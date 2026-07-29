@@ -1,0 +1,31 @@
+{
+  "name": "dian-dian-site",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/prepare-sites-build.mjs",
+    "preview": "vite preview",
+    "start": "serve dist/client -s -l tcp://0.0.0.0:$PORT",
+    "test": "vitest",
+    "test:sites": "node --test tests/sites-worker.test.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "5.0.4",
+    "docx": "^9.7.1",
+    "file-saver": "^2.0.5",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "serve": "^14.2.6",
+    "vite": "6.4.2"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/file-saver": "^2.0.7",
+    "jsdom": "^26.1.0",
+    "vitest": "^3.2.4"
+  }
+}

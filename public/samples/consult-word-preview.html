@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Word 输出样式预览</title>
+<style>
+  body { margin: 0; background: #e8e6e1; font-family: "Segoe UI", "Microsoft YaHei", sans-serif; color: #1c2418; }
+  .bar { background: #315824; color: #fffdf8; padding: 14px 24px; font-size: 14px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .bar a { color: #dce8d4; }
+  .page {
+    width: min(720px, 94vw);
+    margin: 28px auto 48px;
+    background: #fff;
+    padding: 56px 64px 64px;
+    box-shadow: 0 10px 40px rgba(28,36,24,.12);
+    line-height: 1.55;
+  }
+  h1 { text-align: center; font-size: 22px; margin: 0 0 8px; }
+  .date { text-align: center; color: #666; font-size: 13px; margin: 0 0 28px; }
+  h2 { font-size: 16px; margin: 26px 0 12px; }
+  .field { margin: 0 0 8px; font-size: 14px; }
+  .field b { font-weight: 700; }
+  .block-label { margin: 10px 0 4px; font-size: 14px; font-weight: 700; }
+  .block-body { margin: 0 0 12px; font-size: 14px; }
+  .note { margin-top: 28px; color: #888; font-size: 12px; font-style: italic; }
+  @media (max-width: 640px) {
+    .page { padding: 32px 22px 40px; }
+  }
+</style>
+</head>
+<body>
+  <div class="bar">
+    <span>Word 输出样式预览（示例数据）</span>
+    <a href="./%E7%82%B9%E7%82%B9%E6%96%B0%E8%A5%BF%E5%85%B0%E7%95%99%E5%AD%A6%E5%92%A8%E8%AF%A2-%E7%AD%BE%E8%AF%81%E4%BF%A1%E6%81%AF%E8%A1%A8-%E7%A4%BA%E4%BE%8B.docx">下载示例 .docx</a>
+  </div>
+  <article class="page">
+    <h1>点点新西兰留学咨询 · 留学签证信息表</h1>
+    <p class="date">填写日期：2026-07-29</p>
+
+    <h2>1. 基本信息 / 护照</h2>
+    <p class="field"><b>中文姓名：</b>张三</p>
+    <p class="field"><b>护照姓名（拼音）：</b>ZHANG San</p>
+    <p class="field"><b>出生日期：</b>1998-05-12</p>
+    <p class="field"><b>国籍：</b>中国</p>
+    <p class="field"><b>护照号码：</b>E12345678</p>
+    <p class="field"><b>邮箱：</b>zhangsan@example.com</p>
+    <p class="field"><b>手机：</b>13800138000</p>
+    <p class="field"><b>微信：</b>zs_nz2026</p>
+
+    <h2>2. 留学意向</h2>
+    <p class="field"><b>目标城市：</b>奥克兰 Auckland</p>
+    <p class="field"><b>意向学校：</b>ICL Education</p>
+    <p class="field"><b>意向学历：</b>专科 / Diploma</p>
+    <p class="field"><b>意向专业 / 课程：</b>Business</p>
+    <p class="field"><b>预计开学：</b>2026年2月</p>
+    <p class="field"><b>英语成绩：</b>IELTS 6.0</p>
+    <p class="field"><b>是否已有 Offer：</b>否</p>
+    <p class="field"><b>咨询方向：</b>选校 / School choice、签证 / Visa</p>
+
+    <h2>3. 学历背景</h2>
+    <p class="field"><b>最高学历：</b>本科</p>
+    <p class="field"><b>学校：</b>某某大学</p>
+    <p class="field"><b>专业：</b>会计学</p>
+    <p class="block-label">学历时间线：</p>
+    <p class="block-body">2016–2020 某某大学 本科 会计学</p>
+
+    <h2>4. 工作经历</h2>
+    <p class="field"><b>当前状态：</b>在职</p>
+    <p class="field"><b>单位：</b>某某贸易有限公司</p>
+    <p class="field"><b>职位：</b>销售专员</p>
+    <p class="field"><b>税后月收入（人民币）：</b>8000</p>
+    <p class="block-label">工作经历：</p>
+    <p class="block-body">2020.07–至今 某某贸易有限公司 销售专员</p>
+
+    <h2>5. 资金证明：收入、存款与流水</h2>
+    <p class="field"><b>资金来源：</b>父母资助</p>
+    <p class="field"><b>担保人姓名：</b>张父</p>
+    <p class="field"><b>与申请人关系：</b>父亲</p>
+    <p class="field"><b>担保人年收入（人民币）：</b>25万</p>
+    <p class="field"><b>存款总额：</b>28万人民币</p>
+    <p class="field"><b>开户银行：</b>中国银行</p>
+    <p class="field"><b>可提供流水月份：</b>近12个月</p>
+    <p class="block-label">大额进账说明：</p>
+    <p class="block-body">每月工资入账；2025年3月父母转入学费准备金约15万</p>
+
+    <h2>6. 其他签证相关</h2>
+    <p class="block-label">出国 / 旅行记录：</p>
+    <p class="block-body">无</p>
+    <p class="block-label">拒签史：</p>
+    <p class="block-body">无</p>
+    <p class="block-label">补充说明：</p>
+    <p class="block-body">希望优先对比 ICL 与 AIS 的学费与课程</p>
+
+    <p class="note">材料提醒：请另附学历证明、在职/收入证明、存款证明、银行流水扫描件。本文件由点点新西兰留学咨询网站在客户浏览器本地生成，未上传至服务器。</p>
+  </article>
+</body>
+</html>
