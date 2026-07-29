@@ -74,9 +74,58 @@ it("opens the private schools article from the home featured link", async () => 
     }),
   ).toBeInTheDocument();
   expect(
-    screen.getByText(/Auckland Institute of Studies/, { exact: false }),
+    screen.getByText(/为每所学校准备了独立详解/, { exact: false }),
   ).toBeInTheDocument();
-  expect(screen.getByText(/ICL Graduate Business School/, { exact: false })).toBeInTheDocument();
+  expect(screen.getByText(/ICL——奥克兰 CBD/, { exact: false })).toBeInTheDocument();
+});
+
+it("lists dedicated school articles in the study guide", async () => {
+  const user = userEvent.setup();
+  render(<App />);
+
+  await user.click(screen.getAllByRole("button", { name: /探索指南/ })[0]);
+  expect(
+    screen.getByRole("heading", { name: "留学准备" }),
+  ).toBeInTheDocument();
+
+  expect(
+    screen.getByRole("button", { name: /AIS 奥克兰商学院：专业、学费与适合谁/ }),
+  ).toBeInTheDocument();
+  expect(
+    screen.getByRole("button", {
+      name: /ICL 商学院：课程路径、学费与就读体验要点/,
+    }),
+  ).toBeInTheDocument();
+  expect(
+    screen.getByRole("button", { name: /Yoobee：动画、设计与软件课程怎么选/ }),
+  ).toBeInTheDocument();
+  expect(
+    screen.getByRole("button", {
+      name: /NZSE \/ NZSEG：技能课程、校区与学费区间/,
+    }),
+  ).toBeInTheDocument();
+  expect(
+    screen.getByRole("button", {
+      name: /Future Skills：应用管理、学费与奖学金怎么看/,
+    }),
+  ).toBeInTheDocument();
+
+  await user.click(
+    screen.getByRole("button", {
+      name: /ICL 商学院：课程路径、学费与就读体验要点/,
+    }),
+  );
+  expect(
+    screen.getByRole("heading", {
+      name: "ICL 商学院：课程路径、学费与就读体验要点",
+    }),
+  ).toBeInTheDocument();
+  expect(
+    screen.getByRole("link", { name: /icl\.ac\.nz/ }),
+  ).toHaveAttribute("href", "https://icl.ac.nz/");
+  expect(
+    screen.getByText(/ICL Graduate Business School/, { exact: false }),
+  ).toBeInTheDocument();
 });
 
 it("opens the Seek and Trade Me article from the career guide", async () => {

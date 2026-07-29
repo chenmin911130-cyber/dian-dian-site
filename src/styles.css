@@ -413,6 +413,21 @@ a:focus-visible {
   margin-bottom: 1.25rem;
 }
 
+.article-detail__website {
+  margin: 0.85rem 0 0;
+  font-size: 0.95rem;
+}
+
+.article-detail__website a {
+  color: var(--fern-dark);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.article-detail__website a:hover {
+  color: var(--fern);
+}
+
 .article-detail__image {
   width: 100%;
   max-height: 360px;

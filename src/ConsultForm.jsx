@@ -24,7 +24,8 @@ const DEGREE_OPTIONS = [
   { value: "语言 / 预科", zh: "语言 / 预科", en: "Language / pathway" },
   { value: "专科 / Diploma", zh: "专科 / Diploma", en: "Diploma" },
   { value: "本科", zh: "本科", en: "Bachelor" },
-  { value: "研究生", zh: "研究生", en: "Master / postgraduate" },
+  { value: "研文 / PGDip", zh: "研文 / PGDip", en: "Graduate diploma" },
+  { value: "硕士", zh: "硕士", en: "Master’s" },
   { value: "其他", zh: "其他", en: "Other" },
 ];
 

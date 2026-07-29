@@ -25,6 +25,18 @@ export function ArticlePage({
         <p className="detail-lead">
           {zh ? article.excerptZh : article.excerptEn}
         </p>
+        {article.website ? (
+          <p className="article-detail__website">
+            <a
+              href={article.website}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {zh ? "官网：" : "Official site: "}
+              {article.website.replace(/^https?:\/\//, "")}
+            </a>
+          </p>
+        ) : null}
       </header>
 
       <img
