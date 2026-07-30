@@ -72,6 +72,23 @@ export const studyArticles = [
       },
       {
         type: "h2",
+        text: "社区热议：低预算一年制商科硕怎么比",
+      },
+      {
+        type: "p",
+        text: "收藏量较高的对照笔记，常把 ICL、Yoobee、NZSE/NZSEG 放在一起比较：ICL 偏管理细分与晚班；Yoobee 偏数字商业/科技并常见周末班；NZSEG 偏数据分析与混合课表。学费粗算多在奖学金后约 NZD 2.6万–3.1万区间，但每年奖学金规则不同，必须以官网和录取文件为准。想打工兼顾上课的人，优先核对课表是否真的不撞班。",
+      },
+      {
+        type: "articleLinks",
+        items: [
+          { slug: "school-icl", label: "深挖：ICL 商学院" },
+          { slug: "school-yoobee", label: "深挖：Yoobee" },
+          { slug: "school-nzse", label: "深挖：NZSE / NZSEG" },
+          { slug: "renting-guide", label: "生活：奥克兰租房入门" },
+        ],
+      },
+      {
+        type: "h2",
         text: "英文要求：IELTS、PTE、NZCEL 都要看“课程级别”",
       },
       {
@@ -178,6 +195,23 @@ export const studyArticles = [
       {
         type: "p",
         text: "Each school has its own deep-dive article: AIS, ICL, Yoobee, NZSE (NZSEG) and Future Skills. Use the logic below, then open the dedicated pages for details.",
+      },
+      {
+        type: "h2",
+        text: "Community focus: comparing lower-budget one-year business master’s paths",
+      },
+      {
+        type: "p",
+        text: "Highly saved comparison notes often group ICL, Yoobee and NZSE/NZSEG: ICL for management streams and evening classes; Yoobee for digital business/tech with weekend timetables; NZSEG for analytics with mixed delivery. Fee talk usually sits around NZD 26k–31k after scholarships—but scholarship rules change yearly. If you need to work while studying, verify the real timetable first.",
+      },
+      {
+        type: "articleLinks",
+        items: [
+          { slug: "school-icl", label: "Deep dive: ICL" },
+          { slug: "school-yoobee", label: "Deep dive: Yoobee" },
+          { slug: "school-nzse", label: "Deep dive: NZSE / NZSEG" },
+          { slug: "renting-guide", label: "Life: Auckland renting basics" },
+        ],
       },
       {
         type: "h2",
@@ -563,6 +597,54 @@ export const studyArticles = [
       },
       {
         type: "h2",
+        text: "社区高收藏经验：怎么理解 ICL（已改写）",
+      },
+      {
+        type: "p",
+        text: "小红书上收藏较多的 ICL 相关笔记，常见卖点集中在：奥克兰市中心校区、语言与主课衔接、一年制商科/管理类硕士路径、部分晚班或作业评估节奏，以及与其他私立学院的性价比对照。下面把可核对的事实与需要警惕的营销话术分开写。",
+      },
+      {
+        type: "ul",
+        items: [
+          "方向：商科管理、商务信息化等实务路径被提及较多；是否适合取决于你的学术背景与职业目标。",
+          "时间表：部分商科课常见工作日晚间上课，方便白天实习或兼职；以当学期课表为准。",
+          "城市成本：CBD 无免费校内停车是常态；晚班学生常关注夜间封顶停车价，但价格会变，出发前查停车场 App。",
+          "费用话术：社区笔记常写“一年约十多万人民币级学费”，这是粗换算，不等于官网 invoice；奖学金、开学季与课程级别都会改最终数字。",
+          "签证与工签：毕业后能否拿开放工签、能否担保家人，取决于 INZ 当时规则、课程级别与个人情况，不要只信中介文案。",
+        ],
+      },
+      {
+        type: "table",
+        caption: "一年制商科硕常见私立对照（社区整理改写，NZD 约数，务必官网核实）",
+        headers: ["学校", "常见方向印象", "上课节奏印象", "学费约数印象"],
+        rows: [
+          [
+            "ICL",
+            "管理学细分、商务信息化等",
+            "常被描述为工作日晚班",
+            "商科硕粗算约 2.9万–3.1万；偶有入学奖学金宣传",
+          ],
+          [
+            "Yoobee",
+            "数字商业、软件/信息化等创意科技向",
+            "常被描述为周末班",
+            "奖学金后常见粗算约 2.8万–3.0万",
+          ],
+          [
+            "NZSE / NZSEG",
+            "商业智能、数据分析等",
+            "常被描述为线上+周末混合",
+            "奖学金后常见粗算约 2.6万–2.9万",
+          ],
+        ],
+      },
+      {
+        type: "tip",
+        title: "点点提醒",
+        text: "对照表只帮助你提问，不替代录取文件。申请前在官网核对：课程 NZQA 级别、英文条件、是否需要商科背景、奖学金条款、开学日，以及是否符合你的签证与职业规划。",
+      },
+      {
+        type: "h2",
         text: "申请核实清单",
       },
       {
@@ -669,6 +751,54 @@ export const studyArticles = [
         type: "tip",
         title: "Reminder from a current student",
         text: "Before choosing ICL, read the course outline, English conditions, tuition invoice and housing budget together. Do not decide only by the provider name or a single review; whether the course fits you matters more.",
+      },
+      {
+        type: "h2",
+        text: "Highly saved community notes on ICL (rewritten)",
+      },
+      {
+        type: "p",
+        text: "Popular Xiaohongshu notes about ICL often emphasise a CBD campus, English-to-main-course pathways, one-year business/management master’s options, evening timetables, and fee comparisons with other private providers. Separate checkable facts from marketing claims.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Focus: applied management and business informatics paths are mentioned often; fit still depends on your background and goals.",
+          "Timetable: some business classes are described as weekday evenings—confirm the current semester timetable.",
+          "City costs: free on-campus parking is uncommon in the CBD; evening capped parking rates change, so check apps before you drive.",
+          "Fee talk: “around RMB 100k+/year” is a rough conversion, not an invoice. Scholarships, intake and level change the final number.",
+          "Visas: post-study work rights and family sponsorship follow INZ rules for your course and situation—do not rely on agency slogans alone.",
+        ],
+      },
+      {
+        type: "table",
+        caption: "One-year business master’s private-provider comparison (rewritten community notes; NZD approx; verify officially)",
+        headers: ["School", "Common focus", "Timetable impression", "Fee impression"],
+        rows: [
+          [
+            "ICL",
+            "Management streams, business informatics",
+            "Often described as weekday evenings",
+            "Business master’s roughly NZD 29k–31k; scholarships sometimes advertised",
+          ],
+          [
+            "Yoobee",
+            "Digital business / tech-leaning paths",
+            "Often described as weekend classes",
+            "After scholarship, roughly NZD 28k–30k in community notes",
+          ],
+          [
+            "NZSE / NZSEG",
+            "Business intelligence / data analytics",
+            "Often described as online + weekend mix",
+            "After scholarship, roughly NZD 26k–29k in community notes",
+          ],
+        ],
+      },
+      {
+        type: "tip",
+        title: "DianDian reminder",
+        text: "Use the table to ask better questions, not to replace offer documents. Before applying, confirm NZQA level, English requirements, academic background rules, scholarship terms, intakes, and visa/career fit on the official site.",
       },
       {
         type: "h2",

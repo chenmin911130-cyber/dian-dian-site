@@ -37,7 +37,7 @@ export const lifeArticles = [
         caption: "奥克兰合租月度生活费约数（2025-2026，NZD）",
         headers: ["项目", "节省型/月", "中等型/月", "备注"],
         rows: [
-          ["房租", "900-1100", "1100-1400", "合租单间；位置、是否包水电网差异很大"],
+          ["房租", "900-1100", "1100-1400", "约合周租 180-320；位置、是否包水电网差异很大"],
           ["水电网", "80-140", "100-180", "若房租全包可减少，但冬季用电会变"],
           ["吃饭与超市", "350-500", "500-700", "自己做饭比例越高越稳"],
           ["交通", "80-180", "120-220", "取决于住处到学校距离与学生优惠"],
@@ -102,7 +102,7 @@ export const lifeArticles = [
         caption: "Approximate Auckland shared-housing monthly budget (2025-2026, NZD)",
         headers: ["Item", "Thrifty/month", "Mid/month", "Notes"],
         rows: [
-          ["Rent", "900-1100", "1100-1400", "Shared room; location and inclusions change the number"],
+          ["Rent", "900-1100", "1100-1400", "Roughly NZD 180-320/week; location and inclusions change the number"],
           ["Power, water, internet", "80-140", "100-180", "Lower if fully included; winter power can rise"],
           ["Groceries and food", "350-500", "500-700", "More home cooking keeps this steadier"],
           ["Transport", "80-180", "120-220", "Depends on commute and student concessions"],
@@ -302,13 +302,13 @@ export const lifeArticles = [
     titleZh: "新西兰租房入门：合租、押金与看房清单",
     titleEn: "Renting in New Zealand: flatting, bond and viewing checklist",
     excerptZh:
-      "从短住过渡到合租：看清房租包含什么、押金如何处理、室友规则是否适合你。",
+      "综合高收藏社区经验改写：奥克兰分区、远程找房、租金约数、视频看房与避坑。数字为约数，请本地再核。",
     excerptEn:
-      "Move from short stay to flatting by checking inclusions, bond handling and whether house rules fit your life.",
+      "Rewritten from highly saved community tips: Auckland areas, remote search, approximate rents, video viewings and scam checks. Verify locally.",
     image: "/images/hero-coast.jpg",
     imageAltZh: "新西兰住宅街区与看房路线",
     imageAltEn: "A New Zealand residential street and viewing route",
-    readingMins: 8,
+    readingMins: 10,
     sectionsZh: [
       {
         type: "h2",
@@ -321,6 +321,65 @@ export const lifeArticles = [
       {
         type: "p",
         text: "新西兰合租常见按周标价。计算月预算时用每周租金乘以 4.33，而不是乘以 4。还要确认是否包含水、电、网、家具、床品、暖气和停车；“包 bills”也要问是否有限额。",
+      },
+      {
+        type: "h2",
+        text: "奥克兰分区怎么选（约数）",
+      },
+      {
+        type: "p",
+        text: "社区高收藏经验可作参考：City/CBD 通勤方便但租金高、人流更杂；中区兼顾通勤与价格；东区与北岸相对安静，但去市中心高峰可能堵车；南区与西区租金往往更低，需更认真核夜间回家路线与公交。最终以你晚间实际走过的路线为准。",
+      },
+      {
+        type: "table",
+        caption: "奥克兰租金约数参考（2025-2026，NZD/周，落地前请再核）",
+        headers: ["类型", "约数/周", "备注"],
+        rows: [
+          ["合租单间（共享卫浴）", "约 180-250", "是否包 bills 差价很大"],
+          ["Master / 独立卫浴", "约 250-350", "北岸、中区常见区间，视房屋新旧浮动"],
+          ["整租两房", "约 500-800", "通常不带家具、不包水电网"],
+          ["换算月租", "周租 × 4.33", "不要用“四周”低估首月压力"],
+        ],
+      },
+      {
+        type: "h2",
+        text: "人还在国内，怎么远程找房",
+      },
+      {
+        type: "p",
+        text: "若必须人在国内先定房，优先走公开平台与正规中介，而不是私聊急转。主流入口包括 Trade Me Property、大型中介官网（如 Barfoot & Thompson 租房页）。华人转租/短租更新快，但好房常被当地人先订，且更要警惕非正规付款。",
+      },
+      {
+        type: "links",
+        items: [
+          { href: "https://www.trademe.co.nz/a/property", label: "Trade Me Property" },
+          { href: "https://www.barfoot.co.nz/rent", label: "Barfoot & Thompson 租房" },
+        ],
+      },
+      {
+        type: "steps",
+        items: [
+          {
+            title: "筛选区域与预算",
+            text: "先定学校通勤、整租/合租和是否包家具；整租常见不带家具、不包水电网。",
+          },
+          {
+            title: "说明人在海外",
+            text: "联系中介时写清希望视频看房，并说明抵达日期与入住人数。",
+          },
+          {
+            title: "准备材料",
+            text: "护照复印件、资金或 offer、前房东/雇主推荐信、简短自我介绍（来纽目的、时长、几人同住）。",
+          },
+          {
+            title: "正规签约付款",
+            text: "走电子合同与正规账户；bond/房租不要微信支付宝私转。",
+          },
+          {
+            title: "交接钥匙并拍照",
+            text: "常见钥匙盒密码取钥；进屋后立刻拍照记录墙面、地板与家具状态。",
+          },
+        ],
       },
       {
         type: "table",
@@ -342,8 +401,8 @@ export const lifeArticles = [
         type: "steps",
         items: [
           {
-            title: "白天看采光",
-            text: "检查房间是否潮湿、窗户能否打开、衣柜和插座是否够用。",
+            title: "白天看采光与卫生",
+            text: "检查潮湿、窗户、衣柜、插座；留意床虱/跳蚤痕迹与整体卫生。",
           },
           {
             title: "试通勤",
@@ -361,8 +420,8 @@ export const lifeArticles = [
       },
       {
         type: "tip",
-        title: "安全提醒",
-        text: "不要在没看房、没合同或没确认对方身份时转大额押金。若价格明显低于同区水平又催你马上付款，先停下来核实。",
+        title: "避坑提醒",
+        text: "不要交钱才能看房；不要轻信“价格过低 / 全包 / 急租”私聊。务必视频或实地看房 + 正规合同 + 正规付款。竞争大时可同时申请多套。退租通常需提前约两周书面通知（以合同为准）。",
       },
       {
         type: "h2",
@@ -375,6 +434,13 @@ export const lifeArticles = [
           "清洁轮值、访客、做饭味道和安静时间提前说清。",
           "如果跟朋友合租，也要把钱和规则写清楚，避免关系受影响。",
           "保存租金转账记录和与房东/主租的关键聊天记录。",
+        ],
+      },
+      {
+        type: "articleLinks",
+        items: [
+          { slug: "nz-monthly-budget", label: "对照：一个月生活费怎么算" },
+          { slug: "arrival-first-week", label: "对照：落地第一周清单" },
         ],
       },
     ],
@@ -390,6 +456,65 @@ export const lifeArticles = [
       {
         type: "p",
         text: "Rent is commonly advertised weekly. For a monthly budget, multiply weekly rent by 4.33, not 4. Confirm whether water, power, internet, furniture, bedding, heating and parking are included; even “bills included” may have limits.",
+      },
+      {
+        type: "h2",
+        text: "Choosing an Auckland area (approximate)",
+      },
+      {
+        type: "p",
+        text: "Highly saved community tips often summarise: City/CBD is convenient but pricey and busier; central suburbs balance commute and rent; east and North Shore feel quieter but peak traffic into the city can be slow; south and west can be cheaper—check night routes and buses carefully. Judge by the evening walk you personally take.",
+      },
+      {
+        type: "table",
+        caption: "Approximate Auckland rents (2025-2026, NZD/week; verify locally)",
+        headers: ["Type", "Approx/week", "Notes"],
+        rows: [
+          ["Shared room (shared bathroom)", "About 180-250", "Bills included or not changes the price a lot"],
+          ["Master / ensuite", "About 250-350", "Common on North Shore and central suburbs"],
+          ["Two-bedroom whole house", "About 500-800", "Often unfurnished without utilities"],
+          ["Monthly estimate", "Weekly × 4.33", "Do not underestimate the first month"],
+        ],
+      },
+      {
+        type: "h2",
+        text: "Renting remotely while still overseas",
+      },
+      {
+        type: "p",
+        text: "If you must secure a place before arrival, prefer public listings and licensed agencies over urgent private chats. Start with Trade Me Property and major agency sites such as Barfoot & Thompson. Chinese transfer posts move fast and need extra payment caution.",
+      },
+      {
+        type: "links",
+        items: [
+          { href: "https://www.trademe.co.nz/a/property", label: "Trade Me Property" },
+          { href: "https://www.barfoot.co.nz/rent", label: "Barfoot & Thompson rentals" },
+        ],
+      },
+      {
+        type: "steps",
+        items: [
+          {
+            title: "Filter area and budget",
+            text: "Decide commute, flat vs whole house, and furniture needs. Whole-house rentals often exclude furniture and utilities.",
+          },
+          {
+            title: "Say you are overseas",
+            text: "Ask for a video viewing and state arrival date and household size.",
+          },
+          {
+            title: "Prepare documents",
+            text: "Passport copy, funds or offer letter, previous landlord/employer references, and a short intro covering purpose, stay length and household size.",
+          },
+          {
+            title: "Sign and pay formally",
+            text: "Use e-contracts and official accounts; avoid private WeChat/Alipay transfers for bond or rent.",
+          },
+          {
+            title: "Key handover and photos",
+            text: "Key safes are common. Photograph walls, floors and furniture immediately on entry.",
+          },
+        ],
       },
       {
         type: "table",
@@ -411,8 +536,8 @@ export const lifeArticles = [
         type: "steps",
         items: [
           {
-            title: "Check daylight",
-            text: "Look for dampness, windows that open, enough wardrobe space and enough power points.",
+            title: "Check daylight and hygiene",
+            text: "Look for dampness, windows that open, wardrobe space, power points, and hygiene issues such as fleas or bed bugs.",
           },
           {
             title: "Test the commute",
@@ -430,8 +555,8 @@ export const lifeArticles = [
       },
       {
         type: "tip",
-        title: "Safety note",
-        text: "Do not transfer a large bond before seeing the room, receiving written terms or confirming the other person’s identity. If the price is far below the area and payment is urgent, pause and verify.",
+        title: "Scam checks",
+        text: "Do not pay just to view. Be wary of “too cheap / all-inclusive / urgent” private chats. Require video or in-person viewing, a proper contract and official payment. Apply for several places at once. Notice periods are often about two weeks in writing—check your agreement.",
       },
       {
         type: "h2",
@@ -446,8 +571,16 @@ export const lifeArticles = [
           "Save rent transfers and key messages with the landlord or head tenant.",
         ],
       },
+      {
+        type: "articleLinks",
+        items: [
+          { slug: "nz-monthly-budget", label: "Also read: monthly living budget" },
+          { slug: "arrival-first-week", label: "Also read: first-week checklist" },
+        ],
+      },
     ],
   },
+
   {
     slug: "bank-account-setup",
     guideId: "life",

@@ -10,3 +10,7 @@ Thumbs.db
 .idea/
 coverage/
 *.local
+
+# Local MediaCrawler install
+MediaCrawler/
+

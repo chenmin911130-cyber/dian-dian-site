@@ -44,13 +44,13 @@ export const guides = [
     imageAltEn: "A student shared kitchen with a monthly budget notebook",
     titleZh: "生活指南",
     titleEn: "Living in NZ",
-    summaryZh: "月度生活费预算、租房、开户、超市省钱、手机公交、保险看病与落地第一周。",
+    summaryZh: "月度生活费预算、奥克兰租房（分区/远程找房）、开户、超市省钱、手机公交、保险看病与落地第一周。",
     summaryEn:
-      "Monthly living budget, renting, banking, supermarket savings, SIM/transport, insurance and your first week.",
+      "Monthly living budget, Auckland renting (areas/remote search), banking, supermarket savings, SIM/transport, insurance and your first week.",
     introZh:
-      "落地后最先卡住的往往不是课程，而是租房、银行卡、手机卡和看病。下面按「预算与日常开销 → 住与落地 → 通讯交通与健康」整理，数字为约数，务必本地再核。",
+      "落地后最先卡住的往往不是课程，而是租房、银行卡、手机卡和看病。租房篇已吸收高收藏社区经验并改写：分区、周租约数、Trade Me 远程看房与避坑。下面按「预算与日常开销 → 住与落地 → 通讯交通与健康」整理，数字为约数，务必本地再核。",
     introEn:
-      "After arrival, housing, banking, a SIM and healthcare usually come before coursework. Browse Budget → Housing & arrival → Phone, transport & health. Figures are approximate—verify locally.",
+      "After arrival, housing, banking, a SIM and healthcare usually come before coursework. The renting guide now includes rewritten high-save community tips on areas, weekly rents, Trade Me remote viewings and scam checks. Browse Budget → Housing & arrival → Phone, transport & health. Figures are approximate—verify locally.",
     featuredSlug: "nz-monthly-budget",
     featuredTitleZh: "留学生一个月生活费怎么算",
     featuredTitleEn: "A practical one-month NZ living budget",
