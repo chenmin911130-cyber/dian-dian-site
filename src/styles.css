@@ -692,17 +692,18 @@ a:focus-visible {
 
 .author-note {
   display: grid;
-  grid-template-columns: 92px minmax(0, 1fr);
+  grid-template-columns: 128px minmax(0, 1fr);
   gap: 28px;
   align-items: center;
   padding: 18px 12px 0;
 }
 
 .author-note img {
-  width: 92px;
-  height: 92px;
+  width: 128px;
+  height: 128px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center top;
 }
 
 .author-note h2 {
@@ -1040,14 +1041,14 @@ a:focus-visible {
   }
 
   .author-note {
-    grid-template-columns: 68px 1fr;
+    grid-template-columns: 88px 1fr;
     gap: 18px;
     padding-inline: 0;
   }
 
   .author-note img {
-    width: 68px;
-    height: 68px;
+    width: 88px;
+    height: 88px;
   }
 
   .consult-form__grid {
