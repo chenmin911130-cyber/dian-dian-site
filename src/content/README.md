@@ -10,6 +10,15 @@
 - `school-nzse.js` — NZSE / NZSEG：技能课程、校区与学费区间
 - `school-future-skills.js` — Future Skills：应用管理、学费与奖学金怎么看
 - `nz-private-providers.js` — 新西兰私立/技能学校怎么查：不靠传言做决定
+- `nz-eight-universities.js` — 新西兰八大公立大学：官网、城市与 QS 排名对照
+- `uni-auckland.js` — 奥克兰大学：专业、校区与世界排名
+- `uni-otago.js` — 奥塔哥大学：专业、校区与世界排名
+- `uni-massey.js` — 梅西大学：专业、校区与世界排名
+- `uni-victoria.js` — 惠灵顿维多利亚大学：专业、校区与世界排名
+- `uni-canterbury.js` — 坎特伯雷大学：专业、校区与世界排名
+- `uni-waikato.js` — 怀卡托大学：专业、校区与世界排名
+- `uni-lincoln.js` — 林肯大学：专业、校区与世界排名
+- `uni-aut.js` — 奥克兰理工大学 AUT：专业、校区与世界排名
 - `nz-application-timeline.js` — 新西兰留学申请时间线：从 12 个月前到开学
 - `english-test-guide.js` — PTE、IELTS、NZCEL 怎么选：新西兰私立学院英文路径
 - `offer-acceptance-checklist.js` — 收到 offer 后怎么检查：接受、缴费与签证前清单

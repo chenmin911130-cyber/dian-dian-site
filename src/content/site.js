@@ -46,6 +46,7 @@ export const siteCopy = {
 export const guideCategories = {
   study: [
     { id: "schools", zh: "选校与学费", en: "Schools & fees" },
+    { id: "universities", zh: "八大公立大学", en: "Eight universities" },
     { id: "process", zh: "申请与语言", en: "Applications & English" },
     { id: "visa", zh: "签证与预算", en: "Visa & budget" },
   ],

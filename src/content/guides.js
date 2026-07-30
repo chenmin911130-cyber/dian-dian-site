@@ -7,13 +7,13 @@ export const guides = [
     titleZh: "留学准备",
     titleEn: "Study preparation",
     summaryZh:
-      "聚焦 AIS、ICL、Yoobee、NZSE、Future Skills 等私立/技能学校与学费区间，以及签证、语言、预算与申请节奏。",
+      "私立/技能学校学费与选校，加上八大公立大学官网与 QS 排名专文，以及签证、语言、预算与申请节奏。",
     summaryEn:
-      "Focus on AIS, ICL, Yoobee, NZSE and Future Skills-style private/skills providers with tuition ranges, plus visas, English, budget and timing.",
+      "Private/skills school fees and shortlists, plus eight public university pages with official sites and QS ranks, plus visas, English, budget and timing.",
     introZh:
-      "很多人问的不是八大排名，而是：奥克兰私立学院读什么、学费大概多少、PTE/语言班能不能衔接、商科 IT 酒店创意哪条路更贴自己。下面按「选校与学费 → 申请与语言 → 签证与预算」整理，每篇文章配对照表、清单与配图，方便你边看边做短名单。",
+      "选校可以分两条线：私立/技能学院看学费节奏与实务课表；八大公立大学看城市、专业与世界排名。下面按「选校与学费 → 八大公立大学 → 申请与语言 → 签证与预算」整理，每篇配对照表、官网按钮与清单。",
     introEn:
-      "Many students need private/skills-provider options more than university rankings. Browse by Schools & fees → Applications & English → Visa & budget. Each article adds tables, checklists and figures so you can shortlist as you read.",
+      "Two shortlist tracks: private/skills providers for fee rhythm and practice-focused study; the eight public universities for city, major and world ranks. Browse Schools & fees → Eight universities → Applications & English → Visa & budget, with tables, official-site buttons and checklists.",
     featuredSlug: "pte-private-schools",
     featuredTitleZh: "AIS / ICL / Yoobee / NZSE / Future Skills：学费与怎么选",
     featuredTitleEn: "AIS, ICL, Yoobee, NZSE, Future Skills: fees and who they suit",
