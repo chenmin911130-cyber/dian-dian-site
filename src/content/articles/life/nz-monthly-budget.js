@@ -227,7 +227,7 @@ export const nzMonthlyBudget = {
     {
       type: "tip",
       title: "Budget floor",
-      text: "Before signing a lease, paying bond or transferring living funds, list first-month bond, rent in advance, bedding, cookware, transport top-up and SIM costs separately. Arrival month is usually more expensive than a stable month.",
+      text: "Before signing a lease, paying bond or transferring living funds, list first-month bond, rent in advance, bedding, cookware, transport top-up and SIM costs separately. Arrival month is usually more expensive than a stable month. Part-time pay can help, but do not build your floor budget on working every allowed hour—timetables, visa limits and how long job hunting takes are uncertain.",
     },
   ],
 };
