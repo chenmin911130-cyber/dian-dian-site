@@ -645,7 +645,7 @@ export const studyArticles = [
       },
       {
         type: "figure",
-        src: "/images/career-feature.jpg",
+        src: "/images/study-documents.jpg",
         alt: "奥克兰城市天际线与商科学习环境",
         caption: "城市便利是加分项，但市中心预算和晚归安排要提前算清。",
       },
@@ -775,7 +775,7 @@ export const studyArticles = [
       },
       {
         type: "figure",
-        src: "/images/career-feature.jpg",
+        src: "/images/study-documents.jpg",
         alt: "Auckland skyline and a business-study environment",
         caption: "City convenience helps—but city-centre budgeting and late returns need planning.",
       },
@@ -812,7 +812,7 @@ export const studyArticles = [
       "Yoobee 常见定位是周末班 + 数字商业/创意科技；作品集、设备与奖学金后净学费要一起看。",
     excerptEn:
       "Yoobee is often framed as weekend classes plus digital business/creative tech—plan portfolio, equipment and net fees together.",
-    image: "/images/career-feature.jpg",
+    image: "/images/study-documents.jpg",
     imageAltZh: "创意科技学生在城市中学习与求职",
     imageAltEn: "Creative technology students studying and job searching in the city",
     website: "https://yoobee.ac.nz/",

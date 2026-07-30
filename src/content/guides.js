@@ -39,20 +39,20 @@ export const guides = [
   },
   {
     id: "life",
-    image: "/images/life-feature.jpg",
-    imageAltZh: "留学生合租厨房与月度预算笔记",
-    imageAltEn: "A student shared kitchen with a monthly budget notebook",
+    image: "/images/life-weekend-walk.jpg",
+    imageAltZh: "奥克兰晴天街区遛狗散步",
+    imageAltEn: "Walking dogs on a sunny Auckland residential street",
     titleZh: "生活指南",
     titleEn: "Living in NZ",
-    summaryZh: "月度生活费预算、奥克兰租房（分区/远程找房）、开户、超市省钱、手机公交、保险看病与落地第一周。",
+    summaryZh: "月度生活费、奥克兰租房、周末慢生活（散步与咖啡店）、开户、超市、手机公交、保险与落地第一周。",
     summaryEn:
-      "Monthly living budget, Auckland renting (areas/remote search), banking, supermarket savings, SIM/transport, insurance and your first week.",
+      "Monthly budget, Auckland renting, slow weekends (walks and cafes), banking, supermarket tips, SIM/transport, insurance and your first week.",
     introZh:
-      "落地后最先卡住的往往不是课程，而是租房、银行卡、手机卡和看病。租房篇涵盖分区、周租约数、Trade Me 远程看房与避坑。下面按「预算与日常开销 → 住与落地 → 通讯交通与健康」整理，数字为约数，务必本地再核。",
+      "落地后最先卡住的往往不是课程，而是租房、银行卡、手机卡和看病。也别忘了给自己留一点晴天散步、坐在咖啡店门口发呆的时间。下面按「预算与日常开销 → 住与落地 → 通讯交通与健康」整理，数字为约数，务必本地再核。",
     introEn:
-      "After arrival, housing, banking, a SIM and healthcare usually come before coursework. The renting guide covers areas, weekly rents, Trade Me remote viewings and scam checks. Browse Budget → Housing & arrival → Phone, transport & health. Figures are approximate—verify locally.",
-    featuredSlug: "nz-monthly-budget",
-    featuredTitleZh: "留学生一个月生活费怎么算",
-    featuredTitleEn: "A practical one-month NZ living budget",
+      "After arrival, housing, banking, a SIM and healthcare usually come before coursework. Leave room for sunny walks and a quiet cafe seat too. Browse Budget → Housing & arrival → Phone, transport & health. Figures are approximate—verify locally.",
+    featuredSlug: "auckland-weekend-slow",
+    featuredTitleZh: "奥克兰周末慢生活：散步、咖啡店与两只狗",
+    featuredTitleEn: "A slow Auckland weekend: walks, cafes and two dogs",
   },
 ];

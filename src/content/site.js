@@ -55,6 +55,6 @@ export const guideCategories = {
   life: [
     { id: "money", zh: "预算与日常开销", en: "Budget & spending" },
     { id: "settle", zh: "住与落地", en: "Housing & arrival" },
-    { id: "daily", zh: "通讯、交通与健康", en: "Phone, transport & health" },
+    { id: "daily", zh: "日常节奏、通讯与健康", en: "Daily rhythm, phone & health" },
   ],
 };

@@ -1207,4 +1207,159 @@ export const lifeArticles = [
       },
     ],
   },
+  {
+    slug: "auckland-weekend-slow",
+    guideId: "life",
+    categoryId: "daily",
+    titleZh: "奥克兰周末慢生活：散步、咖啡店与两只狗",
+    titleEn: "A slow Auckland weekend: walks, cafes and two dogs",
+    excerptZh:
+      "晴天街区遛狗、坐在咖啡店门口发呆——留学不只是课表和兼职，周末这样过，人会松一点。",
+    excerptEn:
+      "A sunny neighbourhood walk with the dogs, then lingering outside a cafe—study life is more than classes and shifts; slow weekends help you settle.",
+    image: "/images/life-weekend-walk.jpg",
+    imageAltZh: "奥克兰晴天街区，带两只狗散步回头看镜头",
+    imageAltEn: "Looking back while walking two dogs on a sunny Auckland street",
+    readingMins: 5,
+    sectionsZh: [
+      {
+        type: "figure",
+        src: "/images/life-weekend-walk.jpg",
+        alt: "晴天人行道上牵着两只柴犬回头微笑",
+        caption: "周末先出门走走。阳光、绿篱和长长的影子，比刷手机更能把一周的绷劲卸下来。",
+      },
+      {
+        type: "h2",
+        text: "留学日常里，也要给自己留一段「没事做」",
+      },
+      {
+        type: "p",
+        text: "来新西兰之后，很多人的时间表会被课程、兼职、做饭和找房塞满。其实真正让人留下的，常常是这种没有 KPI 的下午：穿得轻便一点，戴上帽子墨镜，牵着狗沿着安静的住宅区人行道慢慢走。两边是修剪整齐的绿篱，天上电线拉得很直，远处有棕榈和停着的车——很普通，但很奥克兰。",
+      },
+      {
+        type: "p",
+        text: "如果你还在国内选住宿，可以提前想一件小事：周末愿不愿意走得出去。离公园、人行道完整、坡度不太陡的街区，比「看起来便宜但只能困在屋里」更适合长期住。合租谈妥前，晚上自己走一遍回家的路；周末再在地图上看有没有能遛一圈的街巷。",
+      },
+      {
+        type: "ul",
+        items: [
+          "防晒霜、帽子和墨镜：奥克兰紫外线不弱，散步半小时也值得遮一下。",
+          "舒适的白鞋或运动鞋：碎石路和草边人行道比想象中磨脚。",
+          "手机离线地图：街区巷子多，信号偶尔不稳时有用。",
+          "带水、带小垃圾袋：公共场所清理狗便是基本礼貌。",
+        ],
+      },
+      {
+        type: "figure",
+        src: "/images/life-cafe-kinship.jpg",
+        alt: "坐在 Kinship 咖啡店门口木椅上，旁边两只柴犬",
+        caption: "走累了就找一家能坐门口的咖啡店。狗在脚边，咖啡在手里，这一刻不用赶下一件事。",
+      },
+      {
+        type: "h2",
+        text: "咖啡店门口的半小时，也算生活费里的「缓冲」",
+      },
+      {
+        type: "p",
+        text: "奥克兰很多小店对宠物比较友好，可以坐在门口的木椅或长凳上。像 Kinship 这样店招清楚、门口有座位的地方，很适合「遛完狗再歇一口气」。点一杯热的或冰的，看窗外反光里的房子和树，把下周要交的作业暂时放一边。",
+      },
+      {
+        type: "p",
+        text: "预算上不用回避这类开销，但要诚实记账。一杯咖啡加偶尔外食，放进月度「社交与缓冲」那一栏通常更稳：节省型可按每月 NZD 100-200 估，中等型 NZD 180-320。关键不是从不喝咖啡，而是别让冲动消费挤掉房租和交通。",
+      },
+      {
+        type: "table",
+        caption: "周末慢生活小清单（可对照自己的预算）",
+        headers: ["事项", "大约花费", "提醒"],
+        rows: [
+          ["街区散步 40-60 分钟", "免费", "防晒、水、合适鞋子"],
+          ["门口咖啡一杯", "NZD 5-8 常见", "问清是否 pet-friendly 再带狗靠近座位"],
+          ["顺路超市补货", "按清单买", "饿着逛街更容易超支"],
+          ["回家整理下周课表", "免费", "把兼职班次和作业截止写进同一周视图"],
+        ],
+      },
+      {
+        type: "tip",
+        title: "点点自己的节奏",
+        text: "学习、找工作和办手续都会很忙，但留一点「带着狗晒太阳」的时间，并不浪费。人松一点，课和简历反而更容易做下去。你也欢迎分享自己在奥克兰的周末角落。",
+      },
+      {
+        type: "articleLinks",
+        items: [
+          { slug: "nz-monthly-budget", label: "对照：一个月生活费怎么算" },
+          { slug: "renting-guide", label: "对照：奥克兰租房入门" },
+        ],
+      },
+    ],
+    sectionsEn: [
+      {
+        type: "figure",
+        src: "/images/life-weekend-walk.jpg",
+        alt: "Looking back while walking two Shiba Inus on a sunny sidewalk",
+        caption: "Start the weekend outside. Sun, hedges and long shadows reset a week of pressure better than scrolling.",
+      },
+      {
+        type: "h2",
+        text: "Leave room for a little “nothing to do”",
+      },
+      {
+        type: "p",
+        text: "After arriving in New Zealand, schedules fill with classes, part-time work, cooking and housing. What often stays with you is an unhurried afternoon: light clothes, a cap and sunglasses, walking the dogs along a quiet residential footpath. Neat hedges, straight power lines, palm trees and parked cars—ordinary, and very Auckland.",
+      },
+      {
+        type: "p",
+        text: "If you are still choosing housing from overseas, ask one small question: can you walk out on weekends? Streets with parks, continuous footpaths and gentle slopes beat a cheap room that traps you indoors. Before signing a flat, walk the evening route home; on a weekend map, check a loop you would actually enjoy.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Sunscreen, hat and sunglasses—Auckland UV is stronger than it feels.",
+          "Comfortable sneakers—gravel edges and grass verges wear on feet.",
+          "Offline maps help when laneways get confusing.",
+          "Water and a small waste bag—cleaning up after dogs is basic courtesy.",
+        ],
+      },
+      {
+        type: "figure",
+        src: "/images/life-cafe-kinship.jpg",
+        alt: "Sitting outside Kinship cafe with two Shiba Inus nearby",
+        caption: "When the walk is done, find a cafe with outdoor seats. Dogs at your feet, coffee in hand—no rush to the next task.",
+      },
+      {
+        type: "h2",
+        text: "Half an hour at a cafe doorway belongs in your buffer budget",
+      },
+      {
+        type: "p",
+        text: "Many Auckland cafes welcome pets at outdoor seats. Spots like Kinship—with a clear sign and benches out front—are perfect after a walk. Order something hot or iced, watch houses and trees reflected in the window, and let next week’s deadlines wait a moment.",
+      },
+      {
+        type: "p",
+        text: "Do not pretend this costs nothing—just track it honestly. Coffee and occasional meals out fit the monthly “social and buffer” line: about NZD 100-200 for thrifty budgets, NZD 180-320 for mid-range. The goal is not zero coffee; it is not letting impulse spending crowd out rent and transport.",
+      },
+      {
+        type: "table",
+        caption: "A slow-weekend checklist (match it to your budget)",
+        headers: ["Item", "Rough cost", "Note"],
+        rows: [
+          ["40–60 minute neighbourhood walk", "Free", "Sunscreen, water, decent shoes"],
+          ["One outdoor coffee", "Often NZD 5–8", "Confirm pet-friendly seating before bringing dogs close"],
+          ["Supermarket top-up on the way home", "Follow a list", "Shopping hungry pushes overspend"],
+          ["Plan next week’s timetable", "Free", "Put shifts and assignment deadlines in one week view"],
+        ],
+      },
+      {
+        type: "tip",
+        title: "DianDian’s rhythm",
+        text: "Study, job hunting and paperwork stay busy—but time in the sun with the dogs is not wasted. When you loosen a little, classes and CVs get easier to finish. Share your own Auckland weekend corner if you like.",
+      },
+      {
+        type: "articleLinks",
+        items: [
+          { slug: "nz-monthly-budget", label: "Also: one-month living budget" },
+          { slug: "renting-guide", label: "Also: Auckland renting basics" },
+        ],
+      },
+    ],
+  },
 ];
