@@ -4,22 +4,33 @@ export function ArticleRow({ article, featuredLabel, onOpenGuide, onOpenArticle 
       <div className="article-copy">
         <h2>{article.title}</h2>
         <p>{article.summary}</p>
-        <button type="button" onClick={() => onOpenGuide(article.guideId)}>
+        <a
+          className="text-link"
+          href={`#/guide/${article.guideId}`}
+          onClick={(event) => {
+            event.preventDefault();
+            onOpenGuide(article.guideId);
+          }}
+        >
           {article.action}
           <span aria-hidden="true">→</span>
-        </button>
+        </a>
       </div>
-      <img src={article.image} alt={article.imageAlt} />
+      <img src={article.image} alt={article.imageAlt} loading="lazy" />
       <div className="article-feature">
         <span>{featuredLabel}</span>
         <h3>{article.featured}</h3>
-        <button
-          type="button"
-          onClick={() => onOpenArticle(article.featuredSlug)}
+        <a
+          className="text-link"
+          href={`#/article/${article.featuredSlug}`}
+          onClick={(event) => {
+            event.preventDefault();
+            onOpenArticle(article.featuredSlug);
+          }}
         >
           {article.read}
           <span aria-hidden="true">→</span>
-        </button>
+        </a>
       </div>
     </article>
   );

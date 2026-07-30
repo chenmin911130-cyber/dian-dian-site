@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ArticlePage } from "./ArticlePage";
 import { ArticleRow } from "./ArticleRow";
 import { AuthorNote } from "./AuthorNote";
@@ -12,37 +12,77 @@ import {
   siteCopy,
 } from "./content";
 
+function parseHash() {
+  const raw = window.location.hash.replace(/^#\/?/, "").trim();
+  if (!raw || raw === "top") return { name: "home" };
+
+  const [kind, id] = raw.split("/");
+  if (kind === "consult") return { name: "consult" };
+  if (kind === "guide" && id && getGuide(id)) return { name: "guide", guideId: id };
+  if (kind === "article" && id && getArticle(id)) {
+    return { name: "article", slug: id };
+  }
+  return { name: "home" };
+}
+
+function hashForView(view) {
+  if (view.name === "consult") return "#/consult";
+  if (view.name === "guide") return `#/guide/${view.guideId}`;
+  if (view.name === "article") return `#/article/${view.slug}`;
+  return "#/";
+}
+
 export function App() {
   const [locale, setLocale] = useState("zh");
-  const [view, setView] = useState({ name: "home" });
+  const [view, setView] = useState(() =>
+    typeof window === "undefined" ? { name: "home" } : parseHash(),
+  );
   const copy = siteCopy[locale];
 
   function scrollTop() {
+    if (typeof window.scrollTo !== "function") return;
     try {
       window.scrollTo({ top: 0, behavior: "smooth" });
     } catch {
-      // jsdom does not implement scrollTo
+      // jsdom may stub scrollTo incompletely
     }
   }
 
-  function openConsultation() {
-    setView({ name: "consult" });
+  function navigate(next) {
+    setView(next);
+    const hash = hashForView(next);
+    if (window.location.hash !== hash) {
+      window.location.hash = hash;
+    }
     scrollTop();
+  }
+
+  useEffect(() => {
+    function onHashChange() {
+      setView(parseHash());
+      scrollTop();
+    }
+    window.addEventListener("hashchange", onHashChange);
+    if (!window.location.hash) {
+      window.location.replace("#/");
+    }
+    return () => window.removeEventListener("hashchange", onHashChange);
+  }, []);
+
+  function openConsultation() {
+    navigate({ name: "consult" });
   }
 
   function openGuide(guideId) {
-    setView({ name: "guide", guideId });
-    scrollTop();
+    navigate({ name: "guide", guideId });
   }
 
   function openArticle(slug) {
-    setView({ name: "article", slug });
-    scrollTop();
+    navigate({ name: "article", slug });
   }
 
   function goHome() {
-    setView({ name: "home" });
-    scrollTop();
+    navigate({ name: "home" });
   }
 
   const guide =
@@ -61,7 +101,7 @@ export function App() {
         <header className="site-header">
           <a
             className="wordmark"
-            href="#top"
+            href="#/"
             aria-label={copy.siteName}
             onClick={(event) => {
               event.preventDefault();
@@ -98,14 +138,17 @@ export function App() {
         {view.name === "home" ? (
           <div id="top" className="hero-copy">
             <h1>{copy.heroTitle}</h1>
-            <button
+            <a
               className="primary-cta"
-              type="button"
-              onClick={openConsultation}
+              href="#/consult"
+              onClick={(event) => {
+                event.preventDefault();
+                openConsultation();
+              }}
             >
               {copy.heroCta}
               <span aria-hidden="true">→</span>
-            </button>
+            </a>
           </div>
         ) : null}
       </section>
@@ -124,7 +167,12 @@ export function App() {
                 />
               ))}
             </section>
-            <AuthorNote title={copy.authorTitle} body={copy.authorBody} />
+            <AuthorNote
+              title={copy.authorTitle}
+              body={copy.authorBody}
+              email={copy.authorEmail}
+              emailLabel={copy.authorEmailLabel}
+            />
           </>
         ) : null}
 
@@ -146,6 +194,7 @@ export function App() {
             labels={copy}
             onBackHome={goHome}
             onBackGuide={() => openGuide(article.guideId)}
+            onOpenArticle={openArticle}
           />
         ) : null}
 
