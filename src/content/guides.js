@@ -26,13 +26,13 @@ export const guides = [
     titleZh: "求职与工作",
     titleEn: "Career and work",
     summaryZh:
-      "Seek、Trade Me Jobs、简历、面试、IRD 与学生工时——本地找工刚需清单。",
+      "Seek、Trade Me Jobs、Indeed/LinkedIn、walk-in、简历、面试、IRD 与学生工时——本地找工刚需清单。",
     summaryEn:
-      "Seek, Trade Me Jobs, CVs, interviews, IRD and student work hours—the essentials.",
+      "Seek, Trade Me Jobs, Indeed/LinkedIn, walk-ins, CVs, interviews, IRD and student work hours—the essentials.",
     introZh:
-      "本地兼职与全职大多从线上开始。Seek 岗位更全，Trade Me Jobs 本地感更强。下面按「找工作平台 → 简历与面试 → 税号与工时」展开，配平台对照、简历模板要点与合规提醒。",
+      "本地兼职与全职大多从线上开始。Seek 岗位更全，Trade Me Jobs 本地感更强；服务业还可配合 walk-in 与本地群。下面按「找工作平台 → 简历与面试 → 税号与工时」展开，配平台对照、简历模板要点与合规提醒。",
     introEn:
-      "Most local jobs start online. Seek is broader; Trade Me Jobs feels more local. Browse Job platforms → CV & interviews → IRD & work hours, with comparison tables and compliance notes.",
+      "Most local jobs start online. Seek is broader; Trade Me Jobs feels more local; hospitality also uses walk-ins and local groups. Browse Job platforms → CV & interviews → IRD & work hours, with comparison tables and compliance notes.",
     featuredSlug: "seek-trademe-jobs",
     featuredTitleZh: "在 Seek 与 Trade Me 找工作：实用建议",
     featuredTitleEn: "Finding work on Seek and Trade Me: practical tips",
