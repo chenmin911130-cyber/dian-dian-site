@@ -6,106 +6,93 @@ export const careerArticles = [
     titleZh: "在 Seek 与 Trade Me 找工作：实用建议",
     titleEn: "Finding work on Seek and Trade Me: practical tips",
     excerptZh:
-      "Seek / Trade Me / Indeed / LinkedIn / Student Job Search / Facebook 怎么分工，少而准比海投更稳。",
+      "Seek 岗位更全，Trade Me Jobs 本地感强、常见中小商家；把平台差异、投递节奏和学生工时一起看。",
     excerptEn:
-      "How to split Seek, Trade Me, Indeed, LinkedIn, Student Job Search and Facebook—quality over spray-and-pray.",
+      "Seek has broader coverage; Trade Me Jobs feels local and often surfaces smaller employers. Use both with a steady application rhythm.",
     image: "/images/career-feature.jpg",
     imageAltZh: "奥克兰城市与求职平台页面",
     imageAltEn: "Auckland city with job platform pages",
-    readingMins: 9,
+    readingMins: 8,
     sectionsZh: [
       {
         type: "figure",
         src: "/images/career-feature.jpg",
         alt: "奥克兰城市天际线与求职笔记",
-        caption: "平台只是入口；筛选、投递节奏和跟进记录才拉开差距。",
+        caption: "线上平台只是入口，真正拉开差距的是岗位筛选、投递节奏和跟进记录。",
       },
       {
         type: "h2",
-        text: "别只盯 Seek：多渠道怎么分工",
+        text: "先把两个平台分工清楚",
       },
       {
         type: "p",
-        text: "Seek 是基本盘，但不是唯一入口。Trade Me Jobs 本地感强、中小商家多；Indeed 常挖到兼职；LinkedIn 偏人脉与白领；Student Job Search 适合在校灵活岗；Facebook 小组对餐饮、零售、部分地区 WHV 岗位很有效。天维网 / 微信群信息真假混杂，只能当补充。",
+        text: "新西兰本地找兼职、实习或毕业后的第一份全职，Seek 和 Trade Me Jobs 都值得每天看。Seek 岗位量大、行业覆盖广，适合找公司制岗位、办公室职位、IT、会计、行政、酒店管理和 graduate role。Trade Me Jobs 本地感强，很多中小商家会发门店、仓库、客服、基础办公室或社区型岗位，描述有时更直接。",
+      },
+      {
+        type: "p",
+        text: "不要把平台当成“刷到就投”的信息流。先建立关键词、地区、工时和签证限制，再把看到的岗位放进同一张表：公司、岗位、地点、是否接受学生、申请截止、已投日期、后续回复。连续两周记录后，你会看出哪些关键词真的有回音。",
       },
       {
         type: "table",
-        caption: "本地常用找工作渠道",
-        headers: ["渠道", "更适合", "怎么用"],
+        caption: "Seek 与 Trade Me Jobs 快速对照",
+        headers: ["维度", "Seek", "Trade Me Jobs"],
         rows: [
-          [
-            "Seek",
-            "公司制岗位、专业岗、graduate role、覆盖面最广",
-            "开 Job Alert；每天精投，不要刷到就点",
-          ],
-          [
-            "Trade Me Jobs",
-            "本地零售、客服、教育、中小商家；本地感强",
-            "按区域 + part-time 筛；描述短也要改 CV 第一段",
-          ],
-          [
-            "Indeed NZ",
-            "聚合岗位；有人学签期靠它找到金融兼职",
-            "上传可被搜索的 CV；设提醒",
-          ],
-          [
-            "LinkedIn",
-            "白领、内推、人设与职业规划",
-            "同步优化主页；HR 常会点进来看",
-          ],
-          [
-            "Student Job Search",
-            "在校短期、灵活兼职",
-            "公司可能偏小，仍要正规合同与时薪",
-          ],
-          [
-            "Facebook 小组 / 官网直投",
-            "餐饮零售、地区岗位；大店有时只发官网",
-            "发帖带过往工作图；Warehouse / Farmers 等可官网补投",
-          ],
+          ["岗位覆盖", "大公司、招聘机构、专业岗和 graduate role 更多", "本地零售、服务业、中小商家和社区岗位更常见"],
+          ["搜索方式", "适合细分行业、薪资、远程/混合办公和合同类型", "适合按区域、兼职、入门岗位和本地雇主筛选"],
+          ["申请材料", "通常要完整 CV、cover letter，有时跳转 ATS 系统", "不少岗位可直接平台申请，但仍要上传干净 CV"],
+          ["节奏", "每天看新岗位，重点跟进 3-5 个高匹配", "每天刷本区新帖，快投但不要复制粘贴"],
+          ["适合谁", "想找专业相关、办公室或长期岗位的人", "想先找本地兼职、门店、仓库、客服切入口的人"],
         ],
       },
       {
         type: "h2",
-        text: "一周节奏：少而准，比海投更稳",
-      },
-      {
-        type: "p",
-        text: "海投不是目标。更稳的做法是：固定两天批量投、不同岗位换关键词、简历写明签证状态（避免卡 PR 的岗位白耗时间）、同步改 LinkedIn。连续两周零回音，先改 CV，再继续投。",
+        text: "一周投递节奏：少而准，比海投更稳",
       },
       {
         type: "steps",
         items: [
           {
             title: "周一：更新关键词",
-            text: "写成 5–8 组：customer service part time、barista、warehouse casual、IT support junior 等，按课表可上班时段再筛。",
+            text: "把课程方向、可工作地区、可上班时段写成 5-8 个关键词组合，例如 customer service part time、IT support junior、hospitality supervisor。",
           },
           {
             title: "周二至周四：每天精投",
-            text: "每天 3–5 个高匹配；改 profile 与 cover letter 第一段，禁止一份材料打天下。",
+            text: "每天选 3-5 个高匹配岗位，改 CV profile 和 cover letter 第一段，不要同一份材料投所有工作。",
           },
           {
             title: "周五：集中跟进",
-            text: "已投 5–7 天仍开放的岗位，发短跟进确认材料并给出可面试时间。",
+            text: "给已投 5-7 天且仍开放的岗位发简短跟进邮件，确认材料已收到并补充你可面试的时间。",
           },
           {
             title: "周末：复盘数据",
-            text: "哪些标题、地区、工时有回复；补充 walk-in 名单（见下一篇）。",
+            text: "看哪些标题、地区和工作时段有回复；如果 20 次申请都没回音，先改 CV，而不是继续海投。",
           },
         ],
       },
       {
+        type: "h2",
+        text: "学生工时与雇主沟通",
+      },
+      {
+        type: "p",
+        text: "如果你持学生签证，先确认签证条件、课程期间每周可工作小时数和假期规则。不要在电话里含糊说“我都可以”，而是说清楚你合法可工作的时间段，例如工作日晚上、周末、课表固定后的白天空档。",
+      },
+      {
         type: "tip",
         title: "学生工时提醒",
-        text: "申请前截图保存签证条件。学期内常见上限约为每周 25 小时——以你签证与 Immigration New Zealand 当时规则为准，学期与假期可能不同。",
+        text: "申请前截图保存签证条件，并在排班前再次确认。工时规则会因签证条件和学期/假期不同而变化，遇到不确定情况以 Immigration New Zealand 与学校国际办公室回复为准。",
+      },
+      {
+        type: "h2",
+        text: "小岗位也要认真筛",
       },
       {
         type: "ul",
         items: [
-          "看清 hourly rate 是否至少符合当年最低工资。",
-          "晚班回家安全比「多几小时」更重要。",
-          "警惕先交培训费、押金、只走私人聊天软件的岗位。",
-          "无薪试工通常不合法，先搞清劳动法再答应。",
+          "看清薪资是否写明 hourly rate、是否至少符合当年最低工资。",
+          "看地点和公交时间，晚班回家安全比“多几小时”更重要。",
+          "警惕要求先交培训费、押金、购买设备或只用私人聊天软件沟通的岗位。",
+          "电话面试前准备 30 秒自我介绍、可工作时间、签证工时和到岗日期。",
         ],
       },
     ],
@@ -113,95 +100,82 @@ export const careerArticles = [
       {
         type: "figure",
         src: "/images/career-feature.jpg",
-        alt: "Auckland skyline with job-search notes",
-        caption: "Platforms are only the door; screening, rhythm and follow-up create the gap.",
+        alt: "Auckland skyline with job search notes",
+        caption: "Online platforms are only the entry point; filtering, rhythm and follow-up make the difference.",
       },
       {
         type: "h2",
-        text: "Do not only use Seek: how to split channels",
+        text: "Give each platform a clear role",
       },
       {
         type: "p",
-        text: "Seek is the base layer, not the only door. Trade Me Jobs feels local with more smaller employers; Indeed often surfaces part-time roles; LinkedIn helps networking; Student Job Search fits flexible student roles; Facebook groups help hospitality and some regional hiring. Chinese forums are extras—verify everything.",
+        text: "For part-time work, internships or a first full-time role in New Zealand, check both Seek and Trade Me Jobs. Seek is broader and stronger for corporate roles, office work, IT, accounting, administration, hospitality management and graduate roles. Trade Me Jobs feels local, with many small and medium employers posting retail, warehouse, customer service, entry-level office and community jobs.",
+      },
+      {
+        type: "p",
+        text: "Do not treat job boards like a feed you scroll until something looks easy. Set your keywords, location, hours and visa limits first, then track each role in one sheet: employer, title, location, whether students are accepted, closing date, applied date and response. After two weeks, the data will show which keywords actually get replies.",
       },
       {
         type: "table",
-        caption: "Common NZ job channels",
-        headers: ["Channel", "Best for", "How to use"],
+        caption: "Seek vs Trade Me Jobs at a glance",
+        headers: ["Factor", "Seek", "Trade Me Jobs"],
         rows: [
-          [
-            "Seek",
-            "Company roles, professional and graduate jobs—broadest coverage",
-            "Job Alerts; apply carefully each day",
-          ],
-          [
-            "Trade Me Jobs",
-            "Local retail, service, education, SMEs—strong local feel",
-            "Filter by area + part-time; still tailor the first CV screen",
-          ],
-          [
-            "Indeed NZ",
-            "Aggregated listings; some students found finance part-time here",
-            "Upload a searchable CV; set alerts",
-          ],
-          [
-            "LinkedIn",
-            "White-collar roles, referrals, professional presence",
-            "Keep the profile current—HR often clicks through",
-          ],
-          [
-            "Student Job Search",
-            "On-campus-friendly short and flexible shifts",
-            "Still insist on a proper contract and hourly rate",
-          ],
-          [
-            "Facebook groups / company sites",
-            "Hospitality/retail; some roles only on career pages",
-            "Post with work photos; also apply on retailer career sites",
-          ],
+          ["Coverage", "More large employers, recruiters, specialist roles and graduate jobs", "More local retail, service, small-business and community roles"],
+          ["Search style", "Good for industry, salary, remote/hybrid and contract filters", "Good for region, part-time, entry-level and local employer filters"],
+          ["Documents", "Usually needs a full CV and cover letter; may redirect to an ATS", "Often allows direct platform applications, but a clean CV still matters"],
+          ["Rhythm", "Check daily and follow up on 3-5 high-fit roles", "Check local listings daily; apply quickly but tailor the message"],
+          ["Best for", "Professional, office or longer-term roles", "Local part-time, shop, warehouse and customer-service entry points"],
         ],
       },
       {
         type: "h2",
-        text: "Weekly rhythm: fewer, better applications",
-      },
-      {
-        type: "p",
-        text: "Mass applying is a warning, not a target: batch on fixed days, change keywords by role, state visa status early, and keep LinkedIn aligned. After two quiet weeks, rewrite the CV before spraying more.",
+        text: "Weekly application rhythm: targeted beats random volume",
       },
       {
         type: "steps",
         items: [
           {
             title: "Monday: refresh keywords",
-            text: "Build 5–8 sets that match your timetable and skills.",
+            text: "Write 5-8 keyword combinations based on your course, location and availability, such as customer service part time, IT support junior or hospitality supervisor.",
           },
           {
             title: "Tuesday to Thursday: apply carefully",
-            text: "3–5 strong matches a day; rewrite the opening each time.",
+            text: "Choose 3-5 strong-fit roles each day and adjust your CV profile plus the opening paragraph of your cover letter.",
           },
           {
             title: "Friday: follow up",
-            text: "Short notes on roles still open after 5–7 days.",
+            text: "For roles still open after 5-7 days, send a short follow-up confirming your application and interview availability.",
           },
           {
             title: "Weekend: review results",
-            text: "See which titles/areas reply; plan walk-ins for the next article.",
+            text: "Check which titles, locations and shifts get replies. If 20 applications receive no response, improve the CV before sending more.",
           },
         ],
       },
       {
+        type: "h2",
+        text: "Student work hours and employer conversations",
+      },
+      {
+        type: "p",
+        text: "If you hold a student visa, confirm your visa conditions, weekly work-hour limit during study and holiday rules before applying. In calls, do not simply say “I am available anytime”; state your lawful availability clearly, such as weekday evenings, weekends or daytime gaps after your timetable is fixed.",
+      },
+      {
         type: "tip",
         title: "Student hour tip",
-        text: "Screenshot your visa conditions. Term-time limits are often about 25 hours/week—confirm against your visa and Immigration New Zealand.",
+        text: "Save a screenshot of your visa conditions before applying, then confirm again before accepting a roster. Rules depend on your visa and study calendar, so use Immigration New Zealand and your school’s international office as the source of truth.",
+      },
+      {
+        type: "h2",
+        text: "Screen small roles carefully too",
       },
       {
         type: "ul",
         items: [
-          "Check the hourly rate meets the current minimum wage.",
-          "Late-night travel safety matters more than extra hours.",
-          "Avoid roles that ask for training fees, deposits or only private-chat hiring.",
-          "Unpaid trials are usually unlawful—know the rules before you agree.",
+          "Check whether the hourly rate is stated and meets the current minimum wage.",
+          "Check the commute and late-night safety; an extra shift is not worth an unsafe trip home.",
+          "Be cautious if a role asks for training fees, deposits, equipment purchases or private-chat-only communication.",
+          "Before a phone screen, prepare a 30-second introduction, your availability, visa work conditions and start date.",
         ],
       },
     ],
@@ -210,182 +184,158 @@ export const careerArticles = [
     slug: "nz-cv-cover-letter",
     guideId: "career",
     categoryId: "apply",
-    titleZh: "Walk-in 与跟进：留学生兼职怎么开口",
-    titleEn: "Walk-ins and follow-ups: how students open the door",
+    titleZh: "新西兰 CV 与 Cover Letter：本地雇主想先看到什么",
+    titleEn: "New Zealand CV and cover letter: what local employers look for first",
     excerptZh:
-      "带 CV 进店问 Are you hiring，当天没回复也要 follow up；表达清晰、礼貌、写明可上班时间。",
+      "把中国式简历改成本地可读：两页以内、成果导向、针对岗位写第一屏。",
     excerptEn:
-      "Walk in with a CV, ask if they are hiring, and follow up—clear, polite, with your available hours.",
-    image: "/images/career-feature.jpg",
-    imageAltZh: "打印好的 CV 与门店求职笔记",
-    imageAltEn: "Printed CV and notes for in-store job hunting",
-    readingMins: 8,
+      "Turn a generic resume into a local, readable application: concise, evidence-led and tailored to the role.",
+    image: "/images/study-documents.jpg",
+    imageAltZh: "桌面上的简历与申请文件",
+    imageAltEn: "CV and application documents on a desk",
+    readingMins: 7,
     sectionsZh: [
       {
         type: "h2",
-        text: "为什么 walk-in 往往更有效",
+        text: "CV 的任务不是写完人生经历",
       },
       {
         type: "p",
-        text: "零售与餐饮的第一份兼职，很多来自纸质 CV + 进店询问。线上海投石沉大海时，线下开口反而更快。内向也没关系——雇主常问的就那几句，提前练比裸考强。",
+        text: "新西兰雇主通常先用几十秒判断你是否适合进入下一轮。CV 最重要的是让对方快速看到：你能做什么、做过什么、何时能上班、是否有合法工作权利。对留学生来说，课程项目、兼职经验、志愿者经历和国内工作都可以写，但要翻译成岗位需要的能力。",
+      },
+      {
+        type: "p",
+        text: "两页以内通常足够。第一屏放姓名、联系方式、所在城市、工作权利简述、目标岗位相关的 profile 和核心技能。不要把证件号、年龄、婚姻状况、完整家庭住址或证件照片放进去；这些信息在本地申请里通常不需要。",
       },
       {
         type: "table",
-        caption: "Walk-in 前准备清单",
-        headers: ["准备", "做什么", "为什么"],
+        caption: "常见中式写法与本地改法",
+        headers: ["位置", "少用写法", "更本地的写法"],
         rows: [
-          [
-            "一页 CV",
-            "英文、联系方式、签证类型、可工作时段写在第一屏",
-            "店长没空读长文",
-          ],
-          [
-            "30 秒自我介绍",
-            "名字、在读学校/课程、为什么想来这家店、每周可上几天",
-            "开口不卡壳",
-          ],
-          [
-            "目标店清单",
-            "按公交线列 cafe、超市、零售；一天走 5–8 家",
-            "比随机瞎逛效率高",
-          ],
-          [
-            "跟进计划",
-            "当天没答复 → 2–3 天后短信/再访一次",
-            "跟进能明显提高成功率",
-          ],
+          ["个人简介", "本人吃苦耐劳，服从安排", "Customer service student with weekend availability and POS experience"],
+          ["经历描述", "负责店铺日常工作", "Handled 40+ customer enquiries per shift and balanced till at closing"],
+          ["技能", "熟练使用办公软件", "Excel pivot tables, Google Sheets, inventory updates, bilingual Mandarin/English service"],
+          ["教育", "列满高中到大学所有奖项", "保留当前 NZ 课程、关键课程项目和与岗位相关的学历"],
         ],
       },
       {
         type: "h2",
-        text: "开口与跟进：要点（勿背诵套话）",
-      },
-      {
-        type: "ul",
-        items: [
-          "进门找不忙的店员或经理：礼貌问好 → 说明带了 CV → 问是否在招 part-time / casual。",
-          "被问经验：诚实说新人也可，强调可学习、班次灵活、准时。",
-          "被问签证：清楚说出学生签与每周可合法工时，不要含糊「我都可以」。",
-          "留下 CV 后：记下店名、日期、对接人；两三日后简短跟进「上周留下 CV，想确认是否还在招人」。",
-        ],
-      },
-      {
-        type: "h2",
-        text: "线上材料仍要改：不要一份简历投到底",
+        text: "Cover Letter 只解决一个问题：为什么是这个岗位",
       },
       {
         type: "p",
-        text: "Seek / Trade Me 投递时，把广告里的 key points 改写进 CV 第一屏；cover letter 用三句说清：你是谁、为什么匹配、何时能面试。可用工具润色，但必须自己校对事实与签证信息。",
+        text: "Cover letter 不要重复 CV。第一段直接写岗位名、你能提供的匹配点和可工作时间；第二段用 1-2 个例子证明你做过类似任务；最后一句说明你愿意面试，并留下电话。招聘方越忙，越需要你把重点放到前面。",
       },
       {
         type: "steps",
         items: [
           {
             title: "拆岗位广告",
-            text: "圈出必须技能、班次、地点；缺三项以上就先别投。",
+            text: "圈出 5 个关键词：客户沟通、库存、Excel、咖啡、儿童照看、IT helpdesk 等。",
           },
           {
             title: "改 CV 第一屏",
-            text: "签证、工时、相关经验或可迁移技能放最上面。",
+            text: "把 profile 和 skills 顺序调到最匹配岗位的内容，不要只改文件名。",
           },
           {
             title: "写三句 cover letter 开头",
-            text: "针对这家店/这个岗位，禁止群发同一段。",
+            text: "岗位来源、你最匹配的能力、你可工作的时间。三句清楚，比长篇客套更有用。",
           },
           {
             title: "保存版本",
-            text: "按「零售 / 餐饮 / 仓库 / 办公室」存不同版本，方便 walk-in 打印。",
+            text: "文件名写清楚姓名、岗位和日期，例如 Diandian-Wang-CV-Customer-Service-Jul2026.pdf。",
           },
         ],
       },
       {
         type: "tip",
         title: "投递前 5 分钟检查",
-        text: "电话能打通、邮箱拼写正确、签证状态写明、时薪预期合理、没有要求先付培训费。",
+        text: "把岗位广告和 CV 并排打开，确认前三分之一页面已经出现广告里的关键词。若雇主需要驾驶、酒牌、急救证或特定排班，不能满足就不要硬投。",
+      },
+      {
+        type: "h2",
+        text: "推荐保留的证据",
+      },
+      {
+        type: "ul",
+        items: [
+          "课程项目链接、作品集、GitHub、设计作品或可展示的作业截图。",
+          "国内工作证明、推荐人姓名与联系方式，先确认对方愿意被联系。",
+          "英文版证书或官方翻译，尤其是急救、食品安全、驾驶、会计或 IT 证书。",
+          "每次投递的岗位广告截图，方便面试前复习对方需求。",
+        ],
       },
     ],
     sectionsEn: [
       {
         type: "h2",
-        text: "Why walk-ins often work well",
+        text: "A CV is not your whole life story",
       },
       {
         type: "p",
-        text: "Many first retail and hospitality jobs start with a printed CV and “Are you hiring?” Online spray-and-pray often goes quiet; a polite in-person ask can move faster. Practice the common questions—do not walk in cold.",
+        text: "New Zealand employers often scan first to decide whether you should move to the next stage. Your CV must quickly show what you can do, what you have done, when you can work and whether you have work rights. For international students, course projects, part-time jobs, volunteering and overseas experience can all count, but translate them into the skills the role needs.",
+      },
+      {
+        type: "p",
+        text: "Two pages are usually enough. Put your name, contacts, city, work-rights note, role-relevant profile and core skills on the first screen. Do not include passport numbers, age, marital status, full home address or an ID-style photo; these are usually unnecessary in local applications.",
       },
       {
         type: "table",
-        caption: "Walk-in prep checklist",
-        headers: ["Prep", "Do this", "Why"],
+        caption: "Generic wording vs local wording",
+        headers: ["Area", "Avoid", "Stronger local version"],
         rows: [
-          [
-            "One-page CV",
-            "English, contacts, visa type and available hours on screen one",
-            "Managers skim",
-          ],
-          [
-            "30-second intro",
-            "Name, course, why this shop, days you can work",
-            "You will not freeze",
-          ],
-          [
-            "Target list",
-            "Cafes, supermarkets, retail along your bus line; 5–8 stops a day",
-            "Beats random wandering",
-          ],
-          [
-            "Follow-up plan",
-            "No answer same day → message or revisit in 2–3 days",
-            "Follow-up often lifts reply rates",
-          ],
+          ["Profile", "Hard-working and obedient", "Customer service student with weekend availability and POS experience"],
+          ["Experience", "Responsible for daily shop work", "Handled 40+ customer enquiries per shift and balanced till at closing"],
+          ["Skills", "Proficient in office software", "Excel pivot tables, Google Sheets, inventory updates, bilingual Mandarin/English service"],
+          ["Education", "Every award from high school onward", "Current NZ programme, relevant projects and qualifications tied to the role"],
         ],
       },
       {
         type: "h2",
-        text: "What to say and how to follow up",
-      },
-      {
-        type: "ul",
-        items: [
-          "Ask a free staff member or manager: greeting → CV → hiring for part-time/casual?",
-          "On experience: honest if new; stress willingness to learn and reliable shifts.",
-          "On visa: state student visa and legal weekly hours clearly.",
-          "After leaving a CV: log shop, date, person; follow up briefly in a few days.",
-        ],
-      },
-      {
-        type: "h2",
-        text: "Online materials still need tailoring",
+        text: "A cover letter answers one question: why this role",
       },
       {
         type: "p",
-        text: "Mirror key points from the ad on CV screen one; open the cover letter in three sentences. AI polish is fine—fact-check visa details yourself.",
+        text: "Do not repeat your CV. In the first paragraph, name the role, your strongest match and your availability. In the second, use one or two examples proving you have done similar tasks. Close by saying you would welcome an interview and include your phone number. The busier the recruiter, the more your key points must appear early.",
       },
       {
         type: "steps",
         items: [
           {
             title: "Break down the ad",
-            text: "Must-have skills, shifts, location—skip if you miss too many.",
+            text: "Circle five keywords: customer communication, stock, Excel, coffee, childcare, IT helpdesk and so on.",
           },
           {
             title: "Update the CV first screen",
-            text: "Visa, hours and relevant skills at the top.",
+            text: "Reorder the profile and skills toward the role; changing only the file name is not tailoring.",
           },
           {
             title: "Write a three-sentence opening",
-            text: "Specific to that employer—no mass paste.",
+            text: "Say where you found the role, your strongest matching skill and when you can work. Clear beats polite but vague.",
           },
           {
             title: "Save versions carefully",
-            text: "Retail / hospitality / warehouse / office versions for print walk-ins.",
+            text: "Use a file name such as Diandian-Wang-CV-Customer-Service-Jul2026.pdf.",
           },
         ],
       },
       {
         type: "tip",
         title: "Five-minute pre-send check",
-        text: "Phone works, email correct, visa stated, pay expectation sane, no upfront training fee.",
+        text: "Open the job ad beside your CV and confirm the top third includes the employer’s keywords. If the role requires a driver licence, LCQ, first aid or specific shifts you cannot meet, do not force the application.",
+      },
+      {
+        type: "h2",
+        text: "Evidence worth keeping",
+      },
+      {
+        type: "ul",
+        items: [
+          "Course project links, portfolio, GitHub, design work or screenshots of relevant assignments.",
+          "Overseas employment proof and referees, after confirming they are happy to be contacted.",
+          "English certificates or official translations, especially first aid, food safety, driving, accounting or IT credentials.",
+          "Screenshots of each job ad so you can review the employer’s needs before an interview.",
+        ],
       },
     ],
   },
@@ -393,199 +343,181 @@ export const careerArticles = [
     slug: "interview-star",
     guideId: "career",
     categoryId: "apply",
-    titleZh: "超市、咖啡店与工厂兼职：面试和入职怎么走",
-    titleEn: "Supermarket, cafe and warehouse part-time: interviews and onboarding",
+    titleZh: "面试用 STAR 讲故事：留学生也能准备得很具体",
+    titleEn: "Using STAR in interviews: concrete preparation for international students",
     excerptZh:
-      "绿超申请流、咖啡店面试与工厂 walk-in：Casual vs Part-time、常见问题与入职坑（无薪试工、合同）。",
+      "把兼职、课程项目和国内经历整理成 Situation、Task、Action、Result，回答不再空泛。",
     excerptEn:
-      "Supermarket apply flows, cafe interviews and warehouse walk-ins: Casual vs Part-time, common questions and contract pitfalls.",
-    image: "/images/career-feature.jpg",
-    imageAltZh: "零售与餐饮兼职面试笔记",
-    imageAltEn: "Notes for retail and hospitality interviews",
-    readingMins: 8,
+      "Turn part-time work, course projects and overseas experience into Situation, Task, Action and Result answers.",
+    image: "/images/hero-coast.jpg",
+    imageAltZh: "海岸边准备面试提纲的学生",
+    imageAltEn: "A student preparing interview notes near the coast",
+    readingMins: 6,
     sectionsZh: [
       {
         type: "h2",
-        text: "绿超类流程：网上申请不是终点",
+        text: "为什么本地面试喜欢具体例子",
       },
       {
         type: "p",
-        text: "超市（如 Woolworths）兼职常见路径：网上申请 → 邮件笔试 → 录视频面试 → 店经理面谈 → Offer。选 Casual 还是 Part-time 会影响排班稳定度——Casual 更灵活、小时更不一定；Part-time 相对固定。以雇主说明与合同为准。",
+        text: "新西兰面试常问行为问题，例如“讲一次你处理难缠客户的经历”或“你如何在 deadline 前完成任务”。对方不是想听你背品质词，而是想知道你在真实情境里如何判断、沟通和收尾。STAR 方法可以把答案压成清楚的故事。",
+      },
+      {
+        type: "p",
+        text: "留学生不一定要有本地工作才有故事。国内实习、小组作业、社团活动、家庭生意、志愿者和校园项目都可以用。关键是别泛泛说“我负责沟通”，而要说清楚对象、问题、你的动作和结果。",
       },
       {
         type: "table",
-        caption: "常见兼职类型怎么理解",
-        headers: ["类型", "印象", "适合谁", "注意"],
+        caption: "STAR 结构与一句话提示",
+        headers: ["部分", "要回答的问题", "避免"],
         rows: [
-          [
-            "Casual",
-            "班次不固定，按需叫人",
-            "课表常变、想先攒本地经验",
-            "确认取消班次规则与最低工时",
-          ],
-          [
-            "Part-time",
-            "相对固定周工时",
-            "课表稳定、需要可预期收入",
-            "别超学生签证周工时上限",
-          ],
-          [
-            "全职 / 合同优先级",
-            "合同类型会影响保障",
-            "毕业后或工时允许时再冲",
-            "一定要书面合同，保留工资单",
-          ],
+          ["Situation", "当时发生了什么，背景多复杂", "从小学经历讲起，铺垫太长"],
+          ["Task", "你具体负责什么，目标是什么", "把团队成果说成全是自己做的"],
+          ["Action", "你做了哪 2-3 个关键动作", "只说“我努力沟通、积极配合”"],
+          ["Result", "结果如何，有没有数字或反馈", "没有收尾，或者只说大家很满意"],
         ],
       },
       {
         type: "h2",
-        text: "咖啡店与零售：面试常问什么",
-      },
-      {
-        type: "p",
-        text: "店长很少考复杂理论。高频问题是：可上班时间、周末能否上、客户冲突怎么处理、有没有拉花/收银经验、英语能不能基本沟通。技术可以教，态度与准时更关键。",
-      },
-      {
-        type: "ul",
-        items: [
-          "用短故事回答：情境 → 你做了什么 → 结果（不必背 STAR 全称，但要有结构）。",
-          "准备：客户或同学冲突、时间压力、学新工具、团队合作、犯错纠正、跨文化沟通各一条。",
-          "英语不好可用简单句；关键是听懂班次与安全指示。",
-        ],
-      },
-      {
-        type: "h2",
-        text: "工厂 / 仓库：勇敢递 CV",
-      },
-      {
-        type: "p",
-        text: "本地也有人直接走进工厂问有没有缺人。班次多、体力向岗位，纸质 CV + 礼貌询问仍然有效。中介登记（如部分工厂招聘中介）也是路径之一，但要确认谁发工资、时薪多少。",
-      },
-      {
-        type: "tip",
-        title: "回答长度",
-        text: "兼职面试回答控制在 45–90 秒。说完停顿，让对方追问；不要背长稿。",
+        text: "准备 6 个可复用故事",
       },
       {
         type: "steps",
         items: [
           {
             title: "客户或同学冲突",
-            text: "各准备一个冷静沟通的例子。",
+            text: "准备一个你如何冷静听、确认需求、给方案并让事情结束的例子。",
           },
           {
             title: "时间压力",
-            text: "高峰期如何排优先级。",
+            text: "讲你如何排序、拆任务、提前沟通风险，而不是只说熬夜完成。",
           },
           {
             title: "学习新工具",
-            text: "POS、库存 App 或拉花机——强调学得快。",
+            text: "适合 IT、行政、零售系统或课程软件；强调学习路径和输出。",
           },
           {
             title: "团队合作",
-            text: "换班、交接、支持同事的一次经历。",
+            text: "说明你负责的部分、如何同步信息、如何处理不同意见。",
           },
           {
             title: "错误与修正",
-            text: "承认错误、怎么补救、以后如何避免。",
+            text: "本地面试不怕你有错，怕你不知道如何承认、修复和预防。",
           },
           {
             title: "跨文化沟通",
-            text: "英语不完美时如何确认指令，避免装懂。",
+            text: "用留学生经历展示你如何确认语义、减少误会、跟不同背景的人合作。",
           },
+        ],
+      },
+      {
+        type: "h2",
+        text: "电话、视频和现场面试的细节",
+      },
+      {
+        type: "p",
+        text: "电话面试要把 CV、岗位广告、签证工时和可上班时间放在手边。视频面试提前测试麦克风、网络和背景，开头先确认对方能听清。现场面试提前查公交和停车，宁可早到附近等，也不要踩点冲进去。",
+      },
+      {
+        type: "tip",
+        title: "回答长度",
+        text: "STAR 答案控制在 60-90 秒。说完后停一下，让面试官追问；不要因为紧张把所有经历一次性倒出来。",
+      },
+      {
+        type: "h2",
+        text: "最后一定准备问题",
+      },
+      {
+        type: "ul",
+        items: [
+          "这个岗位前三个月最重要的目标是什么？",
+          "团队通常如何排班、培训新人和给反馈？",
+          "如果是兼职，假期或考试周的排班如何提前沟通？",
+          "下一步流程和预计时间是什么？",
         ],
       },
     ],
     sectionsEn: [
       {
         type: "h2",
-        text: "Supermarket-style flows: the online form is not the end",
+        text: "Why local interviews value specific examples",
       },
       {
         type: "p",
-        text: "A common supermarket path: online apply → emailed test → video interview → store manager → offer. Casual vs Part-time changes roster certainty—confirm in the contract.",
+        text: "New Zealand interviews often include behavioural questions such as “Tell me about a difficult customer” or “How did you meet a deadline?” The employer is not asking for memorised personality words; they want to hear how you judged, communicated and finished in a real situation. STAR turns an answer into a clear story.",
+      },
+      {
+        type: "p",
+        text: "International students do not need local work experience for every story. Overseas internships, group assignments, clubs, family businesses, volunteering and campus projects can all work. The key is to avoid “I communicated well” and explain the people, problem, actions and result.",
       },
       {
         type: "table",
-        caption: "How common job types differ",
-        headers: ["Type", "Impression", "Suits", "Watch"],
+        caption: "STAR structure and quick prompts",
+        headers: ["Part", "Question to answer", "Avoid"],
         rows: [
-          [
-            "Casual",
-            "Flexible, on-demand shifts",
-            "Changing class timetables; first local experience",
-            "Cancellation rules and minimum hours",
-          ],
-          [
-            "Part-time",
-            "More predictable weekly hours",
-            "Stable timetable; need steadier pay",
-            "Stay inside student-visa weekly limits",
-          ],
-          [
-            "Full-time / stronger contracts",
-            "Contract type affects protection",
-            "When hours and visa allow",
-            "Written contract + keep payslips",
-          ],
+          ["Situation", "What happened and why it mattered", "Starting too far back with a long setup"],
+          ["Task", "What you were responsible for", "Claiming the whole team’s result as yours"],
+          ["Action", "The 2-3 key things you did", "Only saying you worked hard or communicated"],
+          ["Result", "What changed, ideally with a number or feedback", "Ending without a clear outcome"],
         ],
       },
       {
         type: "h2",
-        text: "Cafe and retail: what interviews usually ask",
-      },
-      {
-        type: "p",
-        text: "Managers rarely run theory exams. Expect availability, weekends, customer conflict, till/barista experience and basic English. Skills can be taught; attitude and punctuality matter more.",
-      },
-      {
-        type: "ul",
-        items: [
-          "Answer with a short story: situation → action → result.",
-          "Prep one example each for conflict, time pressure, learning tools, teamwork, mistakes and cross-cultural communication.",
-          "Simple English is fine if you understand shifts and safety instructions.",
-        ],
-      },
-      {
-        type: "h2",
-        text: "Warehouses and factories: walk in bravely",
-      },
-      {
-        type: "p",
-        text: "Locals sometimes walk into factories with a CV. Multi-shift physical roles still respond to polite paper applications. Agencies can help—confirm who pays you and the hourly rate.",
-      },
-      {
-        type: "tip",
-        title: "Answer length",
-        text: "Keep part-time answers to about 45–90 seconds, then pause for follow-ups.",
+        text: "Prepare six reusable stories",
       },
       {
         type: "steps",
         items: [
           {
             title: "Customer or classmate conflict",
-            text: "One calm communication example.",
+            text: "Prepare an example where you listened calmly, confirmed needs, offered a solution and closed the issue.",
           },
           {
             title: "Time pressure",
-            text: "How you prioritise in a rush.",
+            text: "Explain how you prioritised, broke down tasks and communicated risks early, not just that you stayed up late.",
           },
           {
             title: "Learning a new tool",
-            text: "POS, stock apps or coffee machines—show you learn fast.",
+            text: "Useful for IT, admin, retail systems or course software; show your learning path and output.",
           },
           {
             title: "Teamwork",
-            text: "Handovers and supporting colleagues.",
+            text: "Name your part, how you kept people updated and how you handled different opinions.",
           },
           {
             title: "Mistake and correction",
-            text: "Own it, fix it, prevent it.",
+            text: "Employers do not expect perfection; they want ownership, repair and prevention.",
           },
           {
             title: "Cross-cultural communication",
-            text: "How you confirm instructions instead of pretending.",
+            text: "Use international student experience to show how you confirm meaning and reduce misunderstandings.",
           },
+        ],
+      },
+      {
+        type: "h2",
+        text: "Phone, video and in-person details",
+      },
+      {
+        type: "p",
+        text: "For phone screens, keep your CV, the job ad, visa work conditions and availability beside you. For video interviews, test microphone, internet and background; at the start, confirm they can hear you. For in-person interviews, check bus routes or parking and arrive nearby early rather than rushing in at the last minute.",
+      },
+      {
+        type: "tip",
+        title: "Answer length",
+        text: "Keep STAR answers to 60-90 seconds. Pause after finishing so the interviewer can ask follow-up questions; do not unload every experience because you are nervous.",
+      },
+      {
+        type: "h2",
+        text: "Always prepare questions",
+      },
+      {
+        type: "ul",
+        items: [
+          "What are the most important goals for the first three months?",
+          "How does the team usually roster, train new starters and give feedback?",
+          "For part-time work, how should exam weeks or holidays be discussed in advance?",
+          "What are the next steps and expected timing?",
         ],
       },
     ],
@@ -594,166 +526,160 @@ export const careerArticles = [
     slug: "ird-work-hours",
     guideId: "career",
     categoryId: "compliance",
-    titleZh: "学生工时、IRD 与别做无薪试工",
-    titleEn: "Student hours, IRD and no unpaid trials",
+    titleZh: "IRD、税号与学生工时：开始工作前先确认",
+    titleEn: "IRD, tax numbers and student work hours: confirm before you start",
     excerptZh:
-      "先搞清签证周工时、办 IRD、签书面合同；无薪试工与「先交培训费」岗位直接避开。",
+      "拿到工作 offer 前后，要处理 IRD number、税码、KiwiSaver 选择和学生签证工时。",
     excerptEn:
-      "Know visa hours, get an IRD number, sign a written contract—and skip unpaid trials or upfront training fees.",
-    image: "/images/career-feature.jpg",
-    imageAltZh: "工时、税号与劳动合同检查清单",
-    imageAltEn: "Checklist for hours, tax number and employment contracts",
+      "Before and after a job offer, sort your IRD number, tax code, KiwiSaver choice and student-visa work conditions.",
+    image: "/images/study-documents.jpg",
+    imageAltZh: "税号、工资单与签证材料",
+    imageAltEn: "Tax number, payslip and visa documents",
     readingMins: 7,
     sectionsZh: [
       {
         type: "h2",
-        text: "工时：常见说法 vs 你必须核对的来源",
+        text: "为什么 IRD number 要提前办",
       },
       {
         type: "p",
-        text: "符合条件的学生签证持有者，学期内每周最多可工作约 25 小时——以移民局官网与你的签证条件为准。假期规则可能不同。点点建议：截图保存自己的签证条件，排班前再确认一次；不确定就问学校国际办公室或查 Immigration New Zealand。",
+        text: "IRD number 是新西兰税务系统识别你的号码。雇主发工资、扣税、报税都需要它。没有 IRD number 也可能开始流程，但通常会导致税率不合适、入职文件卡住或工资处理变慢。建议在确定会兼职前就准备申请。",
+      },
+      {
+        type: "p",
+        text: "申请通常需要身份信息、签证信息、新西兰银行账户或相关证明。不同身份的材料要求会变化，务必以 Inland Revenue 官网为准。不要把税号、护照和银行信息随便发给陌生招聘账号。",
       },
       {
         type: "table",
-        caption: "入职前合规清单",
-        headers: ["项目", "做什么", "为什么"],
+        caption: "开始工作前常见合规事项",
+        headers: ["事项", "你要做什么", "为什么重要"],
         rows: [
-          [
-            "签证条件",
-            "读清 weekly hours、能否工作、是否有雇主限制",
-            "超工时会影响签证",
-          ],
-          [
-            "IRD number",
-            "开工前申请税号，填对 tax code",
-            "否则可能按错误税率扣税",
-          ],
-          [
-            "书面合同",
-            "Casual / Part-time / Full-time 写清楚",
-            "合同类型会影响保障",
-          ],
-          [
-            "工资记录",
-            "保留 payslip 与排班",
-            "方便核对时薪与工时",
-          ],
+          ["IRD number", "通过 Inland Revenue 官方渠道申请并保存号码", "用于工资扣税和雇主申报"],
+          ["Tax code", "按自己的学习/工作情况填写税码表", "税码错误可能导致扣税过高或过低"],
+          ["KiwiSaver", "了解是否自动加入、是否选择退出或保留", "影响工资到账和长期储蓄安排"],
+          ["Employment agreement", "签署前看清薪资、小时、岗位、试用期和休息安排", "保护你遇到纠纷时有书面依据"],
+          ["Payslip", "每次发工资后保存工资单", "核对工时、税、假期工资和最低工资"],
         ],
       },
       {
         type: "h2",
-        text: "常见踩坑：无薪试工与假招聘",
+        text: "学生工时不是“大家都这样”",
       },
       {
-        type: "ul",
-        items: [
-          "「无薪试工」通常有违法风险——先查劳动法再答应免费干活。",
-          "要求先交培训费、押金、购买设备，或只通过私人社交软件发薪的，优先视为红旗。",
-          "简历里提前写明签证状态，减少投到「必须 PR」岗位的时间浪费。",
-          "KiwiSaver：入职时会问是否加入，先了解规则再选。",
-        ],
+        type: "p",
+        text: "学生签证能否工作、课程期间每周最多多少小时、假期是否可全职，都写在你的签证条件里。朋友、雇主或社群说法不能替代你的签证。即使雇主愿意多排班，超出条件也可能影响签证记录。",
       },
       {
         type: "steps",
         items: [
           {
             title: "读签证条件",
-            text: "截图保存，标出每周上限与假期条款。",
+            text: "打开 eVisa 或签证信，确认 work conditions，而不是凭记忆。",
           },
           {
             title: "对照学期日历",
-            text: "考试周少排班；假期是否可增加工时要再核。",
+            text: "分清 teaching weeks、break、official holiday 和课程结束后的状态。",
           },
           {
             title: "告诉雇主可排班范围",
-            text: "用具体星期几与时间段，不要只说「我很灵活」。",
+            text: "用书面信息说明你每周可工作上限和不可上班的课表时段。",
           },
           {
             title: "保存工资和排班记录",
-            text: "异常扣款或超时立刻对照合同与 payslip。",
+            text: "每周核对 roster、timesheet 和 payslip，发现异常及时沟通。",
           },
         ],
       },
       {
         type: "tip",
         title: "合规优先",
-        text: "兼职是为了cover生活费，不是为了赌签证。任何与签证、税号、合同冲突的「机会」，默认先放下。",
+        text: "如果雇主要求现金工资、不签合同、不给工资单或暗示可以超过学生工时，先停下来核实。短期多赚一点，不值得冒签证和劳动权益风险。",
+      },
+      {
+        type: "h2",
+        text: "遇到问题时找谁",
+      },
+      {
+        type: "ul",
+        items: [
+          "税号、税码、工资扣税：查看 Inland Revenue 官方信息。",
+          "最低工资、合同、假期工资、休息：查看 Employment New Zealand。",
+          "签证工时、假期可工作规则：查看 Immigration New Zealand 与学校国际办公室。",
+          "被拖欠工资或感觉不安全：保留记录，尽快向学校支持服务或相关部门求助。",
+        ],
       },
     ],
     sectionsEn: [
       {
         type: "h2",
-        text: "Hours: common talk vs what you must verify",
+        text: "Why you should organise an IRD number early",
       },
       {
         type: "p",
-        text: "Eligible student-visa holders often have about 25 hours per week in term—check Immigration New Zealand and your visa conditions. Holiday rules may differ. Screenshot your conditions and re-check before accepting a roster.",
+        text: "An IRD number identifies you in New Zealand’s tax system. Employers need it for payroll, tax deductions and reporting. Without one, onboarding can slow down or tax may be deducted at an unsuitable rate. It is wise to prepare before you expect to take part-time work.",
+      },
+      {
+        type: "p",
+        text: "Applications usually involve identity details, visa information and a New Zealand bank account or supporting evidence. Requirements vary by status, so use the Inland Revenue website as the source of truth. Do not send your tax number, passport or banking information to unknown recruitment accounts.",
       },
       {
         type: "table",
-        caption: "Pre-start compliance checklist",
-        headers: ["Item", "Do this", "Why"],
+        caption: "Common compliance items before starting work",
+        headers: ["Item", "What to do", "Why it matters"],
         rows: [
-          [
-            "Visa conditions",
-            "Read weekly hours and any employer limits",
-            "Over-hours can affect your visa",
-          ],
-          [
-            "IRD number",
-            "Apply before starting; use the correct tax code",
-            "Wrong tax settings cost money",
-          ],
-          [
-            "Written contract",
-            "Casual / part-time / full-time spelled out",
-            "Contract type affects protection",
-          ],
-          [
-            "Pay records",
-            "Keep payslips and rosters",
-            "Audit hourly rate and hours worked",
-          ],
+          ["IRD number", "Apply through official Inland Revenue channels and save the number", "Used for payroll tax and employer reporting"],
+          ["Tax code", "Complete the tax code form for your study/work situation", "Wrong codes can over- or under-deduct tax"],
+          ["KiwiSaver", "Understand auto-enrolment, opt-out and contribution choices", "Affects take-home pay and long-term savings"],
+          ["Employment agreement", "Read pay, hours, role, trial terms and breaks before signing", "Gives written protection if issues arise"],
+          ["Payslip", "Save every payslip after payday", "Lets you check hours, tax, holiday pay and minimum wage"],
         ],
       },
       {
         type: "h2",
-        text: "Common pitfalls: unpaid trials and fake hiring",
+        text: "Student work hours are personal to your visa",
       },
       {
-        type: "ul",
-        items: [
-          "Unpaid trials are usually unlawful—check employment law before working for free.",
-          "Upfront training fees, deposits or pay-only-via-private-chat are red flags.",
-          "State visa status on the CV to avoid PR-only roles.",
-          "KiwiSaver: understand the choice at onboarding before you tick a box.",
-        ],
+        type: "p",
+        text: "Whether you may work, your weekly limit during study and whether you can work full-time during breaks are written in your visa conditions. Friends, employers and social media do not replace your own visa. Even if an employer offers more shifts, breaching conditions can affect your immigration record.",
       },
       {
         type: "steps",
         items: [
           {
             title: "Read your visa conditions",
-            text: "Screenshot weekly limits and holiday clauses.",
+            text: "Open the eVisa or visa letter and check the work conditions rather than relying on memory.",
           },
           {
             title: "Compare with the academic calendar",
-            text: "Reduce shifts in exam weeks; re-check holiday hour rules.",
+            text: "Separate teaching weeks, breaks, official holidays and the period after course completion.",
           },
           {
             title: "Tell your employer your roster limits",
-            text: "Give specific days and times—not vague flexibility.",
+            text: "Write down your weekly maximum and class times that cannot be rostered.",
           },
           {
             title: "Keep pay and roster records",
-            text: "Compare anomalies against the contract immediately.",
+            text: "Each week, check roster, timesheet and payslip; raise discrepancies early.",
           },
         ],
       },
       {
         type: "tip",
         title: "Compliance first",
-        text: "Part-time work should cover living costs, not gamble your visa. Drop any “opportunity” that conflicts with visa, tax or contract rules.",
+        text: "If an employer asks for cash pay, no contract, no payslip or hints that student-hour limits can be ignored, pause and verify. A little extra short-term income is not worth visa or employment-rights risk.",
+      },
+      {
+        type: "h2",
+        text: "Where to check issues",
+      },
+      {
+        type: "ul",
+        items: [
+          "IRD numbers, tax codes and payroll tax: Inland Revenue.",
+          "Minimum wage, agreements, holiday pay and breaks: Employment New Zealand.",
+          "Visa work conditions and holiday rules: Immigration New Zealand and your school’s international office.",
+          "Unpaid wages or unsafe situations: keep records and seek help from student support or the relevant authority quickly.",
+        ],
       },
     ],
   },

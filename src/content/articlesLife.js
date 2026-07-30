@@ -37,7 +37,7 @@ export const lifeArticles = [
         caption: "奥克兰合租月度生活费约数（2025-2026，NZD）",
         headers: ["项目", "节省型/月", "中等型/月", "备注"],
         rows: [
-          ["房租", "900-1100", "1100-1400", "约合周租 180-320；位置、是否包水电网差异很大"],
+          ["房租", "900-1100", "1100-1400", "合租单间；位置、是否包水电网差异很大"],
           ["水电网", "80-140", "100-180", "若房租全包可减少，但冬季用电会变"],
           ["吃饭与超市", "350-500", "500-700", "自己做饭比例越高越稳"],
           ["交通", "80-180", "120-220", "取决于住处到学校距离与学生优惠"],
@@ -102,7 +102,7 @@ export const lifeArticles = [
         caption: "Approximate Auckland shared-housing monthly budget (2025-2026, NZD)",
         headers: ["Item", "Thrifty/month", "Mid/month", "Notes"],
         rows: [
-          ["Rent", "900-1100", "1100-1400", "Roughly NZD 180-320/week; location and inclusions change the number"],
+          ["Rent", "900-1100", "1100-1400", "Shared room; location and inclusions change the number"],
           ["Power, water, internet", "80-140", "100-180", "Lower if fully included; winter power can rise"],
           ["Groceries and food", "350-500", "500-700", "More home cooking keeps this steadier"],
           ["Transport", "80-180", "120-220", "Depends on commute and student concessions"],
@@ -302,13 +302,13 @@ export const lifeArticles = [
     titleZh: "新西兰租房入门：合租、押金与看房清单",
     titleEn: "Renting in New Zealand: flatting, bond and viewing checklist",
     excerptZh:
-      "奥克兰分区、远程找房、租金约数、视频看房与避坑。数字为约数，请本地再核。",
+      "从短住过渡到合租：看清房租包含什么、押金如何处理、室友规则是否适合你。",
     excerptEn:
-      "Auckland areas, remote search, approximate rents, video viewings and scam checks. Verify locally.",
+      "Move from short stay to flatting by checking inclusions, bond handling and whether house rules fit your life.",
     image: "/images/hero-coast.jpg",
     imageAltZh: "新西兰住宅街区与看房路线",
     imageAltEn: "A New Zealand residential street and viewing route",
-    readingMins: 10,
+    readingMins: 8,
     sectionsZh: [
       {
         type: "h2",
@@ -321,65 +321,6 @@ export const lifeArticles = [
       {
         type: "p",
         text: "新西兰合租常见按周标价。计算月预算时用每周租金乘以 4.33，而不是乘以 4。还要确认是否包含水、电、网、家具、床品、暖气和停车；“包 bills”也要问是否有限额。",
-      },
-      {
-        type: "h2",
-        text: "奥克兰分区怎么选（约数）",
-      },
-      {
-        type: "p",
-        text: "City/CBD 通勤方便但租金高、人流更杂；中区兼顾通勤与价格；东区与北岸相对安静，但去市中心高峰可能堵车；南区与西区租金往往更低，需更认真核夜间回家路线与公交。最终以你晚间实际走过的路线为准。",
-      },
-      {
-        type: "table",
-        caption: "奥克兰租金约数参考（2025-2026，NZD/周，落地前请再核）",
-        headers: ["类型", "约数/周", "备注"],
-        rows: [
-          ["合租单间（共享卫浴）", "约 180-250", "是否包 bills 差价很大"],
-          ["Master / 独立卫浴", "约 250-350", "北岸、中区常见区间，视房屋新旧浮动"],
-          ["整租两房", "约 500-800", "通常不带家具、不包水电网"],
-          ["换算月租", "周租 × 4.33", "不要用“四周”低估首月压力"],
-        ],
-      },
-      {
-        type: "h2",
-        text: "人还在国内，怎么远程找房",
-      },
-      {
-        type: "p",
-        text: "若必须人在国内先定房，优先走公开平台与正规中介，而不是私聊急转。主流入口包括 Trade Me Property、大型中介官网（如 Barfoot & Thompson 租房页）。华人转租/短租更新快，但好房常被当地人先订，且更要警惕非正规付款。",
-      },
-      {
-        type: "links",
-        items: [
-          { href: "https://www.trademe.co.nz/a/property", label: "Trade Me Property" },
-          { href: "https://www.barfoot.co.nz/rent", label: "Barfoot & Thompson 租房" },
-        ],
-      },
-      {
-        type: "steps",
-        items: [
-          {
-            title: "筛选区域与预算",
-            text: "先定学校通勤、整租/合租和是否包家具；整租常见不带家具、不包水电网。",
-          },
-          {
-            title: "说明人在海外",
-            text: "联系中介时写清希望视频看房，并说明抵达日期与入住人数。",
-          },
-          {
-            title: "准备材料",
-            text: "护照复印件、资金或 offer、前房东/雇主推荐信、简短自我介绍（来纽目的、时长、几人同住）。",
-          },
-          {
-            title: "正规签约付款",
-            text: "走电子合同与正规账户；bond/房租不要微信支付宝私转。",
-          },
-          {
-            title: "交接钥匙并拍照",
-            text: "常见钥匙盒密码取钥；进屋后立刻拍照记录墙面、地板与家具状态。",
-          },
-        ],
       },
       {
         type: "table",
@@ -401,8 +342,8 @@ export const lifeArticles = [
         type: "steps",
         items: [
           {
-            title: "白天看采光与卫生",
-            text: "检查潮湿、窗户、衣柜、插座；留意床虱/跳蚤痕迹与整体卫生。",
+            title: "白天看采光",
+            text: "检查房间是否潮湿、窗户能否打开、衣柜和插座是否够用。",
           },
           {
             title: "试通勤",
@@ -420,8 +361,8 @@ export const lifeArticles = [
       },
       {
         type: "tip",
-        title: "避坑提醒",
-        text: "不要交钱才能看房；不要轻信“价格过低 / 全包 / 急租”私聊。务必视频或实地看房 + 正规合同 + 正规付款。竞争大时可同时申请多套。退租通常需提前约两周书面通知（以合同为准）。",
+        title: "安全提醒",
+        text: "不要在没看房、没合同或没确认对方身份时转大额押金。若价格明显低于同区水平又催你马上付款，先停下来核实。",
       },
       {
         type: "h2",
@@ -434,13 +375,6 @@ export const lifeArticles = [
           "清洁轮值、访客、做饭味道和安静时间提前说清。",
           "如果跟朋友合租，也要把钱和规则写清楚，避免关系受影响。",
           "保存租金转账记录和与房东/主租的关键聊天记录。",
-        ],
-      },
-      {
-        type: "articleLinks",
-        items: [
-          { slug: "nz-monthly-budget", label: "对照：一个月生活费怎么算" },
-          { slug: "arrival-first-week", label: "对照：落地第一周清单" },
         ],
       },
     ],
@@ -456,65 +390,6 @@ export const lifeArticles = [
       {
         type: "p",
         text: "Rent is commonly advertised weekly. For a monthly budget, multiply weekly rent by 4.33, not 4. Confirm whether water, power, internet, furniture, bedding, heating and parking are included; even “bills included” may have limits.",
-      },
-      {
-        type: "h2",
-        text: "Choosing an Auckland area (approximate)",
-      },
-      {
-        type: "p",
-        text: "City/CBD is convenient but pricey and busier; central suburbs balance commute and rent; east and North Shore feel quieter but peak traffic into the city can be slow; south and west can be cheaper—check night routes and buses carefully. Judge by the evening walk you personally take.",
-      },
-      {
-        type: "table",
-        caption: "Approximate Auckland rents (2025-2026, NZD/week; verify locally)",
-        headers: ["Type", "Approx/week", "Notes"],
-        rows: [
-          ["Shared room (shared bathroom)", "About 180-250", "Bills included or not changes the price a lot"],
-          ["Master / ensuite", "About 250-350", "Common on North Shore and central suburbs"],
-          ["Two-bedroom whole house", "About 500-800", "Often unfurnished without utilities"],
-          ["Monthly estimate", "Weekly × 4.33", "Do not underestimate the first month"],
-        ],
-      },
-      {
-        type: "h2",
-        text: "Renting remotely while still overseas",
-      },
-      {
-        type: "p",
-        text: "If you must secure a place before arrival, prefer public listings and licensed agencies over urgent private chats. Start with Trade Me Property and major agency sites such as Barfoot & Thompson. Chinese transfer posts move fast and need extra payment caution.",
-      },
-      {
-        type: "links",
-        items: [
-          { href: "https://www.trademe.co.nz/a/property", label: "Trade Me Property" },
-          { href: "https://www.barfoot.co.nz/rent", label: "Barfoot & Thompson rentals" },
-        ],
-      },
-      {
-        type: "steps",
-        items: [
-          {
-            title: "Filter area and budget",
-            text: "Decide commute, flat vs whole house, and furniture needs. Whole-house rentals often exclude furniture and utilities.",
-          },
-          {
-            title: "Say you are overseas",
-            text: "Ask for a video viewing and state arrival date and household size.",
-          },
-          {
-            title: "Prepare documents",
-            text: "Passport copy, funds or offer letter, previous landlord/employer references, and a short intro covering purpose, stay length and household size.",
-          },
-          {
-            title: "Sign and pay formally",
-            text: "Use e-contracts and official accounts; avoid private WeChat/Alipay transfers for bond or rent.",
-          },
-          {
-            title: "Key handover and photos",
-            text: "Key safes are common. Photograph walls, floors and furniture immediately on entry.",
-          },
-        ],
       },
       {
         type: "table",
@@ -536,8 +411,8 @@ export const lifeArticles = [
         type: "steps",
         items: [
           {
-            title: "Check daylight and hygiene",
-            text: "Look for dampness, windows that open, wardrobe space, power points, and hygiene issues such as fleas or bed bugs.",
+            title: "Check daylight",
+            text: "Look for dampness, windows that open, enough wardrobe space and enough power points.",
           },
           {
             title: "Test the commute",
@@ -555,8 +430,8 @@ export const lifeArticles = [
       },
       {
         type: "tip",
-        title: "Scam checks",
-        text: "Do not pay just to view. Be wary of “too cheap / all-inclusive / urgent” private chats. Require video or in-person viewing, a proper contract and official payment. Apply for several places at once. Notice periods are often about two weeks in writing—check your agreement.",
+        title: "Safety note",
+        text: "Do not transfer a large bond before seeing the room, receiving written terms or confirming the other person’s identity. If the price is far below the area and payment is urgent, pause and verify.",
       },
       {
         type: "h2",
@@ -571,16 +446,8 @@ export const lifeArticles = [
           "Save rent transfers and key messages with the landlord or head tenant.",
         ],
       },
-      {
-        type: "articleLinks",
-        items: [
-          { slug: "nz-monthly-budget", label: "Also read: monthly living budget" },
-          { slug: "arrival-first-week", label: "Also read: first-week checklist" },
-        ],
-      },
     ],
   },
-
   {
     slug: "bank-account-setup",
     guideId: "life",
@@ -1203,161 +1070,6 @@ export const lifeArticles = [
           "If English is hard during appointments, write key points for the doctor first.",
           "Do not delay necessary care because of insurance worries; handle health first, then ask about claims.",
           "For immediate danger or self-harm risk, call 111 or contact crisis support services.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "auckland-weekend-slow",
-    guideId: "life",
-    categoryId: "daily",
-    titleZh: "奥克兰周末慢生活：散步、咖啡店与两只狗",
-    titleEn: "A slow Auckland weekend: walks, cafes and two dogs",
-    excerptZh:
-      "晴天街区遛狗、坐在咖啡店门口发呆——留学不只是课表和兼职，周末这样过，人会松一点。",
-    excerptEn:
-      "A sunny neighbourhood walk with the dogs, then lingering outside a cafe—study life is more than classes and shifts; slow weekends help you settle.",
-    image: "/images/life-weekend-walk.jpg",
-    imageAltZh: "奥克兰晴天街区，带两只狗散步回头看镜头",
-    imageAltEn: "Looking back while walking two dogs on a sunny Auckland street",
-    readingMins: 5,
-    sectionsZh: [
-      {
-        type: "figure",
-        src: "/images/life-weekend-walk.jpg",
-        alt: "晴天人行道上牵着两只柴犬回头微笑",
-        caption: "周末先出门走走。阳光、绿篱和长长的影子，比刷手机更能把一周的绷劲卸下来。",
-      },
-      {
-        type: "h2",
-        text: "留学日常里，也要给自己留一段「没事做」",
-      },
-      {
-        type: "p",
-        text: "来新西兰之后，很多人的时间表会被课程、兼职、做饭和找房塞满。其实真正让人留下的，常常是这种没有 KPI 的下午：穿得轻便一点，戴上帽子墨镜，牵着狗沿着安静的住宅区人行道慢慢走。两边是修剪整齐的绿篱，天上电线拉得很直，远处有棕榈和停着的车——很普通，但很奥克兰。",
-      },
-      {
-        type: "p",
-        text: "如果你还在国内选住宿，可以提前想一件小事：周末愿不愿意走得出去。离公园、人行道完整、坡度不太陡的街区，比「看起来便宜但只能困在屋里」更适合长期住。合租谈妥前，晚上自己走一遍回家的路；周末再在地图上看有没有能遛一圈的街巷。",
-      },
-      {
-        type: "ul",
-        items: [
-          "防晒霜、帽子和墨镜：奥克兰紫外线不弱，散步半小时也值得遮一下。",
-          "舒适的白鞋或运动鞋：碎石路和草边人行道比想象中磨脚。",
-          "手机离线地图：街区巷子多，信号偶尔不稳时有用。",
-          "带水、带小垃圾袋：公共场所清理狗便是基本礼貌。",
-        ],
-      },
-      {
-        type: "figure",
-        src: "/images/life-cafe-kinship.jpg",
-        alt: "坐在 Kinship 咖啡店门口木椅上，旁边两只柴犬",
-        caption: "走累了就找一家能坐门口的咖啡店。狗在脚边，咖啡在手里，这一刻不用赶下一件事。",
-      },
-      {
-        type: "h2",
-        text: "咖啡店门口的半小时，也算生活费里的「缓冲」",
-      },
-      {
-        type: "p",
-        text: "奥克兰很多小店对宠物比较友好，可以坐在门口的木椅或长凳上。像 Kinship 这样店招清楚、门口有座位的地方，很适合「遛完狗再歇一口气」。点一杯热的或冰的，看窗外反光里的房子和树，把下周要交的作业暂时放一边。",
-      },
-      {
-        type: "p",
-        text: "预算上不用回避这类开销，但要诚实记账。一杯咖啡加偶尔外食，放进月度「社交与缓冲」那一栏通常更稳：节省型可按每月 NZD 100-200 估，中等型 NZD 180-320。关键不是从不喝咖啡，而是别让冲动消费挤掉房租和交通。",
-      },
-      {
-        type: "table",
-        caption: "周末慢生活小清单（可对照自己的预算）",
-        headers: ["事项", "大约花费", "提醒"],
-        rows: [
-          ["街区散步 40-60 分钟", "免费", "防晒、水、合适鞋子"],
-          ["门口咖啡一杯", "NZD 5-8 常见", "问清是否 pet-friendly 再带狗靠近座位"],
-          ["顺路超市补货", "按清单买", "饿着逛街更容易超支"],
-          ["回家整理下周课表", "免费", "把兼职班次和作业截止写进同一周视图"],
-        ],
-      },
-      {
-        type: "tip",
-        title: "点点自己的节奏",
-        text: "学习、找工作和办手续都会很忙，但留一点「带着狗晒太阳」的时间，并不浪费。人松一点，课和简历反而更容易做下去。你也欢迎分享自己在奥克兰的周末角落。",
-      },
-      {
-        type: "articleLinks",
-        items: [
-          { slug: "nz-monthly-budget", label: "对照：一个月生活费怎么算" },
-          { slug: "renting-guide", label: "对照：奥克兰租房入门" },
-        ],
-      },
-    ],
-    sectionsEn: [
-      {
-        type: "figure",
-        src: "/images/life-weekend-walk.jpg",
-        alt: "Looking back while walking two Shiba Inus on a sunny sidewalk",
-        caption: "Start the weekend outside. Sun, hedges and long shadows reset a week of pressure better than scrolling.",
-      },
-      {
-        type: "h2",
-        text: "Leave room for a little “nothing to do”",
-      },
-      {
-        type: "p",
-        text: "After arriving in New Zealand, schedules fill with classes, part-time work, cooking and housing. What often stays with you is an unhurried afternoon: light clothes, a cap and sunglasses, walking the dogs along a quiet residential footpath. Neat hedges, straight power lines, palm trees and parked cars—ordinary, and very Auckland.",
-      },
-      {
-        type: "p",
-        text: "If you are still choosing housing from overseas, ask one small question: can you walk out on weekends? Streets with parks, continuous footpaths and gentle slopes beat a cheap room that traps you indoors. Before signing a flat, walk the evening route home; on a weekend map, check a loop you would actually enjoy.",
-      },
-      {
-        type: "ul",
-        items: [
-          "Sunscreen, hat and sunglasses—Auckland UV is stronger than it feels.",
-          "Comfortable sneakers—gravel edges and grass verges wear on feet.",
-          "Offline maps help when laneways get confusing.",
-          "Water and a small waste bag—cleaning up after dogs is basic courtesy.",
-        ],
-      },
-      {
-        type: "figure",
-        src: "/images/life-cafe-kinship.jpg",
-        alt: "Sitting outside Kinship cafe with two Shiba Inus nearby",
-        caption: "When the walk is done, find a cafe with outdoor seats. Dogs at your feet, coffee in hand—no rush to the next task.",
-      },
-      {
-        type: "h2",
-        text: "Half an hour at a cafe doorway belongs in your buffer budget",
-      },
-      {
-        type: "p",
-        text: "Many Auckland cafes welcome pets at outdoor seats. Spots like Kinship—with a clear sign and benches out front—are perfect after a walk. Order something hot or iced, watch houses and trees reflected in the window, and let next week’s deadlines wait a moment.",
-      },
-      {
-        type: "p",
-        text: "Do not pretend this costs nothing—just track it honestly. Coffee and occasional meals out fit the monthly “social and buffer” line: about NZD 100-200 for thrifty budgets, NZD 180-320 for mid-range. The goal is not zero coffee; it is not letting impulse spending crowd out rent and transport.",
-      },
-      {
-        type: "table",
-        caption: "A slow-weekend checklist (match it to your budget)",
-        headers: ["Item", "Rough cost", "Note"],
-        rows: [
-          ["40–60 minute neighbourhood walk", "Free", "Sunscreen, water, decent shoes"],
-          ["One outdoor coffee", "Often NZD 5–8", "Confirm pet-friendly seating before bringing dogs close"],
-          ["Supermarket top-up on the way home", "Follow a list", "Shopping hungry pushes overspend"],
-          ["Plan next week’s timetable", "Free", "Put shifts and assignment deadlines in one week view"],
-        ],
-      },
-      {
-        type: "tip",
-        title: "DianDian’s rhythm",
-        text: "Study, job hunting and paperwork stay busy—but time in the sun with the dogs is not wasted. When you loosen a little, classes and CVs get easier to finish. Share your own Auckland weekend corner if you like.",
-      },
-      {
-        type: "articleLinks",
-        items: [
-          { slug: "nz-monthly-budget", label: "Also: one-month living budget" },
-          { slug: "renting-guide", label: "Also: Auckland renting basics" },
         ],
       },
     ],
