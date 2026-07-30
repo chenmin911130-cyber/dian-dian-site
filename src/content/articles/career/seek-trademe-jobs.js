@@ -9,7 +9,7 @@ export const seekTrademeJobs = {
   image: "/images/career-feature.jpg",
   imageAltZh: "奥克兰城市与求职平台页面",
   imageAltEn: "Auckland city with job platform pages",
-  readingMins: 8,
+  readingMins: 9,
   sectionsZh: [
     {
       type: "figure",
@@ -64,6 +64,59 @@ export const seekTrademeJobs = {
           "想先找本地兼职、门店、仓库、客服切入口的人",
         ],
       ],
+    },
+    {
+      type: "h2",
+      text: "Seek / Trade Me 之外，再补几条通道",
+    },
+    {
+      type: "p",
+      text: "这两个平台是底座，但不是全部。白领与专业岗常再看 LinkedIn 和公司官网；学生兼职可看 Student Job Search；餐饮、咖啡、旅游类很多机会先出现在本地 Facebook 群。岗位少的时候，把通道拆开用，比只在一个 App 海投更有效。",
+    },
+    {
+      type: "table",
+      caption: "补充渠道怎么用（不替代 Seek / Trade Me）",
+      headers: ["渠道", "更适合", "用法"],
+      rows: [
+        [
+          "Indeed NZ",
+          "聚合岗位、兼职与办公室入门",
+          "上传一份干净 CV，设提醒，仍要按岗位改第一段",
+        ],
+        [
+          "LinkedIn",
+          "专业岗、内推与了解团队",
+          "资料写清城市与工作权利；私信要短、具体、可面试时间",
+        ],
+        [
+          "公司官网",
+          "大零售、银行、医院、科技公司",
+          "有的岗位只挂官网；官网申请有时比平台更优先",
+        ],
+        [
+          "Student Job Search",
+          "在校生短期兼职",
+          "通常要学生身份；竞争也大，适合补档期",
+        ],
+        [
+          "Facebook 本地群",
+          "餐饮、咖啡、旅游、临时班",
+          "发帖写清可工作时间与签证；先核雇主真实性再留联系方式",
+        ],
+      ],
+    },
+    {
+      type: "h2",
+      text: "零售与餐饮：试试 walk-in",
+    },
+    {
+      type: "p",
+      text: "门店、咖啡、厨房助手一类岗位，带纸质 CV 进店问 “Are you hiring?” 在本地很常见。提前练 30 秒自我介绍、可上班时段、签证工时和到岗日期；当天没答复，过 2-3 天礼貌跟进一次即可。这不替代线上投递，而是给服务业多一条入口。",
+    },
+    {
+      type: "tip",
+      title: "提高回音的小动作",
+      text: "Seek 打开 Job Alert；CV/申请表写清签证与可工作权利；不同岗位换关键词，别一份材料投到底。无薪试工通常不合规——入职前要求书面合同与明确时薪。",
     },
     {
       type: "h2",
@@ -171,6 +224,59 @@ export const seekTrademeJobs = {
           "Local part-time, shop, warehouse and customer-service entry points",
         ],
       ],
+    },
+    {
+      type: "h2",
+      text: "Beyond Seek and Trade Me, add a few more channels",
+    },
+    {
+      type: "p",
+      text: "Those two platforms are the base, not the whole market. Professional roles often also use LinkedIn and company career pages; students can check Student Job Search; many hospitality and tourism shifts appear first in local Facebook groups. When openings are scarce, split channels instead of mass-applying on one app.",
+    },
+    {
+      type: "table",
+      caption: "Extra channels (they do not replace Seek / Trade Me)",
+      headers: ["Channel", "Best for", "How to use"],
+      rows: [
+        [
+          "Indeed NZ",
+          "Aggregated roles, part-time and entry office jobs",
+          "Upload a clean CV, set alerts, still tailor the opening for each role",
+        ],
+        [
+          "LinkedIn",
+          "Professional roles, referrals and team research",
+          "State your city and work rights; keep messages short, specific and interview-ready",
+        ],
+        [
+          "Company websites",
+          "Large retail, banks, hospitals and tech firms",
+          "Some roles appear only on careers pages; direct apply can rank higher",
+        ],
+        [
+          "Student Job Search",
+          "Short student part-time work",
+          "Usually needs student status; competitive, useful for filling gaps",
+        ],
+        [
+          "Local Facebook groups",
+          "Cafes, kitchens, tourism and casual shifts",
+          "Post availability and visa status; verify the employer before sharing contacts",
+        ],
+      ],
+    },
+    {
+      type: "h2",
+      text: "Retail and hospitality: try walk-ins",
+    },
+    {
+      type: "p",
+      text: "For shops, cafes and kitchen-hand roles, walking in with a printed CV and asking “Are you hiring?” is common. Practise a 30-second introduction, your lawful hours, start date and availability. If there is no answer that day, one polite follow-up after 2-3 days is enough. This complements online applications for service roles.",
+    },
+    {
+      type: "tip",
+      title: "Small moves that improve replies",
+      text: "Turn on Seek Job Alerts; state visa and work rights on the CV/application; change keywords by role instead of one file for everything. Unpaid trials are usually not compliant—ask for a written agreement and clear hourly pay before starting.",
     },
     {
       type: "h2",

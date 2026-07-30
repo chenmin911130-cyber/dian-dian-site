@@ -91,7 +91,20 @@ export const irdWorkHours = {
     {
       type: "tip",
       title: "合规优先",
-      text: "如果雇主要求现金工资、不签合同、不给工资单或暗示可以超过学生工时，先停下来核实。短期多赚一点，不值得冒签证和劳动权益风险。",
+      text: "如果雇主要求现金工资、不签合同、不给工资单、安排无薪试工，或暗示可以超过学生工时，先停下来核实。短期多赚一点，不值得冒签证和劳动权益风险。",
+    },
+    {
+      type: "h2",
+      text: "合同类型先看清再接受",
+    },
+    {
+      type: "ul",
+      items: [
+        "Casual、Part-time、Full-time 保障不同：排班稳定度、公共假日和假期累计往往不一样。",
+        "入职前确认时薪、试用安排、休息与 overtime；口头承诺不如写进 employment agreement。",
+        "零售/酒类岗位若要求 LCQ 等本地证书，先核是否必须，再决定是否投入考证时间。",
+        "保存 roster、timesheet 与 payslip，方便核对工时和扣税。",
+      ],
     },
     {
       type: "h2",
@@ -188,7 +201,20 @@ export const irdWorkHours = {
     {
       type: "tip",
       title: "Compliance first",
-      text: "If an employer asks for cash pay, no contract, no payslip or hints that student-hour limits can be ignored, pause and verify. A little extra short-term income is not worth visa or employment-rights risk.",
+      text: "If an employer asks for cash pay, no contract, no payslip, an unpaid trial, or hints that student-hour limits can be ignored, pause and verify. A little extra short-term income is not worth visa or employment-rights risk.",
+    },
+    {
+      type: "h2",
+      text: "Check contract type before accepting",
+    },
+    {
+      type: "ul",
+      items: [
+        "Casual, part-time and full-time arrangements differ in roster stability, public-holiday treatment and leave accrual.",
+        "Confirm hourly pay, trial terms, breaks and overtime in writing before you start.",
+        "If retail or alcohol roles require a local certificate such as an LCQ, check whether it is essential before spending time on it.",
+        "Keep rosters, timesheets and payslips so you can check hours and tax deductions.",
+      ],
     },
     {
       type: "h2",

@@ -9,19 +9,37 @@ export const rentingGuide = {
   image: "/images/hero-coast.jpg",
   imageAltZh: "新西兰住宅街区与看房路线",
   imageAltEn: "A New Zealand residential street and viewing route",
-  readingMins: 8,
+  readingMins: 9,
   sectionsZh: [
+    {
+      type: "links",
+      items: [
+        { href: "https://www.trademe.co.nz/a/property/residential/rent", label: "打开 Trade Me Property 租房" },
+        { href: "https://www.barfoot.co.nz/rent", label: "打开 Barfoot & Thompson 租房" },
+      ],
+    },
     {
       type: "h2",
       text: "先短住，再决定长租",
     },
     {
       type: "p",
-      text: "刚落地时，不建议在没看房、没走过通勤路线、没见过室友的情况下签长租。先订 1-3 周短住或学校宿舍过渡，熟悉学校、公交、超市和安全感，再看合租房会稳很多。",
+      text: "刚落地时，不建议在没看房、没走过通勤路线、没见过室友的情况下签长租。先订 1-3 周短住或学校宿舍过渡，熟悉学校、公交、超市和安全感，再看合租房会稳很多。人还在国内时，也可用 Trade Me Property、大型中介官网筛区与价格，但尽量把正式长租留到落地后确认。",
     },
     {
       type: "p",
       text: "新西兰合租常见按周标价。计算月预算时用每周租金乘以 4.33，而不是乘以 4。还要确认是否包含水、电、网、家具、床品、暖气和停车；“包 bills”也要问是否有限额。",
+    },
+    {
+      type: "table",
+      caption: "奥克兰常见分区印象（约数，务必本地再核）",
+      headers: ["区域印象", "常见特点", "看房时多问"],
+      rows: [
+        ["City / CBD", "通勤近，租金偏高，人员更杂", "安保、噪音、晚归路线"],
+        ["中区近城", "通勤与租金较折中", "高峰公交时间、是否包网电"],
+        ["东区", "华人与家庭区更多，生活配套全", "到学校是否需换车"],
+        ["北岸", "环境与安全口碑常更好，通勤更长", "过桥/轮渡成本和晚班回家"],
+      ],
     },
     {
       type: "table",
@@ -105,16 +123,34 @@ export const rentingGuide = {
   ],
   sectionsEn: [
     {
+      type: "links",
+      items: [
+        { href: "https://www.trademe.co.nz/a/property/residential/rent", label: "Open Trade Me Property rentals" },
+        { href: "https://www.barfoot.co.nz/rent", label: "Open Barfoot & Thompson rentals" },
+      ],
+    },
+    {
       type: "h2",
       text: "Use short stay before committing long term",
     },
     {
       type: "p",
-      text: "When you first arrive, avoid signing a long lease before seeing the room, testing the commute and meeting flatmates. Book 1-3 weeks of short stay or halls, learn the campus, bus routes, supermarkets and neighbourhood feel, then inspect flats with better judgement.",
+      text: "When you first arrive, avoid signing a long lease before seeing the room, testing the commute and meeting flatmates. Book 1-3 weeks of short stay or halls, learn the campus, bus routes, supermarkets and neighbourhood feel, then inspect flats with better judgement. From overseas you can shortlist areas and prices on Trade Me Property or major agency sites, but keep the formal long lease until you can confirm in person.",
     },
     {
       type: "p",
       text: "Rent is commonly advertised weekly. For a monthly budget, multiply weekly rent by 4.33, not 4. Confirm whether water, power, internet, furniture, bedding, heating and parking are included; even “bills included” may have limits.",
+    },
+    {
+      type: "table",
+      caption: "Rough Auckland area impressions (verify locally)",
+      headers: ["Area feel", "Common traits", "Ask at viewing"],
+      rows: [
+        ["City / CBD", "Short commute, higher rent, busier streets", "Security, noise, late-night routes"],
+        ["Inner / mid suburbs", "Often a middle ground on rent and commute", "Peak bus time, whether power/internet is included"],
+        ["East Auckland", "More family and Chinese-community amenities", "Whether you need transfers to campus"],
+        ["North Shore", "Often praised for environment; longer commute", "Bridge/ferry cost and late shifts home"],
+      ],
     },
     {
       type: "table",

@@ -52,6 +52,11 @@ export const supermarketSavings = {
           "当季蔬果、鸡蛋、部分本地小吃",
           "带现金/环保袋，早去选择更多",
         ],
+        [
+          "剩菜/折扣食物 App",
+          "临期或当日未售完的烘焙、熟食、蔬果",
+          "先确认当地是否可用；注意保质期与冷藏，别囤超过能吃完的量",
+        ],
       ],
     },
     {
@@ -139,6 +144,11 @@ export const supermarketSavings = {
           "Weekend markets",
           "Seasonal produce, eggs, some local food",
           "Bring cash/bags; earlier usually means more choice",
+        ],
+        [
+          "Surplus / discount food apps",
+          "Same-day bakery, cooked food and produce nearing sell-by",
+          "Confirm the app works in your city; check dates and fridge space—do not stockpile more than you can eat",
         ],
       ],
     },
