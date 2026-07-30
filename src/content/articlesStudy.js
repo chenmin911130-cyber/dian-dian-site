@@ -25,37 +25,37 @@ export const studyArticles = [
       {
         type: "table",
         caption: "五所常被中国学生比较的私立/技能学校（NZD 约数，需官网核实）",
-        headers: ["学校", "主要方向", "年学费约数", "更适合谁"],
+        headers: ["学校", "主要方向", "学费约数（国际生）", "更适合谁"],
         rows: [
           [
             "AIS",
-            "商科、IT、酒店/旅游、英语与预科衔接",
-            "18,000-28,000",
-            "想在奥克兰读综合型私立学院、需要语言或路径课程的人",
+            "应用商科 / IT / 酒店与语言衔接",
+            "文凭研文约 22,000–27,000；本科约 22,000–24,000/年；部分硕士约 40,000",
+            "需要 NZCEL/语言班再衔接主课，或对照应用型路径预算的人",
           ],
           [
-            "ICL / ICL Graduate Business School",
-            "商科、管理、研究生商科与英语衔接",
-            "20,000-32,000",
-            "希望读商科、看重小班和市中心学习生活便利的人",
+            "ICL",
+            "奥克兰 CBD 商科管理 / 信息化 / 研文与硕士",
+            "Level 5–9 常见约 23,000–48,500（另计报名/材料费）",
+            "想在市中心读实务商科，接受较短升学节奏的人（站长就读）",
           ],
           [
             "Yoobee",
-            "设计、动画、游戏、软件工程、创意科技",
-            "19,000-30,000",
-            "有作品集或想进入创意/数字技术行业的人",
+            "动画、设计、软件与数字创意",
+            "文凭/本科常见约 27,300/年（另收资源费约 1,400–2,400）",
+            "愿意持续做作品集、目标创意或数字技术行业的人",
           ],
           [
             "NZSE / NZSEG",
-            "IT、健康支持、幼教、商业、技能就业方向",
-            "16,000-26,000",
-            "想读就业导向课程、需要明确技能路径的人；NESEG 通常是 NZSEG 的误写",
+            "IT 支持、网络云、商务、数据分析、教学等技能就业",
+            "约 18,900–35,500+（课差价大）；若见 NESEG 多半是 NZSEG 误写",
+            "更看重技能就业与实务课表的人",
           ],
           [
             "Future Skills",
-            "社区健康、幼教、建筑、商业、技术类技能课程",
-            "14,000-25,000",
-            "预算敏感、想找技能型或社区服务方向的人",
+            "Queen Street 应用管理 / 建筑相关与部分硕士",
+            "标价例约 23,900–40,500；常需算奖学金后净价",
+            "会认真对照标价 vs 奖学金净学费的应用管理路径学生",
           ],
         ],
       },
@@ -65,6 +65,10 @@ export const studyArticles = [
         alt: "留学申请文件和课程短名单",
         caption:
           "建议先做一张短名单表：课程级别、学费、英文要求、校区、开学时间、是否能衔接后续课程。",
+      },
+      {
+        type: "p",
+        text: "本指南为每所学校准备了独立详解：AIS、ICL、Yoobee、NZSE（NZSEG）、Future Skills。下面先讲筛选逻辑，再点进各校专文核对细节。",
       },
       {
         type: "h2",
@@ -130,37 +134,37 @@ export const studyArticles = [
       {
         type: "table",
         caption: "Five private/skills providers often compared by Chinese students (approx. NZD; verify officially)",
-        headers: ["Provider", "Main focus", "Approx. annual tuition", "Who it suits"],
+        headers: ["Provider", "Main focus", "Approx. fees (international)", "Who it suits"],
         rows: [
           [
             "AIS",
-            "Business, IT, hospitality/tourism, English and pathway study",
-            "18,000-28,000",
-            "Students wanting a broad Auckland private college with English or pathway options",
+            "Applied business / IT / hospitality with English bridging",
+            "Diplomas/PGDips ~22k–27k; bachelor ~22k–24k/year; some master’s ~40k",
+            "Students who need NZCEL/pathway English or an applied track with a clear budget",
           ],
           [
-            "ICL / ICL Graduate Business School",
-            "Business, management, graduate business and English pathways",
-            "20,000-32,000",
-            "Students focused on business, small classes and convenient city study life",
+            "ICL",
+            "Auckland CBD business, informatics, graduate diplomas and master’s",
+            "Level 5–9 often ~23k–48.5k (plus enrolment/materials)",
+            "Students wanting a practical CBD business pathway (site author studies here)",
           ],
           [
             "Yoobee",
-            "Design, animation, games, software engineering and creative technology",
-            "19,000-30,000",
-            "Students with a portfolio or an interest in creative/digital industries",
+            "Animation, design, software and digital creative",
+            "Diplomas/bachelor years often ~27,300 (+ resource fees ~1.4k–2.4k)",
+            "Students who will keep building a portfolio for creative/digital work",
           ],
           [
             "NZSE / NZSEG",
-            "IT, health support, early childhood, business and employment-focused skills",
-            "16,000-26,000",
-            "Students wanting a clear skills pathway; NESEG is usually a misspelling of NZSEG",
+            "IT support, network/cloud, business, analytics, teaching skills",
+            "Roughly 18.9k–35.5k+ (wide spread); “NESEG” is usually a NZSEG misspelling",
+            "Students focused on skills-to-work programmes",
           ],
           [
             "Future Skills",
-            "Community health, early childhood, construction, business and technical skills",
-            "14,000-25,000",
-            "Budget-conscious students seeking skills or community-service pathways",
+            "Queen Street applied management / construction-related and some master’s",
+            "List prices ~23.9k–40.5k; always calculate scholarship net fees",
+            "Students comparing list price vs scholarship net cost for applied management",
           ],
         ],
       },
@@ -170,6 +174,10 @@ export const studyArticles = [
         alt: "Study application documents and a course shortlist",
         caption:
           "Build a shortlist table first: programme level, tuition, English requirement, campus, intake and whether it can lead to further study.",
+      },
+      {
+        type: "p",
+        text: "Each school has its own deep-dive article: AIS, ICL, Yoobee, NZSE (NZSEG) and Future Skills. Use the logic below, then open the dedicated pages for details.",
       },
       {
         type: "h2",
@@ -228,8 +236,8 @@ export const studyArticles = [
     slug: "school-ais",
     guideId: "study",
     categoryId: "schools",
-    titleZh: "AIS 选校笔记：商科、IT、酒店与语言衔接",
-    titleEn: "AIS school notes: business, IT, hospitality and English pathways",
+    titleZh: "AIS 奥克兰商学院：专业、学费与适合谁",
+    titleEn: "AIS Auckland: programmes, fees and who it suits",
     excerptZh:
       "AIS 适合想在奥克兰读综合型私立学院的学生，重点看课程级别、英文路径、校区通勤和总预算。",
     excerptEn:
@@ -237,9 +245,22 @@ export const studyArticles = [
     image: "/images/study-feature.jpg",
     imageAltZh: "奥克兰私立学院学习场景",
     imageAltEn: "Auckland private college study setting",
-    website: "https://www.ais.ac.nz",
+    website: "https://ais.ac.nz/",
     readingMins: 8,
     sectionsZh: [
+      {
+        type: "links",
+        items: [
+          { href: "https://ais.ac.nz/", label: "打开 AIS 官网" },
+        ],
+      },
+      {
+        type: "articleLinks",
+        items: [
+          { slug: "pte-private-schools", label: "返回：五校学费与怎么选" },
+          { slug: "school-icl", label: "对照：ICL 商学院" }
+        ],
+      },
       {
         type: "h2",
         text: "AIS 适合怎样的学生",
@@ -332,8 +353,22 @@ export const studyArticles = [
           },
         ],
       },
+    
     ],
     sectionsEn: [
+      {
+        type: "links",
+        items: [
+          { href: "https://ais.ac.nz/", label: "Open AIS website" },
+        ],
+      },
+      {
+        type: "articleLinks",
+        items: [
+          { slug: "pte-private-schools", label: "Back: fees overview" },
+          { slug: "school-icl", label: "Compare: ICL" }
+        ],
+      },
       {
         type: "h2",
         text: "Who AIS can suit",
@@ -426,14 +461,15 @@ export const studyArticles = [
           },
         ],
       },
+    
     ],
   },
   {
     slug: "school-icl",
     guideId: "study",
     categoryId: "schools",
-    titleZh: "ICL / ICL Graduate Business School：商科学生的实用视角",
-    titleEn: "ICL / ICL Graduate Business School: a practical view for business students",
+    titleZh: "ICL 商学院：课程路径、学费与就读体验要点",
+    titleEn: "ICL Business School: pathways, fees and practical notes",
     excerptZh:
       "作者目前在 ICL 商学院就读，这篇从商科方向、英文衔接、城市生活和申请核实清单讲清楚怎么判断是否适合。",
     excerptEn:
@@ -441,9 +477,23 @@ export const studyArticles = [
     image: "/images/study-documents.jpg",
     imageAltZh: "ICL 商科申请资料与英文成绩单",
     imageAltEn: "ICL business application documents and English test notes",
-    website: "https://www.icl.ac.nz",
+    website: "https://icl.ac.nz/",
     readingMins: 9,
     sectionsZh: [
+      {
+        type: "links",
+        items: [
+          { href: "https://icl.ac.nz/", label: "打开 ICL 官网" },
+        ],
+      },
+      {
+        type: "articleLinks",
+        items: [
+          { slug: "pte-private-schools", label: "返回：五校学费与怎么选" },
+          { slug: "school-ais", label: "对照：AIS" },
+          { slug: "school-future-skills", label: "对照：Future Skills" }
+        ],
+      },
       {
         type: "h2",
         text: "为什么把 ICL 单独拿出来看",
@@ -464,15 +514,15 @@ export const studyArticles = [
             "是否直升、是否需要内部测试、出勤要求",
           ],
           [
-            "商科/管理课程",
-            "Diploma、Bachelor 或 Graduate Diploma 等",
-            "20,000-28,000/年",
+            "商科/管理文凭与本科路径",
+            "Level 5 起常见商科与管理课程",
+            "约 23,000–35,000（视级别）",
             "专业方向、入学背景、课程结构",
           ],
           [
             "ICL Graduate Business School",
-            "研究生商科与管理相关课程",
-            "24,000-32,000/年",
+            "研文与硕士（Level 8–9）相关课程",
+            "约 28,000–48,500（整课/年视公布方式）",
             "学术背景、英文要求、课程是否符合职业规划",
           ],
           [
@@ -536,8 +586,23 @@ export const studyArticles = [
           },
         ],
       },
+    
     ],
     sectionsEn: [
+      {
+        type: "links",
+        items: [
+          { href: "https://icl.ac.nz/", label: "Open ICL website" },
+        ],
+      },
+      {
+        type: "articleLinks",
+        items: [
+          { slug: "pte-private-schools", label: "Back: fees overview" },
+          { slug: "school-ais", label: "Compare: AIS" },
+          { slug: "school-future-skills", label: "Compare: Future Skills" }
+        ],
+      },
       {
         type: "h2",
         text: "Why ICL deserves its own note",
@@ -630,14 +695,15 @@ export const studyArticles = [
           },
         ],
       },
+    
     ],
   },
   {
     slug: "school-yoobee",
     guideId: "study",
     categoryId: "schools",
-    titleZh: "Yoobee 选校笔记：创意、设计、游戏与软件方向",
-    titleEn: "Yoobee school notes: creative, design, games and software pathways",
+    titleZh: "Yoobee：动画、设计与软件课程怎么选",
+    titleEn: "Yoobee: animation, design and software programmes",
     excerptZh:
       "Yoobee 更适合想读创意科技、设计、动画、游戏或软件方向的学生，申请时要提前准备作品集、设备和就业预期。",
     excerptEn:
@@ -645,9 +711,21 @@ export const studyArticles = [
     image: "/images/career-feature.jpg",
     imageAltZh: "创意科技学生在城市中学习与求职",
     imageAltEn: "Creative technology students studying and job searching in the city",
-    website: "https://www.yoobee.ac.nz",
+    website: "https://yoobee.ac.nz/",
     readingMins: 8,
     sectionsZh: [
+      {
+        type: "links",
+        items: [
+          { href: "https://yoobee.ac.nz/", label: "打开 Yoobee 官网" },
+        ],
+      },
+      {
+        type: "articleLinks",
+        items: [
+          { slug: "pte-private-schools", label: "返回：五校学费与怎么选" }
+        ],
+      },
       {
         type: "h2",
         text: "Yoobee 的核心关键词是“作品”和“技能”",
@@ -741,8 +819,21 @@ export const studyArticles = [
           },
         ],
       },
+    
     ],
     sectionsEn: [
+      {
+        type: "links",
+        items: [
+          { href: "https://yoobee.ac.nz/", label: "Open Yoobee website" },
+        ],
+      },
+      {
+        type: "articleLinks",
+        items: [
+          { slug: "pte-private-schools", label: "Back: fees overview" }
+        ],
+      },
       {
         type: "h2",
         text: "Yoobee is about portfolio and skills",
@@ -836,14 +927,15 @@ export const studyArticles = [
           },
         ],
       },
+    
     ],
   },
   {
     slug: "school-nzse",
     guideId: "study",
     categoryId: "schools",
-    titleZh: "NZSE / NZSEG：IT、健康、幼教与技能就业方向",
-    titleEn: "NZSE / NZSEG: IT, health, early childhood and skills pathways",
+    titleZh: "NZSE / NZSEG：技能课程、校区与学费区间",
+    titleEn: "NZSE / NZSEG: skills programmes, campuses and fees",
     excerptZh:
       "NZSE/NZSEG 常被技能就业导向学生关注；NESEG 多半是 NZSEG 的误写，申请时要核实官网、课程级别和校区。",
     excerptEn:
@@ -851,9 +943,21 @@ export const studyArticles = [
     image: "/images/hero-coast.jpg",
     imageAltZh: "新西兰城市与技能学习通勤场景",
     imageAltEn: "New Zealand city commute for skills-based study",
-    website: "https://www.nzse.ac.nz",
+    website: "https://nzse.ac.nz/",
     readingMins: 8,
     sectionsZh: [
+      {
+        type: "links",
+        items: [
+          { href: "https://nzse.ac.nz/", label: "打开 NZSE 官网" },
+        ],
+      },
+      {
+        type: "articleLinks",
+        items: [
+          { slug: "pte-private-schools", label: "返回：五校学费与怎么选" }
+        ],
+      },
       {
         type: "h2",
         text: "先确认你找的是 NZSE / NZSEG",
@@ -947,8 +1051,21 @@ export const studyArticles = [
           },
         ],
       },
+    
     ],
     sectionsEn: [
+      {
+        type: "links",
+        items: [
+          { href: "https://nzse.ac.nz/", label: "Open NZSE website" },
+        ],
+      },
+      {
+        type: "articleLinks",
+        items: [
+          { slug: "pte-private-schools", label: "Back: fees overview" }
+        ],
+      },
       {
         type: "h2",
         text: "First confirm you mean NZSE / NZSEG",
@@ -1042,60 +1159,74 @@ export const studyArticles = [
           },
         ],
       },
+    
     ],
   },
   {
     slug: "school-future-skills",
     guideId: "study",
     categoryId: "schools",
-    titleZh: "Future Skills：预算友好型技能课程怎么评估",
-    titleEn: "Future Skills: how to evaluate budget-friendly skills programmes",
+    titleZh: "Future Skills：应用管理、学费与奖学金怎么看",
+    titleEn: "Future Skills: applied management, fees and scholarships",
     excerptZh:
-      "Future Skills 适合关注技能、社区服务、幼教、建筑或实用商科路径的学生；重点看校区、实践要求与总预算。",
+      "Queen Street 应用管理：标价、奖学金净价与硕士路径怎么核对。",
     excerptEn:
-      "Future Skills can suit students looking at skills, community service, ECE, construction or practical business pathways; compare campus, practice requirements and total budget.",
+      "Queen Street applied management: list prices, scholarship net fees and master’s checks.",
     image: "/images/life-feature.jpg",
     imageAltZh: "学生在共享空间做预算与课程规划",
     imageAltEn: "Students planning budget and courses in a shared space",
-    website: "https://www.futureskills.co.nz",
+    website: "https://www.futureskills.co.nz/",
     readingMins: 7,
     sectionsZh: [
+      {
+        type: "links",
+        items: [
+          { href: "https://www.futureskills.co.nz/", label: "打开 Future Skills 官网" },
+        ],
+      },
+      {
+        type: "articleLinks",
+        items: [
+          { slug: "pte-private-schools", label: "返回：五校学费与怎么选" },
+          { slug: "school-icl", label: "对照：ICL 商学院" }
+        ],
+      },
       {
         type: "h2",
         text: "Future Skills 的定位",
       },
       {
         type: "p",
-        text: "Future Skills 这类技能型 provider 通常更强调实用课程、社区连接和就业准备。它不适合只想追求排名标签的学生，但对预算敏感、想读健康支持、幼教、建筑、技术或基础商业技能的人，可以作为短名单的一部分。申请前要看具体课程是否对国际学生开放，以及校区、学费和签证要求是否匹配。",
+        text: "Future Skills（Future Skills Academy）国际生常讨论的是奥克兰 Queen Street 国际校区路径。官网：https://www.futureskills.co.nz/。宣传里会出现应用管理、建筑/工料测量相关，以及部分 AI/IT 整合硕博说法——一律以官网当季课程与 NZQA 批准为准。适合会认真算「标价 vs 奖学金后净学费」的应用管理路径学生；动画作品集优先看 Yoobee，技能 IT 支持对照 NZSE。",
       },
       {
         type: "table",
-        caption: "Future Skills 评估表（NZD 约数，2025-2026，需官网核实）",
-        headers: ["方向", "常见关注点", "学费约数", "额外成本"],
+        caption: "Future Skills 公开标价例（NZD 约数，2025-2026，需官网核实）",
+        headers: ["方向", "常见关注点", "学费约数", "核对重点"],
         rows: [
           [
-            "Health / Community",
-            "照护、社区服务、实践沟通",
-            "14,000-23,000/年",
-            "体检、警察证明、交通、制服或材料",
+            "Bachelor of Applied Management",
+            "应用管理本科",
+            "约 23,900/年",
+            "奖学金条款、是否按年收费",
           ],
           [
-            "Early Childhood",
-            "儿童发展、课堂支持、实践准备",
-            "15,000-24,000/年",
-            "实践交通、材料、英文沟通提升",
+            "应用管理研文",
+            "Graduate Diploma 路径",
+            "约 27,000",
+            "本科背景、英文线、intake",
           ],
           [
-            "Construction / Trades",
-            "建筑基础、工具、安全与技能训练",
-            "14,000-25,000/年",
-            "工具、防护装备、交通、材料",
+            "部分硕士整课",
+            "应用管理 / 相关硕士宣传项目",
+            "约 40,500",
+            "整课还是按年、奖学金后净价",
           ],
           [
-            "Business / Technology",
-            "基础管理、办公室技能、技术应用",
-            "14,000-22,000/年",
-            "电脑、软件、教材、项目材料",
+            "建筑 / 工料测量相关",
+            "应用型技术与管理交叉",
+            "以当季课程页为准",
+            "NZQA 级别、实践与材料费",
           ],
         ],
       },
@@ -1153,8 +1284,22 @@ export const studyArticles = [
           },
         ],
       },
+    
     ],
     sectionsEn: [
+      {
+        type: "links",
+        items: [
+          { href: "https://www.futureskills.co.nz/", label: "Open Future Skills website" },
+        ],
+      },
+      {
+        type: "articleLinks",
+        items: [
+          { slug: "pte-private-schools", label: "Back: fees overview" },
+          { slug: "school-icl", label: "Compare: ICL" }
+        ],
+      },
       {
         type: "h2",
         text: "Where Future Skills fits",
@@ -1248,6 +1393,7 @@ export const studyArticles = [
           },
         ],
       },
+    
     ],
   },
   {
