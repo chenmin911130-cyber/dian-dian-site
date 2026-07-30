@@ -106,22 +106,33 @@ a:focus-visible {
 .wordmark {
   display: inline-flex;
   align-items: center;
-  gap: 9px;
+  gap: 10px;
+  padding: 8px 14px 8px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 1px 0 rgba(36, 68, 29, 0.06);
   color: var(--ink);
   font-family: "Noto Sans SC", Manrope, "PingFang SC", sans-serif;
   line-height: 1;
+  backdrop-filter: blur(6px);
 }
 
-.wordmark__dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--fern);
+.wordmark__mark {
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+  color: var(--fern);
   flex-shrink: 0;
 }
 
+.wordmark__mark svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 .wordmark__brand {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
   letter-spacing: 0.12em;
 }
@@ -134,9 +145,9 @@ a:focus-visible {
 }
 
 .wordmark__tag {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.14em;
   color: var(--ink-soft);
 }
 
@@ -978,16 +989,22 @@ a:focus-visible {
 
   .wordmark {
     gap: 7px;
+    padding: 7px 12px 7px 8px;
+  }
+
+  .wordmark__mark {
+    width: 18px;
+    height: 18px;
   }
 
   .wordmark__brand {
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 0.08em;
   }
 
   .wordmark__tag {
-    font-size: 12px;
-    letter-spacing: 0.12em;
+    font-size: 11px;
+    letter-spacing: 0.1em;
   }
 
   .wordmark__divider {

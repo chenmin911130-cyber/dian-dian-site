@@ -108,7 +108,15 @@ export function App() {
               goHome();
             }}
           >
-            <span className="wordmark__dot" aria-hidden="true" />
+            <span className="wordmark__mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="16" fill="currentColor" />
+                <path
+                  fill="#F4F7F0"
+                  d="M16.2 6.2c.2 2.8-.4 5.2-1.6 7.2 1.9-.6 3.7-1.1 5.6-.8-.9 1.6-2.4 2.6-4.1 3.2 1.7.3 3.3.9 4.6 2-1.5.7-3.2.8-4.8.4 1.1 1.2 1.8 2.7 2 4.4-1.4-.8-2.5-1.9-3.2-3.3-.2 1.8-.1 3.6.5 5.3-1.5-1.1-2.5-2.7-2.9-4.6-.8 1.5-2 2.7-3.5 3.5.7-1.7 1.1-3.5.9-5.3-1.5 1-3.2 1.5-5 .1 1.5-.6 2.9-1.7 3.8-3.2-1.8.1-3.5-.3-5-1.3 1.9-.1 3.7.2 5.4.9-1.1-1.4-1.7-3.1-1.7-5 .2 0 .3 0 .5.1 1.2 2.1 2.9 3.5 4.9 4.2C11.8 10.4 13.6 8 16.2 6.2Z"
+                />
+              </svg>
+            </span>
             <span className="wordmark__brand">{copy.siteBrand}</span>
             <span className="wordmark__divider" aria-hidden="true" />
             <span className="wordmark__tag">{copy.siteTag}</span>
