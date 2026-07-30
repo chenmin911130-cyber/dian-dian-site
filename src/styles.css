@@ -490,6 +490,31 @@ a:focus-visible {
   line-height: 1.8;
 }
 
+.author-note__contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45rem 0.7rem;
+}
+
+.author-note__contact span {
+  color: var(--muted);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+
+.author-note__contact a {
+  color: var(--fern);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.author-note__contact a:hover {
+  color: var(--fern-dark);
+}
+
 .consult-page {
   max-width: 880px;
 }
