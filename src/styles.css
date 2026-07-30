@@ -168,17 +168,31 @@ a:focus-visible {
 .locale-switch {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  color: #6f746b;
+  gap: 8px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 1px 0 rgba(36, 68, 29, 0.06);
+  color: var(--ink);
+  backdrop-filter: blur(6px);
+}
+
+.locale-switch > span[aria-hidden="true"] {
+  color: rgba(42, 51, 40, 0.35);
 }
 
 .locale-switch button {
-  color: #6f746b;
+  color: rgba(42, 51, 40, 0.55);
+  font-weight: 500;
 }
 
 .locale-switch button.is-active {
   color: var(--ink);
-  font-weight: 600;
+  font-weight: 700;
+}
+
+.locale-switch button:hover {
+  color: var(--fern-dark);
 }
 
 .hero-copy {
