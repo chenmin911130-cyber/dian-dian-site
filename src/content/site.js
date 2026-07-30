@@ -45,14 +45,12 @@ export const siteCopy = {
 
 export const guideCategories = {
   study: [
-    { id: "schools", zh: "选校与学费", en: "Schools & fees" },
-    { id: "process", zh: "申请与语言", en: "Applications & English" },
-    { id: "visa", zh: "签证与预算", en: "Visa & budget" },
+    { id: "schools", zh: "私立选校与社区经验", en: "Private schools & community tips" },
   ],
   career: [
-    { id: "platforms", zh: "找工作平台", en: "Job platforms" },
-    { id: "apply", zh: "简历与面试", en: "CV & interviews" },
-    { id: "compliance", zh: "税号与工时", en: "IRD & work hours" },
+    { id: "platforms", zh: "找工作渠道", en: "Job channels" },
+    { id: "apply", zh: "兼职与投递", en: "Part-time & applying" },
+    { id: "compliance", zh: "工时与合规", en: "Hours & compliance" },
   ],
   life: [
     { id: "money", zh: "预算与日常开销", en: "Budget & spending" },

@@ -7,13 +7,13 @@ export const guides = [
     titleZh: "留学准备",
     titleEn: "Study preparation",
     summaryZh:
-      "聚焦 AIS、ICL、Yoobee、NZSE、Future Skills 等私立/技能学校与学费区间，以及签证、语言、预算与申请节奏。",
+      "按小红书高收藏对照重写：AIS / ICL / Yoobee / NZSE / Future Skills 学费区间、一年制硕课表与英文路径——旧申请长文已撤下。",
     summaryEn:
-      "Focus on AIS, ICL, Yoobee, NZSE and Future Skills-style private/skills providers with tuition ranges, plus visas, English, budget and timing.",
+      "Rewritten from high-save community comparisons: AIS, ICL, Yoobee, NZSE and Future Skills fees, one-year master’s timetables and English pathways—older process essays removed.",
     introZh:
-      "很多人问的不是八大排名，而是：奥克兰私立学院读什么、学费大概多少、PTE/语言班能不能衔接、商科 IT 酒店创意哪条路更贴自己。下面按「选校与学费 → 申请与语言 → 签证与预算」整理，每篇文章配对照表、清单与配图，方便你边看边做短名单。",
+      "社区笔记最常问的是课表能不能打工、奖学金后学费多少、管理 / 数字商业 / 数据分析怎么选。下面以五校短名单 + 各校深挖为主，数字为约数，签证与工签以 INZ 和官网为准。",
     introEn:
-      "Many students need private/skills-provider options more than university rankings. Browse by Schools & fees → Applications & English → Visa & budget. Each article adds tables, checklists and figures so you can shortlist as you read.",
+      "Community notes ask about work-friendly timetables, post-scholarship fees, and management vs digital business vs analytics. Browse the five-school shortlist and deep dives. Figures are approximate—verify with INZ and official sites.",
     featuredSlug: "pte-private-schools",
     featuredTitleZh: "AIS / ICL / Yoobee / NZSE / Future Skills：学费与怎么选",
     featuredTitleEn: "AIS, ICL, Yoobee, NZSE, Future Skills: fees and who they suit",
@@ -26,13 +26,13 @@ export const guides = [
     titleZh: "求职与工作",
     titleEn: "Career and work",
     summaryZh:
-      "Seek、Trade Me Jobs、简历、面试、IRD 与学生工时——本地找工刚需清单。",
+      "按高收藏求职笔记重写：多平台分工、Walk-in 跟进、超市咖啡店入职、学生工时与无薪试工避坑。",
     summaryEn:
-      "Seek, Trade Me Jobs, CVs, interviews, IRD and student work hours—the essentials.",
+      "Rewritten from high-save job notes: multi-platform search, walk-ins, supermarket/cafe onboarding, student hours and unpaid-trial warnings.",
     introZh:
-      "本地兼职与全职大多从线上开始。Seek 岗位更全，Trade Me Jobs 本地感更强。下面按「找工作平台 → 简历与面试 → 税号与工时」展开，配平台对照、简历模板要点与合规提醒。",
+      "Seek 是基本盘，Trade Me Jobs 本地感强；再配合 Indeed、LinkedIn、Student Job Search 与 Facebook。下面按「找工作渠道 → 兼职与投递 → 工时与合规」展开，已替换旧简历长文。",
     introEn:
-      "Most local jobs start online. Seek is broader; Trade Me Jobs feels more local. Browse Job platforms → CV & interviews → IRD & work hours, with comparison tables and compliance notes.",
+      "Seek is the base layer; Trade Me Jobs feels local—add Indeed, LinkedIn, Student Job Search and Facebook. Browse Job channels → Part-time & applying → Hours & compliance. Older CV essays have been replaced.",
     featuredSlug: "seek-trademe-jobs",
     featuredTitleZh: "在 Seek 与 Trade Me 找工作：实用建议",
     featuredTitleEn: "Finding work on Seek and Trade Me: practical tips",
