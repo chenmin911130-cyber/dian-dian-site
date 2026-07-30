@@ -124,7 +124,13 @@ export function App() {
                 />
               ))}
             </section>
-            <AuthorNote title={copy.authorTitle} body={copy.authorBody} />
+            <AuthorNote
+              title={copy.authorTitle}
+              body={copy.authorBody}
+              email={copy.authorEmail}
+              emailLabel={copy.authorEmailLabel}
+            />
+
           </>
         ) : null}
 
