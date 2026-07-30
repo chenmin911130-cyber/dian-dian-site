@@ -302,9 +302,9 @@ export const lifeArticles = [
     titleZh: "新西兰租房入门：合租、押金与看房清单",
     titleEn: "Renting in New Zealand: flatting, bond and viewing checklist",
     excerptZh:
-      "综合高收藏社区经验改写：奥克兰分区、远程找房、租金约数、视频看房与避坑。数字为约数，请本地再核。",
+      "奥克兰分区、远程找房、租金约数、视频看房与避坑。数字为约数，请本地再核。",
     excerptEn:
-      "Rewritten from highly saved community tips: Auckland areas, remote search, approximate rents, video viewings and scam checks. Verify locally.",
+      "Auckland areas, remote search, approximate rents, video viewings and scam checks. Verify locally.",
     image: "/images/hero-coast.jpg",
     imageAltZh: "新西兰住宅街区与看房路线",
     imageAltEn: "A New Zealand residential street and viewing route",
@@ -328,7 +328,7 @@ export const lifeArticles = [
       },
       {
         type: "p",
-        text: "社区高收藏经验可作参考：City/CBD 通勤方便但租金高、人流更杂；中区兼顾通勤与价格；东区与北岸相对安静，但去市中心高峰可能堵车；南区与西区租金往往更低，需更认真核夜间回家路线与公交。最终以你晚间实际走过的路线为准。",
+        text: "City/CBD 通勤方便但租金高、人流更杂；中区兼顾通勤与价格；东区与北岸相对安静，但去市中心高峰可能堵车；南区与西区租金往往更低，需更认真核夜间回家路线与公交。最终以你晚间实际走过的路线为准。",
       },
       {
         type: "table",
@@ -463,7 +463,7 @@ export const lifeArticles = [
       },
       {
         type: "p",
-        text: "Highly saved community tips often summarise: City/CBD is convenient but pricey and busier; central suburbs balance commute and rent; east and North Shore feel quieter but peak traffic into the city can be slow; south and west can be cheaper—check night routes and buses carefully. Judge by the evening walk you personally take.",
+        text: "City/CBD is convenient but pricey and busier; central suburbs balance commute and rent; east and North Shore feel quieter but peak traffic into the city can be slow; south and west can be cheaper—check night routes and buses carefully. Judge by the evening walk you personally take.",
       },
       {
         type: "table",

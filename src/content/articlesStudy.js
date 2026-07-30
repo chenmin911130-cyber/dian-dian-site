@@ -6,9 +6,9 @@ export const studyArticles = [
     titleZh: "AIS / ICL / Yoobee / NZSE / Future Skills：学费与怎么选",
     titleEn: "AIS, ICL, Yoobee, NZSE, Future Skills: fees and who they suit",
     excerptZh:
-      "按小红书高收藏对照逻辑重写：一年制商科硕三强课表、学费约数、英文路径与五校短名单——只作初筛，以官网为准。",
+      "一年制商科硕课表对照、学费约数、英文路径与五校短名单——只作初筛，以官网为准。",
     excerptEn:
-      "Rewritten from highly saved community comparisons: one-year master’s timetables, fee ranges, English pathways and a five-school shortlist—verify on official sites.",
+      "One-year master’s timetables, fee ranges, English pathways and a five-school shortlist—verify on official sites.",
     image: "/images/study-feature.jpg",
     imageAltZh: "新西兰私立学院与技能学校资料摊开的桌面",
     imageAltEn: "Study notes for New Zealand private and skills providers on a desk",
@@ -16,11 +16,11 @@ export const studyArticles = [
     sectionsZh: [
       {
         type: "h2",
-        text: "先用社区最常问的三件事筛学校",
+        text: "先用这三件事筛学校",
       },
       {
         type: "p",
-        text: "高收藏笔记里，学生反复问的不是「八大排第几」，而是：① 上课时间能不能兼顾打工；② 奖学金后学费大概多少；③ 管理 / 数字商业 / 数据分析哪条更贴自己。下面把可核对的区间与筛选逻辑写清楚；移民、工签、配偶打工等说法变化快，一律以 Immigration New Zealand 与学校录取文件为准，不要把中介文案当事实。",
+        text: "选校时优先看这三件事，而不是「八大排第几」：① 上课时间能不能兼顾打工；② 奖学金后学费大概多少；③ 管理 / 数字商业 / 数据分析哪条更贴自己。下面把可核对的区间与筛选逻辑写清楚；移民、工签、配偶打工等说法变化快，一律以 Immigration New Zealand 与学校录取文件为准，不要把中介文案当事实。",
       },
       {
         type: "table",
@@ -36,7 +36,7 @@ export const studyArticles = [
           [
             "ICL",
             "奥克兰 CBD 管理细分 / 商务信息化 / 研文与一年制硕士",
-            "Level 5–9 常见约 23,000–48,500；社区商科硕粗算约 2.9万–3.1万",
+            "Level 5–9 常见约 23,000–48,500；一年制商科硕粗算约 2.9万–3.1万",
             "想在市中心读实务商科、接受晚班或新开周末班的人（站长就读）",
           ],
           [
@@ -68,19 +68,19 @@ export const studyArticles = [
       },
       {
         type: "p",
-        text: "本指南为每所学校准备了独立详解：AIS、ICL、Yoobee、NZSE（NZSEG）、Future Skills。下面先讲社区对照里最实用的「课表 + 预算」逻辑，再点进各校专文核对细节。",
+        text: "本指南为每所学校准备了独立详解：AIS、ICL、Yoobee、NZSE（NZSEG）、Future Skills。下面先讲「课表 + 预算」筛选逻辑，再点进各校专文核对细节。",
       },
       {
         type: "h2",
-        text: "社区高收藏：ICL / Yoobee / NZSEG 一年制商科硕怎么比",
+        text: "ICL / Yoobee / NZSEG：一年制商科硕怎么比",
       },
       {
         type: "p",
-        text: "收藏量较高的对照笔记，常把这三所放在一起：方向不同、上课节奏不同，学费粗算多在奖学金后约 NZD 2.6万–3.1万区间。奖学金规则、开学季和是否需要桥梁课每年会变——下列「印象」只帮你提问。",
+        text: "这三所常被一起比较：方向不同、上课节奏不同，学费粗算多在奖学金后约 NZD 2.6万–3.1万区间。奖学金规则、开学季和是否需要桥梁课每年会变——下列对照只帮你提问。",
       },
       {
         type: "table",
-        caption: "一年制商科硕社区对照（改写，NZD 约数，务必官网核实）",
+        caption: "一年制商科硕对照（NZD 约数，务必官网核实）",
         headers: ["学校", "常见方向印象", "上课节奏印象", "选它时先问"],
         rows: [
           [
@@ -118,7 +118,7 @@ export const studyArticles = [
       },
       {
         type: "p",
-        text: "社区笔记常写「雅思 6.5 / PTE 58 / NZCEL 5 可申硕士」——这只是部分课程的常见门槛印象，不是全校统一标准。证书/大专可能更低，Graduate Diploma、Bachelor、Master 通常更高。部分学校接受 IELTS、PTE Academic、NZCEL，也可能提供内部语言或 pathway。",
+        text: "常见说法里会有「雅思 6.5 / PTE 58 / NZCEL 5 可申硕士」——这只是部分课程的门槛印象，不是全校统一标准。证书/大专可能更低，Graduate Diploma、Bachelor、Master 通常更高。部分学校接受 IELTS、PTE Academic、NZCEL，也可能提供内部语言或 pathway。",
       },
       {
         type: "ul",
@@ -159,7 +159,7 @@ export const studyArticles = [
           },
           {
             title: "第四步：核实官方信息",
-            text: "最终以学校官网、offer、INZ 要求为准；本文与社区笔记只作初筛。",
+            text: "最终以学校官网、offer、INZ 要求为准；本文只作初筛。",
           },
         ],
       },
@@ -167,7 +167,7 @@ export const studyArticles = [
     sectionsEn: [
       {
         type: "h2",
-        text: "Shortlist by the three questions community notes ask most",
+        text: "Shortlist by these three questions",
       },
       {
         type: "p",
@@ -187,7 +187,7 @@ export const studyArticles = [
           [
             "ICL",
             "Auckland CBD management streams, informatics, graduate diplomas and one-year master’s",
-            "Level 5–9 often ~23k–48.5k; community master’s talk ~29k–31k",
+            "Level 5–9 often ~23k–48.5k; one-year master’s roughly ~29k–31k",
             "Students wanting practical CBD business study (site author studies here)",
           ],
           [
@@ -219,19 +219,19 @@ export const studyArticles = [
       },
       {
         type: "p",
-        text: "Each school has its own deep-dive article: AIS, ICL, Yoobee, NZSE (NZSEG) and Future Skills. Use the community comparison logic below, then open the dedicated pages.",
+        text: "Each school has its own deep-dive article: AIS, ICL, Yoobee, NZSE (NZSEG) and Future Skills. Use the comparison logic below, then open the dedicated pages.",
       },
       {
         type: "h2",
-        text: "High-save comparison: ICL / Yoobee / NZSEG one-year master’s",
+        text: "ICL / Yoobee / NZSEG: comparing one-year master’s paths",
       },
       {
         type: "p",
-        text: "Popular notes group these three: different focus, different timetables, fee talk often NZD 26k–31k after scholarships. Scholarship rules change—use the table to ask better questions.",
+        text: "These three are often compared together: different focus, different timetables, fee talk often NZD 26k–31k after scholarships. Scholarship rules change—use the table to ask better questions.",
       },
       {
         type: "table",
-        caption: "One-year master’s community comparison (rewritten; NZD approx; verify)",
+        caption: "One-year master’s comparison (NZD approx; verify officially)",
         headers: ["School", "Focus impression", "Timetable impression", "Ask first"],
         rows: [
           [
@@ -269,7 +269,7 @@ export const studyArticles = [
       },
       {
         type: "p",
-        text: "Notes often quote IELTS 6.5 / PTE 58 / NZCEL 5 for master’s entry—that is an impression for some programmes, not a school-wide rule. Confirm on the course page.",
+        text: "You may see IELTS 6.5 / PTE 58 / NZCEL 5 quoted for master’s entry—that is an impression for some programmes, not a school-wide rule. Confirm on the course page.",
       },
       {
         type: "ul",
@@ -310,7 +310,7 @@ export const studyArticles = [
           },
           {
             title: "Step 4: Verify official details",
-            text: "Provider websites, offers and INZ rules win over community notes.",
+            text: "Provider websites, offers and INZ rules are the final source.",
           },
         ],
       },
@@ -323,9 +323,9 @@ export const studyArticles = [
     titleZh: "AIS 奥克兰商学院：专业、学费与适合谁",
     titleEn: "AIS Auckland: programmes, fees and who it suits",
     excerptZh:
-      "社区对照里 AIS 常与 ICL、Yoobee 一起出现：管理硕周末班、语言衔接与应用商科/IT/酒店路径——用官网核实后再定。",
+      "AIS 常与 ICL、Yoobee 一起比较：管理硕周末班、语言衔接与应用商科/IT/酒店路径——用官网核实后再定。",
     excerptEn:
-      "Community notes often place AIS beside ICL and Yoobee: weekend master’s, English bridging and applied business/IT/hospitality—verify on the official site.",
+      "AIS is often compared with ICL and Yoobee: weekend master’s, English bridging and applied business/IT/hospitality—verify on the official site.",
     image: "/images/study-feature.jpg",
     imageAltZh: "奥克兰私立学院学习场景",
     imageAltEn: "Auckland private college study setting",
@@ -345,11 +345,11 @@ export const studyArticles = [
       },
       {
         type: "h2",
-        text: "社区语境里 AIS 被怎么比",
+        text: "AIS 怎么和其他私立学院比",
       },
       {
         type: "p",
-        text: "在高收藏「低预算一年制硕 / 私立三强」讨论里，AIS 常作为对照：管理学硕士本身就被描述为周末上课，和 Yoobee 类似、与 ICL 传统晚班形成对比。AIS（Auckland Institute of Studies）覆盖商科、IT、酒店旅游、英语与 pathway，适合目标明确又想保留转向空间的人。",
+        text: "做低预算一年制硕短名单时，AIS 常作为对照：管理学硕士多为周末上课，和 Yoobee 类似、与 ICL 传统晚班形成对比。AIS（Auckland Institute of Studies）覆盖商科、IT、酒店旅游、英语与 pathway，适合目标明确又想保留转向空间的人。",
       },
       {
         type: "table",
@@ -404,7 +404,7 @@ export const studyArticles = [
       {
         type: "tip",
         title: "申请前核实",
-        text: "AIS 官网、offer 和 invoice 才是最终依据。社区笔记里的「周末班」「学费区间」只帮助提问，不替代录取文件。",
+        text: "AIS 官网、offer 和 invoice 才是最终依据。「周末班」「学费区间」等公开对照只帮助提问，不替代录取文件。",
       },
       {
         type: "steps",
@@ -442,11 +442,11 @@ export const studyArticles = [
       },
       {
         type: "h2",
-        text: "How community notes place AIS",
+        text: "How AIS compares with other private colleges",
       },
       {
         type: "p",
-        text: "In high-save “lower-budget one-year master’s” threads, AIS often appears as a weekend-timetable contrast to ICL’s evening classes. AIS covers business, IT, hospitality, English and pathways—useful if you want an applied Auckland private college with room to pivot.",
+        text: "On a lower-budget one-year master’s shortlist, AIS often appears as a weekend-timetable contrast to ICL’s evening classes. AIS covers business, IT, hospitality, English and pathways—useful if you want an applied Auckland private college with room to pivot.",
       },
       {
         type: "table",
@@ -501,7 +501,7 @@ export const studyArticles = [
       {
         type: "tip",
         title: "Verify before applying",
-        text: "AIS website, offer and invoice win. Community “weekend class” and fee talk only help you ask better questions.",
+        text: "AIS website, offer and invoice win. Public “weekend class” and fee ranges only help you ask better questions.",
       },
       {
         type: "steps",
@@ -533,9 +533,9 @@ export const studyArticles = [
     titleZh: "ICL 商学院：课程路径、学费与就读体验要点",
     titleEn: "ICL Business School: pathways, fees and practical notes",
     excerptZh:
-      "按高收藏笔记改写：CBD 晚班/新开周末班、管理与信息化一年制硕、语言衔接与停车成本——站长就读视角 + 官网核实清单。",
+      "CBD 晚班与周末班、管理与信息化一年制硕、语言衔接与停车成本——站长就读视角 + 官网核实清单。",
     excerptEn:
-      "Rewritten from high-save notes: CBD evenings/new weekend intakes, one-year management & informatics master’s, English pathways and parking costs—plus verification checklist.",
+      "CBD evenings and weekend intakes, one-year management & informatics master’s, English pathways and parking costs—plus verification checklist.",
     image: "/images/study-documents.jpg",
     imageAltZh: "ICL 商科申请资料与英文成绩单",
     imageAltEn: "ICL business application documents and English test notes",
@@ -556,16 +556,16 @@ export const studyArticles = [
       },
       {
         type: "h2",
-        text: "为什么社区笔记总提到 ICL",
+        text: "为什么很多人会认真看 ICL",
       },
       {
         type: "p",
-        text: "ICL Education Group 旗下含 ICL Graduate Business School 等。高收藏笔记集中在：奥克兰市中心、一年制商科/管理类硕士、语言与主课衔接、晚班方便白天打工、以及与 Yoobee / NZSEG 的性价比对照。点点作者本人在 ICL 商学院就读——下面把可核对事实与营销话术分开写。",
+        text: "ICL Education Group 旗下含 ICL Graduate Business School 等。常见关注点包括：奥克兰市中心、一年制商科/管理类硕士、语言与主课衔接、晚班方便白天打工，以及与 Yoobee / NZSEG 的学费与课表对照。点点作者本人在 ICL 商学院就读——下面把可核对事实与营销话术分开写。",
       },
       {
         type: "table",
         caption: "ICL 申请时可先核实的项目（NZD 约数）",
-        headers: ["项目", "社区常见说法", "预算/要求约数", "核实重点"],
+        headers: ["项目", "常见情况", "预算/要求约数", "核实重点"],
         rows: [
           [
             "语言 / pathway",
@@ -582,7 +582,7 @@ export const studyArticles = [
           [
             "一年制硕士（如管理 / 商业信息）",
             "180 学分、多 intake；晚班或新开周末班",
-            "社区粗算约 2.9万–3.1万；偶有入学奖学金宣传",
+            "粗算约 2.9万–3.1万；偶有入学奖学金宣传",
             "是否要商科背景、英文门槛、奖学金押金截止日",
           ],
           [
@@ -599,14 +599,14 @@ export const studyArticles = [
       },
       {
         type: "p",
-        text: "社区对照常写：ICL 偏工作日晚间；部分笔记称自某开学季起新增周末授课（不同月份对应不同模式）。想兼顾兼职的人，先向学校要当学期课表，不要只信社交平台截图。",
+        text: "ICL 常见安排是工作日晚间上课；部分开学季也会提供周末授课（不同月份对应不同模式）。想兼顾兼职的人，先向学校要当学期课表，不要只信社交平台截图。",
       },
       {
         type: "ul",
         items: [
           "晚班：白天实习/兼职更灵活，但要算 CBD 夜间停车或公交。",
           "周末班：适合需要工作日排班的人；与 Yoobee / AIS 管理硕周末印象接近。",
-          "评估：不少笔记称「作业为主、少考试」——以课程 outline 为准，勿默认轻松。",
+          "评估：有人说「作业为主、少考试」——以课程 outline 为准，勿默认轻松。",
         ],
       },
       {
@@ -620,7 +620,7 @@ export const studyArticles = [
       },
       {
         type: "table",
-        caption: "社区一年制硕对照（改写，务必官网核实）",
+        caption: "一年制硕对照（务必官网核实）",
         headers: ["学校", "方向印象", "课表印象", "学费约数印象"],
         rows: [
           [
@@ -686,16 +686,16 @@ export const studyArticles = [
       },
       {
         type: "h2",
-        text: "Why community notes keep mentioning ICL",
+        text: "Why ICL is often on the shortlist",
       },
       {
         type: "p",
-        text: "High-save notes focus on the Auckland CBD campus, one-year business/management master’s paths, English bridging, evening classes for daytime work, and fee comparisons with Yoobee / NZSEG. The DianDian author studies at ICL Business School—separate checkable facts from marketing claims.",
+        text: "People often look at ICL for the Auckland CBD campus, one-year business/management master’s paths, English bridging, evening classes for daytime work, and fee comparisons with Yoobee / NZSEG. The DianDian author studies at ICL Business School—separate checkable facts from marketing claims.",
       },
       {
         type: "table",
         caption: "Items to verify for ICL (approx. NZD)",
-        headers: ["Item", "Community talk", "Approx. budget/requirement", "Verify"],
+        headers: ["Item", "Common situation", "Approx. budget/requirement", "Verify"],
         rows: [
           [
             "English / pathway",
@@ -712,7 +712,7 @@ export const studyArticles = [
           [
             "One-year master’s (e.g. management / informatics)",
             "180 credits, multiple intakes; evenings or new weekend modes",
-            "Community talk ~29k–31k; scholarships sometimes advertised",
+            "Roughly ~29k–31k; scholarships sometimes advertised",
             "Background rules, English threshold, deposit deadlines",
           ],
           [
@@ -729,7 +729,7 @@ export const studyArticles = [
       },
       {
         type: "p",
-        text: "Notes often describe weekday evenings; some say later intakes add weekend delivery. Ask the school for the current timetable—do not rely on screenshots alone.",
+        text: "Weekday evenings are common; some intakes also offer weekend delivery. Ask the school for the current timetable—do not rely on screenshots alone.",
       },
       {
         type: "ul",
@@ -750,7 +750,7 @@ export const studyArticles = [
       },
       {
         type: "table",
-        caption: "Community one-year master’s comparison (rewritten; verify officially)",
+        caption: "One-year master’s comparison (verify officially)",
         headers: ["School", "Focus", "Timetable", "Fee impression"],
         rows: [
           [
@@ -809,9 +809,9 @@ export const studyArticles = [
     titleZh: "Yoobee：动画、设计与软件课程怎么选",
     titleEn: "Yoobee: animation, design and software programmes",
     excerptZh:
-      "高收藏对照里 Yoobee 常被写成周末班 + 数字商业/创意科技；作品集、设备与奖学金后净学费要一起看。",
+      "Yoobee 常见定位是周末班 + 数字商业/创意科技；作品集、设备与奖学金后净学费要一起看。",
     excerptEn:
-      "High-save notes often frame Yoobee as weekend classes plus digital business/creative tech—plan portfolio, equipment and net fees together.",
+      "Yoobee is often framed as weekend classes plus digital business/creative tech—plan portfolio, equipment and net fees together.",
     image: "/images/career-feature.jpg",
     imageAltZh: "创意科技学生在城市中学习与求职",
     imageAltEn: "Creative technology students studying and job searching in the city",
@@ -831,16 +831,16 @@ export const studyArticles = [
       },
       {
         type: "h2",
-        text: "社区笔记怎么定位 Yoobee",
+        text: "Yoobee 适合怎样的路径",
       },
       {
         type: "p",
-        text: "在「性价比硕士三强」类笔记里，Yoobee 常对应：数字商业与科技管理、软件/信息化、周末上课、工作日留给兼职。创意侧则是动画、设计、游戏与数字媒体——和纯商科管理的 ICL 形成互补，而不是简单「谁更好」。",
+        text: "做一年制硕短名单时，Yoobee 常对应：数字商业与科技管理、软件/信息化、周末上课、工作日留给兼职。创意侧则是动画、设计、游戏与数字媒体——和偏商科管理的 ICL 形成互补，而不是简单「谁更好」。",
       },
       {
         type: "table",
         caption: "Yoobee 方向与预算视角（NZD 约数，务必官网核实）",
-        headers: ["方向", "社区印象", "学费约数", "申请重点"],
+        headers: ["方向", "常见定位", "学费约数", "申请重点"],
         rows: [
           [
             "创意 / 动画 / 设计",
@@ -872,7 +872,7 @@ export const studyArticles = [
           "想细分管理 + 晚班 → 先看 ICL。",
           "想数据分析 / BI → 先看 NZSE/NZSEG。",
           "想创意作品集或数字商业、需要工作日空档 → 先看 Yoobee。",
-          "三校社区学费粗算接近；差在方向与课表，不在「谁保证移民」。",
+          "三校学费粗算接近；差在方向与课表，不在「谁保证移民」。",
         ],
       },
       {
@@ -916,16 +916,16 @@ export const studyArticles = [
       },
       {
         type: "h2",
-        text: "How community notes position Yoobee",
+        text: "How Yoobee fits different paths",
       },
       {
         type: "p",
-        text: "In “value master’s trio” notes, Yoobee often means digital business/tech, weekend classes and weekdays free for work. Creative tracks (animation, design, games) complement ICL’s management focus—different jobs, not a simple ranking.",
+        text: "On a one-year master’s shortlist, Yoobee often means digital business/tech, weekend classes and weekdays free for work. Creative tracks (animation, design, games) complement ICL’s management focus—different jobs, not a simple ranking.",
       },
       {
         type: "table",
         caption: "Yoobee focus and budget view (approx. NZD; verify)",
-        headers: ["Focus", "Community impression", "Approx. fees", "Confirm"],
+        headers: ["Focus", "Typical focus", "Approx. fees", "Confirm"],
         rows: [
           [
             "Creative / animation / design",
@@ -957,7 +957,7 @@ export const studyArticles = [
           "Management streams + evenings → start with ICL.",
           "Analytics / BI → start with NZSE/NZSEG.",
           "Portfolio creative or digital business with free weekdays → start with Yoobee.",
-          "Community fee talk is similar; direction and timetable differ—not “who guarantees PR”.",
+          "Fee ranges are often similar; direction and timetable differ—not “who guarantees PR”.",
         ],
       },
       {
@@ -995,9 +995,9 @@ export const studyArticles = [
     titleZh: "NZSE / NZSEG：技能课程、校区与学费区间",
     titleEn: "NZSE / NZSEG: skills programmes, campuses and fee ranges",
     excerptZh:
-      "社区三强对照里 NZSEG 偏数据分析与混合课表；技能课程价差大——先分清校区与 Level，再谈奖学金后净价。",
+      "NZSEG 偏数据分析与混合课表；技能课程价差大——先分清校区与 Level，再谈奖学金后净价。",
     excerptEn:
-      "In community trio notes NZSEG leans analytics and hybrid timetables; skills fees vary widely—confirm campus and level before net-fee talk.",
+      "NZSEG leans analytics and hybrid timetables; skills fees vary widely—confirm campus and level before net-fee talk.",
     image: "/images/study-feature.jpg",
     imageAltZh: "技能学校课堂与实训相关资料",
     imageAltEn: "Skills-school classroom and training materials",
@@ -1021,12 +1021,12 @@ export const studyArticles = [
       },
       {
         type: "p",
-        text: "中文社区里 NZSE / NZSEG 常混写；看到 NESEG 多半是 NZSEG 误拼。集团覆盖英语、职业教育、商业与技能培训。高收藏对照笔记把 NZSEG 放在「商业智能 / 数据分析」一侧，课表印象是周内线上约数小时 + 周末线下，适合不想工作日排满面授课的人。",
+        text: "NZSE / NZSEG 常被混写；看到 NESEG 多半是 NZSEG 误拼。集团覆盖英语、职业教育、商业与技能培训。NZSEG 常见方向是商业智能 / 数据分析，课表多为周内线上约数小时 + 周末线下，适合不想工作日排满面授课的人。",
       },
       {
         type: "table",
         caption: "NZSE / NZSEG 方向与预算视角（NZD 约数）",
-        headers: ["方向", "社区印象", "学费约数", "核实重点"],
+        headers: ["方向", "常见定位", "学费约数", "核实重点"],
         rows: [
           [
             "IT 支持 / 网络云等技能课",
@@ -1042,7 +1042,7 @@ export const studyArticles = [
           ],
           [
             "一年制硕（BI / 数据分析）",
-            "三强中常写「奖学金后更低」",
+            "对照中常写「奖学金后更低」",
             "粗算约 2.6万–2.9万",
             "授课型 vs 研究型、背景要求、净学费",
           ],
@@ -1050,7 +1050,7 @@ export const studyArticles = [
       },
       {
         type: "h2",
-        text: "和 ICL、Yoobee 对照时的选校口诀（改写）",
+        text: "和 ICL、Yoobee 对照时怎么选",
       },
       {
         type: "ul",
@@ -1064,7 +1064,7 @@ export const studyArticles = [
       {
         type: "tip",
         title: "关于英文路径",
-        text: "无相关背景能否入学、语言衔接能否降总成本，社区说法不一。以课程入学要求与语言 offer 为准。",
+        text: "无相关背景能否入学、语言衔接能否降总成本，因课程而异。以课程入学要求与语言 offer 为准。",
       },
       {
         type: "steps",
@@ -1106,12 +1106,12 @@ export const studyArticles = [
       },
       {
         type: "p",
-        text: "Chinese posts mix NZSE / NZSEG; “NESEG” is usually a misspelling. High-save trio notes place NZSEG on the BI/analytics side with a hybrid timetable impression (weekday online + weekend on campus).",
+        text: "NZSE / NZSEG names are often mixed; “NESEG” is usually a misspelling. NZSEG is commonly associated with BI/analytics and a hybrid timetable (weekday online + weekend on campus).",
       },
       {
         type: "table",
         caption: "NZSE / NZSEG focus and budget (approx. NZD)",
-        headers: ["Focus", "Community impression", "Approx. fees", "Verify"],
+        headers: ["Focus", "Typical focus", "Approx. fees", "Verify"],
         rows: [
           [
             "IT support / network-cloud skills",
@@ -1127,7 +1127,7 @@ export const studyArticles = [
           ],
           [
             "One-year master’s (BI / analytics)",
-            "Often “lowest after scholarship” in trio notes",
+            "Often described as lower after scholarship in comparisons",
             "~26k–29k rough",
             "Taught vs research, background rules, net fee",
           ],
@@ -1135,7 +1135,7 @@ export const studyArticles = [
       },
       {
         type: "h2",
-        text: "Rewritten community shortlist logic",
+        text: "Shortlist logic vs ICL and Yoobee",
       },
       {
         type: "ul",
@@ -1181,9 +1181,9 @@ export const studyArticles = [
     titleZh: "Future Skills：应用管理、学费与奖学金怎么看",
     titleEn: "Future Skills: applied management, fees and scholarships",
     excerptZh:
-      "社区较少把它塞进「三强」海报，但应用管理与奖学金净价仍是短名单常客——标价减去奖学金再比房租。",
+      "应用管理与奖学金净价仍是短名单常客——标价减去奖学金再比房租。",
     excerptEn:
-      "Less often in “trio” posters, but applied management and scholarship net fees still matter—subtract scholarships before comparing rent.",
+      "Applied management and scholarship net fees still matter on many shortlists—subtract scholarships before comparing rent.",
     image: "/images/study-documents.jpg",
     imageAltZh: "应用管理课程资料与奖学金说明",
     imageAltEn: "Applied management materials and scholarship notes",
@@ -1209,7 +1209,7 @@ export const studyArticles = [
       },
       {
         type: "p",
-        text: "小红书「ICL / Yoobee / NZSEG」对照帖很少把 Future Skills 画进同一张表，但选校清单里它仍常出现：Queen Street 一带应用管理、建筑相关与部分硕士路径。关键动作不是背标价，而是算奖学金后的净学费，再和奥克兰合租一起比。",
+        text: "Future Skills 不一定出现在 ICL / Yoobee / NZSEG 的并列表里，但选校清单里仍常出现：Queen Street 一带应用管理、建筑相关与部分硕士路径。关键动作不是背标价，而是算奖学金后的净学费，再和奥克兰合租一起比。",
       },
       {
         type: "table",
@@ -1244,7 +1244,7 @@ export const studyArticles = [
       },
       {
         type: "h2",
-        text: "和社区「三强」怎么并列比较",
+        text: "和 ICL / Yoobee / NZSEG 怎么并列比较",
       },
       {
         type: "ul",
@@ -1301,7 +1301,7 @@ export const studyArticles = [
       },
       {
         type: "p",
-        text: "Xiaohongshu “trio” posters rarely include Future Skills, but shortlists still do: Queen Street applied management, construction-related paths and some master’s options. Subtract scholarships before comparing Auckland rent.",
+        text: "Future Skills is not always in the same ICL / Yoobee / NZSEG comparison table, but shortlists still include it: Queen Street applied management, construction-related paths and some master’s options. Subtract scholarships before comparing Auckland rent.",
       },
       {
         type: "table",
@@ -1336,7 +1336,7 @@ export const studyArticles = [
       },
       {
         type: "h2",
-        text: "How to compare beside the community “trio”",
+        text: "How to compare beside ICL / Yoobee / NZSEG",
       },
       {
         type: "ul",

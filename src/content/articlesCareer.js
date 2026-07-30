@@ -6,9 +6,9 @@ export const careerArticles = [
     titleZh: "在 Seek 与 Trade Me 找工作：实用建议",
     titleEn: "Finding work on Seek and Trade Me: practical tips",
     excerptZh:
-      "按高收藏求职笔记重写：Seek / Trade Me / Indeed / LinkedIn / Student Job Search / Facebook 怎么分工，少而准比海投更稳。",
+      "Seek / Trade Me / Indeed / LinkedIn / Student Job Search / Facebook 怎么分工，少而准比海投更稳。",
     excerptEn:
-      "Rewritten from high-save job notes: how to split Seek, Trade Me, Indeed, LinkedIn, Student Job Search and Facebook—quality over spray-and-pray.",
+      "How to split Seek, Trade Me, Indeed, LinkedIn, Student Job Search and Facebook—quality over spray-and-pray.",
     image: "/images/career-feature.jpg",
     imageAltZh: "奥克兰城市与求职平台页面",
     imageAltEn: "Auckland city with job platform pages",
@@ -22,15 +22,15 @@ export const careerArticles = [
       },
       {
         type: "h2",
-        text: "别只盯 Seek：高收藏笔记里的渠道分工",
+        text: "别只盯 Seek：多渠道怎么分工",
       },
       {
         type: "p",
-        text: "收藏上千的「你还只知道 Seek 吗」「招聘网站推荐」「投了 500 份简历」类笔记，共识很一致：Seek 是基本盘，但不是唯一入口。Trade Me Jobs 本地感强、中小商家多；Indeed 常挖到兼职；LinkedIn 偏人脉与白领；Student Job Search 适合在校灵活岗；Facebook 小组对餐饮、零售、部分地区 WHV 岗位很有效。天维网 / 微信群信息真假混杂，只能当补充。",
+        text: "Seek 是基本盘，但不是唯一入口。Trade Me Jobs 本地感强、中小商家多；Indeed 常挖到兼职；LinkedIn 偏人脉与白领；Student Job Search 适合在校灵活岗；Facebook 小组对餐饮、零售、部分地区 WHV 岗位很有效。天维网 / 微信群信息真假混杂，只能当补充。",
       },
       {
         type: "table",
-        caption: "本地常用找工作渠道（社区经验改写）",
+        caption: "本地常用找工作渠道",
         headers: ["渠道", "更适合", "怎么用"],
         rows: [
           [
@@ -71,7 +71,7 @@ export const careerArticles = [
       },
       {
         type: "p",
-        text: "「500 份简历」笔记的教训不是鼓励海投，而是：固定两天批量投、不同岗位换关键词、简历写明签证状态（避免卡 PR 的岗位白耗时间）、同步改 LinkedIn。连续两周零回音，先改 CV，再继续投。",
+        text: "海投不是目标。更稳的做法是：固定两天批量投、不同岗位换关键词、简历写明签证状态（避免卡 PR 的岗位白耗时间）、同步改 LinkedIn。连续两周零回音，先改 CV，再继续投。",
       },
       {
         type: "steps",
@@ -97,7 +97,7 @@ export const careerArticles = [
       {
         type: "tip",
         title: "学生工时提醒",
-        text: "申请前截图保存签证条件。社区常提「每周最多约 25 小时」——以你签证与 Immigration New Zealand 当时规则为准，学期与假期可能不同。",
+        text: "申请前截图保存签证条件。学期内常见上限约为每周 25 小时——以你签证与 Immigration New Zealand 当时规则为准，学期与假期可能不同。",
       },
       {
         type: "ul",
@@ -105,7 +105,7 @@ export const careerArticles = [
           "看清 hourly rate 是否至少符合当年最低工资。",
           "晚班回家安全比「多几小时」更重要。",
           "警惕先交培训费、押金、只走私人聊天软件的岗位。",
-          "无薪试工在社区笔记里被反复点名——通常不合法，先搞清劳动法再答应。",
+          "无薪试工通常不合法，先搞清劳动法再答应。",
         ],
       },
     ],
@@ -118,15 +118,15 @@ export const careerArticles = [
       },
       {
         type: "h2",
-        text: "Do not only use Seek: channel split from high-save notes",
+        text: "Do not only use Seek: how to split channels",
       },
       {
         type: "p",
-        text: "Popular notes agree: Seek is the base layer, not the only door. Trade Me Jobs feels local with more smaller employers; Indeed often surfaces part-time roles; LinkedIn helps networking; Student Job Search fits flexible student roles; Facebook groups help hospitality and some regional hiring. Chinese forums are extras—verify everything.",
+        text: "Seek is the base layer, not the only door. Trade Me Jobs feels local with more smaller employers; Indeed often surfaces part-time roles; LinkedIn helps networking; Student Job Search fits flexible student roles; Facebook groups help hospitality and some regional hiring. Chinese forums are extras—verify everything.",
       },
       {
         type: "table",
-        caption: "Common NZ job channels (rewritten community tips)",
+        caption: "Common NZ job channels",
         headers: ["Channel", "Best for", "How to use"],
         rows: [
           [
@@ -167,7 +167,7 @@ export const careerArticles = [
       },
       {
         type: "p",
-        text: "“500 applications” notes are a warning, not a target: batch on fixed days, change keywords by role, state visa status early, and keep LinkedIn aligned. After two quiet weeks, rewrite the CV before spraying more.",
+        text: "Mass applying is a warning, not a target: batch on fixed days, change keywords by role, state visa status early, and keep LinkedIn aligned. After two quiet weeks, rewrite the CV before spraying more.",
       },
       {
         type: "steps",
@@ -193,7 +193,7 @@ export const careerArticles = [
       {
         type: "tip",
         title: "Student hour tip",
-        text: "Screenshot your visa conditions. Community posts often mention about 25 hours/week in term—confirm against your visa and Immigration New Zealand.",
+        text: "Screenshot your visa conditions. Term-time limits are often about 25 hours/week—confirm against your visa and Immigration New Zealand.",
       },
       {
         type: "ul",
@@ -201,7 +201,7 @@ export const careerArticles = [
           "Check the hourly rate meets the current minimum wage.",
           "Late-night travel safety matters more than extra hours.",
           "Avoid roles that ask for training fees, deposits or only private-chat hiring.",
-          "Unpaid trials are repeatedly flagged—know the law before you agree.",
+          "Unpaid trials are usually unlawful—know the rules before you agree.",
         ],
       },
     ],
@@ -213,9 +213,9 @@ export const careerArticles = [
     titleZh: "Walk-in 与跟进：留学生兼职怎么开口",
     titleEn: "Walk-ins and follow-ups: how students open the door",
     excerptZh:
-      "高收藏兼职笔记核心：带 CV 进店问 Are you hiring、当天没回复也要 follow up；表达清晰、礼貌、写明可上班时间。",
+      "带 CV 进店问 Are you hiring，当天没回复也要 follow up；表达清晰、礼貌、写明可上班时间。",
     excerptEn:
-      "From high-save part-time notes: walk in with a CV, ask if they are hiring, and follow up—clear, polite, with your available hours.",
+      "Walk in with a CV, ask if they are hiring, and follow up—clear, polite, with your available hours.",
     image: "/images/career-feature.jpg",
     imageAltZh: "打印好的 CV 与门店求职笔记",
     imageAltEn: "Printed CV and notes for in-store job hunting",
@@ -223,11 +223,11 @@ export const careerArticles = [
     sectionsZh: [
       {
         type: "h2",
-        text: "为什么 walk-in 在社区笔记里排名靠前",
+        text: "为什么 walk-in 往往更有效",
       },
       {
         type: "p",
-        text: "「留子如何兼职挣回生活费」「投了 500 份」「一周内两份工」等笔记，反复提到：零售与餐饮第一份兼职，很多来自纸质 CV + 进店询问。线上海投石沉大海时，线下开口反而更快。内向也没关系——雇主常问的就那几句，提前练比裸考强。",
+        text: "零售与餐饮的第一份兼职，很多来自纸质 CV + 进店询问。线上海投石沉大海时，线下开口反而更快。内向也没关系——雇主常问的就那几句，提前练比裸考强。",
       },
       {
         type: "table",
@@ -252,13 +252,13 @@ export const careerArticles = [
           [
             "跟进计划",
             "当天没答复 → 2–3 天后短信/再访一次",
-            "高收藏笔记强调 follow-up 拉高成功率",
+            "跟进能明显提高成功率",
           ],
         ],
       },
       {
         type: "h2",
-        text: "开口与跟进：要点（改写，勿背诵营销话术）",
+        text: "开口与跟进：要点（勿背诵套话）",
       },
       {
         type: "ul",
@@ -307,11 +307,11 @@ export const careerArticles = [
     sectionsEn: [
       {
         type: "h2",
-        text: "Why walk-ins rank high in community notes",
+        text: "Why walk-ins often work well",
       },
       {
         type: "p",
-        text: "High-save part-time notes repeat the same pattern: many first retail/hospitality jobs start with a printed CV and “Are you hiring?” Online spray-and-pray often goes quiet; a polite in-person ask can move faster. Practice the common questions—do not walk in cold.",
+        text: "Many first retail and hospitality jobs start with a printed CV and “Are you hiring?” Online spray-and-pray often goes quiet; a polite in-person ask can move faster. Practice the common questions—do not walk in cold.",
       },
       {
         type: "table",
@@ -336,7 +336,7 @@ export const careerArticles = [
           [
             "Follow-up plan",
             "No answer same day → message or revisit in 2–3 days",
-            "High-save notes say follow-up lifts success",
+            "Follow-up often lifts reply rates",
           ],
         ],
       },
@@ -396,9 +396,9 @@ export const careerArticles = [
     titleZh: "超市、咖啡店与工厂兼职：面试和入职怎么走",
     titleEn: "Supermarket, cafe and warehouse part-time: interviews and onboarding",
     excerptZh:
-      "吸收绿超申请流、咖啡店口语与工厂 walk-in 经验：Casual vs Part-time、常见问题与入职坑（无薪试工、合同）。",
+      "绿超申请流、咖啡店面试与工厂 walk-in：Casual vs Part-time、常见问题与入职坑（无薪试工、合同）。",
     excerptEn:
-      "From supermarket apply flows, cafe English and warehouse walk-ins: Casual vs Part-time, common questions and contract pitfalls.",
+      "Supermarket apply flows, cafe interviews and warehouse walk-ins: Casual vs Part-time, common questions and contract pitfalls.",
     image: "/images/career-feature.jpg",
     imageAltZh: "零售与餐饮兼职面试笔记",
     imageAltEn: "Notes for retail and hospitality interviews",
@@ -410,11 +410,11 @@ export const careerArticles = [
       },
       {
         type: "p",
-        text: "高收藏「Woolworths 绿超兼职申请」笔记把路径写得很清楚：网上申请 → 邮件笔试 → 录视频面试 → 店经理面谈 → Offer。选 Casual 还是 Part-time 会影响排班稳定度——Casual 更灵活、小时更不一定；Part-time 相对固定。以雇主说明与合同为准。",
+        text: "超市（如 Woolworths）兼职常见路径：网上申请 → 邮件笔试 → 录视频面试 → 店经理面谈 → Offer。选 Casual 还是 Part-time 会影响排班稳定度——Casual 更灵活、小时更不一定；Part-time 相对固定。以雇主说明与合同为准。",
       },
       {
         type: "table",
-        caption: "常见兼职类型怎么理解（社区经验改写）",
+        caption: "常见兼职类型怎么理解",
         headers: ["类型", "印象", "适合谁", "注意"],
         rows: [
           [
@@ -431,7 +431,7 @@ export const careerArticles = [
           ],
           [
             "全职 / 合同优先级",
-            "社区笔记称合同类型影响保障",
+            "合同类型会影响保障",
             "毕业后或工时允许时再冲",
             "一定要书面合同，保留工资单",
           ],
@@ -443,7 +443,7 @@ export const careerArticles = [
       },
       {
         type: "p",
-        text: "实景英文与 walk-in 笔记里，店长很少考复杂理论。高频是：可上班时间、周末能否上、客户冲突怎么处理、有没有拉花/收银经验、英语能不能基本沟通。技术可以教，态度与准时更关键。",
+        text: "店长很少考复杂理论。高频问题是：可上班时间、周末能否上、客户冲突怎么处理、有没有拉花/收银经验、英语能不能基本沟通。技术可以教，态度与准时更关键。",
       },
       {
         type: "ul",
@@ -459,7 +459,7 @@ export const careerArticles = [
       },
       {
         type: "p",
-        text: "「华人小伙伴可以再勇敢一点」类笔记：本地年轻人会直接走进工厂问有没有缺人。班次多、体力向岗位，纸质 CV + 礼貌询问仍然有效。中介登记（如部分工厂招聘中介）也是路径之一，但要确认谁发工资、时薪多少。",
+        text: "本地也有人直接走进工厂问有没有缺人。班次多、体力向岗位，纸质 CV + 礼貌询问仍然有效。中介登记（如部分工厂招聘中介）也是路径之一，但要确认谁发工资、时薪多少。",
       },
       {
         type: "tip",
@@ -503,11 +503,11 @@ export const careerArticles = [
       },
       {
         type: "p",
-        text: "High-save Woolworths-style notes outline: online apply → emailed test → video interview → store manager → offer. Casual vs Part-time changes roster certainty—confirm in the contract.",
+        text: "A common supermarket path: online apply → emailed test → video interview → store manager → offer. Casual vs Part-time changes roster certainty—confirm in the contract.",
       },
       {
         type: "table",
-        caption: "How community notes describe job types",
+        caption: "How common job types differ",
         headers: ["Type", "Impression", "Suits", "Watch"],
         rows: [
           [
@@ -524,7 +524,7 @@ export const careerArticles = [
           ],
           [
             "Full-time / stronger contracts",
-            "Notes say contract type affects protection",
+            "Contract type affects protection",
             "When hours and visa allow",
             "Written contract + keep payslips",
           ],
@@ -552,7 +552,7 @@ export const careerArticles = [
       },
       {
         type: "p",
-        text: "Notes describe locals walking into factories with a CV. Multi-shift physical roles still respond to polite paper applications. Agencies can help—confirm who pays you and the hourly rate.",
+        text: "Locals sometimes walk into factories with a CV. Multi-shift physical roles still respond to polite paper applications. Agencies can help—confirm who pays you and the hourly rate.",
       },
       {
         type: "tip",
@@ -597,9 +597,9 @@ export const careerArticles = [
     titleZh: "学生工时、IRD 与别做无薪试工",
     titleEn: "Student hours, IRD and no unpaid trials",
     excerptZh:
-      "社区高频提醒：先搞清签证周工时、办 IRD、签书面合同；无薪试工与「先交培训费」岗位直接避开。",
+      "先搞清签证周工时、办 IRD、签书面合同；无薪试工与「先交培训费」岗位直接避开。",
     excerptEn:
-      "High-frequency community warnings: know visa hours, get an IRD number, sign a written contract—and skip unpaid trials or upfront training fees.",
+      "Know visa hours, get an IRD number, sign a written contract—and skip unpaid trials or upfront training fees.",
     image: "/images/career-feature.jpg",
     imageAltZh: "工时、税号与劳动合同检查清单",
     imageAltEn: "Checklist for hours, tax number and employment contracts",
@@ -607,11 +607,11 @@ export const careerArticles = [
     sectionsZh: [
       {
         type: "h2",
-        text: "工时：社区说法 vs 你必须核对的来源",
+        text: "工时：常见说法 vs 你必须核对的来源",
       },
       {
         type: "p",
-        text: "教育类官方向笔记常写：符合条件的学生签证持有者，学期内每周最多可工作约 25 小时，并提醒以移民局官网为准。假期规则可能不同。点点建议：截图保存自己的签证条件，排班前再确认一次；不确定就问学校国际办公室或查 Immigration New Zealand。",
+        text: "符合条件的学生签证持有者，学期内每周最多可工作约 25 小时——以移民局官网与你的签证条件为准。假期规则可能不同。点点建议：截图保存自己的签证条件，排班前再确认一次；不确定就问学校国际办公室或查 Immigration New Zealand。",
       },
       {
         type: "table",
@@ -631,7 +631,7 @@ export const careerArticles = [
           [
             "书面合同",
             "Casual / Part-time / Full-time 写清楚",
-            "社区笔记强调合同类型影响保障",
+            "合同类型会影响保障",
           ],
           [
             "工资记录",
@@ -642,12 +642,12 @@ export const careerArticles = [
       },
       {
         type: "h2",
-        text: "高收藏踩坑：无薪试工与假招聘",
+        text: "常见踩坑：无薪试工与假招聘",
       },
       {
         type: "ul",
         items: [
-          "「无薪试工」在求职干货里被点名为违法风险——先查劳动法再答应免费干活。",
+          "「无薪试工」通常有违法风险——先查劳动法再答应免费干活。",
           "要求先交培训费、押金、购买设备，或只通过私人社交软件发薪的，优先视为红旗。",
           "简历里提前写明签证状态，减少投到「必须 PR」岗位的时间浪费。",
           "KiwiSaver：入职时会问是否加入，先了解规则再选。",
@@ -683,11 +683,11 @@ export const careerArticles = [
     sectionsEn: [
       {
         type: "h2",
-        text: "Hours: community talk vs what you must verify",
+        text: "Hours: common talk vs what you must verify",
       },
       {
         type: "p",
-        text: "Official-tone notes often mention about 25 hours per week in term for eligible student-visa holders—and tell you to check Immigration New Zealand. Holiday rules may differ. Screenshot your conditions and re-check before accepting a roster.",
+        text: "Eligible student-visa holders often have about 25 hours per week in term—check Immigration New Zealand and your visa conditions. Holiday rules may differ. Screenshot your conditions and re-check before accepting a roster.",
       },
       {
         type: "table",
@@ -718,12 +718,12 @@ export const careerArticles = [
       },
       {
         type: "h2",
-        text: "High-save pitfalls: unpaid trials and fake hiring",
+        text: "Common pitfalls: unpaid trials and fake hiring",
       },
       {
         type: "ul",
         items: [
-          "Unpaid trials are repeatedly flagged—check employment law before working for free.",
+          "Unpaid trials are usually unlawful—check employment law before working for free.",
           "Upfront training fees, deposits or pay-only-via-private-chat are red flags.",
           "State visa status on the CV to avoid PR-only roles.",
           "KiwiSaver: understand the choice at onboarding before you tick a box.",

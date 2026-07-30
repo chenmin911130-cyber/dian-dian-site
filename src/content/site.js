@@ -45,7 +45,7 @@ export const siteCopy = {
 
 export const guideCategories = {
   study: [
-    { id: "schools", zh: "私立选校与社区经验", en: "Private schools & community tips" },
+    { id: "schools", zh: "选校与学费", en: "Schools & fees" },
   ],
   career: [
     { id: "platforms", zh: "找工作渠道", en: "Job channels" },

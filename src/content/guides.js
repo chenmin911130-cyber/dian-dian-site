@@ -7,13 +7,13 @@ export const guides = [
     titleZh: "留学准备",
     titleEn: "Study preparation",
     summaryZh:
-      "按小红书高收藏对照重写：AIS / ICL / Yoobee / NZSE / Future Skills 学费区间、一年制硕课表与英文路径——旧申请长文已撤下。",
+      "AIS / ICL / Yoobee / NZSE / Future Skills：学费区间、一年制硕课表与英文路径，方便做短名单。",
     summaryEn:
-      "Rewritten from high-save community comparisons: AIS, ICL, Yoobee, NZSE and Future Skills fees, one-year master’s timetables and English pathways—older process essays removed.",
+      "AIS, ICL, Yoobee, NZSE and Future Skills: fees, one-year master’s timetables and English pathways for a shortlist.",
     introZh:
-      "社区笔记最常问的是课表能不能打工、奖学金后学费多少、管理 / 数字商业 / 数据分析怎么选。下面以五校短名单 + 各校深挖为主，数字为约数，签证与工签以 INZ 和官网为准。",
+      "先看课表能不能兼顾打工、奖学金后学费多少，以及管理 / 数字商业 / 数据分析哪条更贴自己。下面以五校短名单 + 各校深挖为主，数字为约数，签证与工签以 INZ 和官网为准。",
     introEn:
-      "Community notes ask about work-friendly timetables, post-scholarship fees, and management vs digital business vs analytics. Browse the five-school shortlist and deep dives. Figures are approximate—verify with INZ and official sites.",
+      "Start with work-friendly timetables, post-scholarship fees, and whether management, digital business or analytics fits you. Browse the five-school shortlist and deep dives. Figures are approximate—verify with INZ and official sites.",
     featuredSlug: "pte-private-schools",
     featuredTitleZh: "AIS / ICL / Yoobee / NZSE / Future Skills：学费与怎么选",
     featuredTitleEn: "AIS, ICL, Yoobee, NZSE, Future Skills: fees and who they suit",
@@ -26,13 +26,13 @@ export const guides = [
     titleZh: "求职与工作",
     titleEn: "Career and work",
     summaryZh:
-      "按高收藏求职笔记重写：多平台分工、Walk-in 跟进、超市咖啡店入职、学生工时与无薪试工避坑。",
+      "多平台找工、Walk-in 跟进、超市与咖啡店入职、学生工时与无薪试工避坑。",
     summaryEn:
-      "Rewritten from high-save job notes: multi-platform search, walk-ins, supermarket/cafe onboarding, student hours and unpaid-trial warnings.",
+      "Multi-platform search, walk-ins, supermarket/cafe onboarding, student hours and unpaid-trial warnings.",
     introZh:
-      "Seek 是基本盘，Trade Me Jobs 本地感强；再配合 Indeed、LinkedIn、Student Job Search 与 Facebook。下面按「找工作渠道 → 兼职与投递 → 工时与合规」展开，已替换旧简历长文。",
+      "Seek 是基本盘，Trade Me Jobs 本地感强；再配合 Indeed、LinkedIn、Student Job Search 与 Facebook。下面按「找工作渠道 → 兼职与投递 → 工时与合规」展开。",
     introEn:
-      "Seek is the base layer; Trade Me Jobs feels local—add Indeed, LinkedIn, Student Job Search and Facebook. Browse Job channels → Part-time & applying → Hours & compliance. Older CV essays have been replaced.",
+      "Seek is the base layer; Trade Me Jobs feels local—add Indeed, LinkedIn, Student Job Search and Facebook. Browse Job channels → Part-time & applying → Hours & compliance.",
     featuredSlug: "seek-trademe-jobs",
     featuredTitleZh: "在 Seek 与 Trade Me 找工作：实用建议",
     featuredTitleEn: "Finding work on Seek and Trade Me: practical tips",
@@ -48,9 +48,9 @@ export const guides = [
     summaryEn:
       "Monthly living budget, Auckland renting (areas/remote search), banking, supermarket savings, SIM/transport, insurance and your first week.",
     introZh:
-      "落地后最先卡住的往往不是课程，而是租房、银行卡、手机卡和看病。租房篇已吸收高收藏社区经验并改写：分区、周租约数、Trade Me 远程看房与避坑。下面按「预算与日常开销 → 住与落地 → 通讯交通与健康」整理，数字为约数，务必本地再核。",
+      "落地后最先卡住的往往不是课程，而是租房、银行卡、手机卡和看病。租房篇涵盖分区、周租约数、Trade Me 远程看房与避坑。下面按「预算与日常开销 → 住与落地 → 通讯交通与健康」整理，数字为约数，务必本地再核。",
     introEn:
-      "After arrival, housing, banking, a SIM and healthcare usually come before coursework. The renting guide now includes rewritten high-save community tips on areas, weekly rents, Trade Me remote viewings and scam checks. Browse Budget → Housing & arrival → Phone, transport & health. Figures are approximate—verify locally.",
+      "After arrival, housing, banking, a SIM and healthcare usually come before coursework. The renting guide covers areas, weekly rents, Trade Me remote viewings and scam checks. Browse Budget → Housing & arrival → Phone, transport & health. Figures are approximate—verify locally.",
     featuredSlug: "nz-monthly-budget",
     featuredTitleZh: "留学生一个月生活费怎么算",
     featuredTitleEn: "A practical one-month NZ living budget",
