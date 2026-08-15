@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ArticlePage } from "./ArticlePage";
+import { LogoMark } from "./LogoMark";
 import { ArticleRow } from "./ArticleRow";
 import { AuthorNote } from "./AuthorNote";
 import { ConsultForm } from "./ConsultForm";
@@ -68,7 +69,7 @@ export function App() {
               goHome();
             }}
           >
-            <span className="wordmark__dot" aria-hidden="true" />
+            <LogoMark className="wordmark__mark" />
             <span className="wordmark__brand">{copy.siteBrand}</span>
             <span className="wordmark__divider" aria-hidden="true" />
             <span className="wordmark__tag">{copy.siteTag}</span>

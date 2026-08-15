@@ -1,3 +1,30 @@
+function renderBlocks(blocks) {
+  return blocks.map((block, index) => {
+    if (typeof block === "string") {
+      return <p key={`p-${index}`}>{block}</p>;
+    }
+
+    if (block?.type === "h2") {
+      return (
+        <h2 key={`h2-${index}`} className="article-detail__subhead">
+          {block.text}
+        </h2>
+      );
+    }
+
+    if (block?.type === "image") {
+      return (
+        <figure key={`img-${index}`} className="article-detail__figure">
+          <img src={block.src} alt={block.alt || ""} loading="lazy" />
+          {block.caption ? <figcaption>{block.caption}</figcaption> : null}
+        </figure>
+      );
+    }
+
+    return null;
+  });
+}
+
 export function ArticlePage({
   article,
   locale,
@@ -6,7 +33,7 @@ export function ArticlePage({
   onBackGuide,
 }) {
   const zh = locale === "zh";
-  const paragraphs = zh ? article.bodyZh : article.bodyEn;
+  const blocks = zh ? article.bodyZh : article.bodyEn;
 
   return (
     <article className="detail-page detail-page--article">
@@ -45,11 +72,7 @@ export function ArticlePage({
         alt={zh ? article.imageAltZh : article.imageAltEn}
       />
 
-      <div className="article-detail__body">
-        {paragraphs.map((paragraph) => (
-          <p key={paragraph}>{paragraph}</p>
-        ))}
-      </div>
+      <div className="article-detail__body">{renderBlocks(blocks)}</div>
     </article>
   );
 }

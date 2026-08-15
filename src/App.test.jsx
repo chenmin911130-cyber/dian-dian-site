@@ -7,6 +7,9 @@ it("renders the Chinese site title", () => {
   expect(
     screen.getByRole("heading", { name: "留学新西兰，从规划到落地" }),
   ).toBeInTheDocument();
+  expect(
+    screen.getByRole("link", { name: "点点新西兰留学咨询" }),
+  ).toBeInTheDocument();
 });
 
 it("switches the hero copy to English without showing both languages", async () => {
@@ -77,6 +80,9 @@ it("opens the private schools article from the home featured link", async () => 
     screen.getByText(/为每所学校准备了独立详解/, { exact: false }),
   ).toBeInTheDocument();
   expect(screen.getByText(/ICL——奥克兰 CBD/, { exact: false })).toBeInTheDocument();
+  expect(
+    screen.getByRole("img", { name: /课堂学习场景|应用型学院/ }),
+  ).toBeInTheDocument();
 });
 
 it("lists dedicated school articles in the study guide", async () => {
@@ -149,6 +155,9 @@ it("opens the Seek and Trade Me article from the career guide", async () => {
     }),
   ).toBeInTheDocument();
   expect(
-    screen.getByText(/本地感强，很多中小商家会发/, { exact: false }),
+    screen.getByText(/本地中小商家多，适合附近兼职/, { exact: false }),
+  ).toBeInTheDocument();
+  expect(
+    screen.getByRole("img", { name: /在 Seek 与 Trade Me 找工作/ }),
   ).toBeInTheDocument();
 });
