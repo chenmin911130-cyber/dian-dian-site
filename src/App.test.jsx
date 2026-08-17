@@ -42,6 +42,14 @@ it("renders the three Chinese editorial sections", () => {
   ).toBeInTheDocument();
 });
 
+it("shows the contact email on the homepage", () => {
+  render(<App />);
+
+  expect(
+    screen.getByRole("link", { name: "yuditawang0925@gmail.com" }),
+  ).toHaveAttribute("href", "mailto:yuditawang0925@gmail.com");
+});
+
 it("opens the consultation form from the hero", async () => {
   const user = userEvent.setup();
   render(<App />);

@@ -18,6 +18,8 @@ export const siteCopy = {
     authorTitle: "联系点点",
     authorBody:
       "2024 年来到新西兰，目前在 ICL 商学院就读。一边适应新环境，一边整理留学、求职与生活里踩过的坑和有用的经验。希望这个网站能给你真实、实用的参考；也欢迎你分享自己的故事，我们一起慢慢成长。",
+    authorEmail: "yuditawang0925@gmail.com",
+    authorEmailLabel: "邮箱",
   },
   en: {
     siteName: "DianDian NZ Study Consulting",
@@ -34,6 +36,8 @@ export const siteCopy = {
     authorTitle: "Contact DianDian",
     authorBody:
       "I arrived in New Zealand in 2024 and am currently studying at ICL Business School. While settling in, I collect practical notes on study, work and daily life—what helped, and what I wish I had known sooner. I hope these pages are useful, and you are welcome to share your story too.",
+    authorEmail: "yuditawang0925@gmail.com",
+    authorEmailLabel: "Email",
   },
 };
 

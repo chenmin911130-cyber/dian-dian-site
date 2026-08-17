@@ -21,3 +21,4 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Consultation “intended level” options include language/pathway, diploma, bachelor, graduate diploma, master’s (硕士), and other.
 - Brand logo is a modern horizontal lockup: koru mark (unfurling NZ fern spiral with two inner dots for 点点) + `点点` + thin divider + `新西兰留学咨询`. English: `DianDian` / `NZ Study Consulting`. Mark is inline SVG (`src/LogoMark.jsx`), fern green `#315824`; files also live at `public/logo-mark.svg` and `public/favicon.svg`.
 - Hero typography stays soft editorial sans (Manrope + Noto Sans SC, weight 600). A light paper mist gradient on the left of the coast photo keeps type readable without hard contrast against the landscape.
+- Homepage author/contact block shows email `yuditawang0925@gmail.com` as a mailto link under the bio.
