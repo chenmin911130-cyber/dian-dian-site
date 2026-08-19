@@ -127,7 +127,7 @@ export async function generateConsultDoc(data) {
             spacing: { before: 360 },
             children: [
               new TextRun({
-                text: "材料提醒：请另附学历证明、在职/收入证明、存款证明、银行流水扫描件。本文件由点点新西兰留学咨询网站在客户浏览器本地生成，未上传至服务器。",
+                text: "材料提醒：如需继续沟通，请将此 Word 文件发送至 yuditawang0925@gmail.com。请另附学历证明、在职/收入证明、存款证明、银行流水扫描件。本文件由点点新西兰留学咨询网站在客户浏览器本地生成，未上传至服务器。",
                 italics: true,
                 color: "888888",
                 size: 18,

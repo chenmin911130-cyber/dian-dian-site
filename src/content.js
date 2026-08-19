@@ -78,7 +78,7 @@ export const guides = [
   },
   {
     id: "life",
-    image: "/images/hero-coast.png",
+    image: "/images/life-feature.png",
     imageAltZh: "新西兰海岸与城市生活",
     imageAltEn: "New Zealand coast and everyday life",
     titleZh: "生活指南",

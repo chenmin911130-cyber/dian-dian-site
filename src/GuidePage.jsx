@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function GuidePage({
   guide,
   articles,
@@ -33,10 +35,9 @@ export function GuidePage({
         <ul>
           {articles.map((article) => (
             <li key={article.slug}>
-              <button
-                type="button"
+              <Link
+                to={`/article/${article.slug}`}
                 className="detail-article-link"
-                onClick={() => onOpenArticle(article.slug)}
               >
                 <span className="detail-article-link__title">
                   {zh ? article.titleZh : article.titleEn}
@@ -47,7 +48,7 @@ export function GuidePage({
                 <span className="detail-article-link__cta">
                   {labels.readArticle} →
                 </span>
-              </button>
+              </Link>
             </li>
           ))}
         </ul>

@@ -1,6 +1,12 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
+import { beforeEach } from "vitest";
 import { App } from "./App";
+
+beforeEach(() => {
+  window.localStorage.clear();
+  window.history.replaceState({}, "", "/");
+});
 
 it("renders the Chinese site title", () => {
   render(<App />);
@@ -46,15 +52,15 @@ it("opens the consultation form from the hero", async () => {
   const user = userEvent.setup();
   render(<App />);
 
-  await user.click(screen.getByRole("button", { name: "咨询申请" }));
+  await user.click(screen.getByRole("link", { name: "咨询申请" }));
 
   expect(
-    screen.getByRole("heading", { name: "留学签证咨询信息表" }),
+    screen.getByRole("heading", { name: "先聊聊你的计划" }),
   ).toBeInTheDocument();
   expect(
     screen.getByRole("button", { name: "生成并下载 Word" }),
   ).toBeInTheDocument();
-  expect(screen.getByText(/资金证明：收入、存款与流水/)).toBeInTheDocument();
+  expect(screen.getByText(/可选：签证材料小表/)).toBeInTheDocument();
   expect(
     screen.getAllByRole("button", { name: /返回首页/ }).length,
   ).toBeGreaterThanOrEqual(1);
@@ -67,9 +73,7 @@ it("opens the private schools article from the home featured link", async () => 
   const user = userEvent.setup();
   render(<App />);
 
-  await user.click(
-    screen.getAllByRole("button", { name: /阅读文章/ })[0],
-  );
+  await user.click(screen.getAllByRole("link", { name: /阅读文章/ })[0]);
 
   expect(
     screen.getByRole("heading", {
@@ -89,35 +93,35 @@ it("lists dedicated school articles in the study guide", async () => {
   const user = userEvent.setup();
   render(<App />);
 
-  await user.click(screen.getAllByRole("button", { name: /探索指南/ })[0]);
+  await user.click(screen.getAllByRole("link", { name: /探索指南/ })[0]);
   expect(
     screen.getByRole("heading", { name: "留学准备" }),
   ).toBeInTheDocument();
 
   expect(
-    screen.getByRole("button", { name: /AIS 奥克兰商学院：专业、学费与适合谁/ }),
+    screen.getByRole("link", { name: /AIS 奥克兰商学院：专业、学费与适合谁/ }),
   ).toBeInTheDocument();
   expect(
-    screen.getByRole("button", {
+    screen.getByRole("link", {
       name: /ICL 商学院：课程路径、学费与就读体验要点/,
     }),
   ).toBeInTheDocument();
   expect(
-    screen.getByRole("button", { name: /Yoobee：动画、设计与软件课程怎么选/ }),
+    screen.getByRole("link", { name: /Yoobee：动画、设计与软件课程怎么选/ }),
   ).toBeInTheDocument();
   expect(
-    screen.getByRole("button", {
+    screen.getByRole("link", {
       name: /NZSE \/ NZSEG：技能课程、校区与学费区间/,
     }),
   ).toBeInTheDocument();
   expect(
-    screen.getByRole("button", {
+    screen.getByRole("link", {
       name: /Future Skills：应用管理、学费与奖学金怎么看/,
     }),
   ).toBeInTheDocument();
 
   await user.click(
-    screen.getByRole("button", {
+    screen.getByRole("link", {
       name: /ICL 商学院：课程路径、学费与就读体验要点/,
     }),
   );
@@ -127,7 +131,7 @@ it("lists dedicated school articles in the study guide", async () => {
     }),
   ).toBeInTheDocument();
   expect(
-    screen.getByRole("link", { name: /icl\.ac\.nz/ }),
+    screen.getAllByRole("link", { name: /icl\.ac\.nz/ })[0],
   ).toHaveAttribute("href", "https://icl.ac.nz/");
   expect(
     screen.getByText(/ICL Graduate Business School/, { exact: false }),
@@ -138,13 +142,13 @@ it("opens the Seek and Trade Me article from the career guide", async () => {
   const user = userEvent.setup();
   render(<App />);
 
-  await user.click(screen.getAllByRole("button", { name: /探索指南/ })[1]);
+  await user.click(screen.getAllByRole("link", { name: /探索指南/ })[1]);
   expect(
     screen.getByRole("heading", { name: "求职与工作" }),
   ).toBeInTheDocument();
 
   await user.click(
-    screen.getByRole("button", {
+    screen.getByRole("link", {
       name: /在 Seek 与 Trade Me 找工作/,
     }),
   );

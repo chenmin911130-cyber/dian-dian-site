@@ -1,7 +1,17 @@
+import { Link } from "react-router-dom";
+import { getArticle } from "./content";
+
+function textWithLinks(text) {
+  const parts = text.split(/(https?:\/\/[^\s]+)/g);
+  return parts.map((part, index) =>
+    /^https?:\/\//.test(part) ? <a key={index} href={part} target="_blank" rel="noreferrer">{part}</a> : part,
+  );
+}
+
 function renderBlocks(blocks) {
   return blocks.map((block, index) => {
     if (typeof block === "string") {
-      return <p key={`p-${index}`}>{block}</p>;
+      return <p key={`p-${index}`}>{textWithLinks(block)}</p>;
     }
 
     if (block?.type === "h2") {
@@ -73,6 +83,17 @@ export function ArticlePage({
       />
 
       <div className="article-detail__body">{renderBlocks(blocks)}</div>
+      {article.slug === "pte-private-schools" ? (
+        <section className="article-related" aria-label={zh ? "学校详解" : "School guides"}>
+          <h2>{zh ? "继续看每所学校的详解" : "Read each school guide"}</h2>
+          <div>
+            {["school-ais", "school-icl", "school-yoobee", "school-nzse", "school-future-skills"].map((slug) => {
+              const school = getArticle(slug);
+              return <Link key={slug} to={`/article/${slug}`}>{school ? (zh ? school.titleZh : school.titleEn) : slug}</Link>;
+            })}
+          </div>
+        </section>
+      ) : null}
     </article>
   );
 }

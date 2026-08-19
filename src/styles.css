@@ -271,7 +271,8 @@ a:focus-visible {
   line-height: 1.75;
 }
 
-.article-row button {
+.article-row button,
+.article-row a {
   display: inline-flex;
   align-items: center;
   gap: 22px;
@@ -284,7 +285,8 @@ a:focus-visible {
   cursor: pointer;
 }
 
-.article-row button:hover {
+.article-row button:hover,
+.article-row a:hover {
   opacity: 0.8;
 }
 
@@ -516,6 +518,104 @@ a:focus-visible {
   line-height: 1.8;
 }
 
+.author-note__email {
+  display: inline-block;
+  margin-top: 0.6rem;
+  color: var(--fern-dark);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.main-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.1rem;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+.main-nav a {
+  color: var(--ink-soft);
+}
+
+.main-nav a.active {
+  color: var(--fern-dark);
+  font-weight: 700;
+}
+
+.site-footer {
+  width: min(100% - 96px, 1400px);
+  margin: 2rem auto 0;
+  padding: 1.5rem 0 2.5rem;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.site-footer > div {
+  display: grid;
+  align-content: start;
+  gap: 0.25rem;
+}
+
+.site-footer strong,
+.site-footer a {
+  color: var(--fern-dark);
+}
+
+.site-footer a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.site-footer small {
+  max-width: 36rem;
+}
+
+.consult-worksheet {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 1rem 0;
+}
+
+.consult-worksheet summary {
+  color: var(--fern-dark);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.consult-worksheet .consult-form__grid {
+  margin-top: 1rem;
+}
+
+.article-detail__body a,
+.article-related a {
+  color: var(--fern-dark);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.article-related {
+  max-width: 720px;
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.article-related h2 {
+  font-size: 1rem;
+}
+
+.article-related div {
+  display: grid;
+  gap: 0.65rem;
+}
+
 .consult-page {
   max-width: 880px;
 }
@@ -697,7 +797,8 @@ a:focus-visible {
 
 @media (max-width: 980px) {
   .site-header,
-  .content-frame {
+  .content-frame,
+  .site-footer {
     width: min(100% - 48px, 1400px);
   }
 
@@ -775,6 +876,17 @@ a:focus-visible {
     gap: 18px;
   }
 
+  .main-nav {
+    gap: 0.65rem;
+    font-size: 0.8rem;
+  }
+
+  .locale-switch {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 0.35rem;
+  }
+
   .hero {
     min-height: 560px;
     background-position: 60% center;
@@ -834,5 +946,10 @@ a:focus-visible {
 
   .consult-page__head h1 {
     font-size: 22px;
+  }
+
+  .site-footer {
+    display: grid;
+    gap: 1rem;
   }
 }

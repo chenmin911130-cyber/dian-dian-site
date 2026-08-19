@@ -92,7 +92,7 @@ function Field({ label, children, full = false }) {
   );
 }
 
-export function ConsultForm({ locale, labels, onBack }) {
+function LegacyConsultForm({ locale, labels, onBack }) {
   const zh = locale === "zh";
   const [form, setForm] = useState(emptyForm);
   const [error, setError] = useState("");
@@ -535,6 +535,92 @@ export function ConsultForm({ locale, labels, onBack }) {
           >
             {labels?.backHome ?? (zh ? "返回首页" : "Back to home")}
           </button>
+        </div>
+      </form>
+    </section>
+  );
+}
+
+export function ConsultForm({ locale, labels, onBack }) {
+  const zh = locale === "zh";
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    contact: "",
+    direction: "",
+    notes: "",
+    passportNo: "",
+    fundingSource: "",
+    depositAmount: "",
+  });
+  const [error, setError] = useState("");
+  const [done, setDone] = useState(false);
+  const [busy, setBusy] = useState(false);
+
+  function update(key, value) {
+    setForm((previous) => ({ ...previous, [key]: value }));
+    setDone(false);
+  }
+
+  async function onSubmit(event) {
+    event.preventDefault();
+    setError("");
+    if (!form.name.trim() || !form.email.trim() || !form.contact.trim()) {
+      setError(zh ? "请填写姓名、邮箱和手机/微信。" : "Please provide your name, email, and phone or WeChat.");
+      return;
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim())) {
+      setError(zh ? "请输入有效邮箱。" : "Please enter a valid email address.");
+      return;
+    }
+    setBusy(true);
+    try {
+      await generateConsultDoc({
+        ...form,
+        interests: form.direction,
+        contact: form.contact,
+      });
+      setDone(true);
+    } catch {
+      setError(zh ? "生成 Word 失败，请重试或换用 Chrome / Edge。" : "Could not generate the Word file. Please retry in Chrome or Edge.");
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  return (
+    <section className="detail-page consult-page" aria-labelledby="consult-title">
+      <button className="detail-back" type="button" onClick={onBack}>← {labels?.backHome ?? (zh ? "返回首页" : "Back to home")}</button>
+      <header className="consult-page__head">
+        <p className="consult-page__kicker">FIRST TOUCH / 初次联系</p>
+        <h1 id="consult-title">{zh ? "先聊聊你的计划" : "Tell me about your plan"}</h1>
+        <p className="consult-page__lead">{zh ? "只需几项基本信息。Word 在你的设备上生成，不会上传到服务器。" : "Just the essentials. The Word file is made on your device and is never uploaded."}</p>
+      </header>
+      <form className="consult-form" onSubmit={onSubmit} noValidate>
+        <div className="consult-form__grid">
+          <Field label={zh ? "姓名 *" : "Name *"}><input value={form.name} onChange={(event) => update("name", event.target.value)} required /></Field>
+          <Field label={zh ? "邮箱 *" : "Email *"}><input type="email" value={form.email} onChange={(event) => update("email", event.target.value)} required /></Field>
+          <Field label={zh ? "手机 / 微信 *" : "Phone / WeChat *"}><input value={form.contact} onChange={(event) => update("contact", event.target.value)} required /></Field>
+          <Field label={zh ? "咨询方向" : "Area of interest"}>
+            <select value={form.direction} onChange={(event) => update("direction", event.target.value)}>
+              <option value="">{zh ? "请选择" : "Select"}</option>
+              {INTEREST_OPTIONS.map((option) => <option key={option.id} value={zh ? option.zh : option.en}>{zh ? option.zh : option.en}</option>)}
+            </select>
+          </Field>
+          <Field label={zh ? "想补充的情况" : "Notes"} full><textarea rows={4} value={form.notes} onChange={(event) => update("notes", event.target.value)} placeholder={zh ? "例如：目标城市、专业、开学时间或预算。" : "For example: city, programme, intake, or budget."} /></Field>
+        </div>
+        <details className="consult-worksheet">
+          <summary>{zh ? "可选：签证材料小表（护照 / 资金）" : "Optional: visa worksheet (passport / funds)"}</summary>
+          <div className="consult-form__grid">
+            <Field label={zh ? "护照号码" : "Passport number"}><input value={form.passportNo} onChange={(event) => update("passportNo", event.target.value)} /></Field>
+            <Field label={zh ? "资金来源" : "Funding source"}><input value={form.fundingSource} onChange={(event) => update("fundingSource", event.target.value)} /></Field>
+            <Field label={zh ? "可准备的存款金额" : "Funds available"} full><input value={form.depositAmount} onChange={(event) => update("depositAmount", event.target.value)} /></Field>
+          </div>
+        </details>
+        {error && <p className="consult-form__error" role="alert">{error}</p>}
+        {done && <p className="consult-form__success" role="status">{zh ? <>Word 已开始下载。请将文件发送至 <a href="mailto:yuditawang0925@gmail.com">yuditawang0925@gmail.com</a>；请勿通过本站上传材料。</> : <>Word is downloading. Please email it to <a href="mailto:yuditawang0925@gmail.com">yuditawang0925@gmail.com</a>; this site does not accept uploads.</>}</p>}
+        <div className="consult-form__actions">
+          <button className="consult-form__submit" type="submit" disabled={busy}>{busy ? (zh ? "生成中…" : "Generating…") : (zh ? "生成并下载 Word" : "Generate & download Word")}</button>
         </div>
       </form>
     </section>
