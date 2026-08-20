@@ -48,14 +48,6 @@ const emptyForm = {
   employmentStatus: "",
   employer: "",
   monthlyIncome: "",
-  fundingSource: "",
-  sponsorName: "",
-  depositAmount: "",
-  statementMonths: "",
-  largeTransfers: "",
-  travelHistory: "",
-  visaRefusal: "",
-  notes: "",
 };
 
 function Section({ title, children }) {
@@ -143,8 +135,8 @@ export function ConsultForm({ locale, labels, onBack }) {
         </h1>
         <p className="consult-page__lead">
           {zh
-            ? "按六个部分填写必要信息即可。完成后在本机生成 Word 文件，邮件发给点点；资料仅在你的浏览器中处理，不会上传。"
-            : "Fill in the essentials across six sections. A Word file is generated on your device to email to DianDian—nothing is uploaded."}
+            ? "按四个部分填写必要信息即可。完成后在本机生成 Word 文件，邮件发给点点；资料仅在你的浏览器中处理，不会上传。"
+            : "Fill in the essentials across four sections. A Word file is generated on your device to email to DianDian—nothing is uploaded."}
         </p>
         <div className="consult-page__notes">
           <p className="consult-page__contact">
@@ -315,85 +307,6 @@ export function ConsultForm({ locale, labels, onBack }) {
           </Field>
         </Section>
 
-        <Section
-          title={zh ? "5. 资金证明：收入、存款与流水" : "5. Funds: income, deposits, statements"}
-        >
-          <Field label={zh ? "资金来源" : "Funding source"}>
-            <input
-              value={form.fundingSource}
-              onChange={(e) => update("fundingSource", e.target.value)}
-              placeholder={zh ? "自费 / 父母 / 配偶 / 混合" : "Self / parents / spouse / mixed"}
-            />
-          </Field>
-          <Field label={zh ? "担保人 / 关系" : "Sponsor / relationship"}>
-            <input
-              value={form.sponsorName}
-              onChange={(e) => update("sponsorName", e.target.value)}
-              placeholder={zh ? "例如：张父 / 父亲" : "e.g. Mr Zhang / father"}
-            />
-          </Field>
-          <Field label={zh ? "存款总额" : "Total deposits"}>
-            <input
-              value={form.depositAmount}
-              onChange={(e) => update("depositAmount", e.target.value)}
-              placeholder={zh ? "例如：25 万人民币" : "e.g. CNY 250,000"}
-            />
-          </Field>
-          <Field label={zh ? "可提供流水月份" : "Bank statements available"}>
-            <input
-              value={form.statementMonths}
-              onChange={(e) => update("statementMonths", e.target.value)}
-              placeholder={zh ? "例如：近 6–12 个月" : "e.g. last 6–12 months"}
-            />
-          </Field>
-          <Field
-            label={zh ? "大额进账说明" : "Large deposits explanation"}
-            full
-          >
-            <textarea
-              rows={2}
-              value={form.largeTransfers}
-              onChange={(e) => update("largeTransfers", e.target.value)}
-              placeholder={
-                zh
-                  ? "工资、转账、卖房等大额来源"
-                  : "Salary, transfers, property sale, etc."
-              }
-            />
-          </Field>
-        </Section>
-
-        <Section title={zh ? "6. 其他签证相关" : "6. Other visa details"}>
-          <Field label={zh ? "出国 / 旅行记录" : "Travel history"} full>
-            <textarea
-              rows={2}
-              value={form.travelHistory}
-              onChange={(e) => update("travelHistory", e.target.value)}
-              placeholder={zh ? "国家、时间（无则写无）" : "Countries & dates (or none)"}
-            />
-          </Field>
-          <Field label={zh ? "是否有拒签史" : "Any visa refusal?"} full>
-            <textarea
-              rows={2}
-              value={form.visaRefusal}
-              onChange={(e) => update("visaRefusal", e.target.value)}
-              placeholder={zh ? "无 / 有（说明国家与原因）" : "No / Yes (country & reason)"}
-            />
-          </Field>
-          <Field label={zh ? "补充说明" : "Notes"} full>
-            <textarea
-              rows={2}
-              value={form.notes}
-              onChange={(e) => update("notes", e.target.value)}
-              placeholder={
-                zh
-                  ? "材料缺口或其他想说明的情况"
-                  : "Document gaps or anything else to note"
-              }
-            />
-          </Field>
-        </Section>
-
         {error ? (
           <p className="consult-form__error" role="alert">
             {error}
@@ -405,13 +318,13 @@ export function ConsultForm({ locale, labels, onBack }) {
               <>
                 Word 已开始下载。请将文件发送至{" "}
                 <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
-                ，并另附学历、在职/收入、存款证明与银行流水扫描件。
+                ，如有学历或在职证明扫描件可一并附上。
               </>
             ) : (
               <>
                 Word is downloading. Email it to{" "}
-                <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> with
-                education, income, deposit and bank-statement scans attached.
+                <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+                , with education or employment scans if you have them.
               </>
             )}
           </p>

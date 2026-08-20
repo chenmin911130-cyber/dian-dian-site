@@ -33,16 +33,10 @@ it("renders the Chinese site title", () => {
   ).toBeGreaterThanOrEqual(1);
 });
 
-it("uses a muted looping landscape video in the homepage hero", async () => {
+it("uses a slowly drifting Wanaka landscape in the homepage hero", () => {
   render(<App />);
-  const video = await screen.findByTestId("hero-video");
-  expect(video).toHaveAttribute("autoplay");
-  expect(video.muted).toBe(true);
-  expect(video.loop).toBe(true);
-  expect(video.querySelector("source")).toHaveAttribute(
-    "src",
-    "/videos/hero-coast.mp4",
-  );
+  expect(screen.getByTestId("hero-atmosphere")).toBeInTheDocument();
+  expect(screen.queryByTestId("hero-video")).not.toBeInTheDocument();
 });
 
 it("keeps the homepage free of consultation form fields", () => {
@@ -81,7 +75,7 @@ it("renders the three Chinese editorial sections", () => {
   ).toBeInTheDocument();
 });
 
-it("opens the consultation form from the hero with six visa-prep sections", async () => {
+it("opens the consultation form from the hero with four visa-prep sections", async () => {
   const user = userEvent.setup();
   render(<App />);
 
@@ -97,11 +91,15 @@ it("opens the consultation form from the hero with six visa-prep sections", asyn
     "2. 留学意向",
     "3. 学历背景",
     "4. 工作经历",
-    "5. 资金证明：收入、存款与流水",
-    "6. 其他签证相关",
   ]) {
     expect(screen.getByRole("heading", { name: title })).toBeInTheDocument();
   }
+  expect(
+    screen.queryByRole("heading", { name: "5. 资金证明：收入、存款与流水" }),
+  ).not.toBeInTheDocument();
+  expect(
+    screen.queryByRole("heading", { name: "6. 其他签证相关" }),
+  ).not.toBeInTheDocument();
 
   const levelSelect = screen.getByRole("combobox", { name: "意向学历" });
   expect(

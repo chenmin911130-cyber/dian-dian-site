@@ -8,14 +8,14 @@ export function AuthorNote({ title, body, email, locale }) {
         src="/images/author.jpg"
         alt="点点，点点新西兰留学咨询的在读学生作者"
       />
-      <div>
+      <div className="author-note__copy">
         <h2 id="author-title">{title}</h2>
         <p>{body}</p>
         <a className="author-note__email" href={`mailto:${email}`}>
           {email}
         </a>
-        <ContactChannels locale={locale} />
       </div>
+      <ContactChannels locale={locale} />
     </section>
   );
 }

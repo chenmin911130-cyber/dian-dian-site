@@ -27,19 +27,6 @@ function heading(text) {
   });
 }
 
-function block(label, value) {
-  return [
-    new Paragraph({
-      spacing: { before: 80, after: 60 },
-      children: [new TextRun({ text: `${label}：`, bold: true })],
-    }),
-    new Paragraph({
-      spacing: { after: 140 },
-      children: [new TextRun({ text: value || "—" })],
-    }),
-  ];
-}
-
 const data = {
   name: "张三",
   nameEn: "ZHANG San",
@@ -60,14 +47,6 @@ const data = {
   employmentStatus: "在职",
   employer: "某某贸易有限公司 / 销售专员",
   monthlyIncome: "8000",
-  fundingSource: "父母资助",
-  sponsorName: "张父 / 父亲",
-  depositAmount: "28万人民币",
-  statementMonths: "近12个月",
-  largeTransfers: "每月工资入账；2025年3月父母转入学费准备金约15万",
-  travelHistory: "无",
-  visaRefusal: "无",
-  notes: "希望优先对比 ICL 与 AIS 的学费与课程",
 };
 
 const dateStr = "2026-07-29";
@@ -121,21 +100,11 @@ const doc = new Document({
         field("当前状态", data.employmentStatus),
         field("单位 / 职位", data.employer),
         field("税后月收入（人民币）", data.monthlyIncome),
-        heading("5. 资金证明：收入、存款与流水"),
-        field("资金来源", data.fundingSource),
-        field("担保人 / 关系", data.sponsorName),
-        field("存款总额", data.depositAmount),
-        field("可提供流水月份", data.statementMonths),
-        ...block("大额进账说明", data.largeTransfers),
-        heading("6. 其他签证相关"),
-        ...block("出国 / 旅行记录", data.travelHistory),
-        ...block("拒签史", data.visaRefusal),
-        ...block("补充说明", data.notes),
         new Paragraph({
           spacing: { before: 360 },
           children: [
             new TextRun({
-              text: "材料提醒：如需继续沟通，请将此 Word 文件发送至 yuditawang0925@gmail.com。请另附学历证明、在职/收入证明、存款证明、银行流水扫描件。本文件由点点新西兰留学咨询网站在客户浏览器本地生成，未上传至服务器。本站内容仅为一般信息，不构成持牌移民法律建议。",
+              text: "材料提醒：如需继续沟通，请将此 Word 文件发送至 yuditawang0925@gmail.com。如有学历或在职证明扫描件可一并附上。本文件由点点新西兰留学咨询网站在客户浏览器本地生成，未上传至服务器。本站内容仅为一般信息，不构成持牌移民法律建议。",
               italics: true,
               color: "888888",
               size: 18,
@@ -221,23 +190,7 @@ const html = `<!DOCTYPE html>
     <p class="field"><b>单位 / 职位：</b>${data.employer}</p>
     <p class="field"><b>税后月收入（人民币）：</b>${data.monthlyIncome}</p>
 
-    <h2>5. 资金证明：收入、存款与流水</h2>
-    <p class="field"><b>资金来源：</b>${data.fundingSource}</p>
-    <p class="field"><b>担保人 / 关系：</b>${data.sponsorName}</p>
-    <p class="field"><b>存款总额：</b>${data.depositAmount}</p>
-    <p class="field"><b>可提供流水月份：</b>${data.statementMonths}</p>
-    <p class="block-label">大额进账说明：</p>
-    <p class="block-body">${data.largeTransfers}</p>
-
-    <h2>6. 其他签证相关</h2>
-    <p class="block-label">出国 / 旅行记录：</p>
-    <p class="block-body">${data.travelHistory}</p>
-    <p class="block-label">拒签史：</p>
-    <p class="block-body">${data.visaRefusal}</p>
-    <p class="block-label">补充说明：</p>
-    <p class="block-body">${data.notes}</p>
-
-    <p class="note">材料提醒：如需继续沟通，请将此 Word 文件发送至 yuditawang0925@gmail.com。请另附学历证明、在职/收入证明、存款证明、银行流水扫描件。本文件由点点新西兰留学咨询网站在客户浏览器本地生成，未上传至服务器。本站内容仅为一般信息，不构成持牌移民法律建议。</p>
+    <p class="note">材料提醒：如需继续沟通，请将此 Word 文件发送至 yuditawang0925@gmail.com。如有学历或在职证明扫描件可一并附上。本文件由点点新西兰留学咨询网站在客户浏览器本地生成，未上传至服务器。本站内容仅为一般信息，不构成持牌移民法律建议。</p>
   </article>
 </body>
 </html>

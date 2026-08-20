@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArticleRow } from "./ArticleRow";
 import { AuthorNote } from "./AuthorNote";
-import { HeroVideo } from "./HeroVideo";
+import { HeroAtmosphere } from "./HeroAtmosphere";
 import { CONTACT_EMAIL, getHomeArticles, siteCopy } from "./content";
 
 export function HomeLanding({ locale, header }) {
@@ -21,7 +21,7 @@ export function HomeLanding({ locale, header }) {
         }
       />
       <section className="hero hero--cinematic">
-        <HeroVideo />
+        <HeroAtmosphere />
         {header}
         <div id="top" className="hero-copy">
           <h1>
