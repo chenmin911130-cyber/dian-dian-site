@@ -10,18 +10,15 @@ import {
   useParams,
 } from "react-router-dom";
 import { ArticlePage } from "./ArticlePage";
+import { HomeLanding } from "./HomeLanding";
 import { LogoMark } from "./LogoMark";
-import { ArticleRow } from "./ArticleRow";
-import { AuthorNote } from "./AuthorNote";
 import { ContactChannels } from "./ContactChannels";
 import { ConsultForm } from "./ConsultForm";
 import { GuidePage } from "./GuidePage";
 import {
-  CONTACT_EMAIL,
   getArticle,
   getArticlesByGuide,
   getGuide,
-  getHomeArticles,
   siteCopy,
 } from "./content";
 
@@ -32,50 +29,122 @@ function PageTitle({ title }) {
   return null;
 }
 
+function LocaleSwitch({ locale, setLocale }) {
+  return (
+    <span className="locale-switch" aria-label="Language">
+      <button
+        type="button"
+        className={locale === "zh" ? "is-active" : ""}
+        aria-pressed={locale === "zh"}
+        onClick={() => setLocale("zh")}
+      >
+        中文
+      </button>
+      <span aria-hidden="true">|</span>
+      <button
+        type="button"
+        className={locale === "en" ? "is-active" : ""}
+        aria-pressed={locale === "en"}
+        onClick={() => setLocale("en")}
+      >
+        EN
+      </button>
+    </span>
+  );
+}
+
 function Header({ locale, setLocale }) {
   const copy = siteCopy[locale];
+  const location = useLocation();
+  const [compact, setCompact] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const navItems = [
+    ["/study", locale === "zh" ? "留学" : "Study"],
+    ["/career", locale === "zh" ? "求职" : "Career"],
+    ["/life", locale === "zh" ? "生活" : "Life"],
+  ];
+
+  useEffect(() => {
+    const media = window.matchMedia("(max-width: 880px)");
+    const sync = () => setCompact(media.matches);
+    sync();
+    media.addEventListener?.("change", sync);
+    return () => media.removeEventListener?.("change", sync);
+  }, []);
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    if (!menuOpen) return undefined;
+    const onKey = (event) => {
+      if (event.key === "Escape") setMenuOpen(false);
+    };
+    document.body.classList.add("nav-open");
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.classList.remove("nav-open");
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [menuOpen]);
 
   return (
-    <header className="site-header">
+    <header className={compact ? "site-header site-header--compact" : "site-header"}>
       <Link className="wordmark" to="/" aria-label={copy.siteName}>
         <LogoMark className="wordmark__mark" />
         <span className="wordmark__brand">{copy.siteBrand}</span>
         <span className="wordmark__divider" aria-hidden="true" />
         <span className="wordmark__tag">{copy.siteTag}</span>
       </Link>
-      <nav aria-label={locale === "zh" ? "主导航" : "Primary navigation"}>
-        <span className="main-nav">
-          {[
-            ["/study", locale === "zh" ? "留学" : "Study"],
-            ["/career", locale === "zh" ? "求职" : "Career"],
-            ["/life", locale === "zh" ? "生活" : "Life"],
-            ["/consult", locale === "zh" ? "咨询" : "Consult"],
-          ].map(([to, label]) => (
-            <NavLink key={to} to={to}>
-              {label}
-            </NavLink>
-          ))}
-        </span>
-        <span className="locale-switch" aria-label="Language">
+      {compact ? (
+        <div className="header-tools">
+          <Link className="header-cta" to="/consult">
+            {copy.consultation}
+          </Link>
           <button
             type="button"
-            className={locale === "zh" ? "is-active" : ""}
-            aria-pressed={locale === "zh"}
-            onClick={() => setLocale("zh")}
+            className="menu-toggle"
+            aria-expanded={menuOpen}
+            aria-controls="site-menu"
+            onClick={() => setMenuOpen((open) => !open)}
           >
-            中文
+            {menuOpen ? copy.closeMenu : copy.menuLabel}
           </button>
-          <span aria-hidden="true">|</span>
+        </div>
+      ) : (
+        <nav aria-label={locale === "zh" ? "主导航" : "Primary navigation"}>
+          <span className="main-nav">
+            {navItems.map(([to, label]) => (
+              <NavLink key={to} to={to}>
+                {label}
+              </NavLink>
+            ))}
+          </span>
+          <Link className="header-cta" to="/consult">
+            {copy.consultation}
+          </Link>
+          <LocaleSwitch locale={locale} setLocale={setLocale} />
+        </nav>
+      )}
+      {compact && menuOpen ? (
+        <div className="site-menu" id="site-menu">
           <button
             type="button"
-            className={locale === "en" ? "is-active" : ""}
-            aria-pressed={locale === "en"}
-            onClick={() => setLocale("en")}
-          >
-            EN
-          </button>
-        </span>
-      </nav>
+            className="site-menu__backdrop"
+            aria-label={copy.closeMenu}
+            onClick={() => setMenuOpen(false)}
+          />
+          <nav className="site-menu__panel" aria-label={locale === "zh" ? "主导航" : "Primary navigation"}>
+            {navItems.map(([to, label]) => (
+              <NavLink key={to} to={to} onClick={() => setMenuOpen(false)}>
+                {label}
+              </NavLink>
+            ))}
+            <LocaleSwitch locale={locale} setLocale={setLocale} />
+          </nav>
+        </div>
+      ) : null}
     </header>
   );
 }
@@ -96,30 +165,8 @@ function Footer({ locale, showChannels }) {
   );
 }
 
-function Home({ locale }) {
-  const copy = siteCopy[locale];
-  return (
-    <>
-      <PageTitle title={locale === "zh" ? "点点新西兰留学咨询｜留学、求职与生活" : "DianDian NZ Study Consulting | Study, work and life"} />
-      <div className="content-frame">
-        <section id="latest" className="article-list">
-          {getHomeArticles(locale).map((item) => (
-            <ArticleRow
-              key={item.guideId}
-              article={item}
-              featuredLabel={copy.featuredLabel}
-            />
-          ))}
-        </section>
-        <AuthorNote
-          title={copy.authorTitle}
-          body={copy.authorBody}
-          email={CONTACT_EMAIL}
-          locale={locale}
-        />
-      </div>
-    </>
-  );
+function Home({ locale, header }) {
+  return <HomeLanding locale={locale} header={header} />;
 }
 
 function GuideRoute({ locale, guideId }) {
@@ -168,33 +215,23 @@ function AppContent() {
   }, [location.pathname]);
 
   const isHome = location.pathname === "/";
-  const copy = siteCopy[locale];
+  const header = <Header locale={locale} setLocale={setLocale} />;
+
+  useEffect(() => {
+    document.body.classList.add("is-cinematic");
+    return () => document.body.classList.remove("is-cinematic");
+  }, []);
 
   return (
-    <main className="site-shell">
-      {isHome ? (
-        <section className="hero">
-          <Header locale={locale} setLocale={setLocale} />
-          <div id="top" className="hero-copy">
-            <h1>{copy.heroTitle}</h1>
-            <Link className="primary-cta" to="/consult">
-              {copy.heroCta}
-              <span aria-hidden="true">→</span>
-            </Link>
-          </div>
-        </section>
-      ) : (
-        <div className="site-masthead">
-          <Header locale={locale} setLocale={setLocale} />
-        </div>
-      )}
+    <main className="site-shell site-shell--cinematic">
+      {isHome ? null : <div className="site-masthead">{header}</div>}
       <Routes>
-        <Route path="/" element={<Home locale={locale} />} />
+        <Route path="/" element={<Home locale={locale} header={header} />} />
         <Route path="/study" element={<GuideRoute locale={locale} guideId="study" />} />
         <Route path="/career" element={<GuideRoute locale={locale} guideId="career" />} />
         <Route path="/life" element={<GuideRoute locale={locale} guideId="life" />} />
         <Route path="/article/:slug" element={<ArticleRoute locale={locale} />} />
-        <Route path="/consult" element={<div className="content-frame"><PageTitle title={`${locale === "zh" ? "咨询" : "Consultation"}｜点点新西兰留学咨询`} /><ConsultForm locale={locale} labels={siteCopy[locale]} onBack={() => window.history.back()} /></div>} />
+        <Route path="/consult" element={<div className="content-frame"><PageTitle title={`${locale === "zh" ? "留学咨询" : "Consultation"}｜点点新西兰留学咨询`} /><ConsultForm locale={locale} labels={siteCopy[locale]} onBack={() => window.history.back()} /></div>} />
         <Route path="*" element={<NotFound locale={locale} />} />
       </Routes>
       <Footer locale={locale} showChannels={!isHome} />

@@ -11,8 +11,15 @@ beforeEach(() => {
 it("renders the Chinese site title", () => {
   render(<App />);
   expect(
-    screen.getByRole("heading", { name: "留学新西兰，从规划到落地" }),
+    screen.getByRole("heading", { name: /留学新西兰/ }),
   ).toBeInTheDocument();
+  expect(screen.getByText("从规划到落地")).toBeInTheDocument();
+  expect(
+    screen.getByText("面向计划赴新西兰留学的学生，提供选校、申请材料与落地建议。"),
+  ).toBeInTheDocument();
+  expect(
+    screen.getAllByRole("link", { name: "填写留学咨询" }).length,
+  ).toBeGreaterThanOrEqual(1);
   expect(
     screen.getByRole("link", { name: "点点新西兰留学咨询" }),
   ).toBeInTheDocument();
@@ -24,6 +31,18 @@ it("renders the Chinese site title", () => {
   expect(
     screen.getAllByRole("img", { name: "抖音：@点点儿 Yudita" }).length,
   ).toBeGreaterThanOrEqual(1);
+});
+
+it("uses a muted looping landscape video in the homepage hero", async () => {
+  render(<App />);
+  const video = await screen.findByTestId("hero-video");
+  expect(video).toHaveAttribute("autoplay");
+  expect(video.muted).toBe(true);
+  expect(video.loop).toBe(true);
+  expect(video.querySelector("source")).toHaveAttribute(
+    "src",
+    "/videos/hero-coast.mp4",
+  );
 });
 
 it("keeps the homepage free of consultation form fields", () => {
@@ -44,7 +63,7 @@ it("switches the hero copy to English without showing both languages", async () 
     }),
   ).toBeInTheDocument();
   expect(
-    screen.queryByRole("heading", { name: "留学新西兰，从规划到落地" }),
+    screen.queryByRole("heading", { name: /留学新西兰/ }),
   ).not.toBeInTheDocument();
 });
 
@@ -66,7 +85,7 @@ it("opens the consultation form from the hero with six visa-prep sections", asyn
   const user = userEvent.setup();
   render(<App />);
 
-  await user.click(screen.getByRole("link", { name: "咨询申请" }));
+  await user.click(screen.getAllByRole("link", { name: "填写留学咨询" })[0]);
 
   expect(window.location.pathname).toBe("/consult");
   expect(
@@ -112,7 +131,7 @@ it("opens the consultation form from the hero with six visa-prep sections", asyn
     screen.getAllByRole("button", { name: /返回首页/ }).length,
   ).toBeGreaterThanOrEqual(1);
   expect(
-    screen.queryByRole("heading", { name: "留学新西兰，从规划到落地" }),
+    screen.queryByRole("heading", { name: /留学新西兰/ }),
   ).not.toBeInTheDocument();
 });
 
@@ -234,6 +253,41 @@ it("loads a school article directly at its URL", () => {
       name: "AIS 奥克兰商学院：专业、学费与适合谁",
     }),
   ).toBeInTheDocument();
+});
+
+it("uses a compact header menu on small screens", async () => {
+  const user = userEvent.setup();
+  const originalMatchMedia = window.matchMedia;
+  window.matchMedia = (query) => ({
+    matches: String(query).includes("max-width: 880px"),
+    media: query,
+    addEventListener: () => {},
+    removeEventListener: () => {},
+    addListener: () => {},
+    removeListener: () => {},
+    dispatchEvent: () => false,
+  });
+
+  try {
+    render(<App />);
+
+    expect(screen.queryByRole("navigation", { name: "主导航" })).not.toBeInTheDocument();
+    expect(
+      screen.getAllByRole("link", { name: "填写留学咨询" }).length,
+    ).toBeGreaterThanOrEqual(1);
+
+    await user.click(screen.getByRole("button", { name: "菜单" }));
+
+    const menu = screen.getByRole("navigation", { name: "主导航" });
+    expect(within(menu).getByRole("link", { name: "留学" })).toBeInTheDocument();
+    expect(within(menu).getByRole("link", { name: "求职" })).toBeInTheDocument();
+    expect(within(menu).getByRole("link", { name: "生活" })).toBeInTheDocument();
+    expect(
+      within(menu).queryByRole("link", { name: "填写留学咨询" }),
+    ).not.toBeInTheDocument();
+  } finally {
+    window.matchMedia = originalMatchMedia;
+  }
 });
 
 it("shows a not-found page for unknown URLs", () => {
