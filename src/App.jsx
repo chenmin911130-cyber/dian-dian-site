@@ -16,14 +16,13 @@ import { AuthorNote } from "./AuthorNote";
 import { ConsultForm } from "./ConsultForm";
 import { GuidePage } from "./GuidePage";
 import {
+  CONTACT_EMAIL,
   getArticle,
   getArticlesByGuide,
   getGuide,
   getHomeArticles,
   siteCopy,
 } from "./content";
-
-const EMAIL = "yuditawang0925@gmail.com";
 
 function PageTitle({ title }) {
   useEffect(() => {
@@ -70,17 +69,17 @@ function Header({ locale, setLocale }) {
 }
 
 function Footer({ locale }) {
-  const zh = locale === "zh";
+  const copy = siteCopy[locale];
   return (
     <footer className="site-footer">
       <div>
-        <strong>{zh ? "点点新西兰留学咨询" : "DianDian NZ Study Consulting"}</strong>
-        <span>Auckland · <a href={`mailto:${EMAIL}`}>{EMAIL}</a></span>
+        <strong>{copy.siteName}</strong>
+        <span>Auckland · <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a></span>
       </div>
       <div>
         <a href="https://www.immigration.govt.nz/" target="_blank" rel="noreferrer">Immigration New Zealand</a>
-        <span>{zh ? "隐私：表单和 Word 文件仅在你的浏览器中处理，不会上传。" : "Privacy: form data and Word files stay in your browser and are never uploaded."}</span>
-        <small>{zh ? "免责声明：本站由在读学生整理，仅提供一般信息，不构成持牌移民建议。" : "Disclaimer: general information from a current student, not licensed immigration advice."}</small>
+        <span>{copy.privacyNote}</span>
+        <small>{copy.disclaimer}</small>
       </div>
     </footer>
   );
@@ -101,7 +100,7 @@ function Home({ locale }) {
         <section id="latest" className="article-list">
           {getHomeArticles(locale).map((item) => <ArticleRow key={item.guideId} article={item} featuredLabel={copy.featuredLabel} />)}
         </section>
-        <AuthorNote title={copy.authorTitle} body={copy.authorBody} email={EMAIL} />
+        <AuthorNote title={copy.authorTitle} body={copy.authorBody} email={CONTACT_EMAIL} />
       </div>
     </>
   );
