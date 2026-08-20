@@ -1,13 +1,6 @@
 import { useState } from "react";
+import { CONTACT_EMAIL, siteCopy } from "./content";
 import { generateConsultDoc } from "./generateConsultDoc";
-
-const INTEREST_OPTIONS = [
-  { id: "school", zh: "选校", en: "School choice" },
-  { id: "visa", zh: "签证", en: "Visa" },
-  { id: "job", zh: "找工作", en: "Jobs" },
-  { id: "rent", zh: "租房", en: "Housing" },
-  { id: "other", zh: "其他", en: "Other" },
-];
 
 const CITY_OPTIONS = [
   { value: "", zh: "请选择", en: "Select" },
@@ -39,34 +32,25 @@ const emptyForm = {
   name: "",
   nameEn: "",
   birthDate: "",
-  nationality: "中国",
   passportNo: "",
   email: "",
   contact: "",
-  wechat: "",
   city: "",
-  schoolIntent: "",
   degree: "",
+  schoolIntent: "",
   major: "",
   arrival: "",
   english: "",
   hasOffer: "",
-  interests: [],
   highestEdu: "",
   schoolName: "",
   schoolMajor: "",
-  eduHistory: "",
   employmentStatus: "",
   employer: "",
-  jobTitle: "",
   monthlyIncome: "",
-  workHistory: "",
   fundingSource: "",
   sponsorName: "",
-  sponsorRelation: "",
-  sponsorIncome: "",
   depositAmount: "",
-  depositBank: "",
   statementMonths: "",
   largeTransfers: "",
   travelHistory: "",
@@ -92,8 +76,9 @@ function Field({ label, children, full = false }) {
   );
 }
 
-function LegacyConsultForm({ locale, labels, onBack }) {
+export function ConsultForm({ locale, labels, onBack }) {
   const zh = locale === "zh";
+  const copy = siteCopy[locale];
   const [form, setForm] = useState(emptyForm);
   const [error, setError] = useState("");
   const [done, setDone] = useState(false);
@@ -102,26 +87,6 @@ function LegacyConsultForm({ locale, labels, onBack }) {
   function update(key, value) {
     setForm((prev) => ({ ...prev, [key]: value }));
     setDone(false);
-  }
-
-  function toggleInterest(id) {
-    setForm((prev) => {
-      const has = prev.interests.includes(id);
-      return {
-        ...prev,
-        interests: has
-          ? prev.interests.filter((item) => item !== id)
-          : [...prev.interests, id],
-      };
-    });
-    setDone(false);
-  }
-
-  function interestLabels(ids) {
-    return ids.map((id) => {
-      const opt = INTEREST_OPTIONS.find((item) => item.id === id);
-      return opt ? `${opt.zh} / ${opt.en}` : id;
-    });
   }
 
   function trimAll(data) {
@@ -139,8 +104,8 @@ function LegacyConsultForm({ locale, labels, onBack }) {
     if (!form.name.trim() || !form.email.trim() || !form.contact.trim()) {
       setError(
         zh
-          ? "请至少填写姓名、邮箱和手机。"
-          : "Please fill in name, email, and phone.",
+          ? "请至少填写姓名、邮箱和手机/微信。"
+          : "Please fill in name, email, and phone or WeChat.",
       );
       return;
     }
@@ -152,11 +117,7 @@ function LegacyConsultForm({ locale, labels, onBack }) {
 
     setBusy(true);
     try {
-      const payload = trimAll({
-        ...form,
-        interests: interestLabels(form.interests),
-      });
-      await generateConsultDoc(payload);
+      await generateConsultDoc(trimAll(form));
       setDone(true);
     } catch {
       setError(
@@ -182,9 +143,19 @@ function LegacyConsultForm({ locale, labels, onBack }) {
         </h1>
         <p className="consult-page__lead">
           {zh
-            ? "按类别填写必要信息即可。完成后可下载 Word 发给顾问；资料仅在本机生成，不会上传。"
-            : "Fill in the essentials by section. Download a Word file for your advisor—nothing is uploaded."}
+            ? "按六个部分填写必要信息即可。完成后在本机生成 Word 文件，邮件发给点点；资料仅在你的浏览器中处理，不会上传。"
+            : "Fill in the essentials across six sections. A Word file is generated on your device to email to DianDian—nothing is uploaded."}
         </p>
+        <div className="consult-page__notes">
+          <p className="consult-page__contact">
+            {zh ? "联系点点：" : "Contact DianDian: "}
+            <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+            {zh
+              ? "（填好的 Word 文件也发到这个邮箱）"
+              : " (send the finished Word file here too)"}
+          </p>
+          <p className="site-note">{copy.disclaimer}</p>
+        </div>
       </header>
 
       <form className="consult-form" onSubmit={onSubmit} noValidate>
@@ -196,7 +167,7 @@ function LegacyConsultForm({ locale, labels, onBack }) {
               required
             />
           </Field>
-          <Field label={zh ? "护照姓名（拼音）" : "Passport name"}>
+          <Field label={zh ? "护照姓名（拼音）" : "Passport name (pinyin)"}>
             <input
               value={form.nameEn}
               onChange={(e) => update("nameEn", e.target.value)}
@@ -208,12 +179,6 @@ function LegacyConsultForm({ locale, labels, onBack }) {
               value={form.birthDate}
               onChange={(e) => update("birthDate", e.target.value)}
               placeholder="YYYY-MM-DD"
-            />
-          </Field>
-          <Field label={zh ? "国籍" : "Nationality"}>
-            <input
-              value={form.nationality}
-              onChange={(e) => update("nationality", e.target.value)}
             />
           </Field>
           <Field label={zh ? "护照号码" : "Passport number"}>
@@ -230,17 +195,11 @@ function LegacyConsultForm({ locale, labels, onBack }) {
               required
             />
           </Field>
-          <Field label={zh ? "手机 *" : "Phone *"}>
+          <Field label={zh ? "手机 / 微信 *" : "Phone / WeChat *"}>
             <input
               value={form.contact}
               onChange={(e) => update("contact", e.target.value)}
               required
-            />
-          </Field>
-          <Field label={zh ? "微信" : "WeChat"}>
-            <input
-              value={form.wechat}
-              onChange={(e) => update("wechat", e.target.value)}
             />
           </Field>
         </Section>
@@ -258,13 +217,6 @@ function LegacyConsultForm({ locale, labels, onBack }) {
               ))}
             </select>
           </Field>
-          <Field label={zh ? "意向学校" : "Intended school"}>
-            <input
-              value={form.schoolIntent}
-              onChange={(e) => update("schoolIntent", e.target.value)}
-              placeholder="AIS / ICL / Yoobee / NZSE / Future Skills"
-            />
-          </Field>
           <Field label={zh ? "意向学历" : "Intended level"}>
             <select
               value={form.degree}
@@ -276,6 +228,13 @@ function LegacyConsultForm({ locale, labels, onBack }) {
                 </option>
               ))}
             </select>
+          </Field>
+          <Field label={zh ? "意向学校" : "Intended school"}>
+            <input
+              value={form.schoolIntent}
+              onChange={(e) => update("schoolIntent", e.target.value)}
+              placeholder="AIS / ICL / Yoobee / NZSE / Future Skills"
+            />
           </Field>
           <Field label={zh ? "意向专业 / 课程" : "Intended programme"}>
             <input
@@ -290,7 +249,7 @@ function LegacyConsultForm({ locale, labels, onBack }) {
               placeholder={zh ? "例如：2026 年 2 月" : "e.g. Feb 2026"}
             />
           </Field>
-          <Field label={zh ? "英语成绩（IELTS/PTE）" : "English score"}>
+          <Field label={zh ? "英语成绩（IELTS/PTE）" : "English score (IELTS/PTE)"}>
             <input
               value={form.english}
               onChange={(e) => update("english", e.target.value)}
@@ -309,21 +268,6 @@ function LegacyConsultForm({ locale, labels, onBack }) {
               ))}
             </select>
           </Field>
-          <fieldset className="consult-form__interests consult-form__full">
-            <legend>{zh ? "咨询方向" : "What you need help with"}</legend>
-            <div className="consult-form__checks">
-              {INTEREST_OPTIONS.map((opt) => (
-                <label key={opt.id} className="consult-check">
-                  <input
-                    type="checkbox"
-                    checked={form.interests.includes(opt.id)}
-                    onChange={() => toggleInterest(opt.id)}
-                  />
-                  <span>{zh ? opt.zh : opt.en}</span>
-                </label>
-              ))}
-            </div>
-          </fieldset>
         </Section>
 
         <Section title={zh ? "3. 学历背景" : "3. Education"}>
@@ -334,7 +278,7 @@ function LegacyConsultForm({ locale, labels, onBack }) {
               placeholder={zh ? "高中 / 大专 / 本科 / 硕士" : "High school / Diploma / Bachelor"}
             />
           </Field>
-          <Field label={zh ? "学校" : "School"}>
+          <Field label={zh ? "毕业院校" : "School"}>
             <input
               value={form.schoolName}
               onChange={(e) => update("schoolName", e.target.value)}
@@ -344,21 +288,6 @@ function LegacyConsultForm({ locale, labels, onBack }) {
             <input
               value={form.schoolMajor}
               onChange={(e) => update("schoolMajor", e.target.value)}
-            />
-          </Field>
-          <Field
-            label={zh ? "学历时间线（简要）" : "Education timeline (brief)"}
-            full
-          >
-            <textarea
-              rows={2}
-              value={form.eduHistory}
-              onChange={(e) => update("eduHistory", e.target.value)}
-              placeholder={
-                zh
-                  ? "例如：2018–2022 某某大学 本科 会计"
-                  : "e.g. 2018–2022 University X, Bachelor of Accounting"
-              }
             />
           </Field>
         </Section>
@@ -371,35 +300,17 @@ function LegacyConsultForm({ locale, labels, onBack }) {
               placeholder={zh ? "在职 / 待业 / 学生" : "Employed / unemployed / student"}
             />
           </Field>
-          <Field label={zh ? "单位" : "Employer"}>
+          <Field label={zh ? "单位 / 职位" : "Employer / role"}>
             <input
               value={form.employer}
               onChange={(e) => update("employer", e.target.value)}
-            />
-          </Field>
-          <Field label={zh ? "职位" : "Job title"}>
-            <input
-              value={form.jobTitle}
-              onChange={(e) => update("jobTitle", e.target.value)}
             />
           </Field>
           <Field label={zh ? "税后月收入（人民币）" : "Monthly income (CNY net)"}>
             <input
               value={form.monthlyIncome}
               onChange={(e) => update("monthlyIncome", e.target.value)}
-              placeholder={zh ? "例如：8000" : "e.g. 8000"}
-            />
-          </Field>
-          <Field label={zh ? "工作经历（简要）" : "Work history (brief)"} full>
-            <textarea
-              rows={2}
-              value={form.workHistory}
-              onChange={(e) => update("workHistory", e.target.value)}
-              placeholder={
-                zh
-                  ? "例如：2022.03–至今 某某公司 销售"
-                  : "e.g. 2022.03–present Company Y, Sales"
-              }
+              placeholder={zh ? "例如：8000（无则写无）" : "e.g. 8000 (or none)"}
             />
           </Field>
         </Section>
@@ -414,23 +325,11 @@ function LegacyConsultForm({ locale, labels, onBack }) {
               placeholder={zh ? "自费 / 父母 / 配偶 / 混合" : "Self / parents / spouse / mixed"}
             />
           </Field>
-          <Field label={zh ? "担保人姓名" : "Sponsor name"}>
+          <Field label={zh ? "担保人 / 关系" : "Sponsor / relationship"}>
             <input
               value={form.sponsorName}
               onChange={(e) => update("sponsorName", e.target.value)}
-            />
-          </Field>
-          <Field label={zh ? "与申请人关系" : "Relationship"}>
-            <input
-              value={form.sponsorRelation}
-              onChange={(e) => update("sponsorRelation", e.target.value)}
-              placeholder={zh ? "父亲 / 母亲 / 配偶" : "Father / mother / spouse"}
-            />
-          </Field>
-          <Field label={zh ? "担保人年收入（人民币）" : "Sponsor annual income (CNY)"}>
-            <input
-              value={form.sponsorIncome}
-              onChange={(e) => update("sponsorIncome", e.target.value)}
+              placeholder={zh ? "例如：张父 / 父亲" : "e.g. Mr Zhang / father"}
             />
           </Field>
           <Field label={zh ? "存款总额" : "Total deposits"}>
@@ -438,12 +337,6 @@ function LegacyConsultForm({ locale, labels, onBack }) {
               value={form.depositAmount}
               onChange={(e) => update("depositAmount", e.target.value)}
               placeholder={zh ? "例如：25 万人民币" : "e.g. CNY 250,000"}
-            />
-          </Field>
-          <Field label={zh ? "开户银行" : "Bank"}>
-            <input
-              value={form.depositBank}
-              onChange={(e) => update("depositBank", e.target.value)}
             />
           </Field>
           <Field label={zh ? "可提供流水月份" : "Bank statements available"}>
@@ -508,9 +401,19 @@ function LegacyConsultForm({ locale, labels, onBack }) {
         ) : null}
         {done ? (
           <p className="consult-form__success" role="status">
-            {zh
-              ? "Word 已开始下载。请另附学历、在职/收入、存款证明与银行流水扫描件发给顾问。"
-              : "Word downloading. Attach education, income, deposit and bank-statement scans for your advisor."}
+            {zh ? (
+              <>
+                Word 已开始下载。请将文件发送至{" "}
+                <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+                ，并另附学历、在职/收入、存款证明与银行流水扫描件。
+              </>
+            ) : (
+              <>
+                Word is downloading. Email it to{" "}
+                <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> with
+                education, income, deposit and bank-statement scans attached.
+              </>
+            )}
           </p>
         ) : null}
 
@@ -535,92 +438,6 @@ function LegacyConsultForm({ locale, labels, onBack }) {
           >
             {labels?.backHome ?? (zh ? "返回首页" : "Back to home")}
           </button>
-        </div>
-      </form>
-    </section>
-  );
-}
-
-export function ConsultForm({ locale, labels, onBack }) {
-  const zh = locale === "zh";
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    contact: "",
-    direction: "",
-    notes: "",
-    passportNo: "",
-    fundingSource: "",
-    depositAmount: "",
-  });
-  const [error, setError] = useState("");
-  const [done, setDone] = useState(false);
-  const [busy, setBusy] = useState(false);
-
-  function update(key, value) {
-    setForm((previous) => ({ ...previous, [key]: value }));
-    setDone(false);
-  }
-
-  async function onSubmit(event) {
-    event.preventDefault();
-    setError("");
-    if (!form.name.trim() || !form.email.trim() || !form.contact.trim()) {
-      setError(zh ? "请填写姓名、邮箱和手机/微信。" : "Please provide your name, email, and phone or WeChat.");
-      return;
-    }
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim())) {
-      setError(zh ? "请输入有效邮箱。" : "Please enter a valid email address.");
-      return;
-    }
-    setBusy(true);
-    try {
-      await generateConsultDoc({
-        ...form,
-        interests: form.direction,
-        contact: form.contact,
-      });
-      setDone(true);
-    } catch {
-      setError(zh ? "生成 Word 失败，请重试或换用 Chrome / Edge。" : "Could not generate the Word file. Please retry in Chrome or Edge.");
-    } finally {
-      setBusy(false);
-    }
-  }
-
-  return (
-    <section className="detail-page consult-page" aria-labelledby="consult-title">
-      <button className="detail-back" type="button" onClick={onBack}>← {labels?.backHome ?? (zh ? "返回首页" : "Back to home")}</button>
-      <header className="consult-page__head">
-        <p className="consult-page__kicker">FIRST TOUCH / 初次联系</p>
-        <h1 id="consult-title">{zh ? "先聊聊你的计划" : "Tell me about your plan"}</h1>
-        <p className="consult-page__lead">{zh ? "只需几项基本信息。Word 在你的设备上生成，不会上传到服务器。" : "Just the essentials. The Word file is made on your device and is never uploaded."}</p>
-      </header>
-      <form className="consult-form" onSubmit={onSubmit} noValidate>
-        <div className="consult-form__grid">
-          <Field label={zh ? "姓名 *" : "Name *"}><input value={form.name} onChange={(event) => update("name", event.target.value)} required /></Field>
-          <Field label={zh ? "邮箱 *" : "Email *"}><input type="email" value={form.email} onChange={(event) => update("email", event.target.value)} required /></Field>
-          <Field label={zh ? "手机 / 微信 *" : "Phone / WeChat *"}><input value={form.contact} onChange={(event) => update("contact", event.target.value)} required /></Field>
-          <Field label={zh ? "咨询方向" : "Area of interest"}>
-            <select value={form.direction} onChange={(event) => update("direction", event.target.value)}>
-              <option value="">{zh ? "请选择" : "Select"}</option>
-              {INTEREST_OPTIONS.map((option) => <option key={option.id} value={zh ? option.zh : option.en}>{zh ? option.zh : option.en}</option>)}
-            </select>
-          </Field>
-          <Field label={zh ? "想补充的情况" : "Notes"} full><textarea rows={4} value={form.notes} onChange={(event) => update("notes", event.target.value)} placeholder={zh ? "例如：目标城市、专业、开学时间或预算。" : "For example: city, programme, intake, or budget."} /></Field>
-        </div>
-        <details className="consult-worksheet">
-          <summary>{zh ? "可选：签证材料小表（护照 / 资金）" : "Optional: visa worksheet (passport / funds)"}</summary>
-          <div className="consult-form__grid">
-            <Field label={zh ? "护照号码" : "Passport number"}><input value={form.passportNo} onChange={(event) => update("passportNo", event.target.value)} /></Field>
-            <Field label={zh ? "资金来源" : "Funding source"}><input value={form.fundingSource} onChange={(event) => update("fundingSource", event.target.value)} /></Field>
-            <Field label={zh ? "可准备的存款金额" : "Funds available"} full><input value={form.depositAmount} onChange={(event) => update("depositAmount", event.target.value)} /></Field>
-          </div>
-        </details>
-        {error && <p className="consult-form__error" role="alert">{error}</p>}
-        {done && <p className="consult-form__success" role="status">{zh ? <>Word 已开始下载。请将文件发送至 <a href="mailto:yuditawang0925@gmail.com">yuditawang0925@gmail.com</a>；请勿通过本站上传材料。</> : <>Word is downloading. Please email it to <a href="mailto:yuditawang0925@gmail.com">yuditawang0925@gmail.com</a>; this site does not accept uploads.</>}</p>}
-        <div className="consult-form__actions">
-          <button className="consult-form__submit" type="submit" disabled={busy}>{busy ? (zh ? "生成中…" : "Generating…") : (zh ? "生成并下载 Word" : "Generate & download Word")}</button>
         </div>
       </form>
     </section>

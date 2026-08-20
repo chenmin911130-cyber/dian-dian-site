@@ -646,6 +646,36 @@ a:focus-visible {
   line-height: 1.7;
 }
 
+.consult-page__notes {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 16px;
+  max-width: 40rem;
+}
+
+.consult-page__contact {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.consult-page__contact a,
+.consult-form__success a {
+  color: var(--fern-dark);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.site-note {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid var(--fern);
+  background: rgba(49, 88, 36, 0.06);
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
 .consult-section {
   display: grid;
   gap: 0.85rem;

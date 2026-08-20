@@ -7,6 +7,7 @@ import {
   TextRun,
 } from "docx";
 import { saveAs } from "file-saver";
+import { CONTACT_EMAIL } from "./content";
 
 function field(label, value) {
   return new Paragraph({
@@ -74,47 +75,33 @@ export async function generateConsultDoc(data) {
           field("中文姓名", data.name),
           field("护照姓名（拼音）", data.nameEn),
           field("出生日期", data.birthDate),
-          field("国籍", data.nationality),
           field("护照号码", data.passportNo),
           field("邮箱", data.email),
-          field("手机", data.contact),
-          field("微信", data.wechat),
+          field("手机 / 微信", data.contact),
 
           heading("2. 留学意向"),
           field("目标城市", data.city),
-          field("意向学校", data.schoolIntent),
           field("意向学历", data.degree),
+          field("意向学校", data.schoolIntent),
           field("意向专业 / 课程", data.major),
           field("预计开学", data.arrival),
           field("英语成绩", data.english),
           field("是否已有 Offer", data.hasOffer),
-          field(
-            "咨询方向",
-            Array.isArray(data.interests)
-              ? data.interests.join("、")
-              : data.interests,
-          ),
 
           heading("3. 学历背景"),
           field("最高学历", data.highestEdu),
-          field("学校", data.schoolName),
+          field("毕业院校", data.schoolName),
           field("专业", data.schoolMajor),
-          ...block("学历时间线", data.eduHistory),
 
           heading("4. 工作经历"),
           field("当前状态", data.employmentStatus),
-          field("单位", data.employer),
-          field("职位", data.jobTitle),
+          field("单位 / 职位", data.employer),
           field("税后月收入（人民币）", data.monthlyIncome),
-          ...block("工作经历", data.workHistory),
 
           heading("5. 资金证明：收入、存款与流水"),
           field("资金来源", data.fundingSource),
-          field("担保人姓名", data.sponsorName),
-          field("与申请人关系", data.sponsorRelation),
-          field("担保人年收入（人民币）", data.sponsorIncome),
+          field("担保人 / 关系", data.sponsorName),
           field("存款总额", data.depositAmount),
-          field("开户银行", data.depositBank),
           field("可提供流水月份", data.statementMonths),
           ...block("大额进账说明", data.largeTransfers),
 
@@ -127,7 +114,7 @@ export async function generateConsultDoc(data) {
             spacing: { before: 360 },
             children: [
               new TextRun({
-                text: "材料提醒：如需继续沟通，请将此 Word 文件发送至 yuditawang0925@gmail.com。请另附学历证明、在职/收入证明、存款证明、银行流水扫描件。本文件由点点新西兰留学咨询网站在客户浏览器本地生成，未上传至服务器。",
+                text: `材料提醒：如需继续沟通，请将此 Word 文件发送至 ${CONTACT_EMAIL}。请另附学历证明、在职/收入证明、存款证明、银行流水扫描件。本文件由点点新西兰留学咨询网站在客户浏览器本地生成，未上传至服务器。本站内容仅为一般信息，不构成持牌移民法律建议。`,
                 italics: true,
                 color: "888888",
                 size: 18,
