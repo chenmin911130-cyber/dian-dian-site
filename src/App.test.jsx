@@ -16,6 +16,14 @@ it("renders the Chinese site title", () => {
   expect(
     screen.getByRole("link", { name: "点点新西兰留学咨询" }),
   ).toBeInTheDocument();
+  expect(screen.getAllByText("微信").length).toBeGreaterThanOrEqual(1);
+  expect(screen.getAllByText("抖音").length).toBeGreaterThanOrEqual(1);
+  expect(
+    screen.getAllByRole("img", { name: "微信：点点（好运版）" }).length,
+  ).toBeGreaterThanOrEqual(1);
+  expect(
+    screen.getAllByRole("img", { name: "抖音：@点点儿 Yudita" }).length,
+  ).toBeGreaterThanOrEqual(1);
 });
 
 it("keeps the homepage free of consultation form fields", () => {
@@ -96,7 +104,7 @@ it("opens the consultation form from the hero with six visa-prep sections", asyn
   ).toBeGreaterThanOrEqual(2);
   expect(
     screen.getAllByRole("link", { name: "yuditawang0925@gmail.com" }).length,
-  ).toBeGreaterThanOrEqual(2);
+  ).toBeGreaterThanOrEqual(1);
   expect(
     screen.getByRole("button", { name: "生成并下载 Word" }),
   ).toBeInTheDocument();

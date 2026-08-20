@@ -13,6 +13,7 @@ import { ArticlePage } from "./ArticlePage";
 import { LogoMark } from "./LogoMark";
 import { ArticleRow } from "./ArticleRow";
 import { AuthorNote } from "./AuthorNote";
+import { ContactChannels } from "./ContactChannels";
 import { ConsultForm } from "./ConsultForm";
 import { GuidePage } from "./GuidePage";
 import {
@@ -35,49 +36,59 @@ function Header({ locale, setLocale }) {
   const copy = siteCopy[locale];
 
   return (
-    <section className="hero hero--compact">
-      <header className="site-header">
-        <Link className="wordmark" to="/" aria-label={copy.siteName}>
-          <LogoMark className="wordmark__mark" />
-          <span className="wordmark__brand">{copy.siteBrand}</span>
-          <span className="wordmark__divider" aria-hidden="true" />
-          <span className="wordmark__tag">{copy.siteTag}</span>
-        </Link>
-        <nav aria-label={locale === "zh" ? "主导航" : "Primary navigation"}>
-          <span className="main-nav">
-            {[
-              ["/", locale === "zh" ? "首页" : "Home"],
-              ["/study", locale === "zh" ? "留学" : "Study"],
-              ["/career", locale === "zh" ? "求职" : "Career"],
-              ["/life", locale === "zh" ? "生活" : "Life"],
-              ["/consult", locale === "zh" ? "咨询" : "Consult"],
-            ].map(([to, label]) => (
-              <NavLink key={to} to={to} end={to === "/"}>
-                {label}
-              </NavLink>
-            ))}
-          </span>
-          <span className="locale-switch" aria-label="Language">
-            <button type="button" className={locale === "zh" ? "is-active" : ""} aria-pressed={locale === "zh"} onClick={() => setLocale("zh")}>中文</button>
-            <span aria-hidden="true">|</span>
-            <button type="button" className={locale === "en" ? "is-active" : ""} aria-pressed={locale === "en"} onClick={() => setLocale("en")}>EN</button>
-          </span>
-        </nav>
-      </header>
-    </section>
+    <header className="site-header">
+      <Link className="wordmark" to="/" aria-label={copy.siteName}>
+        <LogoMark className="wordmark__mark" />
+        <span className="wordmark__brand">{copy.siteBrand}</span>
+        <span className="wordmark__divider" aria-hidden="true" />
+        <span className="wordmark__tag">{copy.siteTag}</span>
+      </Link>
+      <nav aria-label={locale === "zh" ? "主导航" : "Primary navigation"}>
+        <span className="main-nav">
+          {[
+            ["/study", locale === "zh" ? "留学" : "Study"],
+            ["/career", locale === "zh" ? "求职" : "Career"],
+            ["/life", locale === "zh" ? "生活" : "Life"],
+            ["/consult", locale === "zh" ? "咨询" : "Consult"],
+          ].map(([to, label]) => (
+            <NavLink key={to} to={to}>
+              {label}
+            </NavLink>
+          ))}
+        </span>
+        <span className="locale-switch" aria-label="Language">
+          <button
+            type="button"
+            className={locale === "zh" ? "is-active" : ""}
+            aria-pressed={locale === "zh"}
+            onClick={() => setLocale("zh")}
+          >
+            中文
+          </button>
+          <span aria-hidden="true">|</span>
+          <button
+            type="button"
+            className={locale === "en" ? "is-active" : ""}
+            aria-pressed={locale === "en"}
+            onClick={() => setLocale("en")}
+          >
+            EN
+          </button>
+        </span>
+      </nav>
+    </header>
   );
 }
 
-function Footer({ locale }) {
+function Footer({ locale, showChannels }) {
   const copy = siteCopy[locale];
   return (
     <footer className="site-footer">
-      <div>
-        <strong>{copy.siteName}</strong>
-        <span>Auckland · <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a></span>
-      </div>
-      <div>
-        <a href="https://www.immigration.govt.nz/" target="_blank" rel="noreferrer">Immigration New Zealand</a>
+      {showChannels ? <ContactChannels locale={locale} /> : null}
+      <div className="site-footer__legal">
+        <a href="https://www.immigration.govt.nz/" target="_blank" rel="noreferrer">
+          Immigration New Zealand
+        </a>
         <span>{copy.privacyNote}</span>
         <small>{copy.disclaimer}</small>
       </div>
@@ -90,17 +101,22 @@ function Home({ locale }) {
   return (
     <>
       <PageTitle title={locale === "zh" ? "点点新西兰留学咨询｜留学、求职与生活" : "DianDian NZ Study Consulting | Study, work and life"} />
-      <section className="hero hero--home">
-        <div id="top" className="hero-copy">
-          <h1>{copy.heroTitle}</h1>
-          <Link className="primary-cta" to="/consult">{copy.heroCta}<span aria-hidden="true">→</span></Link>
-        </div>
-      </section>
       <div className="content-frame">
         <section id="latest" className="article-list">
-          {getHomeArticles(locale).map((item) => <ArticleRow key={item.guideId} article={item} featuredLabel={copy.featuredLabel} />)}
+          {getHomeArticles(locale).map((item) => (
+            <ArticleRow
+              key={item.guideId}
+              article={item}
+              featuredLabel={copy.featuredLabel}
+            />
+          ))}
         </section>
-        <AuthorNote title={copy.authorTitle} body={copy.authorBody} email={CONTACT_EMAIL} />
+        <AuthorNote
+          title={copy.authorTitle}
+          body={copy.authorBody}
+          email={CONTACT_EMAIL}
+          locale={locale}
+        />
       </div>
     </>
   );
@@ -151,9 +167,27 @@ function AppContent() {
     }
   }, [location.pathname]);
 
+  const isHome = location.pathname === "/";
+  const copy = siteCopy[locale];
+
   return (
     <main className="site-shell">
-      <Header locale={locale} setLocale={setLocale} />
+      {isHome ? (
+        <section className="hero">
+          <Header locale={locale} setLocale={setLocale} />
+          <div id="top" className="hero-copy">
+            <h1>{copy.heroTitle}</h1>
+            <Link className="primary-cta" to="/consult">
+              {copy.heroCta}
+              <span aria-hidden="true">→</span>
+            </Link>
+          </div>
+        </section>
+      ) : (
+        <div className="site-masthead">
+          <Header locale={locale} setLocale={setLocale} />
+        </div>
+      )}
       <Routes>
         <Route path="/" element={<Home locale={locale} />} />
         <Route path="/study" element={<GuideRoute locale={locale} guideId="study" />} />
@@ -163,7 +197,7 @@ function AppContent() {
         <Route path="/consult" element={<div className="content-frame"><PageTitle title={`${locale === "zh" ? "咨询" : "Consultation"}｜点点新西兰留学咨询`} /><ConsultForm locale={locale} labels={siteCopy[locale]} onBack={() => window.history.back()} /></div>} />
         <Route path="*" element={<NotFound locale={locale} />} />
       </Routes>
-      <Footer locale={locale} />
+      <Footer locale={locale} showChannels={!isHome} />
     </main>
   );
 }

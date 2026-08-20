@@ -72,15 +72,17 @@ a:focus-visible {
   background:
     linear-gradient(
       105deg,
-      rgba(247, 244, 237, 0.72) 0%,
-      rgba(247, 244, 237, 0.42) 34%,
-      rgba(247, 244, 237, 0.08) 58%,
+      rgba(247, 244, 237, 0.78) 0%,
+      rgba(247, 244, 237, 0.5) 32%,
+      rgba(247, 244, 237, 0.12) 56%,
       rgba(247, 244, 237, 0) 74%
     ),
     linear-gradient(
       to bottom,
-      rgba(247, 244, 237, 0.18) 0%,
-      rgba(247, 244, 237, 0) 28%
+      rgba(247, 244, 237, 0.86) 0%,
+      rgba(247, 244, 237, 0.52) 72px,
+      rgba(247, 244, 237, 0.12) 150px,
+      rgba(247, 244, 237, 0) 230px
     );
 }
 
@@ -98,9 +100,11 @@ a:focus-visible {
 .site-header {
   min-height: 72px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  padding-top: 18px;
+  gap: 24px;
+  padding-top: 16px;
+  padding-bottom: 8px;
 }
 
 .wordmark {
@@ -135,15 +139,16 @@ a:focus-visible {
 
 .wordmark__tag {
   font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  color: var(--ink-soft);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--ink);
 }
 
 .site-header nav {
   display: flex;
   align-items: center;
-  gap: 34px;
+  gap: 28px;
+  flex-shrink: 0;
 }
 
 .site-header button {
@@ -157,17 +162,22 @@ a:focus-visible {
 .locale-switch {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  color: #6f746b;
+  gap: 8px;
+  padding-left: 16px;
+  border-left: 1px solid rgba(42, 51, 40, 0.22);
+  color: var(--ink-soft);
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .locale-switch button {
-  color: #6f746b;
+  color: var(--ink-soft);
+  font-weight: 600;
 }
 
 .locale-switch button.is-active {
   color: var(--ink);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .hero-copy {
@@ -290,13 +300,15 @@ a:focus-visible {
   opacity: 0.8;
 }
 
-.hero--compact {
-  min-height: 0;
-  background-position: center 30%;
+.site-masthead {
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
 }
 
-.hero--compact .site-header {
+.site-masthead .site-header {
   min-height: 64px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .detail-page {
@@ -494,11 +506,11 @@ a:focus-visible {
   display: grid;
   grid-template-columns: 92px minmax(0, 1fr);
   gap: 28px;
-  align-items: center;
+  align-items: start;
   padding: 18px 12px 0;
 }
 
-.author-note img {
+.author-note__portrait {
   width: 92px;
   height: 92px;
   border-radius: 50%;
@@ -527,21 +539,48 @@ a:focus-visible {
   text-underline-offset: 0.2em;
 }
 
-.main-nav {
-  display: inline-flex;
-  align-items: center;
-  gap: 1.1rem;
-  white-space: nowrap;
-  font-size: 0.9rem;
+.contact-channels {
+  display: grid;
+  grid-template-columns: repeat(2, 160px);
+  gap: 20px 24px;
+  margin-top: 18px;
 }
 
-.main-nav a {
-  color: var(--ink-soft);
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 160px;
 }
 
-.main-nav a.active {
+.contact-card img {
+  display: block;
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.contact-card figcaption {
+  display: grid;
+  gap: 2px;
+  margin-top: 8px;
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.contact-card strong {
   color: var(--fern-dark);
+  font-size: 14px;
   font-weight: 700;
+}
+
+.contact-card small {
+  color: var(--muted);
+  font-size: 12px;
 }
 
 .site-footer {
@@ -551,30 +590,57 @@ a:focus-visible {
   border-top: 1px solid var(--line);
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 2rem;
   color: var(--muted);
   font-size: 0.85rem;
   line-height: 1.6;
 }
 
-.site-footer > div {
+.site-footer .contact-channels {
+  margin-top: 0;
+}
+
+.site-footer__legal {
   display: grid;
   align-content: start;
-  gap: 0.25rem;
+  gap: 0.35rem;
+  max-width: 42rem;
 }
 
-.site-footer strong,
 .site-footer a {
   color: var(--fern-dark);
-}
-
-.site-footer a {
   text-decoration: underline;
   text-underline-offset: 0.2em;
+  width: fit-content;
 }
 
 .site-footer small {
-  max-width: 36rem;
+  display: block;
+}
+
+.main-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.35rem;
+  white-space: nowrap;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+}
+
+.main-nav a {
+  color: var(--ink);
+}
+
+.main-nav a:hover {
+  color: var(--fern-dark);
+}
+
+.main-nav a.active {
+  color: var(--fern);
+  font-weight: 700;
 }
 
 .consult-worksheet {
@@ -875,8 +941,10 @@ a:focus-visible {
   }
 
   .site-header {
-    min-height: 60px;
-    padding-top: 14px;
+    min-height: 56px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    gap: 12px;
   }
 
   .wordmark {
@@ -895,7 +963,8 @@ a:focus-visible {
 
   .wordmark__tag {
     font-size: 12px;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.08em;
+    font-weight: 600;
   }
 
   .wordmark__divider {
@@ -907,8 +976,9 @@ a:focus-visible {
   }
 
   .main-nav {
-    gap: 0.65rem;
-    font-size: 0.8rem;
+    gap: 0.75rem;
+    font-size: 13px;
+    letter-spacing: 0.04em;
   }
 
   .locale-switch {
@@ -965,9 +1035,28 @@ a:focus-visible {
     padding-inline: 0;
   }
 
-  .author-note img {
+  .author-note__portrait {
     width: 68px;
     height: 68px;
+  }
+
+  .contact-channels {
+    grid-template-columns: repeat(2, 132px);
+    gap: 14px;
+  }
+
+  .contact-card,
+  .contact-card img {
+    width: 132px;
+  }
+
+  .contact-card img {
+    height: 132px;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    gap: 1.25rem;
   }
 
   .consult-form__grid {
@@ -978,8 +1067,4 @@ a:focus-visible {
     font-size: 22px;
   }
 
-  .site-footer {
-    display: grid;
-    gap: 1rem;
-  }
 }
