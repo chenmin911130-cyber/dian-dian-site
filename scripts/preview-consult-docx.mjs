@@ -44,34 +44,25 @@ const data = {
   name: "张三",
   nameEn: "ZHANG San",
   birthDate: "1998-05-12",
-  nationality: "中国",
   passportNo: "E12345678",
   email: "zhangsan@example.com",
-  contact: "13800138000",
-  wechat: "zs_nz2026",
+  contact: "13800138000 / zs_nz2026",
   city: "奥克兰 Auckland",
-  schoolIntent: "ICL Education",
   degree: "专科 / Diploma",
+  schoolIntent: "ICL Education",
   major: "Business",
   arrival: "2026年2月",
   english: "IELTS 6.0",
   hasOffer: "否",
-  interests: "选校 / School choice、签证 / Visa",
   highestEdu: "本科",
   schoolName: "某某大学",
   schoolMajor: "会计学",
-  eduHistory: "2016–2020 某某大学 本科 会计学",
   employmentStatus: "在职",
-  employer: "某某贸易有限公司",
-  jobTitle: "销售专员",
+  employer: "某某贸易有限公司 / 销售专员",
   monthlyIncome: "8000",
-  workHistory: "2020.07–至今 某某贸易有限公司 销售专员",
   fundingSource: "父母资助",
-  sponsorName: "张父",
-  sponsorRelation: "父亲",
-  sponsorIncome: "25万",
+  sponsorName: "张父 / 父亲",
   depositAmount: "28万人民币",
-  depositBank: "中国银行",
   statementMonths: "近12个月",
   largeTransfers: "每月工资入账；2025年3月父母转入学费准备金约15万",
   travelHistory: "无",
@@ -111,38 +102,29 @@ const doc = new Document({
         field("中文姓名", data.name),
         field("护照姓名（拼音）", data.nameEn),
         field("出生日期", data.birthDate),
-        field("国籍", data.nationality),
         field("护照号码", data.passportNo),
         field("邮箱", data.email),
-        field("手机", data.contact),
-        field("微信", data.wechat),
+        field("手机 / 微信", data.contact),
         heading("2. 留学意向"),
         field("目标城市", data.city),
-        field("意向学校", data.schoolIntent),
         field("意向学历", data.degree),
+        field("意向学校", data.schoolIntent),
         field("意向专业 / 课程", data.major),
         field("预计开学", data.arrival),
         field("英语成绩", data.english),
         field("是否已有 Offer", data.hasOffer),
-        field("咨询方向", data.interests),
         heading("3. 学历背景"),
         field("最高学历", data.highestEdu),
-        field("学校", data.schoolName),
+        field("毕业院校", data.schoolName),
         field("专业", data.schoolMajor),
-        ...block("学历时间线", data.eduHistory),
         heading("4. 工作经历"),
         field("当前状态", data.employmentStatus),
-        field("单位", data.employer),
-        field("职位", data.jobTitle),
+        field("单位 / 职位", data.employer),
         field("税后月收入（人民币）", data.monthlyIncome),
-        ...block("工作经历", data.workHistory),
         heading("5. 资金证明：收入、存款与流水"),
         field("资金来源", data.fundingSource),
-        field("担保人姓名", data.sponsorName),
-        field("与申请人关系", data.sponsorRelation),
-        field("担保人年收入（人民币）", data.sponsorIncome),
+        field("担保人 / 关系", data.sponsorName),
         field("存款总额", data.depositAmount),
-        field("开户银行", data.depositBank),
         field("可提供流水月份", data.statementMonths),
         ...block("大额进账说明", data.largeTransfers),
         heading("6. 其他签证相关"),
@@ -153,7 +135,7 @@ const doc = new Document({
           spacing: { before: 360 },
           children: [
             new TextRun({
-              text: "材料提醒：请另附学历证明、在职/收入证明、存款证明、银行流水扫描件。本文件由点点新西兰留学咨询网站在客户浏览器本地生成，未上传至服务器。",
+              text: "材料提醒：如需继续沟通，请将此 Word 文件发送至 yuditawang0925@gmail.com。请另附学历证明、在职/收入证明、存款证明、银行流水扫描件。本文件由点点新西兰留学咨询网站在客户浏览器本地生成，未上传至服务器。本站内容仅为一般信息，不构成持牌移民法律建议。",
               italics: true,
               color: "888888",
               size: 18,
@@ -216,44 +198,33 @@ const html = `<!DOCTYPE html>
     <p class="field"><b>中文姓名：</b>${data.name}</p>
     <p class="field"><b>护照姓名（拼音）：</b>${data.nameEn}</p>
     <p class="field"><b>出生日期：</b>${data.birthDate}</p>
-    <p class="field"><b>国籍：</b>${data.nationality}</p>
     <p class="field"><b>护照号码：</b>${data.passportNo}</p>
     <p class="field"><b>邮箱：</b>${data.email}</p>
-    <p class="field"><b>手机：</b>${data.contact}</p>
-    <p class="field"><b>微信：</b>${data.wechat}</p>
+    <p class="field"><b>手机 / 微信：</b>${data.contact}</p>
 
     <h2>2. 留学意向</h2>
     <p class="field"><b>目标城市：</b>${data.city}</p>
-    <p class="field"><b>意向学校：</b>${data.schoolIntent}</p>
     <p class="field"><b>意向学历：</b>${data.degree}</p>
+    <p class="field"><b>意向学校：</b>${data.schoolIntent}</p>
     <p class="field"><b>意向专业 / 课程：</b>${data.major}</p>
     <p class="field"><b>预计开学：</b>${data.arrival}</p>
     <p class="field"><b>英语成绩：</b>${data.english}</p>
     <p class="field"><b>是否已有 Offer：</b>${data.hasOffer}</p>
-    <p class="field"><b>咨询方向：</b>${data.interests}</p>
 
     <h2>3. 学历背景</h2>
     <p class="field"><b>最高学历：</b>${data.highestEdu}</p>
-    <p class="field"><b>学校：</b>${data.schoolName}</p>
+    <p class="field"><b>毕业院校：</b>${data.schoolName}</p>
     <p class="field"><b>专业：</b>${data.schoolMajor}</p>
-    <p class="block-label">学历时间线：</p>
-    <p class="block-body">${data.eduHistory}</p>
 
     <h2>4. 工作经历</h2>
     <p class="field"><b>当前状态：</b>${data.employmentStatus}</p>
-    <p class="field"><b>单位：</b>${data.employer}</p>
-    <p class="field"><b>职位：</b>${data.jobTitle}</p>
+    <p class="field"><b>单位 / 职位：</b>${data.employer}</p>
     <p class="field"><b>税后月收入（人民币）：</b>${data.monthlyIncome}</p>
-    <p class="block-label">工作经历：</p>
-    <p class="block-body">${data.workHistory}</p>
 
     <h2>5. 资金证明：收入、存款与流水</h2>
     <p class="field"><b>资金来源：</b>${data.fundingSource}</p>
-    <p class="field"><b>担保人姓名：</b>${data.sponsorName}</p>
-    <p class="field"><b>与申请人关系：</b>${data.sponsorRelation}</p>
-    <p class="field"><b>担保人年收入（人民币）：</b>${data.sponsorIncome}</p>
+    <p class="field"><b>担保人 / 关系：</b>${data.sponsorName}</p>
     <p class="field"><b>存款总额：</b>${data.depositAmount}</p>
-    <p class="field"><b>开户银行：</b>${data.depositBank}</p>
     <p class="field"><b>可提供流水月份：</b>${data.statementMonths}</p>
     <p class="block-label">大额进账说明：</p>
     <p class="block-body">${data.largeTransfers}</p>
@@ -266,7 +237,7 @@ const html = `<!DOCTYPE html>
     <p class="block-label">补充说明：</p>
     <p class="block-body">${data.notes}</p>
 
-    <p class="note">材料提醒：请另附学历证明、在职/收入证明、存款证明、银行流水扫描件。本文件由点点新西兰留学咨询网站在客户浏览器本地生成，未上传至服务器。</p>
+    <p class="note">材料提醒：如需继续沟通，请将此 Word 文件发送至 yuditawang0925@gmail.com。请另附学历证明、在职/收入证明、存款证明、银行流水扫描件。本文件由点点新西兰留学咨询网站在客户浏览器本地生成，未上传至服务器。本站内容仅为一般信息，不构成持牌移民法律建议。</p>
   </article>
 </body>
 </html>
