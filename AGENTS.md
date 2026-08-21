@@ -14,6 +14,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Homepage header is light-on-dark (weight 600) with a lake-blue `填写留学咨询` pill; inner pages use the same dark masthead (not a paper strip). Compact screens use Logo + CTA + menu instead of inline nav.
 - Hero includes a one-line service description: 面向计划赴新西兰留学的学生，提供选校、申请材料与落地建议。 CTA copy is unified as `填写留学咨询` (header, hero, and consult entry).
 - Mobile header is Logo (horizontal lockup, tagline hidden) + `填写留学咨询` + Menu. Do not squeeze 留学 / 求职 / 生活 / language into one row. Primary controls stay at least 44px tall.
+- Compact screens (tablet ≤980px, phone ≤680px) keep the same information structure. Hero photo is framed so the Wanaka tree stays to the right of the title; page background uses the tree-free crop. Do not use `background-attachment: fixed` below 880px (it breaks on iOS).
 - Default to Chinese; switching to English replaces the page copy rather than showing both languages together.
 - Use one consistent sans-serif font stack with restrained weights (Manrope + Noto Sans SC).
 - Keep consultation as a homepage entry only; do not show form fields on the homepage. Hero/header CTAs navigate to the in-app consultation page.
