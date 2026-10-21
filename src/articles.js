@@ -4507,7 +4507,7 @@ export const articles = [
         "type": "h2",
         "text": "3. 奥克兰大学 Master of Artificial Intelligence（MAI）"
       },
-      "计算机向的授课型 AI。120 或 180 学分；2027 Semester One 开学 3 月 1 日，申请截止官网写 2026-12-08。GPA/GPE 4.0；国际生 IELTS 6.5、单项不低于 6.0。120 学分路径面向工程/荣誉理学等背景，180 学分面向理学学士。",
+      "计算机向的授课型 AI。120 或 180 学分；2027 Semester One 开学 3 月 1 日，课程页申请截止写 2026-12-08。研究生截止页另写：国际生申请 2027 Semester One 需在 2026-12-01 前提交，以便留签证时间。GPA/GPE 4.0；国际生 IELTS 6.5、单项不低于 6.0。120 学分路径面向工程/荣誉理学等背景，180 学分面向理学学士。https://www.auckland.ac.nz/en/study/applications-and-admissions/how-to-apply/postgraduate-application-closing-dates.html",
       "学费页目前公示的是 2026 年国际约 NZD 54,508（未写清对应 120 还是 180 学分），另加每学分 NZD 9.44 服务费。2027 学费以官网为准。https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/master-of-artificial-intelligence--mai-.html",
       {
         "type": "h2",
@@ -4568,7 +4568,7 @@ export const articles = [
         "type": "h2",
         "text": "3. University of Auckland Master of Artificial Intelligence"
       },
-      "120 or 180 points. 2027 Semester One starts 1 March; applications close 8 December 2026. GPA/GPE 4.0. IELTS 6.5 / 6.0. 2026 international estimate NZD 54,508 (the page does not say whether that is 120 or 180 points). 2027 fees: check the official page.",
+      "120 or 180 points. 2027 Semester One starts 1 March; the programme page closes on 8 December 2026. Auckland’s postgraduate closing-dates page separately tells international Semester One 2027 applicants to apply by 1 December 2026 for visa time. GPA/GPE 4.0. IELTS 6.5 / 6.0. 2026 international estimate NZD 54,508 (the page does not say whether that is 120 or 180 points). 2027 fees: check the official page.",
       {
         "type": "h2",
         "text": "4. University of Canterbury Master of Artificial Intelligence"
