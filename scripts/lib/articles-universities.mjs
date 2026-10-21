@@ -7,6 +7,7 @@ import {
   feeNoteEn,
   sourcesBlock,
 } from "./article-kit.mjs";
+import { campusFig, campusHero } from "./campus-images.mjs";
 
 const RELATED = [
   "nz-universities-overview",
@@ -27,6 +28,8 @@ export function universityArticles() {
 const UNIS = [
   {
     slug: "school-auckland",
+    imageId: "uni-auckland",
+    imageId2: "street-queen",
     nameZh: "奥克兰大学",
     nameEn: "University of Auckland",
     maori: "Waipapa Taumata Rau",
@@ -60,6 +63,7 @@ const UNIS = [
   },
   {
     slug: "school-aut",
+    imageId: "uni-aut",
     nameZh: "奥克兰理工大学（AUT）",
     nameEn: "Auckland University of Technology",
     maori: "Te Wānanga Aronui o Tāmaki Makau Rau",
@@ -91,6 +95,7 @@ const UNIS = [
   },
   {
     slug: "school-waikato",
+    imageId: "uni-waikato",
     nameZh: "怀卡托大学",
     nameEn: "University of Waikato",
     maori: "Te Whare Wānanga o Waikato",
@@ -122,6 +127,8 @@ const UNIS = [
   },
   {
     slug: "school-massey",
+    imageId: "uni-massey",
+    imageId2: "uni-massey-albany",
     nameZh: "梅西大学",
     nameEn: "Massey University",
     maori: "Te Kunenga ki Pūrehuroa",
@@ -153,6 +160,7 @@ const UNIS = [
   },
   {
     slug: "school-vuw",
+    imageId: "uni-vuw",
     nameZh: "惠灵顿维多利亚大学",
     nameEn: "Victoria University of Wellington",
     maori: "Te Herenga Waka",
@@ -184,6 +192,7 @@ const UNIS = [
   },
   {
     slug: "school-canterbury",
+    imageId: "uni-canterbury",
     nameZh: "坎特伯雷大学",
     nameEn: "University of Canterbury",
     maori: "Te Whare Wānanga o Waitaha",
@@ -215,6 +224,7 @@ const UNIS = [
   },
   {
     slug: "school-lincoln",
+    imageId: "uni-lincoln",
     nameZh: "林肯大学",
     nameEn: "Lincoln University",
     maori: "Te Whare Wānaka o Aoraki",
@@ -248,6 +258,7 @@ const UNIS = [
   },
   {
     slug: "school-otago",
+    imageId: "uni-otago",
     nameZh: "奥塔哥大学",
     nameEn: "University of Otago",
     maori: "Ōtākou Whakaihu Waka",
@@ -292,15 +303,24 @@ function universityArticle(uni) {
     titleEn,
     excerptZh: `${uni.nameZh}（${uni.maori}）：校区城市、公开排名来源、国际学费约数与入学英语。`,
     excerptEn: `${uni.nameEn} (${uni.maori}): campus city, cited ranking, approximate international fees and English entry.`,
-    image: IMG.study,
-    imageAltZh: uni.nameZh,
-    imageAltEn: uni.nameEn,
+    ...campusHero(uni.imageId),
+    imageAltZh: `${uni.nameZh}校园`,
+    imageAltEn: `${uni.nameEn} campus`,
     website: uni.website,
     related: RELATED.filter((slug) => slug !== uni.slug),
     bodyZh: [
       `${uni.nameZh}（${uni.nameEn}，${uni.maori}）是新西兰八所公立大学之一。选校、交费和签证材料用官网全名。下面只整理可核对的公开信息；数字会变。`,
       `官网：${uni.website}`,
-      fig(IMG.class, `${uni.nameZh}学习场景`, "先锁定专业与上课校区，再比排名和学费。"),
+      ...(uni.imageId2
+        ? [campusFig(
+            uni.imageId2,
+            uni.imageId2 === "street-queen" ? "奥克兰 Queen Street 一带" : `${uni.nameZh}另一校区`,
+            uni.imageId2 === "street-queen"
+              ? "市中心街景，示意通勤环境，不是校内教学楼。报名时把上课 campus 写进预算表。"
+              : "梅西大学 Albany（奥克兰）校区。同一所大学也可能有多个校区，报名时把上课 campus 写进预算表。",
+            true,
+          )]
+        : []),
       h2("校区与城市"),
       uni.cityZh,
       "城市决定房租、兼职机会和气候。奥克兰最贵；惠灵顿住房也紧；汉密尔顿、但尼丁、林肯通常更省。把一年房租写进和学费同一张表。",
@@ -329,7 +349,16 @@ function universityArticle(uni) {
     bodyEn: [
       `${uni.nameEn} (${uni.maori}) is one of New Zealand’s eight public universities. Use the official name for applications, fees and visas.`,
       `Official site: ${uni.website}`,
-      fig(IMG.class, `${uni.nameEn} study setting`, "Lock the programme and campus before you compare rank or fees."),
+      ...(uni.imageId2
+        ? [campusFig(
+            uni.imageId2,
+            uni.imageId2 === "street-queen" ? "Queen Street, Auckland" : `${uni.nameEn} other campus`,
+            uni.imageId2 === "street-queen"
+              ? "Street scene for commuting context, not a campus building. Confirm the teaching campus before you budget rent."
+              : "Massey Albany (Auckland). Confirm the teaching campus before you budget rent.",
+            false,
+          )]
+        : []),
       h2("Campus and city"),
       uni.cityEn,
       "City choice drives rent, part-time work and climate. Put a year of housing on the same sheet as tuition.",

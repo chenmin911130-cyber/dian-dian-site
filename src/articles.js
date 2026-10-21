@@ -10,9 +10,17 @@ export const articles = [
     "titleEn": "Choosing among New Zealand’s eight universities",
     "excerptZh": "奥克兰大学、AUT、怀卡托、梅西、惠灵顿维多利亚、坎特伯雷、林肯与奥塔哥：先对照城市与专业，再看排名与学费约数。",
     "excerptEn": "Auckland, AUT, Waikato, Massey, Victoria Wellington, Canterbury, Lincoln and Otago: start with city and subject, then rankings and approximate fees.",
-    "image": "/images/study-feature.png",
-    "imageAltZh": "新西兰大学校园",
-    "imageAltEn": "A New Zealand university campus",
+    "image": "/images/campus/uni-auckland.webp",
+    "imageAltZh": "奥克兰大学钟楼与校园",
+    "imageAltEn": "University of Auckland clock tower",
+    "imageCreditZh": {
+      "text": "图片：Uhooep · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Clock_Tower%2C_University_of_Auckland.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Uhooep · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Clock_Tower%2C_University_of_Auckland.jpg"
+    },
     "related": [
       "school-auckland",
       "school-aut",
@@ -39,9 +47,13 @@ export const articles = [
       "奥塔哥大学（University of Otago）——但尼丁，另有基督城、惠灵顿健康科学校区。医学、牙科、药学、人文与海洋科学常被讨论。QS 2026：全球并列第 197（校方 2025-06-19 新闻）。学费按 paper 计。官网 https://www.otago.ac.nz/",
       {
         "type": "image",
-        "src": "/images/article-campus-class.png",
+        "src": "/images/campus/ai-lecture.webp",
         "alt": "大学课堂",
-        "caption": "八大是综合或专科研究型大学，和私立技能学院不是同一条赛道——先锁定学历级别和专业。"
+        "caption": "课堂示意（摄于赫尔辛基理工大学，不是新西兰校园）。八大是研究型大学，和私立技能学院不是同一条赛道——先锁定学历级别和专业。",
+        "credit": {
+          "text": "图片：Tungsten · Public domain",
+          "href": "https://commons.wikimedia.org/wiki/File:Mathematics_lecture_at_the_Helsinki_University_of_Technology.jpg"
+        }
       },
       {
         "type": "h2",
@@ -61,9 +73,13 @@ export const articles = [
       "多数本科与授课型硕士主开学季是 2 月（Semester 1）和 7 月（Semester 2）。医学、教育、部分健康科学只有 2 月或更早截止。2027 年 Semester 1，校方已公布的国际申请节点包括：奥塔哥境外全日制学位 2026-11-15；林肯境外 2026-12-01；奥克兰大学一般课程 2026-12-08（国际授课型研究生页另写建议 2026-12-01，以便留签证时间）。详见《2027 入学截止与博士奖学金》。",
       {
         "type": "image",
-        "src": "/images/article-auckland-cbd.png",
-        "alt": "奥克兰城市",
-        "caption": "同一所大学也可能有多个校区；梅西、AUT、奥塔哥尤其要把「上课校区」写进预算表。"
+        "src": "/images/campus/uni-otago.webp",
+        "alt": "奥塔哥大学钟楼",
+        "caption": "同一所大学也可能有多个校区；梅西、AUT、奥塔哥尤其要把「上课校区」写进预算表。",
+        "credit": {
+          "text": "图片：Bernard Spragg. NZ · CC0",
+          "href": "https://commons.wikimedia.org/wiki/File:University_of_Otago_Clocktower._NZ_(22954035383).jpg"
+        }
       },
       {
         "type": "h2",
@@ -106,9 +122,13 @@ export const articles = [
       "University of Otago—Dunedin, with health-science campuses in Christchurch and Wellington. Medicine, dentistry, pharmacy, humanities and marine science are often discussed. QS 2026: =197 (Otago news, 19 June 2025). Fees are charged per paper. https://www.otago.ac.nz/",
       {
         "type": "image",
-        "src": "/images/article-campus-class.png",
+        "src": "/images/campus/ai-lecture.webp",
         "alt": "University classroom",
-        "caption": "The eight universities are a different track from private skills colleges—lock the qualification level and subject first."
+        "caption": "Generic lecture photo (Helsinki University of Technology, not a New Zealand campus). The eight universities are a different track from private skills colleges.",
+        "credit": {
+          "text": "Photo: Tungsten · Public domain",
+          "href": "https://commons.wikimedia.org/wiki/File:Mathematics_lecture_at_the_Helsinki_University_of_Technology.jpg"
+        }
       },
       {
         "type": "h2",
@@ -128,9 +148,13 @@ export const articles = [
       "Most taught programmes start in February and July. Medicine, teaching and some health programmes have earlier or single intakes. Published 2027 Semester 1 international nodes include Otago offshore 15 November 2026, Lincoln offshore 1 December 2026, and Auckland’s general date 8 December 2026 (Auckland also advises international taught postgraduate applicants to apply by 1 December 2026 for visa time).",
       {
         "type": "image",
-        "src": "/images/article-auckland-cbd.png",
-        "alt": "Auckland city",
-        "caption": "Confirm the teaching campus—Massey, AUT and Otago in particular."
+        "src": "/images/campus/uni-otago.webp",
+        "alt": "University of Otago clocktower",
+        "caption": "Confirm the teaching campus—Massey, AUT and Otago in particular.",
+        "credit": {
+          "text": "Photo: Bernard Spragg. NZ · CC0",
+          "href": "https://commons.wikimedia.org/wiki/File:University_of_Otago_Clocktower._NZ_(22954035383).jpg"
+        }
       },
       {
         "type": "h2",
@@ -1819,9 +1843,17 @@ export const articles = [
     "titleEn": "University of Auckland: strengths, rank, fees and who it suits",
     "excerptZh": "奥克兰大学（Waipapa Taumata Rau）：校区城市、公开排名来源、国际学费约数与入学英语。",
     "excerptEn": "University of Auckland (Waipapa Taumata Rau): campus city, cited ranking, approximate international fees and English entry.",
-    "image": "/images/study-feature.png",
-    "imageAltZh": "奥克兰大学",
-    "imageAltEn": "University of Auckland",
+    "image": "/images/campus/uni-auckland.webp",
+    "imageAltZh": "奥克兰大学校园",
+    "imageAltEn": "University of Auckland campus",
+    "imageCreditZh": {
+      "text": "图片：Uhooep · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Clock_Tower%2C_University_of_Auckland.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Uhooep · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Clock_Tower%2C_University_of_Auckland.jpg"
+    },
     "website": "https://www.auckland.ac.nz/",
     "related": [
       "nz-universities-overview",
@@ -1838,9 +1870,13 @@ export const articles = [
       "官网：https://www.auckland.ac.nz/",
       {
         "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "奥克兰大学学习场景",
-        "caption": "先锁定专业与上课校区，再比排名和学费。"
+        "src": "/images/campus/street-queen.webp",
+        "alt": "奥克兰 Queen Street 一带",
+        "caption": "市中心街景，示意通勤环境，不是校内教学楼。报名时把上课 campus 写进预算表。",
+        "credit": {
+          "text": "图片：Paora · CC0",
+          "href": "https://commons.wikimedia.org/wiki/File:Queen_Street%2C_Auckland_PA01.jpg"
+        }
       },
       {
         "type": "h2",
@@ -1900,9 +1936,13 @@ export const articles = [
       "Official site: https://www.auckland.ac.nz/",
       {
         "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "University of Auckland study setting",
-        "caption": "Lock the programme and campus before you compare rank or fees."
+        "src": "/images/campus/street-queen.webp",
+        "alt": "Queen Street, Auckland",
+        "caption": "Street scene for commuting context, not a campus building. Confirm the teaching campus before you budget rent.",
+        "credit": {
+          "text": "Photo: Paora · CC0",
+          "href": "https://commons.wikimedia.org/wiki/File:Queen_Street%2C_Auckland_PA01.jpg"
+        }
       },
       {
         "type": "h2",
@@ -1966,9 +2006,17 @@ export const articles = [
     "titleEn": "Auckland University of Technology: strengths, rank, fees and who it suits",
     "excerptZh": "奥克兰理工大学（AUT）（Te Wānanga Aronui o Tāmaki Makau Rau）：校区城市、公开排名来源、国际学费约数与入学英语。",
     "excerptEn": "Auckland University of Technology (Te Wānanga Aronui o Tāmaki Makau Rau): campus city, cited ranking, approximate international fees and English entry.",
-    "image": "/images/study-feature.png",
-    "imageAltZh": "奥克兰理工大学（AUT）",
-    "imageAltEn": "Auckland University of Technology",
+    "image": "/images/campus/uni-aut.webp",
+    "imageAltZh": "奥克兰理工大学（AUT）校园",
+    "imageAltEn": "Auckland University of Technology campus",
+    "imageCreditZh": {
+      "text": "图片：Sophbuchan · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:North_Campus.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Sophbuchan · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:North_Campus.jpg"
+    },
     "website": "https://www.aut.ac.nz/",
     "related": [
       "nz-universities-overview",
@@ -1983,12 +2031,6 @@ export const articles = [
     "bodyZh": [
       "奥克兰理工大学（AUT）（Auckland University of Technology，Te Wānanga Aronui o Tāmaki Makau Rau）是新西兰八所公立大学之一。选校、交费和签证材料用官网全名。下面只整理可核对的公开信息；数字会变。",
       "官网：https://www.aut.ac.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "奥克兰理工大学（AUT）学习场景",
-        "caption": "先锁定专业与上课校区，再比排名和学费。"
-      },
       {
         "type": "h2",
         "text": "校区与城市"
@@ -2045,12 +2087,6 @@ export const articles = [
     "bodyEn": [
       "Auckland University of Technology (Te Wānanga Aronui o Tāmaki Makau Rau) is one of New Zealand’s eight public universities. Use the official name for applications, fees and visas.",
       "Official site: https://www.aut.ac.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "Auckland University of Technology study setting",
-        "caption": "Lock the programme and campus before you compare rank or fees."
-      },
       {
         "type": "h2",
         "text": "Campus and city"
@@ -2113,9 +2149,17 @@ export const articles = [
     "titleEn": "University of Waikato: strengths, rank, fees and who it suits",
     "excerptZh": "怀卡托大学（Te Whare Wānanga o Waikato）：校区城市、公开排名来源、国际学费约数与入学英语。",
     "excerptEn": "University of Waikato (Te Whare Wānanga o Waikato): campus city, cited ranking, approximate international fees and English entry.",
-    "image": "/images/study-feature.png",
-    "imageAltZh": "怀卡托大学",
-    "imageAltEn": "University of Waikato",
+    "image": "/images/campus/uni-waikato.webp",
+    "imageAltZh": "怀卡托大学校园",
+    "imageAltEn": "University of Waikato campus",
+    "imageCreditZh": {
+      "text": "图片：Waikato Wordwizard · CC BY-SA 3.0",
+      "href": "https://commons.wikimedia.org/wiki/File:University_of_Waikato_village_green.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Waikato Wordwizard · CC BY-SA 3.0",
+      "href": "https://commons.wikimedia.org/wiki/File:University_of_Waikato_village_green.jpg"
+    },
     "website": "https://www.waikato.ac.nz/",
     "related": [
       "nz-universities-overview",
@@ -2130,12 +2174,6 @@ export const articles = [
     "bodyZh": [
       "怀卡托大学（University of Waikato，Te Whare Wānanga o Waikato）是新西兰八所公立大学之一。选校、交费和签证材料用官网全名。下面只整理可核对的公开信息；数字会变。",
       "官网：https://www.waikato.ac.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "怀卡托大学学习场景",
-        "caption": "先锁定专业与上课校区，再比排名和学费。"
-      },
       {
         "type": "h2",
         "text": "校区与城市"
@@ -2192,12 +2230,6 @@ export const articles = [
     "bodyEn": [
       "University of Waikato (Te Whare Wānanga o Waikato) is one of New Zealand’s eight public universities. Use the official name for applications, fees and visas.",
       "Official site: https://www.waikato.ac.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "University of Waikato study setting",
-        "caption": "Lock the programme and campus before you compare rank or fees."
-      },
       {
         "type": "h2",
         "text": "Campus and city"
@@ -2260,9 +2292,17 @@ export const articles = [
     "titleEn": "Massey University: strengths, rank, fees and who it suits",
     "excerptZh": "梅西大学（Te Kunenga ki Pūrehuroa）：校区城市、公开排名来源、国际学费约数与入学英语。",
     "excerptEn": "Massey University (Te Kunenga ki Pūrehuroa): campus city, cited ranking, approximate international fees and English entry.",
-    "image": "/images/study-feature.png",
-    "imageAltZh": "梅西大学",
-    "imageAltEn": "Massey University",
+    "image": "/images/campus/uni-massey.webp",
+    "imageAltZh": "梅西大学校园",
+    "imageAltEn": "Massey University campus",
+    "imageCreditZh": {
+      "text": "图片：Michal Klajban · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Massey_University%2C_Palmerston_North_Campus%2C_New_Zealand_03.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Michal Klajban · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Massey_University%2C_Palmerston_North_Campus%2C_New_Zealand_03.jpg"
+    },
     "website": "https://www.massey.ac.nz/",
     "related": [
       "nz-universities-overview",
@@ -2279,9 +2319,13 @@ export const articles = [
       "官网：https://www.massey.ac.nz/",
       {
         "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "梅西大学学习场景",
-        "caption": "先锁定专业与上课校区，再比排名和学费。"
+        "src": "/images/campus/uni-massey-albany.webp",
+        "alt": "梅西大学另一校区",
+        "caption": "梅西大学 Albany（奥克兰）校区。同一所大学也可能有多个校区，报名时把上课 campus 写进预算表。",
+        "credit": {
+          "text": "图片：Ingolfson · Public domain",
+          "href": "https://commons.wikimedia.org/wiki/File:Massey_University%2C_Albany_Campus_I.jpg"
+        }
       },
       {
         "type": "h2",
@@ -2341,9 +2385,13 @@ export const articles = [
       "Official site: https://www.massey.ac.nz/",
       {
         "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "Massey University study setting",
-        "caption": "Lock the programme and campus before you compare rank or fees."
+        "src": "/images/campus/uni-massey-albany.webp",
+        "alt": "Massey University other campus",
+        "caption": "Massey Albany (Auckland). Confirm the teaching campus before you budget rent.",
+        "credit": {
+          "text": "Photo: Ingolfson · Public domain",
+          "href": "https://commons.wikimedia.org/wiki/File:Massey_University%2C_Albany_Campus_I.jpg"
+        }
       },
       {
         "type": "h2",
@@ -2407,9 +2455,17 @@ export const articles = [
     "titleEn": "Victoria University of Wellington: strengths, rank, fees and who it suits",
     "excerptZh": "惠灵顿维多利亚大学（Te Herenga Waka）：校区城市、公开排名来源、国际学费约数与入学英语。",
     "excerptEn": "Victoria University of Wellington (Te Herenga Waka): campus city, cited ranking, approximate international fees and English entry.",
-    "image": "/images/study-feature.png",
-    "imageAltZh": "惠灵顿维多利亚大学",
-    "imageAltEn": "Victoria University of Wellington",
+    "image": "/images/campus/uni-vuw.webp",
+    "imageAltZh": "惠灵顿维多利亚大学校园",
+    "imageAltEn": "Victoria University of Wellington campus",
+    "imageCreditZh": {
+      "text": "图片：L Maule · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Hunter_VUW.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: L Maule · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Hunter_VUW.jpg"
+    },
     "website": "https://www.wgtn.ac.nz/",
     "related": [
       "nz-universities-overview",
@@ -2424,12 +2480,6 @@ export const articles = [
     "bodyZh": [
       "惠灵顿维多利亚大学（Victoria University of Wellington，Te Herenga Waka）是新西兰八所公立大学之一。选校、交费和签证材料用官网全名。下面只整理可核对的公开信息；数字会变。",
       "官网：https://www.wgtn.ac.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "惠灵顿维多利亚大学学习场景",
-        "caption": "先锁定专业与上课校区，再比排名和学费。"
-      },
       {
         "type": "h2",
         "text": "校区与城市"
@@ -2486,12 +2536,6 @@ export const articles = [
     "bodyEn": [
       "Victoria University of Wellington (Te Herenga Waka) is one of New Zealand’s eight public universities. Use the official name for applications, fees and visas.",
       "Official site: https://www.wgtn.ac.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "Victoria University of Wellington study setting",
-        "caption": "Lock the programme and campus before you compare rank or fees."
-      },
       {
         "type": "h2",
         "text": "Campus and city"
@@ -2554,9 +2598,17 @@ export const articles = [
     "titleEn": "University of Canterbury: strengths, rank, fees and who it suits",
     "excerptZh": "坎特伯雷大学（Te Whare Wānanga o Waitaha）：校区城市、公开排名来源、国际学费约数与入学英语。",
     "excerptEn": "University of Canterbury (Te Whare Wānanga o Waitaha): campus city, cited ranking, approximate international fees and English entry.",
-    "image": "/images/study-feature.png",
-    "imageAltZh": "坎特伯雷大学",
-    "imageAltEn": "University of Canterbury",
+    "image": "/images/campus/uni-canterbury.webp",
+    "imageAltZh": "坎特伯雷大学校园",
+    "imageAltEn": "University of Canterbury campus",
+    "imageCreditZh": {
+      "text": "图片：Claude12 · CC BY-SA 3.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Ilam_Fields_University_of_Canterbury_New_Zealand_2007.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Claude12 · CC BY-SA 3.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Ilam_Fields_University_of_Canterbury_New_Zealand_2007.jpg"
+    },
     "website": "https://www.canterbury.ac.nz/",
     "related": [
       "nz-universities-overview",
@@ -2571,12 +2623,6 @@ export const articles = [
     "bodyZh": [
       "坎特伯雷大学（University of Canterbury，Te Whare Wānanga o Waitaha）是新西兰八所公立大学之一。选校、交费和签证材料用官网全名。下面只整理可核对的公开信息；数字会变。",
       "官网：https://www.canterbury.ac.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "坎特伯雷大学学习场景",
-        "caption": "先锁定专业与上课校区，再比排名和学费。"
-      },
       {
         "type": "h2",
         "text": "校区与城市"
@@ -2633,12 +2679,6 @@ export const articles = [
     "bodyEn": [
       "University of Canterbury (Te Whare Wānanga o Waitaha) is one of New Zealand’s eight public universities. Use the official name for applications, fees and visas.",
       "Official site: https://www.canterbury.ac.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "University of Canterbury study setting",
-        "caption": "Lock the programme and campus before you compare rank or fees."
-      },
       {
         "type": "h2",
         "text": "Campus and city"
@@ -2701,9 +2741,17 @@ export const articles = [
     "titleEn": "Lincoln University: strengths, rank, fees and who it suits",
     "excerptZh": "林肯大学（Te Whare Wānaka o Aoraki）：校区城市、公开排名来源、国际学费约数与入学英语。",
     "excerptEn": "Lincoln University (Te Whare Wānaka o Aoraki): campus city, cited ranking, approximate international fees and English entry.",
-    "image": "/images/study-feature.png",
-    "imageAltZh": "林肯大学",
-    "imageAltEn": "Lincoln University",
+    "image": "/images/campus/uni-lincoln.webp",
+    "imageAltZh": "林肯大学校园",
+    "imageAltEn": "Lincoln University campus",
+    "imageCreditZh": {
+      "text": "图片：Michal Klajban · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Ivey_Hall%2C_Lincoln_University%2C_New_Zealand.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Michal Klajban · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Ivey_Hall%2C_Lincoln_University%2C_New_Zealand.jpg"
+    },
     "website": "https://www.lincoln.ac.nz/",
     "related": [
       "nz-universities-overview",
@@ -2718,12 +2766,6 @@ export const articles = [
     "bodyZh": [
       "林肯大学（Lincoln University，Te Whare Wānaka o Aoraki）是新西兰八所公立大学之一。选校、交费和签证材料用官网全名。下面只整理可核对的公开信息；数字会变。",
       "官网：https://www.lincoln.ac.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "林肯大学学习场景",
-        "caption": "先锁定专业与上课校区，再比排名和学费。"
-      },
       {
         "type": "h2",
         "text": "校区与城市"
@@ -2780,12 +2822,6 @@ export const articles = [
     "bodyEn": [
       "Lincoln University (Te Whare Wānaka o Aoraki) is one of New Zealand’s eight public universities. Use the official name for applications, fees and visas.",
       "Official site: https://www.lincoln.ac.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "Lincoln University study setting",
-        "caption": "Lock the programme and campus before you compare rank or fees."
-      },
       {
         "type": "h2",
         "text": "Campus and city"
@@ -2848,9 +2884,17 @@ export const articles = [
     "titleEn": "University of Otago: strengths, rank, fees and who it suits",
     "excerptZh": "奥塔哥大学（Ōtākou Whakaihu Waka）：校区城市、公开排名来源、国际学费约数与入学英语。",
     "excerptEn": "University of Otago (Ōtākou Whakaihu Waka): campus city, cited ranking, approximate international fees and English entry.",
-    "image": "/images/study-feature.png",
-    "imageAltZh": "奥塔哥大学",
-    "imageAltEn": "University of Otago",
+    "image": "/images/campus/uni-otago.webp",
+    "imageAltZh": "奥塔哥大学校园",
+    "imageAltEn": "University of Otago campus",
+    "imageCreditZh": {
+      "text": "图片：Bernard Spragg. NZ · CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:University_of_Otago_Clocktower._NZ_(22954035383).jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Bernard Spragg. NZ · CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:University_of_Otago_Clocktower._NZ_(22954035383).jpg"
+    },
     "website": "https://www.otago.ac.nz/",
     "related": [
       "nz-universities-overview",
@@ -2865,12 +2909,6 @@ export const articles = [
     "bodyZh": [
       "奥塔哥大学（University of Otago，Ōtākou Whakaihu Waka）是新西兰八所公立大学之一。选校、交费和签证材料用官网全名。下面只整理可核对的公开信息；数字会变。",
       "官网：https://www.otago.ac.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "奥塔哥大学学习场景",
-        "caption": "先锁定专业与上课校区，再比排名和学费。"
-      },
       {
         "type": "h2",
         "text": "校区与城市"
@@ -2927,12 +2965,6 @@ export const articles = [
     "bodyEn": [
       "University of Otago (Ōtākou Whakaihu Waka) is one of New Zealand’s eight public universities. Use the official name for applications, fees and visas.",
       "Official site: https://www.otago.ac.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "University of Otago study setting",
-        "caption": "Lock the programme and campus before you compare rank or fees."
-      },
       {
         "type": "h2",
         "text": "Campus and city"
@@ -2995,9 +3027,17 @@ export const articles = [
     "titleEn": "Auckland secondary schools for international students: zones, NCEA/IB/CIE, fees and guardians",
     "excerptZh": "只写能核对的事实：学区对本地生与国际生不同、三大课程体系、公开国际学费，以及 18 岁以下住宿规则。",
     "excerptEn": "Verified facts only: how zoning works, NCEA/IB/CIE, published international fees, and under-18 accommodation rules.",
-    "image": "/images/study-feature.png",
-    "imageAltZh": "奥克兰中学国际生",
-    "imageAltEn": "Auckland secondary schools for international students",
+    "image": "/images/campus/hs-grammar.webp",
+    "imageAltZh": "奥克兰文法学校校园",
+    "imageAltEn": "Auckland Grammar School campus",
+    "imageCreditZh": {
+      "text": "图片：Ingolfson · Public domain",
+      "href": "https://commons.wikimedia.org/wiki/File:Auckland_Grammar_School%2C_East_Part.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Ingolfson · Public domain",
+      "href": "https://commons.wikimedia.org/wiki/File:Auckland_Grammar_School%2C_East_Part.jpg"
+    },
     "related": [
       "school-auckland-grammar",
       "school-epsom-girls",
@@ -3014,9 +3054,13 @@ export const articles = [
       "奥克兰有一批常被国际家庭问起的中学。本稿和各校专文只写能在学校官网或移民局/NZQA 文件里核对的事实。学费均为约数，核对日期 2026-10-21，以学校国际部当季账单为准。本站不是学校招生办，也不能保证学位。",
       {
         "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "中学课堂",
-        "caption": "先定课程体系（NCEA / Cambridge / IB）和住宿方式，再比学费。"
+        "src": "/images/campus/hs-epsom.webp",
+        "alt": "伊普瑟姆女子文法学校",
+        "caption": "先定课程体系（NCEA / Cambridge / IB）和住宿方式，再比学费。",
+        "credit": {
+          "text": "图片：Prosperosity · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Epsom_Girls'_Grammar_School.jpg"
+        }
       },
       {
         "type": "h2",
@@ -3031,6 +3075,16 @@ export const articles = [
       "NCEA（National Certificate of Educational Achievement）是新西兰国家资格，Level 1–3 对应高中后段，由 NZQA 管理。国际全费生参加 NCEA 外部考试需另付 NZQA 费用，多所学校 2026 年写明约 NZD 383.30/年。",
       "Cambridge International（常称 CIE / AS / A2）是部分学校并行的英国课程，例如奥克兰文法（Auckland Grammar）公开同时提供 NCEA 与 Cambridge，并单列 AS/A2 科目考试费。",
       "IB Diploma 是国际文凭课程。Rangitoto College 国际学费表把 NCEA 与 IB 分成两个学费档；Diocesan 学费说明里把 IB Diploma 报考费列为学费未包含项。一所学校是否开 IB，以该校课程页为准，不要用口头名单推断。",
+      {
+        "type": "image",
+        "src": "/images/campus/hs-rangitoto.webp",
+        "alt": "朗伊托托学院数学楼",
+        "caption": "数学楼外观，不是全校全景。Rangitoto 把 NCEA 与 IB 分成两个国际学费档，报名时看课程页。",
+        "credit": {
+          "text": "图片：DXR · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Maths_Building%2C_Rangitoto_College%2C_Auckland_20100211_1.jpg"
+        }
+      },
       {
         "type": "h2",
         "text": "国际学费量级（2026，已核对校方页）"
@@ -3070,9 +3124,13 @@ export const articles = [
       "These notes cover Auckland secondary schools international families often ask about. Only facts that can be checked on a school page or an INZ/NZQA document are used. Fees are approximate as of 2026-10-21.",
       {
         "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "Secondary classroom",
-        "caption": "Choose the qualification pathway and accommodation type before you compare fees."
+        "src": "/images/campus/hs-epsom.webp",
+        "alt": "Epsom Girls’ Grammar School",
+        "caption": "Choose the qualification pathway and accommodation type before you compare fees.",
+        "credit": {
+          "text": "Photo: Prosperosity · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Epsom_Girls'_Grammar_School.jpg"
+        }
       },
       {
         "type": "h2",
@@ -3084,6 +3142,16 @@ export const articles = [
         "text": "NCEA, Cambridge and IB"
       },
       "NCEA is New Zealand’s national secondary qualification (NZQA). Several schools list the 2026 international NCEA exam fee at about NZD 383.30. Cambridge (CIE) runs alongside NCEA at some schools, including Auckland Grammar, which publishes separate AS/A2 subject fees. IB Diploma is offered at some schools; Rangitoto splits NCEA and IB tuition, and Diocesan lists IB exam fees as extra. Confirm on the school page.",
+      {
+        "type": "image",
+        "src": "/images/campus/hs-rangitoto.webp",
+        "alt": "Rangitoto College maths building",
+        "caption": "The maths building, not a whole-campus view. Rangitoto publishes separate NCEA and IB international fees.",
+        "credit": {
+          "text": "Photo: DXR · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Maths_Building%2C_Rangitoto_College%2C_Auckland_20100211_1.jpg"
+        }
+      },
       {
         "type": "h2",
         "text": "Published international tuition (2026 unless noted)"
@@ -3121,9 +3189,17 @@ export const articles = [
     "titleEn": "Auckland Grammar: NCEA, Cambridge and international fees",
     "excerptZh": "Mt Eden 公立男校。2026 年国际学费 NZD 26,250；不可独居或自行合租。",
     "excerptEn": "State boys’ school in Mt Eden. 2026 international tuition NZD 26,250; no living alone or flatting.",
-    "image": "/images/study-feature.png",
+    "image": "/images/campus/hs-grammar.webp",
     "imageAltZh": "Auckland Grammar：NCEA 与 Cambridge、国际学费",
     "imageAltEn": "Auckland Grammar: NCEA, Cambridge and international fees",
+    "imageCreditZh": {
+      "text": "图片：Ingolfson · Public domain",
+      "href": "https://commons.wikimedia.org/wiki/File:Auckland_Grammar_School%2C_East_Part.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Ingolfson · Public domain",
+      "href": "https://commons.wikimedia.org/wiki/File:Auckland_Grammar_School%2C_East_Part.jpg"
+    },
     "website": "https://www.ags.school.nz/",
     "related": [
       "auckland-secondary-schools",
@@ -3140,12 +3216,7 @@ export const articles = [
     "bodyZh": [
       "Mt Eden / Epsom 一带，奥克兰。以下费用与规则摘自学校官网，核对日期 2026-10-21。学区对国内生与国际全费生的含义不同，见总览一文。",
       "官网：https://www.ags.school.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "Auckland Grammar：NCEA 与 Cambridge、国际学费",
-        "caption": "国际申请走学校国际部，不要把学区房广告当成录取。"
-      },
+      "国际申请走学校国际部，不要把学区房广告当成录取。",
       "Auckland Grammar School 是奥克兰 Mt Eden 的公立男子中学，国际部页公布 2026 年费用（含 GST，校董会可调整）。",
       {
         "type": "h2",
@@ -3176,12 +3247,7 @@ export const articles = [
     "bodyEn": [
       "Mt Eden / Epsom 一带，奥克兰. Figures are from the school site, checked 2026-10-21. Zoning does not work the same way for domestic and full-fee international students.",
       "Official site: https://www.ags.school.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "Auckland Grammar: NCEA, Cambridge and international fees",
-        "caption": "Apply through the international office."
-      },
+      "Apply through the international office.",
       "Auckland Grammar is a state boys’ school in Mt Eden. 2026 international fees are published GST-inclusive and can be reviewed by the board.",
       {
         "type": "h2",
@@ -3218,9 +3284,17 @@ export const articles = [
     "titleEn": "Epsom Girls Grammar: international fees and NCEA",
     "excerptZh": "Epsom 公立女校。2026 年学费 NZD 23,000，2027 年 NZD 25,000。",
     "excerptEn": "State girls’ school in Epsom. Tuition NZD 23,000 in 2026 and NZD 25,000 in 2027.",
-    "image": "/images/study-feature.png",
+    "image": "/images/campus/hs-epsom.webp",
     "imageAltZh": "Epsom Girls Grammar：国际学费与 NCEA",
     "imageAltEn": "Epsom Girls Grammar: international fees and NCEA",
+    "imageCreditZh": {
+      "text": "图片：Prosperosity · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Epsom_Girls'_Grammar_School.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Prosperosity · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Epsom_Girls'_Grammar_School.jpg"
+    },
     "website": "https://www.eggs.school.nz/",
     "related": [
       "auckland-secondary-schools",
@@ -3237,12 +3311,7 @@ export const articles = [
     "bodyZh": [
       "Epsom，奥克兰。以下费用与规则摘自学校官网，核对日期 2026-10-21。学区对国内生与国际全费生的含义不同，见总览一文。",
       "官网：https://www.eggs.school.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "Epsom Girls Grammar：国际学费与 NCEA",
-        "caption": "国际申请走学校国际部，不要把学区房广告当成录取。"
-      },
+      "国际申请走学校国际部，不要把学区房广告当成录取。",
       "Epsom Girls Grammar School 国际招生页公布 2026 与 2027 年费用。https://www.eggs.school.nz/international-students/applications/fees/",
       {
         "type": "h2",
@@ -3267,12 +3336,7 @@ export const articles = [
     "bodyEn": [
       "Epsom，奥克兰. Figures are from the school site, checked 2026-10-21. Zoning does not work the same way for domestic and full-fee international students.",
       "Official site: https://www.eggs.school.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "Epsom Girls Grammar: international fees and NCEA",
-        "caption": "Apply through the international office."
-      },
+      "Apply through the international office.",
       "Epsom Girls Grammar publishes 2026 and 2027 international fees at https://www.eggs.school.nz/international-students/applications/fees/",
       {
         "type": "h2",
@@ -3304,9 +3368,17 @@ export const articles = [
     "titleEn": "Mount Albert Grammar: 2026 international fees",
     "excerptZh": "公立男女合校。2026 全年国际学费 NZD 20,000，寄宿 NZD 420/周。",
     "excerptEn": "Co-ed state school. 2026 full-year international tuition NZD 20,000; homestay NZD 420/week.",
-    "image": "/images/study-feature.png",
+    "image": "/images/campus/hs-mags.webp",
     "imageAltZh": "Mount Albert Grammar：2026 国际学费",
     "imageAltEn": "Mount Albert Grammar: 2026 international fees",
+    "imageCreditZh": {
+      "text": "图片：Itineris55 · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:NZ_AK_Mt_Albert_Grammar_School_(4).jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Itineris55 · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:NZ_AK_Mt_Albert_Grammar_School_(4).jpg"
+    },
     "website": "https://www.mags.school.nz/",
     "related": [
       "auckland-secondary-schools",
@@ -3323,12 +3395,7 @@ export const articles = [
     "bodyZh": [
       "Mount Albert，奥克兰。以下费用与规则摘自学校官网，核对日期 2026-10-21。学区对国内生与国际全费生的含义不同，见总览一文。",
       "官网：https://www.mags.school.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "Mount Albert Grammar：2026 国际学费",
-        "caption": "国际申请走学校国际部，不要把学区房广告当成录取。"
-      },
+      "国际申请走学校国际部，不要把学区房广告当成录取。",
       "Mount Albert Grammar School（MAGS）2026 国际学费表：全年学费 NZD 20,000，行政费 NZD 2,300，政府levy NZD 440，住宿监测 NZD 500，寄宿 NZD 420/周（全年约 NZD 20,160），NCEA 考试费 NZD 385。一学期/两学期/三学期按比例。圣诞假期另加寄宿或 NZD 700 占房费。https://www.mags.school.nz/wp-content/uploads/2025/05/International-Fees-2026.pdf",
       "课程与学区细节以学校国际部与 enrolment scheme 页为准。指定照顾者监测费表内写 NZD 350。",
       "以上费用为约数，核对日期 2026-10-21。学年、专业、奖学金与汇率都会变，报名前请以学校官网当季学费表和 Offer 为准。",
@@ -3344,12 +3411,7 @@ export const articles = [
     "bodyEn": [
       "Mount Albert，奥克兰. Figures are from the school site, checked 2026-10-21. Zoning does not work the same way for domestic and full-fee international students.",
       "Official site: https://www.mags.school.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "Mount Albert Grammar: 2026 international fees",
-        "caption": "Apply through the international office."
-      },
+      "Apply through the international office.",
       "MAGS 2026 international schedule: full-year tuition NZD 20,000, admin NZD 2,300, government levy NZD 440, accommodation monitoring NZD 500, homestay NZD 420/week, NCEA NZD 385. https://www.mags.school.nz/wp-content/uploads/2025/05/International-Fees-2026.pdf",
       "Fee figures are approximate as of 2026-10-21. They change by year, programme and scholarship—verify on the official site and your offer letter.",
       "Under-18 accommodation must meet the pastoral-care Code. https://www.immigration.govt.nz/study/for-education-providers/rules-for-approved-education-providers/",
@@ -3371,9 +3433,17 @@ export const articles = [
     "titleEn": "Westlake Girls: 2026 international fees",
     "excerptZh": "北岸公立女校。2026 年学费 NZD 23,000，寄宿 45 周 × NZD 400。",
     "excerptEn": "North Shore state girls’ school. 2026 tuition NZD 23,000; homestay 45 × NZD 400.",
-    "image": "/images/study-feature.png",
+    "image": "/images/campus/hs-westlake-girls.webp",
     "imageAltZh": "Westlake Girls：2026 国际学费",
     "imageAltEn": "Westlake Girls: 2026 international fees",
+    "imageCreditZh": {
+      "text": "图片：Prosperosity · CC BY 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Westlake_Girls'_High_School_20230823_131801.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Prosperosity · CC BY 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Westlake_Girls'_High_School_20230823_131801.jpg"
+    },
     "website": "https://www.westlakegirls.school.nz/",
     "related": [
       "auckland-secondary-schools",
@@ -3390,12 +3460,7 @@ export const articles = [
     "bodyZh": [
       "Takapuna / 北岸，奥克兰。以下费用与规则摘自学校官网，核对日期 2026-10-21。学区对国内生与国际全费生的含义不同，见总览一文。",
       "官网：https://www.westlakegirls.school.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "Westlake Girls：2026 国际学费",
-        "caption": "国际申请走学校国际部，不要把学区房广告当成录取。"
-      },
+      "国际申请走学校国际部，不要把学区房广告当成录取。",
       "Westlake Girls High School 2026 国际费用表：学费 NZD 23,000；行政费 NZD 2,500；寄宿安置 NZD 450；寄宿 45 周 × NZD 400 = NZD 18,000。NCEA Level 1–3 政府定价 NZD 383.30/年；Scholarship NZD 102.20/科。https://international.westlakegirls.school.nz/wp-content/uploads/2025/11/WGHS-International-Fees-2026.pdf",
       "男子部 Westlake Boys 是独立学校，学费请看该校国际页；本稿不把两校费用混用。",
       "以上费用为约数，核对日期 2026-10-21。学年、专业、奖学金与汇率都会变，报名前请以学校官网当季学费表和 Offer 为准。",
@@ -3411,12 +3476,7 @@ export const articles = [
     "bodyEn": [
       "Takapuna / 北岸，奥克兰. Figures are from the school site, checked 2026-10-21. Zoning does not work the same way for domestic and full-fee international students.",
       "Official site: https://www.westlakegirls.school.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "Westlake Girls: 2026 international fees",
-        "caption": "Apply through the international office."
-      },
+      "Apply through the international office.",
       "2026 international tuition NZD 23,000; admin NZD 2,500; homestay NZD 18,000 (45 × NZD 400). NCEA NZD 383.30. https://international.westlakegirls.school.nz/wp-content/uploads/2025/11/WGHS-International-Fees-2026.pdf",
       "Westlake Boys is a separate school—do not reuse these figures.",
       "Fee figures are approximate as of 2026-10-21. They change by year, programme and scholarship—verify on the official site and your offer letter.",
@@ -3439,9 +3499,17 @@ export const articles = [
     "titleEn": "Rangitoto College: NCEA and IB international fees",
     "excerptZh": "北岸大型公立合校。2027 年 NCEA NZD 20,500，IB NZD 22,250。",
     "excerptEn": "Large North Shore state co-ed school. 2027 NCEA NZD 20,500; IB NZD 22,250.",
-    "image": "/images/study-feature.png",
+    "image": "/images/campus/hs-rangitoto.webp",
     "imageAltZh": "Rangitoto College：NCEA 与 IB 国际学费",
     "imageAltEn": "Rangitoto College: NCEA and IB international fees",
+    "imageCreditZh": {
+      "text": "图片：DXR · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Maths_Building%2C_Rangitoto_College%2C_Auckland_20100211_1.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: DXR · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Maths_Building%2C_Rangitoto_College%2C_Auckland_20100211_1.jpg"
+    },
     "website": "https://www.rangitoto.school.nz/",
     "related": [
       "auckland-secondary-schools",
@@ -3458,12 +3526,7 @@ export const articles = [
     "bodyZh": [
       "Mairangi Bay / 北岸，奥克兰。以下费用与规则摘自学校官网，核对日期 2026-10-21。学区对国内生与国际全费生的含义不同，见总览一文。",
       "官网：https://www.rangitoto.school.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "Rangitoto College：NCEA 与 IB 国际学费",
-        "caption": "国际申请走学校国际部，不要把学区房广告当成录取。"
-      },
+      "数学楼，不是全校全景。",
       "Rangitoto College 国际学费表把 NCEA 与 IB 分开。2027 年（校方 2026 年 2 月表）：NCEA 全年 NZD 20,500；IB NZD 22,250；行政费 NZD 2,750；寄宿 NZD 420/周（13 岁 NZD 440）。2026 年同行曾写 NCEA NZD 19,750、IB NZD 21,500。https://www.rangitoto.school.nz/app/uploads/2026/02/Fees-2026-2027.pdf",
       "是否录用 IB、英语分班和学区对国内生的规则，以国际部与课程页为准。电脑为强制自备项（表内注明）。",
       "以上费用为约数，核对日期 2026-10-21。学年、专业、奖学金与汇率都会变，报名前请以学校官网当季学费表和 Offer 为准。",
@@ -3479,12 +3542,7 @@ export const articles = [
     "bodyEn": [
       "Mairangi Bay / 北岸，奥克兰. Figures are from the school site, checked 2026-10-21. Zoning does not work the same way for domestic and full-fee international students.",
       "Official site: https://www.rangitoto.school.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "Rangitoto College: NCEA and IB international fees",
-        "caption": "Apply through the international office."
-      },
+      "Maths building, not a whole-campus view.",
       "Rangitoto splits NCEA and IB tuition. 2027: NCEA NZD 20,500; IB NZD 22,250; admin NZD 2,750; homestay NZD 420/week (NZD 440 for age 13). https://www.rangitoto.school.nz/app/uploads/2026/02/Fees-2026-2027.pdf",
       "Fee figures are approximate as of 2026-10-21. They change by year, programme and scholarship—verify on the official site and your offer letter.",
       "Under-18 accommodation must meet the pastoral-care Code. https://www.immigration.govt.nz/study/for-education-providers/rules-for-approved-education-providers/",
@@ -3506,9 +3564,17 @@ export const articles = [
     "titleEn": "Macleans College: 2026 international fees and homestay",
     "excerptZh": "Howick 公立合校。2026 年学费 NZD 25,000，寄宿 NZD 380/周。",
     "excerptEn": "Howick state co-ed school. 2026 tuition NZD 25,000; homestay NZD 380/week.",
-    "image": "/images/study-feature.png",
+    "image": "/images/campus/hs-macleans.webp",
     "imageAltZh": "Macleans College：2026 国际学费与寄宿",
     "imageAltEn": "Macleans College: 2026 international fees and homestay",
+    "imageCreditZh": {
+      "text": "图片：EryZ · CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:Macleans_college_Auckland_New_Zealand_front_office.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: EryZ · CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:Macleans_college_Auckland_New_Zealand_front_office.jpg"
+    },
     "website": "https://www.macleans.school.nz/",
     "related": [
       "auckland-secondary-schools",
@@ -3525,12 +3591,7 @@ export const articles = [
     "bodyZh": [
       "Howick / Bucklands Beach，奥克兰。以下费用与规则摘自学校官网，核对日期 2026-10-21。学区对国内生与国际全费生的含义不同，见总览一文。",
       "官网：https://www.macleans.school.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "Macleans College：2026 国际学费与寄宿",
-        "caption": "国际申请走学校国际部，不要把学区房广告当成录取。"
-      },
+      "国际申请走学校国际部，不要把学区房广告当成录取。",
       "Macleans College 国际学费页：2026 年学费 NZD 25,000；保险 NZD 675；新生报名 NZD 1,000；行政费 NZD 1,000；寄宿安置 NZD 500；寄宿 NZD 380/周（按 47 周约 NZD 17,860）。校方估算寄宿路径全年大约 NZD 48,235–50,250。https://www.macleans.school.nz/international-students/fees",
       "课程、学区与国际名额以国际部为准。",
       "以上费用为约数，核对日期 2026-10-21。学年、专业、奖学金与汇率都会变，报名前请以学校官网当季学费表和 Offer 为准。",
@@ -3546,12 +3607,7 @@ export const articles = [
     "bodyEn": [
       "Howick / Bucklands Beach，奥克兰. Figures are from the school site, checked 2026-10-21. Zoning does not work the same way for domestic and full-fee international students.",
       "Official site: https://www.macleans.school.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "Macleans College: 2026 international fees and homestay",
-        "caption": "Apply through the international office."
-      },
+      "Apply through the international office.",
       "2026 tuition NZD 25,000; insurance NZD 675; enrolment NZD 1,000; admin NZD 1,000; homestay NZD 380/week (about NZD 17,860 for 47 weeks). Homestay pathway estimate about NZD 48,235–50,250. https://www.macleans.school.nz/international-students/fees",
       "Fee figures are approximate as of 2026-10-21. They change by year, programme and scholarship—verify on the official site and your offer letter.",
       "Under-18 accommodation must meet the pastoral-care Code. https://www.immigration.govt.nz/study/for-education-providers/rules-for-approved-education-providers/",
@@ -3573,9 +3629,17 @@ export const articles = [
     "titleEn": "Diocesan School for Girls: 2026 international fees and IB extras",
     "excerptZh": "Epsom 私立女校。2026 年 Year 7–13 学费 NZD 61,650；IB 报考费另计。",
     "excerptEn": "Independent girls’ school in Epsom. 2026 Year 7–13 tuition NZD 61,650; IB exam fees extra.",
-    "image": "/images/study-feature.png",
+    "image": "/images/campus/hs-diocesan.webp",
     "imageAltZh": "Diocesan School for Girls：2026 国际学费与 IB 费用",
     "imageAltEn": "Diocesan School for Girls: 2026 international fees and IB extras",
+    "imageCreditZh": {
+      "text": "图片：Whites Aviation · CC BY 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Diocesan_School_for_Girls%2C_Auckland_(cropped).jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Whites Aviation · CC BY 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Diocesan_School_for_Girls%2C_Auckland_(cropped).jpg"
+    },
     "website": "https://www.diocesan.school.nz/",
     "related": [
       "auckland-secondary-schools",
@@ -3592,12 +3656,7 @@ export const articles = [
     "bodyZh": [
       "Epsom，奥克兰。以下费用与规则摘自学校官网，核对日期 2026-10-21。学区对国内生与国际全费生的含义不同，见总览一文。",
       "官网：https://www.diocesan.school.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "Diocesan School for Girls：2026 国际学费与 IB 费用",
-        "caption": "国际申请走学校国际部，不要把学区房广告当成录取。"
-      },
+      "历史航拍，示意校址与周边，不是今日校园近景。",
       "Diocesan School for Girls（Dio）2026 国际学费：Junior Year 1–6 NZD 54,030；Year 7–13 NZD 61,650。报名 NZD 300，录取确认 NZD 2,250（均不退、不抵学费）。住宿 Innes House NZD 21,960 + 一次性 NZD 330；全日寄宿家庭约 NZD 19,090（约 NZD 415 × 46 周）。https://www.diocesan.school.nz/international/international-fees/",
       "学费包含医疗保险与 NCEA 报考费；明确不包含 IB Diploma 报考费、签证费和部分选修活动。是否就读 IB 以学校课程安排为准。",
       "以上费用为约数，核对日期 2026-10-21。学年、专业、奖学金与汇率都会变，报名前请以学校官网当季学费表和 Offer 为准。",
@@ -3613,12 +3672,7 @@ export const articles = [
     "bodyEn": [
       "Epsom，奥克兰. Figures are from the school site, checked 2026-10-21. Zoning does not work the same way for domestic and full-fee international students.",
       "Official site: https://www.diocesan.school.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "Diocesan School for Girls: 2026 international fees and IB extras",
-        "caption": "Apply through the international office."
-      },
+      "Historic aerial showing the site, not a current close-up.",
       "2026 international tuition: Years 1–6 NZD 54,030; Years 7–13 NZD 61,650. Registration NZD 300; enrolment NZD 2,250. Boarding NZD 21,960. Homestay about NZD 19,090. Tuition includes medical/travel insurance and NCEA entry fees, not IB Diploma entry fees. https://www.diocesan.school.nz/international/international-fees/",
       "Fee figures are approximate as of 2026-10-21. They change by year, programme and scholarship—verify on the official site and your offer letter.",
       "Under-18 accommodation must meet the pastoral-care Code. https://www.immigration.govt.nz/study/for-education-providers/rules-for-approved-education-providers/",
@@ -3640,9 +3694,17 @@ export const articles = [
     "titleEn": "St Cuthbert’s: 2026 international tuition and boarding",
     "excerptZh": "私立女校。2026 年 Year 7–13 国际学费 NZD 63,088，住宿 NZD 21,608。",
     "excerptEn": "Independent girls’ school. 2026 Year 7–13 international tuition NZD 63,088; boarding NZD 21,608.",
-    "image": "/images/study-feature.png",
+    "image": "/images/campus/hs-stcuthberts.webp",
     "imageAltZh": "St Cuthbert's：2026 国际学费与住宿",
     "imageAltEn": "St Cuthbert’s: 2026 international tuition and boarding",
+    "imageCreditZh": {
+      "text": "图片：Whites Aviation · CC BY 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Saint_Cuthbert's_College%2C_Epsom%2C_Auckland.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Whites Aviation · CC BY 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Saint_Cuthbert's_College%2C_Epsom%2C_Auckland.jpg"
+    },
     "website": "https://stcuthberts.school.nz/",
     "related": [
       "auckland-secondary-schools",
@@ -3659,12 +3721,7 @@ export const articles = [
     "bodyZh": [
       "Epsom / 奥克兰。以下费用与规则摘自学校官网，核对日期 2026-10-21。学区对国内生与国际全费生的含义不同，见总览一文。",
       "官网：https://stcuthberts.school.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "St Cuthbert's：2026 国际学费与住宿",
-        "caption": "国际申请走学校国际部，不要把学区房广告当成录取。"
-      },
+      "历史航拍，示意校址与周边，不是今日校园近景。",
       "St Cuthbert's College 2026 国际学费：Year 0–6 NZD 55,000；Year 7–13 NZD 63,088。住宿 NZD 21,608。另有建筑维护levy（1 名学生 NZD 1,000）。https://stcuthberts.school.nz/admissions/fees/",
       "课程与国际招生细节以招生页为准。本稿只引用校方公布的国际学费，不推断 IB/NCEA 分班。",
       "以上费用为约数，核对日期 2026-10-21。学年、专业、奖学金与汇率都会变，报名前请以学校官网当季学费表和 Offer 为准。",
@@ -3680,12 +3737,7 @@ export const articles = [
     "bodyEn": [
       "Epsom / 奥克兰. Figures are from the school site, checked 2026-10-21. Zoning does not work the same way for domestic and full-fee international students.",
       "Official site: https://stcuthberts.school.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "St Cuthbert’s: 2026 international tuition and boarding",
-        "caption": "Apply through the international office."
-      },
+      "Historic aerial showing the site, not a current close-up.",
       "2026 international tuition: Years 0–6 NZD 55,000; Years 7–13 NZD 63,088; boarding NZD 21,608; building levy NZD 1,000 for one student. https://stcuthberts.school.nz/admissions/fees/",
       "Fee figures are approximate as of 2026-10-21. They change by year, programme and scholarship—verify on the official site and your offer letter.",
       "Under-18 accommodation must meet the pastoral-care Code. https://www.immigration.govt.nz/study/for-education-providers/rules-for-approved-education-providers/",
@@ -3707,9 +3759,17 @@ export const articles = [
     "titleEn": "King’s College: 2027 international tuition and boarding",
     "excerptZh": "Otahuhu 私立学校。校方公布 2027 年国际学费 NZD 57,000，住宿 NZD 20,500。",
     "excerptEn": "Independent school in Otahuhu. Published 2027 international tuition NZD 57,000 and boarding NZD 20,500.",
-    "image": "/images/study-feature.png",
+    "image": "/images/campus/hs-kings.webp",
     "imageAltZh": "King's College：2027 国际学费与住宿",
     "imageAltEn": "King’s College: 2027 international tuition and boarding",
+    "imageCreditZh": {
+      "text": "图片：John Halpin · CC BY 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:King's_College_Chapel_and_Charles_Thomas_Major_Statue.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: John Halpin · CC BY 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:King's_College_Chapel_and_Charles_Thomas_Major_Statue.jpg"
+    },
     "website": "https://www.kingscollege.school.nz/",
     "related": [
       "auckland-secondary-schools",
@@ -3726,12 +3786,7 @@ export const articles = [
     "bodyZh": [
       "Otahuhu，奥克兰。以下费用与规则摘自学校官网，核对日期 2026-10-21。学区对国内生与国际全费生的含义不同，见总览一文。",
       "官网：https://www.kingscollege.school.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "King's College：2027 国际学费与住宿",
-        "caption": "国际申请走学校国际部，不要把学区房广告当成录取。"
-      },
+      "教堂与雕像近景，不是全校全景。",
       "King's College 国际生费用页公布的是 2027 年数字：学费 NZD 57,000，住宿 NZD 20,500，合计 NZD 77,500。申请费 NZD 350；接受学位后 enrolment acceptance NZD 1,700。杂费预收 NZD 6,000（含制服、保险约数、活动与考试等）。寄宿家庭备选 NZD 420/周。须提前电汇或信用卡支付次年费用，页上写前一年 11 月 30 日。https://www.kingscollege.school.nz/admissions/international-students/fees-for-international-students",
       "课程（含是否 IB/NCEA）以招生页为准。本稿不引用第三方目录里的旧学费。",
       "以上费用为约数，核对日期 2026-10-21。学年、专业、奖学金与汇率都会变，报名前请以学校官网当季学费表和 Offer 为准。",
@@ -3747,12 +3802,7 @@ export const articles = [
     "bodyEn": [
       "Otahuhu，奥克兰. Figures are from the school site, checked 2026-10-21. Zoning does not work the same way for domestic and full-fee international students.",
       "Official site: https://www.kingscollege.school.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "King’s College: 2027 international tuition and boarding",
-        "caption": "Apply through the international office."
-      },
+      "Chapel and statue, not a whole-campus view.",
       "Published 2027 international fees: tuition NZD 57,000, boarding NZD 20,500. Application NZD 350; acceptance NZD 1,700; incidentals NZD 6,000. Homestay option NZD 420/week. https://www.kingscollege.school.nz/admissions/international-students/fees-for-international-students",
       "Fee figures are approximate as of 2026-10-21. They change by year, programme and scholarship—verify on the official site and your offer letter.",
       "Under-18 accommodation must meet the pastoral-care Code. https://www.immigration.govt.nz/study/for-education-providers/rules-for-approved-education-providers/",
@@ -3774,9 +3824,17 @@ export const articles = [
     "titleEn": "Pinehurst School: 2027 international fees (Cambridge)",
     "excerptZh": "Albany 私立学校。校方公布 2027 年 Year 9–13 国际学费 NZD 45,590。",
     "excerptEn": "Independent school in Albany. Published 2027 Year 9–13 international tuition NZD 45,590.",
-    "image": "/images/study-feature.png",
+    "image": "/images/campus/hs-pinehurst.webp",
     "imageAltZh": "Pinehurst School：2027 国际学费（Cambridge）",
     "imageAltEn": "Pinehurst School: 2027 international fees (Cambridge)",
+    "imageCreditZh": {
+      "text": "图片：Bjankuloski06 · CC BY 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Pinehurst_School%2C_Albany_-_Reception.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Bjankuloski06 · CC BY 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Pinehurst_School%2C_Albany_-_Reception.jpg"
+    },
     "website": "https://www.pinehurst.school.nz/",
     "related": [
       "auckland-secondary-schools",
@@ -3793,12 +3851,7 @@ export const articles = [
     "bodyZh": [
       "Albany，北岸。以下费用与规则摘自学校官网，核对日期 2026-10-21。学区对国内生与国际全费生的含义不同，见总览一文。",
       "官网：https://www.pinehurst.school.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "Pinehurst School：2027 国际学费（Cambridge）",
-        "caption": "国际申请走学校国际部，不要把学区房广告当成录取。"
-      },
+      "接待处外观。",
       "Pinehurst School 招生费用页公布 2027 年学费（含 GST）：国际生 Year 1–6 NZD 34,270；Year 7–8 NZD 40,570；Year 9–13 NZD 45,590。申请 NZD 255；入学 NZD 695；保证金 NZD 2,500。另有资本贡献 NZD 750 与活动费 NZD 350。https://www.pinehurst.school.nz/admissions/fees/",
       "学校走 Cambridge 路径（IGCSE / A-Level），不是 NCEA 公立体系。是否招收寄宿/国际全费生的住宿安排，以国际招生页为准；费用页本身按国际生学费列示。",
       "以上费用为约数，核对日期 2026-10-21。学年、专业、奖学金与汇率都会变，报名前请以学校官网当季学费表和 Offer 为准。",
@@ -3814,12 +3867,7 @@ export const articles = [
     "bodyEn": [
       "Albany，北岸. Figures are from the school site, checked 2026-10-21. Zoning does not work the same way for domestic and full-fee international students.",
       "Official site: https://www.pinehurst.school.nz/",
-      {
-        "type": "image",
-        "src": "/images/article-campus-class.png",
-        "alt": "Pinehurst School: 2027 international fees (Cambridge)",
-        "caption": "Apply through the international office."
-      },
+      "Reception building exterior.",
       "Published 2027 international tuition: Years 1–6 NZD 34,270; Years 7–8 NZD 40,570; Years 9–13 NZD 45,590. https://www.pinehurst.school.nz/admissions/fees/",
       "Pinehurst’s academic pathway is Cambridge (IGCSE/A-Level), not NCEA.",
       "Fee figures are approximate as of 2026-10-21. They change by year, programme and scholarship—verify on the official site and your offer letter.",
@@ -3842,9 +3890,17 @@ export const articles = [
     "titleEn": "Westlake Boys and Takapuna Grammar: use the official pages",
     "excerptZh": "两所北岸常被问起的公立中学。本稿未引用到 2026 年国际学费表，故不编造数字。",
     "excerptEn": "Two frequently asked North Shore state schools. No 2026 international fee table is cited here, so no figure is invented.",
-    "image": "/images/study-feature.png",
-    "imageAltZh": "北岸公立中学",
-    "imageAltEn": "North Shore state secondary schools",
+    "image": "/images/campus/hs-westlake-boys.webp",
+    "imageAltZh": "西湖男子中学 Quad",
+    "imageAltEn": "Westlake Boys High School quad",
+    "imageCreditZh": {
+      "text": "图片：Berniem4483 · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Quad_Panorama.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Berniem4483 · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Quad_Panorama.jpg"
+    },
     "related": [
       "auckland-secondary-schools",
       "school-auckland-grammar",
@@ -3866,9 +3922,13 @@ export const articles = [
       "住宿、监护和签证规则与总览一文相同：未满 18 岁必须有合规住宿声明；生活费证明每年 NZD 17,000。",
       {
         "type": "image",
-        "src": "/images/article-auckland-cbd.png",
-        "alt": "北岸城市",
-        "caption": "北岸通勤依赖公交与家庭接送，看房时把到校时间算进去。"
+        "src": "/images/campus/hs-takapuna.webp",
+        "alt": "1992 年 Belmont 航拍",
+        "caption": "历史航拍示意北岸街区，不是今日 Takapuna Grammar 校园近景。北岸通勤依赖公交与家庭接送，看房时把到校时间算进去。",
+        "credit": {
+          "text": "图片：Auckland Libraries · CC BY 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Aerial_view%2C_Belmont%2C_1992_(Takapuna_Grammar).jpg"
+        }
       },
       {
         "type": "h2",
@@ -4468,9 +4528,17 @@ export const articles = [
     "titleEn": "NZ AI and AI-management master’s: a commercial shortlist and scholarships",
     "excerptZh": "按就业变现、学制与学费核对官网后，列出五条更常被国际生比较的路径；奖学金很少有“专门给 AI”的。",
     "excerptEn": "Five commercially compared AI / analytics master’s after official-fee checks. There is no NZ government AI-only scholarship.",
-    "image": "/images/article-campus-class.png",
-    "imageAltZh": "数据分析与课堂讨论",
-    "imageAltEn": "A data-analytics classroom",
+    "image": "/images/campus/uni-auckland.webp",
+    "imageAltZh": "奥克兰大学校园（AI 与商科硕士常在此比较）",
+    "imageAltEn": "University of Auckland campus, often compared for AI and analytics master’s",
+    "imageCreditZh": {
+      "text": "图片：Uhooep · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Clock_Tower%2C_University_of_Auckland.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Uhooep · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Clock_Tower%2C_University_of_Auckland.jpg"
+    },
     "related": [
       "massey-ai-business-it",
       "school-future-skills-ai",
@@ -4482,9 +4550,23 @@ export const articles = [
       "想用一年到一年半换一条能讲清的 AI / 数据分析职业故事，新西兰没有统一的“AI 硕士排行”。下面按商业变现（雇主是否听得懂、学制是否短、学费是否对得上工签窗口）对照五条大学路径，并附惠灵顿维多利亚、AUT 的补充。数字一律来自 2026-10-21 打开的校方页面；未写清的项目标「以官网为准」。",
       {
         "type": "image",
-        "src": "/images/article-campus-class.png",
+        "src": "/images/campus/ai-lecture.webp",
         "alt": "授课型硕士课堂",
-        "caption": "商业分析、数据科学和计算机 AI 不是同一条录取与课表，短名单不要混成一张表。"
+        "caption": "课堂示意（摄于赫尔辛基理工大学，不是新西兰校园）。商业分析、数据科学和计算机 AI 不是同一条录取与课表，短名单不要混成一张表。",
+        "credit": {
+          "text": "图片：Tungsten · Public domain",
+          "href": "https://commons.wikimedia.org/wiki/File:Mathematics_lecture_at_the_Helsinki_University_of_Technology.jpg"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/campus/uni-canterbury.webp",
+        "alt": "坎特伯雷大学 Ilam 运动场（2007）",
+        "caption": "坎特伯雷有授课型 Master of Artificial Intelligence；线上 MAAI 的国际政策要另核，不要和 Ilam 面授课混为一谈。",
+        "credit": {
+          "text": "图片：Claude12 · CC BY-SA 3.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Ilam_Fields_University_of_Canterbury_New_Zealand_2007.jpg"
+        }
       },
       {
         "type": "h2",
@@ -4550,9 +4632,23 @@ export const articles = [
       "There is no official “AI master’s ranking” in New Zealand. This page shortlists five university routes by how clearly you can explain the job story, how long the taught programme is, and what the official fee pages said on 2026-10-21. Private-provider AI paths are separate articles.",
       {
         "type": "image",
-        "src": "/images/article-campus-class.png",
+        "src": "/images/campus/ai-lecture.webp",
         "alt": "Taught master’s class",
-        "caption": "Business analytics, data science and computer-science AI use different entry rules."
+        "caption": "Generic lecture photo (Helsinki University of Technology, not a New Zealand campus). Business analytics, data science and computer-science AI use different entry rules.",
+        "credit": {
+          "text": "Photo: Tungsten · Public domain",
+          "href": "https://commons.wikimedia.org/wiki/File:Mathematics_lecture_at_the_Helsinki_University_of_Technology.jpg"
+        }
+      },
+      {
+        "type": "image",
+        "src": "/images/campus/uni-canterbury.webp",
+        "alt": "University of Canterbury Ilam fields (2007)",
+        "caption": "Canterbury’s taught Master of Artificial Intelligence is on campus; the online MAAI has a separate international-student policy.",
+        "credit": {
+          "text": "Photo: Claude12 · CC BY-SA 3.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Ilam_Fields_University_of_Canterbury_New_Zealand_2007.jpg"
+        }
       },
       {
         "type": "h2",
@@ -4610,9 +4706,17 @@ export const articles = [
     "titleEn": "Massey: MBA (AI), Analytics, Management and Information Sciences fees",
     "excerptZh": "2027 年国际学费以 massey.ac.nz 学费页为准；MBA 课程页与招生简章数字不一致时，以 Offer 为准。",
     "excerptEn": "2027 international estimates from Massey’s fee table. Where the MBA page and prospectus disagree, trust the offer.",
-    "image": "/images/article-auckland-cbd.png",
-    "imageAltZh": "奥克兰商务区",
-    "imageAltEn": "Auckland business district",
+    "image": "/images/campus/uni-massey-albany.webp",
+    "imageAltZh": "梅西大学 Albany（奥克兰）校区",
+    "imageAltEn": "Massey University Albany campus in Auckland",
+    "imageCreditZh": {
+      "text": "图片：Ingolfson · Public domain",
+      "href": "https://commons.wikimedia.org/wiki/File:Massey_University%2C_Albany_Campus_I.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Ingolfson · Public domain",
+      "href": "https://commons.wikimedia.org/wiki/File:Massey_University%2C_Albany_Campus_I.jpg"
+    },
     "website": "https://www.massey.ac.nz/",
     "related": [
       "nz-ai-masters-overview",
@@ -4623,9 +4727,13 @@ export const articles = [
       "梅西大学没有单独叫 “AI 学院” 的本科，但 2027 年国际材料里，和 AI / 数据最常被一起问的是五条授课型硕士。下列学费来自 https://www.massey.ac.nz/study/fees-and-funding/tuition-fees-for-international-students/（核对 2026-10-21），并对照 2027 International Prospectus PDF。未含杂费、保险和生活费。",
       {
         "type": "image",
-        "src": "/images/article-auckland-cbd.png",
-        "alt": "奥克兰校区通勤",
-        "caption": "MBA 与部分商科硕士在奥克兰开课；信息科学等可能在其他校区，报名时看 campus。"
+        "src": "/images/campus/uni-massey.webp",
+        "alt": "梅西大学北帕默斯顿校区",
+        "caption": "MBA 与部分商科硕士在奥克兰开课；信息科学等可能在其他校区，报名时看 campus。",
+        "credit": {
+          "text": "图片：Michal Klajban · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Massey_University%2C_Palmerston_North_Campus%2C_New_Zealand_03.jpg"
+        }
       },
       {
         "type": "h2",
@@ -4672,9 +4780,13 @@ export const articles = [
       "Massey’s 2027 international fee table (checked 2026-10-21) is the source for the figures below. The MBA specialisation page and the prospectus disagree—use the offer.",
       {
         "type": "image",
-        "src": "/images/article-auckland-cbd.png",
-        "alt": "Auckland campus commute",
-        "caption": "Confirm campus. MBA is taught in Auckland; other qualifications may not be."
+        "src": "/images/campus/uni-massey.webp",
+        "alt": "Massey University Palmerston North campus",
+        "caption": "Confirm campus. MBA is taught in Auckland; other qualifications may not be.",
+        "credit": {
+          "text": "Photo: Michal Klajban · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Massey_University%2C_Palmerston_North_Campus%2C_New_Zealand_03.jpg"
+        }
       },
       {
         "type": "h2",
@@ -4720,9 +4832,17 @@ export const articles = [
     "titleEn": "NZSE has no “AI business management” course—closest options are analytics",
     "excerptZh": "官网没有叫 AI business management 的课程；有的是商务信息管理本科（数据分析方向）和数据分析研文。",
     "excerptEn": "No programme is titled AI business management. The closest official options are a data-analytics major and a graduate diploma.",
-    "image": "/images/article-skills-lab.png",
-    "imageAltZh": "技能实训机房",
-    "imageAltEn": "A skills lab",
+    "image": "/images/campus/street-queen.webp",
+    "imageAltZh": "奥克兰 Queen Street 一带（NZSE 上课环境示意）",
+    "imageAltEn": "Queen Street, Auckland — commuting context for NZSE",
+    "imageCreditZh": {
+      "text": "图片：Paora · CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:Queen_Street%2C_Auckland_PA01.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Paora · CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:Queen_Street%2C_Auckland_PA01.jpg"
+    },
     "website": "https://nzse.ac.nz/",
     "related": [
       "school-nzse",
@@ -4733,9 +4853,13 @@ export const articles = [
       "先把结论写死：在 nzse.ac.nz 公开课程里，没有一门课的正式名称是 “AI business management” 或 “AI 商务管理”。中介材料如果这样写，先当营销口径，打开 NZQA 注册名再交钱。",
       {
         "type": "image",
-        "src": "/images/article-skills-lab.png",
-        "alt": "数据分析机房",
-        "caption": "NZSE 能核到的是数据分析与机器学习课程，不是以 AI 命名的管理硕士。"
+        "src": "/images/campus/ai-lab.webp",
+        "alt": "计算机机房示意",
+        "caption": "机房示意（摄于美国李大学，不是 NZSE 教室）。NZSE 能核到的是数据分析与机器学习课程，不是以 AI 命名的管理硕士。",
+        "credit": {
+          "text": "图片：Harrison Keely · CC BY 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:A_computer_science_classroom_at_Lee_University_in_Cleveland%2C_Tennessee%2C_United_States_02.jpg"
+        }
       },
       {
         "type": "h2",
@@ -4762,9 +4886,13 @@ export const articles = [
       "NZSE’s public catalogue has no programme titled “AI business management”. Treat that phrase as marketing until you see the NZQA-registered name.",
       {
         "type": "image",
-        "src": "/images/article-skills-lab.png",
-        "alt": "Analytics lab",
-        "caption": "The official closest options are data-analytics courses, not an AI-named management master’s."
+        "src": "/images/campus/ai-lab.webp",
+        "alt": "Computer lab (illustrative)",
+        "caption": "Generic lab photo (Lee University, USA — not an NZSE classroom). The official closest options are data-analytics courses, not an AI-named management master’s.",
+        "credit": {
+          "text": "Photo: Harrison Keely · CC BY 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:A_computer_science_classroom_at_Lee_University_in_Cleveland%2C_Tennessee%2C_United_States_02.jpg"
+        }
       },
       {
         "type": "h2",
@@ -4796,9 +4924,17 @@ export const articles = [
     "titleEn": "Future Skills: Master of AI Integrated IT Solutions (private Level 9)",
     "excerptZh": "Queen Street 私立硕士；2026 标价与 Jubilee 奖学金可核到官网。2027 奖学金和工签资格请再核。",
     "excerptEn": "A private Level 9 master’s on Queen Street. 2026 list and Jubilee prices are on the official pages; 2027 awards and work-visa outcomes need a fresh check.",
-    "image": "/images/article-auckland-cbd.png",
-    "imageAltZh": "奥克兰 Queen Street",
-    "imageAltEn": "Queen Street, Auckland",
+    "image": "/images/campus/street-queen.webp",
+    "imageAltZh": "奥克兰 Queen Street（Future Skills 国际校区一带）",
+    "imageAltEn": "Queen Street, Auckland — Future Skills international campus area",
+    "imageCreditZh": {
+      "text": "图片：Paora · CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:Queen_Street%2C_Auckland_PA01.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Paora · CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:Queen_Street%2C_Auckland_PA01.jpg"
+    },
     "website": "https://www.futureskills.co.nz/programmes/master-of-ai-integrated-it-solutions/",
     "related": [
       "school-future-skills",
@@ -4810,9 +4946,13 @@ export const articles = [
       "这是私立培训机构（PTE）的 NZQA Level 9 硕士，不是八大计算机系。校方自称 New Zealand’s first postgraduate programme that brings together Artificial Intelligence and Information Technology。上课地点官网写 Auckland Central (Queen Street)。2026 国际招生简章写 Who can apply: International students, over 18 years of age。",
       {
         "type": "image",
-        "src": "/images/article-auckland-cbd.png",
-        "alt": "Queen Street 国际校区一带",
-        "caption": "私立硕士的学费、奖学金和工签要三条分开核对，不要只看“Level 9”四个字。"
+        "src": "/images/campus/ai-lab.webp",
+        "alt": "计算机机房示意",
+        "caption": "机房示意（摄于美国李大学，不是 Future Skills 教室）。私立硕士的学费、奖学金和工签要三条分开核对，不要只看“Level 9”四个字。",
+        "credit": {
+          "text": "图片：Harrison Keely · CC BY 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:A_computer_science_classroom_at_Lee_University_in_Cleveland%2C_Tennessee%2C_United_States_02.jpg"
+        }
       },
       {
         "type": "h2",
@@ -4850,9 +4990,13 @@ export const articles = [
       "This is a private-training-establishment Level 9 master’s on Queen Street, not a university computer-science degree. The 2026 prospectus says it is for international students aged 18+.",
       {
         "type": "image",
-        "src": "/images/article-auckland-cbd.png",
-        "alt": "Queen Street",
-        "caption": "Price, scholarship and visa eligibility are three separate checks."
+        "src": "/images/campus/ai-lab.webp",
+        "alt": "Computer lab (illustrative)",
+        "caption": "Generic lab photo (Lee University, USA — not a Future Skills classroom). Price, scholarship and visa eligibility are three separate checks.",
+        "credit": {
+          "text": "Photo: Harrison Keely · CC BY 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:A_computer_science_classroom_at_Lee_University_in_Cleveland%2C_Tennessee%2C_United_States_02.jpg"
+        }
       },
       {
         "type": "h2",

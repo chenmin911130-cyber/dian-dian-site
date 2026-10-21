@@ -18,6 +18,25 @@ function textWithLinks(text) {
   });
 }
 
+function CreditLine({ credit }) {
+  if (!credit) return null;
+  const text = typeof credit === "string" ? credit : credit.text;
+  const href = typeof credit === "string" ? null : credit.href;
+  return (
+    <p className="article-detail__credit">
+      {text}
+      {href ? (
+        <>
+          {" · "}
+          <a href={href} target="_blank" rel="noreferrer">
+            Wikimedia Commons
+          </a>
+        </>
+      ) : null}
+    </p>
+  );
+}
+
 function renderBlocks(blocks) {
   return blocks.map((block, index) => {
     if (typeof block === "string") {
@@ -35,8 +54,9 @@ function renderBlocks(blocks) {
     if (block?.type === "image") {
       return (
         <figure key={`img-${index}`} className="article-detail__figure">
-          <img src={block.src} alt={block.alt || ""} loading="lazy" />
+          <img src={block.src} alt={block.alt || ""} loading="lazy" decoding="async" />
           {block.caption ? <figcaption>{block.caption}</figcaption> : null}
+          <CreditLine credit={block.credit} />
         </figure>
       );
     }
@@ -91,11 +111,15 @@ export function ArticlePage({
         ) : null}
       </header>
 
-      <img
-        className="article-detail__image"
-        src={article.image}
-        alt={zh ? article.imageAltZh : article.imageAltEn}
-      />
+      <figure className="article-detail__hero">
+        <img
+          className="article-detail__image"
+          src={article.image}
+          alt={zh ? article.imageAltZh : article.imageAltEn}
+          decoding="async"
+        />
+        <CreditLine credit={zh ? article.imageCreditZh : article.imageCreditEn} />
+      </figure>
 
       <div className="article-detail__body">{renderBlocks(blocks)}</div>
       {article.related?.length ? (

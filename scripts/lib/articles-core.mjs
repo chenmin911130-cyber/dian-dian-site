@@ -9,6 +9,7 @@ import {
   feeNoteEn,
   sourcesBlock,
 } from "./article-kit.mjs";
+import { campusFig, campusHero } from "./campus-images.mjs";
 
 const UNI_RELATED = [
   "school-auckland",
@@ -57,9 +58,9 @@ function universitiesOverview() {
       "奥克兰大学、AUT、怀卡托、梅西、惠灵顿维多利亚、坎特伯雷、林肯与奥塔哥：先对照城市与专业，再看排名与学费约数。",
     excerptEn:
       "Auckland, AUT, Waikato, Massey, Victoria Wellington, Canterbury, Lincoln and Otago: start with city and subject, then rankings and approximate fees.",
-    image: IMG.study,
-    imageAltZh: "新西兰大学校园",
-    imageAltEn: "A New Zealand university campus",
+    ...campusHero("uni-auckland"),
+    imageAltZh: "奥克兰大学钟楼与校园",
+    imageAltEn: "University of Auckland clock tower",
     related: UNI_RELATED,
     bodyZh: [
       `新西兰公办大学共八所，中文里常称「八大」。它们都是 Universities New Zealand 成员，学历受 NZQCF 认可。选校不要只看一张排名表：同一所学校不同专业的录取、学费和就业出口差很大。本文是总览；每所大学另有详解。费用与排名均标注来源与核对日期（${UPDATED}），报名前请再打开官网。`,
@@ -72,7 +73,7 @@ function universitiesOverview() {
       "坎特伯雷大学（University of Canterbury）——基督城 Ilam。工程（尤其土木）、林业、地震与环境、教育常见。QS 2027：全球第 257（校方排名页，2026-09-01）。学费按学科分档，以官网为准。官网 https://www.canterbury.ac.nz/",
       "林肯大学（Lincoln University）——基督城以南林肯镇。农学、园艺、环境、物业与旅游管理是长项。QS 2026：全球第 407（校方 2025-06-19 新闻）。学费按项目打包。官网 https://www.lincoln.ac.nz/",
       "奥塔哥大学（University of Otago）——但尼丁，另有基督城、惠灵顿健康科学校区。医学、牙科、药学、人文与海洋科学常被讨论。QS 2026：全球并列第 197（校方 2025-06-19 新闻）。学费按 paper 计。官网 https://www.otago.ac.nz/",
-      fig(IMG.class, "大学课堂", "八大是综合或专科研究型大学，和私立技能学院不是同一条赛道——先锁定学历级别和专业。"),
+      campusFig("ai-lecture", "大学课堂", "课堂示意（摄于赫尔辛基理工大学，不是新西兰校园）。八大是研究型大学，和私立技能学院不是同一条赛道——先锁定学历级别和专业。", true),
       h2("怎么快速筛，而不是只看排名"),
       "建议五步：① 专业是否真的开设、有无实习或职业注册要求（医学、教师、工程师、护士尤其关键）；② 城市生活成本——奥克兰房租通常最高，但尼丁、汉密尔顿、林肯往往更低；③ 英语与学历门槛是否赶得上目标开学季；④ 国际学费 + 一年生活费是否在预算内；⑤ 毕业后的签证路径以移民局为准，不要把「好录取」当成「好移民」。",
       "排名只作参考。本文引用 QS World University Rankings，并写明年份与校方新闻/排名页。QS 每年方法会微调，不同榜单（THE、ARWU）顺序也会不同。",
@@ -80,7 +81,7 @@ function universitiesOverview() {
       "Universities New Zealand 的公开说明：本科一般最低 IELTS Academic 6.0（或同等），研究生一般 6.5；部分专业更高。TOEFL iBT、PTE Academic、部分语言班或预科也可被接受——一律以该校该课的 English language requirements 为准。https://www.universitiesnz.ac.nz/international-students/am-i-eligible",
       h2("开学季与申请节奏"),
       "多数本科与授课型硕士主开学季是 2 月（Semester 1）和 7 月（Semester 2）。医学、教育、部分健康科学只有 2 月或更早截止。2027 年 Semester 1，校方已公布的国际申请节点包括：奥塔哥境外全日制学位 2026-11-15；林肯境外 2026-12-01；奥克兰大学一般课程 2026-12-08（国际授课型研究生页另写建议 2026-12-01，以便留签证时间）。详见《2027 入学截止与博士奖学金》。",
-      fig(IMG.cbd, "奥克兰城市", "同一所大学也可能有多个校区；梅西、AUT、奥塔哥尤其要把「上课校区」写进预算表。"),
+      campusFig("uni-otago", "奥塔哥大学钟楼", "同一所大学也可能有多个校区；梅西、AUT、奥塔哥尤其要把「上课校区」写进预算表。", true),
       h2("学费怎么读，才不会漏项"),
       "大学学费常按 120 学分/年估算，另收 Student Services Levy。博士若在新西兰境内全日制就读，多所大学按国内费率收国际博士生（以各校博士页为准）。保险、教材、实验室或实地课、机票不在学费里。签证资金证明（生活费）与真实开销不是同一笔数——见学生签证一文。",
       feeNoteZh("应用型私立路径仍保留 Yoobee、NZSE、Future Skills 专文（不是八大）。本站不再介绍 ICL。"),
@@ -106,7 +107,7 @@ function universitiesOverview() {
       "University of Canterbury—Ilam, Christchurch. Engineering (especially civil), forestry, earthquake/environment and education. QS 2027: 257th (UC rankings page, 1 September 2026). Fees are banded by subject. https://www.canterbury.ac.nz/",
       "Lincoln University—Lincoln township south of Christchurch. Agriculture, horticulture, environment, property and tourism. QS 2026: 407th (Lincoln news, 19 June 2025). Programme-based fees. https://www.lincoln.ac.nz/",
       "University of Otago—Dunedin, with health-science campuses in Christchurch and Wellington. Medicine, dentistry, pharmacy, humanities and marine science are often discussed. QS 2026: =197 (Otago news, 19 June 2025). Fees are charged per paper. https://www.otago.ac.nz/",
-      fig(IMG.class, "University classroom", "The eight universities are a different track from private skills colleges—lock the qualification level and subject first."),
+      campusFig("ai-lecture", "University classroom", "Generic lecture photo (Helsinki University of Technology, not a New Zealand campus). The eight universities are a different track from private skills colleges.", false),
       h2("Filter by fit, not only rank"),
       "Check: the exact programme and any registration/placement rules; city living costs; whether English and academic conditions are realistic; tuition plus a year of living costs; and post-study visas on Immigration NZ pages—not agent slogans.",
       "This site cites QS and names the year plus the university page used. QS methodology changes; THE and ARWU will not match.",
@@ -114,7 +115,7 @@ function universitiesOverview() {
       "Universities New Zealand: undergraduate study commonly needs IELTS Academic 6.0 (or equivalent); postgraduate commonly 6.5. Some programmes sit higher. TOEFL iBT, PTE Academic and pathway English may also be accepted. https://www.universitiesnz.ac.nz/international-students/am-i-eligible",
       h2("Intakes"),
       "Most taught programmes start in February and July. Medicine, teaching and some health programmes have earlier or single intakes. Published 2027 Semester 1 international nodes include Otago offshore 15 November 2026, Lincoln offshore 1 December 2026, and Auckland’s general date 8 December 2026 (Auckland also advises international taught postgraduate applicants to apply by 1 December 2026 for visa time).",
-      fig(IMG.cbd, "Auckland city", "Confirm the teaching campus—Massey, AUT and Otago in particular."),
+      campusFig("uni-otago", "University of Otago clocktower", "Confirm the teaching campus—Massey, AUT and Otago in particular.", false),
       h2("How to read a fee table"),
       "University fees are often estimated on 120 points plus a student services levy. Many universities charge domestic PhD tuition for international doctoral candidates living in New Zealand. Insurance, books, field trips and flights are extra. Visa living-funds evidence is not the same as a real budget.",
       feeNoteEn(" Applied private/skills paths still have dedicated pages for Yoobee, NZSE and Future Skills. This site no longer covers ICL."),
