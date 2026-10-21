@@ -8,6 +8,7 @@ const CITY_OPTIONS = [
   { value: "惠灵顿 Wellington", zh: "惠灵顿 Wellington", en: "Wellington" },
   { value: "基督城 Christchurch", zh: "基督城 Christchurch", en: "Christchurch" },
   { value: "汉密尔顿 Hamilton", zh: "汉密尔顿 Hamilton", en: "Hamilton" },
+  { value: "北帕默斯顿 Palmerston North", zh: "北帕默斯顿 Palmerston North", en: "Palmerston North" },
   { value: "但尼丁 Dunedin", zh: "但尼丁 Dunedin", en: "Dunedin" },
   { value: "未定 / 需要建议", zh: "未定 / 需要建议", en: "Undecided" },
 ];
@@ -15,6 +16,7 @@ const CITY_OPTIONS = [
 const DEGREE_OPTIONS = [
   { value: "", zh: "请选择", en: "Select" },
   { value: "语言 / 预科", zh: "语言 / 预科", en: "Language / pathway" },
+  { value: "高中", zh: "高中", en: "Secondary school" },
   { value: "专科 / Diploma", zh: "专科 / Diploma", en: "Diploma" },
   { value: "本科", zh: "本科", en: "Bachelor" },
   { value: "研文 / PGDip", zh: "研文 / PGDip", en: "Graduate diploma" },
@@ -225,7 +227,7 @@ export function ConsultForm({ locale, labels, onBack }) {
             <input
               value={form.schoolIntent}
               onChange={(e) => update("schoolIntent", e.target.value)}
-              placeholder="AIS / ICL / Yoobee / NZSE / Future Skills"
+              placeholder="University of Auckland / AUT / Yoobee / NZSE / Future Skills"
             />
           </Field>
           <Field label={zh ? "意向专业 / 课程" : "Intended programme"}>

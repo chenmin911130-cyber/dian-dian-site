@@ -2,10 +2,20 @@ import { Link } from "react-router-dom";
 import { getArticle } from "./content";
 
 function textWithLinks(text) {
-  const parts = text.split(/(https?:\/\/[^\s]+)/g);
-  return parts.map((part, index) =>
-    /^https?:\/\//.test(part) ? <a key={index} href={part} target="_blank" rel="noreferrer">{part}</a> : part,
-  );
+  const parts = text.split(/(https?:\/\/[A-Za-z0-9._~:/?#\[\]@!$&'*+,;=%-]+)/g);
+  return parts.map((part, index) => {
+    if (!/^https?:\/\//.test(part)) return part;
+    const href = part.replace(/[),.;:]+$/g, "");
+    const trail = part.slice(href.length);
+    return (
+      <span key={index}>
+        <a href={href} target="_blank" rel="noreferrer">
+          {href}
+        </a>
+        {trail}
+      </span>
+    );
+  });
 }
 
 function renderBlocks(blocks) {
@@ -62,6 +72,11 @@ export function ArticlePage({
         <p className="detail-lead">
           {zh ? article.excerptZh : article.excerptEn}
         </p>
+        {article.updatedAt ? (
+          <p className="article-detail__updated">
+            {zh ? `最近核对：${article.updatedAt}` : `Last checked: ${article.updatedAt}`}
+          </p>
+        ) : null}
         {article.website ? (
           <p className="article-detail__website">
             <a
@@ -83,13 +98,17 @@ export function ArticlePage({
       />
 
       <div className="article-detail__body">{renderBlocks(blocks)}</div>
-      {article.slug === "pte-private-schools" ? (
-        <section className="article-related" aria-label={zh ? "学校详解" : "School guides"}>
-          <h2>{zh ? "继续看每所学校的详解" : "Read each school guide"}</h2>
+      {article.related?.length ? (
+        <section className="article-related" aria-label={zh ? "相关文章" : "Related articles"}>
+          <h2>{zh ? "相关文章" : "Related articles"}</h2>
           <div>
-            {["school-ais", "school-icl", "school-yoobee", "school-nzse", "school-future-skills"].map((slug) => {
-              const school = getArticle(slug);
-              return <Link key={slug} to={`/article/${slug}`}>{school ? (zh ? school.titleZh : school.titleEn) : slug}</Link>;
+            {article.related.map((slug) => {
+              const related = getArticle(slug);
+              return (
+                <Link key={slug} to={`/article/${slug}`}>
+                  {related ? (zh ? related.titleZh : related.titleEn) : slug}
+                </Link>
+              );
             })}
           </div>
         </section>

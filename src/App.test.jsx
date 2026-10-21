@@ -109,6 +109,7 @@ it("opens the consultation form from the hero with four visa-prep sections", asy
   ).toEqual([
     "请选择",
     "语言 / 预科",
+    "高中",
     "专科 / Diploma",
     "本科",
     "研文 / PGDip",
@@ -133,28 +134,26 @@ it("opens the consultation form from the hero with four visa-prep sections", asy
   ).not.toBeInTheDocument();
 });
 
-it("opens the private schools article from the home featured link", async () => {
+it("opens the eight-universities article from the home featured link", async () => {
   const user = userEvent.setup();
   render(<App />);
 
   await user.click(screen.getAllByRole("link", { name: /阅读文章/ })[0]);
 
-  expect(window.location.pathname).toBe("/article/pte-private-schools");
+  expect(window.location.pathname).toBe("/article/nz-universities-overview");
   expect(
     screen.getByRole("heading", {
-      name: "AIS / ICL / Yoobee / NZSE / Future Skills：学费与怎么选",
+      name: "新西兰八大怎么选：城市、专业、学费与适合谁",
     }),
   ).toBeInTheDocument();
+  expect(screen.getAllByText(/奥克兰大学/, { exact: false }).length).toBeGreaterThan(0);
+  expect(screen.queryByText(/icl\.ac\.nz/i)).not.toBeInTheDocument();
   expect(
-    screen.getByText(/为每所学校准备了独立详解/, { exact: false }),
-  ).toBeInTheDocument();
-  expect(screen.getByText(/ICL——奥克兰 CBD/, { exact: false })).toBeInTheDocument();
-  expect(
-    screen.getByRole("img", { name: /课堂学习场景|应用型学院/ }),
+    screen.getByRole("img", { name: /大学课堂|八大/ }),
   ).toBeInTheDocument();
 });
 
-it("lists dedicated school articles in the study guide", async () => {
+it("lists university and retained private-school articles in the study guide", async () => {
   const user = userEvent.setup();
   render(<App />);
 
@@ -163,14 +162,15 @@ it("lists dedicated school articles in the study guide", async () => {
   expect(
     screen.getByRole("heading", { name: "留学准备" }),
   ).toBeInTheDocument();
-
   expect(
-    screen.getByRole("link", { name: /AIS 奥克兰商学院：专业、学费与适合谁/ }),
+    screen.getByRole("heading", { name: "八所大学" }),
   ).toBeInTheDocument();
   expect(
-    screen.getByRole("link", {
-      name: /ICL 商学院：课程路径、学费与就读体验要点/,
-    }),
+    screen.getByRole("heading", { name: "技能与应用管理" }),
+  ).toBeInTheDocument();
+
+  expect(
+    screen.getByRole("link", { name: /奥克兰大学：优势专业、排名、学费与适合谁/ }),
   ).toBeInTheDocument();
   expect(
     screen.getByRole("link", { name: /Yoobee：动画、设计与软件课程怎么选/ }),
@@ -185,24 +185,24 @@ it("lists dedicated school articles in the study guide", async () => {
       name: /Future Skills：应用管理、学费与奖学金怎么看/,
     }),
   ).toBeInTheDocument();
+  expect(
+    screen.queryByRole("link", { name: /ICL/ }),
+  ).not.toBeInTheDocument();
 
   await user.click(
     screen.getByRole("link", {
-      name: /ICL 商学院：课程路径、学费与就读体验要点/,
+      name: /NZSE \/ NZSEG：技能课程、校区与学费区间/,
     }),
   );
-  expect(window.location.pathname).toBe("/article/school-icl");
+  expect(window.location.pathname).toBe("/article/school-nzse");
   expect(
     screen.getByRole("heading", {
-      name: "ICL 商学院：课程路径、学费与就读体验要点",
+      name: "NZSE / NZSEG：技能课程、校区与学费区间",
     }),
   ).toBeInTheDocument();
   expect(
-    screen.getAllByRole("link", { name: /icl\.ac\.nz/ })[0],
-  ).toHaveAttribute("href", "https://icl.ac.nz/");
-  expect(
-    screen.getByText(/ICL Graduate Business School/, { exact: false }),
-  ).toBeInTheDocument();
+    screen.getAllByRole("link", { name: /nzse\.ac\.nz/ })[0],
+  ).toHaveAttribute("href", "https://nzse.ac.nz/");
 });
 
 it("opens the Seek and Trade Me article from the career guide", async () => {
@@ -224,12 +224,13 @@ it("opens the Seek and Trade Me article from the career guide", async () => {
   expect(window.location.pathname).toBe("/article/seek-trademe-jobs");
   expect(
     screen.getByRole("heading", {
-      name: "在 Seek 与 Trade Me 找工作：实用建议",
+      name: "在 Seek 与 Trade Me 找工作：从注册到入职",
     }),
   ).toBeInTheDocument();
+  expect(screen.getByText(/本地中小商家多/)).toBeInTheDocument();
   expect(
-    screen.getByText(/本地中小商家多，适合附近兼职/, { exact: false }),
-  ).toBeInTheDocument();
+    screen.getAllByRole("link", { name: "https://www.seek.co.nz/" })[0],
+  ).toHaveAttribute("href", "https://www.seek.co.nz/");
   expect(
     screen.getByRole("img", { name: /在 Seek 与 Trade Me 找工作/ }),
   ).toBeInTheDocument();
@@ -243,12 +244,12 @@ it("loads the consultation page directly at /consult", () => {
   ).toBeInTheDocument();
 });
 
-it("loads a school article directly at its URL", () => {
-  window.history.replaceState({}, "", "/article/school-ais");
+it("loads a university article directly at its URL", () => {
+  window.history.replaceState({}, "", "/article/school-auckland");
   render(<App />);
   expect(
     screen.getByRole("heading", {
-      name: "AIS 奥克兰商学院：专业、学费与适合谁",
+      name: "奥克兰大学：优势专业、排名、学费与适合谁",
     }),
   ).toBeInTheDocument();
 });
