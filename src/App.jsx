@@ -160,6 +160,7 @@ function Footer({ locale, showChannels }) {
         </a>
         <span>{copy.privacyNote}</span>
         <small>{copy.disclaimer}</small>
+        <small>© 2026 {copy.siteName}</small>
       </div>
     </footer>
   );
