@@ -188,6 +188,24 @@ it("lists university and retained private-school articles in the study guide", a
   expect(
     screen.queryByRole("link", { name: /ICL/ }),
   ).not.toBeInTheDocument();
+  expect(
+    screen.getByRole("heading", { name: "AI 课程专文" }),
+  ).toBeInTheDocument();
+  expect(
+    screen.getByRole("link", {
+      name: /新西兰 AI \/ AI 管理硕士怎么选/,
+    }),
+  ).toBeInTheDocument();
+  expect(
+    screen.getByRole("link", {
+      name: /NZSE 没有“AI 商务管理”课/,
+    }),
+  ).toBeInTheDocument();
+  expect(
+    screen.getByRole("link", {
+      name: /Future Skills：Master of AI Integrated IT Solutions/,
+    }),
+  ).toBeInTheDocument();
 
   await user.click(
     screen.getByRole("link", {

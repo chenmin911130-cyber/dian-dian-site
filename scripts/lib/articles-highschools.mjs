@@ -9,6 +9,7 @@ import {
   feeNoteEn,
   sourcesBlock,
 } from "./article-kit.mjs";
+import { campusFig, campusHero } from "./campus-images.mjs";
 
 const HS_RELATED = [
   "auckland-secondary-schools",
@@ -37,13 +38,13 @@ function overview() {
     titleEn: "Auckland secondary schools for international students: zones, NCEA/IB/CIE, fees and guardians",
     excerptZh: "只写能核对的事实：学区对本地生与国际生不同、三大课程体系、公开国际学费，以及 18 岁以下住宿规则。",
     excerptEn: "Verified facts only: how zoning works, NCEA/IB/CIE, published international fees, and under-18 accommodation rules.",
-    image: IMG.study,
-    imageAltZh: "奥克兰中学国际生",
-    imageAltEn: "Auckland secondary schools for international students",
+    ...campusHero("hs-grammar"),
+    imageAltZh: "奥克兰文法学校校园",
+    imageAltEn: "Auckland Grammar School campus",
     related: HS_RELATED.slice(1),
     bodyZh: [
       `奥克兰有一批常被国际家庭问起的中学。本稿和各校专文只写能在学校官网或移民局/NZQA 文件里核对的事实。学费均为约数，核对日期 ${UPDATED}，以学校国际部当季账单为准。本站不是学校招生办，也不能保证学位。`,
-      fig(IMG.class, "中学课堂", "先定课程体系（NCEA / Cambridge / IB）和住宿方式，再比学费。"),
+      campusFig("hs-epsom", "伊普瑟姆女子文法学校", "先定课程体系（NCEA / Cambridge / IB）和住宿方式，再比学费。", true),
       h2("学区（zoning）对谁有效"),
       "新西兰公立中学的 enrolment scheme（学区）主要用于保障住在区内的国内生入学。国际全费生一般不走「买学区房就能进」这条路，而是向学校国际部申请，受国际名额、英语和学年位置限制。",
       "学区仍然值得了解：如果家庭持有居民签证或已经在区内居住，子女可能按国内生规则申请，学费完全不同。国际全费生不要把中介说的「进了某学区就等于录取」当成移民局或学校政策。各校学区地图在学校官网或教育部 enrolment scheme 页。",
@@ -51,6 +52,7 @@ function overview() {
       "NCEA（National Certificate of Educational Achievement）是新西兰国家资格，Level 1–3 对应高中后段，由 NZQA 管理。国际全费生参加 NCEA 外部考试需另付 NZQA 费用，多所学校 2026 年写明约 NZD 383.30/年。",
       "Cambridge International（常称 CIE / AS / A2）是部分学校并行的英国课程，例如奥克兰文法（Auckland Grammar）公开同时提供 NCEA 与 Cambridge，并单列 AS/A2 科目考试费。",
       "IB Diploma 是国际文凭课程。Rangitoto College 国际学费表把 NCEA 与 IB 分成两个学费档；Diocesan 学费说明里把 IB Diploma 报考费列为学费未包含项。一所学校是否开 IB，以该校课程页为准，不要用口头名单推断。",
+      campusFig("hs-rangitoto", "朗伊托托学院数学楼", "数学楼外观，不是全校全景。Rangitoto 把 NCEA 与 IB 分成两个国际学费档，报名时看课程页。", true),
       h2("国际学费量级（2026，已核对校方页）"),
       "公立男子/女子/混合中学国际学费公开例：Mount Albert Grammar 全年 NZD 20,000；Rangitoto 2027 年 NCEA NZD 20,500、IB NZD 22,250；Epsom Girls 2026 年 NZD 23,000（2027 年 NZD 25,000）；Westlake Girls 2026 年 NZD 23,000；Macleans 2026 年 NZD 25,000；Auckland Grammar 全年 NZD 26,250。另计报名/行政费、制服、保险、NZQA 或 Cambridge 考试费。",
       "私立学校更高：Pinehurst 公布的是 2027 年国际学费（Year 9–13 NZD 45,590）；Diocesan 2026 年 Year 7–13 NZD 61,650；St Cuthbert's 2026 年 Year 7–13 NZD 63,088；King's College 公布的是 2027 年国际学费 NZD 57,000 + 住宿 NZD 20,500。西湖男子中学、Takapuna Grammar 本稿未找到可引用的 2026 国际学费表，故不编造数字，只在北岸合集里给官网。",
@@ -72,11 +74,12 @@ function overview() {
     ],
     bodyEn: [
       `These notes cover Auckland secondary schools international families often ask about. Only facts that can be checked on a school page or an INZ/NZQA document are used. Fees are approximate as of ${UPDATED}.`,
-      fig(IMG.class, "Secondary classroom", "Choose the qualification pathway and accommodation type before you compare fees."),
+      campusFig("hs-epsom", "Epsom Girls’ Grammar School", "Choose the qualification pathway and accommodation type before you compare fees.", false),
       h2("Zoning"),
       "An enrolment scheme mainly protects domestic students who live in zone. Full-fee international students usually apply through the international department and are limited by places, English and year-level space. Zoning still matters if the family already has residence and lives in zone—the fee status is then completely different. Do not treat “buy in zone” as an international-admission rule.",
       h2("NCEA, Cambridge and IB"),
       "NCEA is New Zealand’s national secondary qualification (NZQA). Several schools list the 2026 international NCEA exam fee at about NZD 383.30. Cambridge (CIE) runs alongside NCEA at some schools, including Auckland Grammar, which publishes separate AS/A2 subject fees. IB Diploma is offered at some schools; Rangitoto splits NCEA and IB tuition, and Diocesan lists IB exam fees as extra. Confirm on the school page.",
+      campusFig("hs-rangitoto", "Rangitoto College maths building", "The maths building, not a whole-campus view. Rangitoto publishes separate NCEA and IB international fees.", false),
       h2("Published international tuition (2026 unless noted)"),
       "State-school examples: MAGS NZD 20,000; Rangitoto 2027 NCEA NZD 20,500 / IB NZD 22,250; Epsom Girls NZD 23,000 (NZD 25,000 in 2027); Westlake Girls NZD 23,000; Macleans NZD 25,000; Auckland Grammar NZD 26,250. Independent schools: Pinehurst 2027 Year 9–13 NZD 45,590; Diocesan 2026 Year 7–13 NZD 61,650; St Cuthbert’s 2026 Year 7–13 NZD 63,088; King’s College 2027 tuition NZD 57,000 plus boarding NZD 20,500. Westlake Boys and Takapuna Grammar have no 2026 international fee table cited here, so no number is invented.",
       feeNoteEn(),
@@ -92,6 +95,7 @@ function overview() {
 const SCHOOLS = [
   {
     slug: "school-auckland-grammar",
+    imageId: "hs-grammar",
     titleZh: "Auckland Grammar：NCEA 与 Cambridge、国际学费",
     titleEn: "Auckland Grammar: NCEA, Cambridge and international fees",
     excerptZh: "Mt Eden 公立男校。2026 年国际学费 NZD 26,250；不可独居或自行合租。",
@@ -120,6 +124,7 @@ const SCHOOLS = [
   },
   {
     slug: "school-epsom-girls",
+    imageId: "hs-epsom",
     titleZh: "Epsom Girls Grammar：国际学费与 NCEA",
     titleEn: "Epsom Girls Grammar: international fees and NCEA",
     excerptZh: "Epsom 公立女校。2026 年学费 NZD 23,000，2027 年 NZD 25,000。",
@@ -143,6 +148,7 @@ const SCHOOLS = [
   },
   {
     slug: "school-mags",
+    imageId: "hs-mags",
     titleZh: "Mount Albert Grammar：2026 国际学费",
     titleEn: "Mount Albert Grammar: 2026 international fees",
     excerptZh: "公立男女合校。2026 全年国际学费 NZD 20,000，寄宿 NZD 420/周。",
@@ -159,6 +165,7 @@ const SCHOOLS = [
   },
   {
     slug: "school-westlake-girls",
+    imageId: "hs-westlake-girls",
     titleZh: "Westlake Girls：2026 国际学费",
     titleEn: "Westlake Girls: 2026 international fees",
     excerptZh: "北岸公立女校。2026 年学费 NZD 23,000，寄宿 45 周 × NZD 400。",
@@ -176,6 +183,9 @@ const SCHOOLS = [
   },
   {
     slug: "school-rangitoto",
+    imageId: "hs-rangitoto",
+    imageNoteZh: "数学楼，不是全校全景。",
+    imageNoteEn: "Maths building, not a whole-campus view.",
     titleZh: "Rangitoto College：NCEA 与 IB 国际学费",
     titleEn: "Rangitoto College: NCEA and IB international fees",
     excerptZh: "北岸大型公立合校。2027 年 NCEA NZD 20,500，IB NZD 22,250。",
@@ -192,6 +202,7 @@ const SCHOOLS = [
   },
   {
     slug: "school-macleans",
+    imageId: "hs-macleans",
     titleZh: "Macleans College：2026 国际学费与寄宿",
     titleEn: "Macleans College: 2026 international fees and homestay",
     excerptZh: "Howick 公立合校。2026 年学费 NZD 25,000，寄宿 NZD 380/周。",
@@ -208,6 +219,9 @@ const SCHOOLS = [
   },
   {
     slug: "school-diocesan",
+    imageId: "hs-diocesan",
+    imageNoteZh: "历史航拍，示意校址与周边，不是今日校园近景。",
+    imageNoteEn: "Historic aerial showing the site, not a current close-up.",
     titleZh: "Diocesan School for Girls：2026 国际学费与 IB 费用",
     titleEn: "Diocesan School for Girls: 2026 international fees and IB extras",
     excerptZh: "Epsom 私立女校。2026 年 Year 7–13 学费 NZD 61,650；IB 报考费另计。",
@@ -224,6 +238,9 @@ const SCHOOLS = [
   },
   {
     slug: "school-st-cuthberts",
+    imageId: "hs-stcuthberts",
+    imageNoteZh: "历史航拍，示意校址与周边，不是今日校园近景。",
+    imageNoteEn: "Historic aerial showing the site, not a current close-up.",
     titleZh: "St Cuthbert's：2026 国际学费与住宿",
     titleEn: "St Cuthbert’s: 2026 international tuition and boarding",
     excerptZh: "私立女校。2026 年 Year 7–13 国际学费 NZD 63,088，住宿 NZD 21,608。",
@@ -240,6 +257,9 @@ const SCHOOLS = [
   },
   {
     slug: "school-kings-college",
+    imageId: "hs-kings",
+    imageNoteZh: "教堂与雕像近景，不是全校全景。",
+    imageNoteEn: "Chapel and statue, not a whole-campus view.",
     titleZh: "King's College：2027 国际学费与住宿",
     titleEn: "King’s College: 2027 international tuition and boarding",
     excerptZh: "Otahuhu 私立学校。校方公布 2027 年国际学费 NZD 57,000，住宿 NZD 20,500。",
@@ -256,6 +276,9 @@ const SCHOOLS = [
   },
   {
     slug: "school-pinehurst",
+    imageId: "hs-pinehurst",
+    imageNoteZh: "接待处外观。",
+    imageNoteEn: "Reception building exterior.",
     titleZh: "Pinehurst School：2027 国际学费（Cambridge）",
     titleEn: "Pinehurst School: 2027 international fees (Cambridge)",
     excerptZh: "Albany 私立学校。校方公布 2027 年 Year 9–13 国际学费 NZD 45,590。",
@@ -282,7 +305,7 @@ function schoolArticle(school) {
     titleEn: school.titleEn,
     excerptZh: school.excerptZh,
     excerptEn: school.excerptEn,
-    image: IMG.study,
+    ...campusHero(school.imageId),
     imageAltZh: school.titleZh,
     imageAltEn: school.titleEn,
     website: school.website,
@@ -290,7 +313,7 @@ function schoolArticle(school) {
     bodyZh: [
       `${school.city}。以下费用与规则摘自学校官网，核对日期 ${UPDATED}。学区对国内生与国际全费生的含义不同，见总览一文。`,
       `官网：${school.website}`,
-      fig(IMG.class, school.titleZh, "国际申请走学校国际部，不要把学区房广告当成录取。"),
+      school.imageNoteZh || "国际申请走学校国际部，不要把学区房广告当成录取。",
       ...school.zh,
       feeNoteZh(),
       `18 岁以下住宿须符合牧养准则，并由学校出具合规声明。来源：${INZ.providers}`,
@@ -299,7 +322,7 @@ function schoolArticle(school) {
     bodyEn: [
       `${school.city}. Figures are from the school site, checked ${UPDATED}. Zoning does not work the same way for domestic and full-fee international students.`,
       `Official site: ${school.website}`,
-      fig(IMG.class, school.titleEn, "Apply through the international office."),
+      school.imageNoteEn || "Apply through the international office.",
       ...school.en,
       feeNoteEn(),
       `Under-18 accommodation must meet the pastoral-care Code. ${INZ.providers}`,
@@ -317,9 +340,9 @@ function northShoreNote() {
     titleEn: "Westlake Boys and Takapuna Grammar: use the official pages",
     excerptZh: "两所北岸常被问起的公立中学。本稿未引用到 2026 年国际学费表，故不编造数字。",
     excerptEn: "Two frequently asked North Shore state schools. No 2026 international fee table is cited here, so no figure is invented.",
-    image: IMG.study,
-    imageAltZh: "北岸公立中学",
-    imageAltEn: "North Shore state secondary schools",
+    ...campusHero("hs-westlake-boys"),
+    imageAltZh: "西湖男子中学 Quad",
+    imageAltEn: "Westlake Boys High School quad",
     related: HS_RELATED,
     bodyZh: [
       "Westlake Boys High School 与 Takapuna Grammar School 常出现在奥克兰国际生短名单里。它们是公立中学，国内生受学区规则约束；国际全费生走国际部。",
@@ -327,7 +350,7 @@ function northShoreNote() {
       "Takapuna Grammar 官网：https://www.takapuna.school.nz/ （若域名变更，以学校信纸为准）。",
       `在核对日 ${UPDATED}，本稿没有引用到这两所学校可公开打开的 2026 国际学费 PDF，因此不写学费数字。请直接问国际部要当季 Invoice 与课程说明（NCEA 或是否并行其他资格）。`,
       "住宿、监护和签证规则与总览一文相同：未满 18 岁必须有合规住宿声明；生活费证明每年 NZD 17,000。",
-      fig(IMG.cbd, "北岸城市", "北岸通勤依赖公交与家庭接送，看房时把到校时间算进去。"),
+      campusFig("hs-takapuna", "1992 年 Belmont 航拍", "历史航拍示意北岸街区，不是今日 Takapuna Grammar 校园近景。北岸通勤依赖公交与家庭接送，看房时把到校时间算进去。", true),
       ...sourcesBlock(true, [
         "https://www.westlake.school.nz/",
         "https://www.takapuna.school.nz/",

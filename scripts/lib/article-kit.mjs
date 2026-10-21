@@ -1,7 +1,13 @@
 export const UPDATED = "2026-10-21";
 
 export const h2 = (text) => ({ type: "h2", text });
-export const fig = (src, alt, caption) => ({ type: "image", src, alt, caption });
+export const fig = (src, alt, caption, credit) => ({
+  type: "image",
+  src,
+  alt,
+  caption,
+  ...(credit ? { credit } : {}),
+});
 
 export const IMG = {
   cbd: "/images/article-auckland-cbd.png",
@@ -66,6 +72,8 @@ export function article({
   image,
   imageAltZh,
   imageAltEn,
+  imageCreditZh,
+  imageCreditEn,
   website,
   related,
   bodyZh,
@@ -83,6 +91,8 @@ export function article({
     image,
     imageAltZh,
     imageAltEn,
+    ...(imageCreditZh ? { imageCreditZh } : {}),
+    ...(imageCreditEn ? { imageCreditEn } : {}),
     ...(website ? { website } : {}),
     ...(related ? { related } : {}),
     bodyZh,

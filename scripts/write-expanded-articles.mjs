@@ -5,12 +5,14 @@ import { coreArticles } from "./lib/articles-core.mjs";
 import { universityArticles } from "./lib/articles-universities.mjs";
 import { highSchoolArticles } from "./lib/articles-highschools.mjs";
 import { immigrationArticles } from "./lib/articles-immigration.mjs";
+import { aiArticles } from "./lib/articles-ai.mjs";
 
 const articles = [
   ...coreArticles(),
   ...universityArticles(),
   ...highSchoolArticles(),
   ...immigrationArticles(),
+  ...aiArticles(),
 ];
 
 const seen = new Set();

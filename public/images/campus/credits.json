@@ -1,0 +1,218 @@
+[
+  {
+    "id": "uni-auckland",
+    "src": "/images/campus/uni-auckland.webp",
+    "commonsTitle": "Clock Tower, University of Auckland.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Clock_Tower%2C_University_of_Auckland.jpg",
+    "author": "Uhooep",
+    "license": "CC BY-SA 4.0",
+    "bytes": 351032
+  },
+  {
+    "id": "uni-aut",
+    "src": "/images/campus/uni-aut.webp",
+    "commonsTitle": "North Campus.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:North_Campus.jpg",
+    "author": "Sophbuchan",
+    "license": "CC BY-SA 4.0",
+    "bytes": 375444
+  },
+  {
+    "id": "uni-waikato",
+    "src": "/images/campus/uni-waikato.webp",
+    "commonsTitle": "University of Waikato village green.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:University_of_Waikato_village_green.jpg",
+    "author": "Waikato Wordwizard",
+    "license": "CC BY-SA 3.0",
+    "bytes": 299662
+  },
+  {
+    "id": "uni-massey",
+    "src": "/images/campus/uni-massey.webp",
+    "commonsTitle": "Massey University, Palmerston North Campus, New Zealand 03.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Massey_University%2C_Palmerston_North_Campus%2C_New_Zealand_03.jpg",
+    "author": "Michal Klajban",
+    "license": "CC BY-SA 4.0",
+    "bytes": 284648
+  },
+  {
+    "id": "uni-massey-albany",
+    "src": "/images/campus/uni-massey-albany.webp",
+    "commonsTitle": "Massey University, Albany Campus I.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Massey_University%2C_Albany_Campus_I.jpg",
+    "author": "Ingolfson",
+    "license": "Public domain",
+    "bytes": 44614
+  },
+  {
+    "id": "uni-vuw",
+    "src": "/images/campus/uni-vuw.webp",
+    "commonsTitle": "Hunter VUW.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Hunter_VUW.jpg",
+    "author": "L Maule",
+    "license": "CC BY-SA 4.0",
+    "bytes": 373868
+  },
+  {
+    "id": "uni-canterbury",
+    "src": "/images/campus/uni-canterbury.webp",
+    "commonsTitle": "Ilam Fields University of Canterbury New Zealand 2007.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Ilam_Fields_University_of_Canterbury_New_Zealand_2007.jpg",
+    "author": "Claude12",
+    "license": "CC BY-SA 3.0",
+    "bytes": 93080
+  },
+  {
+    "id": "uni-lincoln",
+    "src": "/images/campus/uni-lincoln.webp",
+    "commonsTitle": "Ivey Hall, Lincoln University, New Zealand.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Ivey_Hall%2C_Lincoln_University%2C_New_Zealand.jpg",
+    "author": "Michal Klajban",
+    "license": "CC BY-SA 4.0",
+    "bytes": 206794
+  },
+  {
+    "id": "uni-otago",
+    "src": "/images/campus/uni-otago.webp",
+    "commonsTitle": "University of Otago Clocktower. NZ (22954035383).jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:University_of_Otago_Clocktower._NZ_(22954035383).jpg",
+    "author": "Bernard Spragg. NZ",
+    "license": "CC0",
+    "bytes": 273684
+  },
+  {
+    "id": "hs-grammar",
+    "src": "/images/campus/hs-grammar.webp",
+    "commonsTitle": "Auckland Grammar School, East Part.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Auckland_Grammar_School%2C_East_Part.jpg",
+    "author": "Ingolfson",
+    "license": "Public domain",
+    "bytes": 156910
+  },
+  {
+    "id": "hs-epsom",
+    "src": "/images/campus/hs-epsom.webp",
+    "commonsTitle": "Epsom Girls' Grammar School.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Epsom_Girls'_Grammar_School.jpg",
+    "author": "Prosperosity",
+    "license": "CC BY-SA 4.0",
+    "bytes": 326448
+  },
+  {
+    "id": "hs-mags",
+    "src": "/images/campus/hs-mags.webp",
+    "commonsTitle": "NZ AK Mt Albert Grammar School (4).jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:NZ_AK_Mt_Albert_Grammar_School_(4).jpg",
+    "author": "Itineris55",
+    "license": "CC BY-SA 4.0",
+    "bytes": 202960
+  },
+  {
+    "id": "hs-westlake-girls",
+    "src": "/images/campus/hs-westlake-girls.webp",
+    "commonsTitle": "Westlake Girls' High School 20230823 131801.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Westlake_Girls'_High_School_20230823_131801.jpg",
+    "author": "Prosperosity",
+    "license": "CC BY 4.0",
+    "bytes": 277786
+  },
+  {
+    "id": "hs-rangitoto",
+    "src": "/images/campus/hs-rangitoto.webp",
+    "commonsTitle": "Maths Building, Rangitoto College, Auckland 20100211 1.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Maths_Building%2C_Rangitoto_College%2C_Auckland_20100211_1.jpg",
+    "author": "DXR",
+    "license": "CC BY-SA 4.0",
+    "bytes": 201388
+  },
+  {
+    "id": "hs-macleans",
+    "src": "/images/campus/hs-macleans.webp",
+    "commonsTitle": "Macleans college Auckland New Zealand front office.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Macleans_college_Auckland_New_Zealand_front_office.jpg",
+    "author": "EryZ",
+    "license": "CC0",
+    "bytes": 78272
+  },
+  {
+    "id": "hs-diocesan",
+    "src": "/images/campus/hs-diocesan.webp",
+    "commonsTitle": "Diocesan School for Girls, Auckland (cropped).jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Diocesan_School_for_Girls%2C_Auckland_(cropped).jpg",
+    "author": "Whites Aviation",
+    "license": "CC BY 4.0",
+    "bytes": 289668
+  },
+  {
+    "id": "hs-stcuthberts",
+    "src": "/images/campus/hs-stcuthberts.webp",
+    "commonsTitle": "Saint Cuthbert's College, Epsom, Auckland.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Saint_Cuthbert's_College%2C_Epsom%2C_Auckland.jpg",
+    "author": "Whites Aviation",
+    "license": "CC BY 4.0",
+    "bytes": 250170
+  },
+  {
+    "id": "hs-kings",
+    "src": "/images/campus/hs-kings.webp",
+    "commonsTitle": "King's College Chapel and Charles Thomas Major Statue.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:King's_College_Chapel_and_Charles_Thomas_Major_Statue.jpg",
+    "author": "John Halpin",
+    "license": "CC BY 4.0",
+    "bytes": 95550
+  },
+  {
+    "id": "hs-pinehurst",
+    "src": "/images/campus/hs-pinehurst.webp",
+    "commonsTitle": "Pinehurst School, Albany - Reception.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Pinehurst_School%2C_Albany_-_Reception.jpg",
+    "author": "Bjankuloski06",
+    "license": "CC BY 4.0",
+    "bytes": 390740
+  },
+  {
+    "id": "hs-westlake-boys",
+    "src": "/images/campus/hs-westlake-boys.webp",
+    "commonsTitle": "Quad Panorama.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Quad_Panorama.jpg",
+    "author": "Berniem4483",
+    "license": "CC BY-SA 4.0",
+    "bytes": 362842
+  },
+  {
+    "id": "hs-takapuna",
+    "src": "/images/campus/hs-takapuna.webp",
+    "commonsTitle": "Aerial view, Belmont, 1992 (Takapuna Grammar).jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Aerial_view%2C_Belmont%2C_1992_(Takapuna_Grammar).jpg",
+    "author": "Auckland Libraries",
+    "license": "CC BY 4.0",
+    "bytes": 199706
+  },
+  {
+    "id": "street-queen",
+    "src": "/images/campus/street-queen.webp",
+    "commonsTitle": "Queen Street, Auckland PA01.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Queen_Street%2C_Auckland_PA01.jpg",
+    "author": "Paora",
+    "license": "CC0",
+    "bytes": 220052
+  },
+  {
+    "id": "ai-lecture",
+    "src": "/images/campus/ai-lecture.webp",
+    "commonsTitle": "Mathematics lecture at the Helsinki University of Technology.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Mathematics_lecture_at_the_Helsinki_University_of_Technology.jpg",
+    "author": "Tungsten",
+    "license": "Public domain",
+    "bytes": 96298
+  },
+  {
+    "id": "ai-lab",
+    "src": "/images/campus/ai-lab.webp",
+    "commonsTitle": "A computer science classroom at Lee University in Cleveland, Tennessee, United States 02.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:A_computer_science_classroom_at_Lee_University_in_Cleveland%2C_Tennessee%2C_United_States_02.jpg",
+    "author": "Harrison Keely",
+    "license": "CC BY 4.0",
+    "bytes": 181032
+  }
+]
