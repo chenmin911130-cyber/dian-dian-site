@@ -16,8 +16,8 @@ export function HomeLanding({ locale, header }) {
       <PageTitle
         title={
           zh
-            ? "点点新西兰留学咨询｜留学、求职与生活"
-            : "DianDian NZ Study Consulting | Study, work and life"
+            ? "点点新西兰留学咨询｜八大、中学与落地"
+            : "DianDian NZ Study Consulting | Universities, schools and arrival"
         }
       />
       <section className="hero hero--cinematic">

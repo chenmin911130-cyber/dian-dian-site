@@ -22,7 +22,7 @@ export const siteCopy = {
     menuLabel: "菜单",
     closeMenu: "关闭菜单",
     authorBody:
-      "2024 年来到新西兰，目前在 ICL 商学院就读。一边适应新环境，一边整理留学、求职与生活里踩过的坑和有用的经验。希望这个网站能给你真实、实用的参考；也欢迎你分享自己的故事，我们一起慢慢成长。",
+      "2024 年来到新西兰，一边适应新环境，一边整理留学、求职与生活里踩过的坑和有用的经验。希望这个网站能给你真实、实用的参考；也欢迎你分享自己的故事，我们一起慢慢成长。",
     privacyNote:
       "隐私：表单和 Word 文件仅在你的浏览器中处理，不会上传。",
     disclaimer:
@@ -46,7 +46,7 @@ export const siteCopy = {
     menuLabel: "Menu",
     closeMenu: "Close menu",
     authorBody:
-      "I arrived in New Zealand in 2024 and am currently studying at ICL Business School. While settling in, I collect practical notes on study, work and daily life—what helped, and what I wish I had known sooner. I hope these pages are useful, and you are welcome to share your story too.",
+      "I arrived in New Zealand in 2024. While settling in, I collect practical notes on study, work and daily life—what helped, and what I wish I had known sooner. I hope these pages are useful, and you are welcome to share your story too.",
     privacyNote:
       "Privacy: form data and Word files stay in your browser and are never uploaded.",
     disclaimer:
@@ -58,21 +58,21 @@ export const guides = [
   {
     id: "study",
     image: "/images/study-feature.png",
-    imageAltZh: "新西兰私立学院与技能学校",
-    imageAltEn: "A New Zealand private college campus",
+    imageAltZh: "新西兰大学与中学校园",
+    imageAltEn: "A New Zealand university campus",
     titleZh: "留学准备",
     titleEn: "Study preparation",
     summaryZh:
-      "聚焦 AIS、ICL、Yoobee、NZSE、Future Skills 等私立/技能学校与学费区间，以及签证、语言、预算与申请节奏。",
+      "对照新西兰八所大学与奥克兰常见国际生中学，以及签证、语言、预算；私立路径仍保留 Yoobee、NZSE 与 Future Skills。",
     summaryEn:
-      "Focus on AIS, ICL, Yoobee, NZSE and Future Skills-style private/skills providers with tuition ranges, plus visas, English, budget and timing.",
+      "The eight universities and commonly asked Auckland secondary schools, plus visas, English and budget. Yoobee, NZSE and Future Skills remain for private/skills paths.",
     introZh:
-      "很多人问的不是八大排名，而是：奥克兰私立学院读什么、学费大概多少、PTE/语言班能不能衔接、商科 IT 酒店创意哪条路更贴自己。这里按 AIS、ICL、Yoobee、NZSE（NZSEG）、Future Skills 整理实用对照——讲清适合谁、学费大致区间，并提醒务必核对官网最新费用与 NZQA 级别。",
+      "主线是新西兰八所公立大学，以及奥克兰一批常被国际家庭问起的中学。每所大学和多数中学都有专文：优势专业、排名来源与年份、国际学费约数、英语与开学季。签证走 Immigration Online，生活费证明与工时以移民局为准。应用型私立路径仍保留 Yoobee、NZSE、Future Skills——本站不再介绍 ICL。",
     introEn:
-      "Many students need private/skills-provider options more than university rankings: what to study in Auckland colleges, typical tuition, PTE/English pathways, and which track fits—business, IT, hospitality or creative. These notes cover AIS, ICL, Yoobee, NZSE (NZSEG) and Future Skills with honest “who it suits” notes and approximate fee ranges—always verify current NZQA level and fees on the official site.",
-    featuredSlug: "pte-private-schools",
-    featuredTitleZh: "AIS / ICL / Yoobee / NZSE / Future Skills：学费与怎么选",
-    featuredTitleEn: "AIS, ICL, Yoobee, NZSE, Future Skills: fees and who they suit",
+      "The main track is New Zealand’s eight public universities, plus Auckland secondary schools international families often ask about. Each university—and most of those schools—has a deep-dive with cited rankings, approximate fees, English and intakes. Student visas go through Immigration Online. Yoobee, NZSE and Future Skills remain for private/skills paths. This site no longer covers ICL.",
+    featuredSlug: "nz-universities-overview",
+    featuredTitleZh: "新西兰八大怎么选：城市、专业、学费与适合谁",
+    featuredTitleEn: "Choosing among New Zealand’s eight universities",
   },
   {
     id: "career",

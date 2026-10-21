@@ -36,7 +36,7 @@ const data = {
   contact: "13800138000 / zs_nz2026",
   city: "奥克兰 Auckland",
   degree: "专科 / Diploma",
-  schoolIntent: "ICL Education",
+  schoolIntent: "University of Auckland",
   major: "Business",
   arrival: "2026年2月",
   english: "IELTS 6.0",

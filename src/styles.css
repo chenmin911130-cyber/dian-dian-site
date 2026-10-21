@@ -535,12 +535,17 @@ a:focus-visible {
   line-height: 1.7;
 }
 
-.detail-article-list h2 {
+.detail-article-list h2,
+.detail-article-group__title {
   margin: 0 0 1rem;
   font-size: 1rem;
   letter-spacing: 0.06em;
   color: var(--muted);
   font-weight: 600;
+}
+
+.detail-article-group + .detail-article-group {
+  margin-top: 2rem;
 }
 
 .detail-article-list ul {
@@ -953,6 +958,12 @@ body.nav-open .content-frame {
 
 .consult-worksheet .consult-form__grid {
   margin-top: 1rem;
+}
+
+.article-detail__updated {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
 }
 
 .article-detail__body a,
@@ -1703,8 +1714,13 @@ body.is-cinematic {
 
 .site-shell--cinematic .detail-kicker,
 .site-shell--cinematic .consult-page__kicker,
-.site-shell--cinematic .detail-article-list h2 {
+.site-shell--cinematic .detail-article-list h2,
+.site-shell--cinematic .detail-article-group__title {
   color: #9ec9e6;
+}
+
+.site-shell--cinematic .article-detail__updated {
+  color: rgba(246, 243, 236, 0.55);
 }
 
 .site-shell--cinematic .detail-lead,

@@ -1,0 +1,315 @@
+import {
+  UPDATED,
+  IMG,
+  INZ,
+  article,
+  fig,
+  h2,
+  sourcesBlock,
+} from "./article-kit.mjs";
+
+const RELATED = [
+  "post-study-work-visa",
+  "short-term-graduate-work-visa",
+  "skilled-migrant-category",
+  "green-list-residence",
+  "intake-deadlines-scholarships",
+  "visa-scams-fake-degrees",
+  "student-visa-processing",
+];
+
+export function immigrationArticles() {
+  return [
+    postStudy(),
+    shortTerm(),
+    smc(),
+    greenList(),
+    deadlines(),
+    scams(),
+    processing(),
+  ];
+}
+
+function postStudy() {
+  return article({
+    slug: "post-study-work-visa",
+    guideId: "study",
+    section: "pathways",
+    titleZh: "毕业工签（Post-Study Work Visa）：2026 年 11 月起的 Level 7 变化",
+    titleEn: "Post-Study Work Visa: Level 7 changes from November 2026",
+    excerptZh: "从 2026-11-16 起，符合条件的 Level 7 研究生文凭（另持学士学位）可申请 PSWV。以移民局为准。",
+    excerptEn: "From 16 November 2026, some Level 7 graduate diplomas plus a bachelor’s degree can qualify. Follow INZ.",
+    image: IMG.study,
+    imageAltZh: "毕业后工作签证",
+    imageAltEn: "Post-study work visa",
+    related: RELATED.filter((s) => s !== "post-study-work-visa"),
+    bodyZh: [
+      "Post-Study Work Visa（PSWV）是毕业后的开放工签路径之一。以下整理移民局 2026 年 9 月公告与 2026-24 号修正通告，不构成持牌移民法律建议。政策会变，递交前打开官网。",
+      fig(IMG.visa, "毕业工签材料", "学历是否「符合资格」比学校名气更重要。"),
+      h2("2026-11-16 起扩大的 Level 7 资格"),
+      `从周一 2026-11-16 起，完成 NZQCF Level 7 研究生文凭（graduate diploma）的毕业生，在同时满足以下条件时可申请 PSWV：在新西兰全日制读完该文凭的全部规定时长；全程注册在该文凭上（学分减免 / 认可先前学习不符合）；并持有在新西兰或海外完成的学士学位（学士学位取得时间没有期限）。来源：${INZ.pswvExtend}`,
+      "除研究生文凭本身外，还需提供学士学位证书（显示资格类型与授予院校）以及正式成绩单。海外学士一般不强制做 IQA，但移民局可为移民目的核查真实性。",
+      h2("时长与「只能拿一次」"),
+      "此类研究生文凭路径的 PSWV 时长，按你在新西兰攻读该文凭的时间发放，最长 1 年。一个人只能获批一次 PSWV；曾经持有过 PSWV 的人，即使再读同级或更高级课程，也不符合再拿一次。",
+      h2("其他本来就符合的资格（通告摘要）"),
+      "修正通告 WD3.1 还列明：NZQCF Level 8–10 且在新西兰全日制至少 30 周；Level 7 学士学位且在新西兰全日制至少 30 周；以及名单上的部分 Level 4–7 资格（有的还要求工作与所学相关）。名单见 https://www.immigration.govt.nz/formshelp/eligibility-for-post-study-work-visa",
+      h2("申请方式"),
+      `从 2026-11-16 起，毕业工签与新的短期毕业工签都在增强版 Immigration Online 提交。申请时需证明至少 NZD 5,000 生活费。不要求先有工作 Offer。来源：${INZ.postStudyOptions} 与 ${INZ.stayWork}`,
+      "持有 PSWV 的人，在符合条件时可以为伴侣和未成年子女担保相应签证。短期毕业工签没有同等担保权——见下一篇。",
+      ...sourcesBlock(true, [INZ.pswvExtend, INZ.postStudyOptions, INZ.stayWork]),
+    ],
+    bodyEn: [
+      "This is general information about the Post-Study Work Visa, not licensed advice.",
+      fig(IMG.visa, "Post-study documents", "Whether the qualification is eligible matters more than the brand name."),
+      h2("Level 7 graduate diplomas from 16 November 2026"),
+      `From Monday 16 November 2026, a NZQCF Level 7 graduate diploma can qualify if you studied it full-time in New Zealand for its full required duration, remained enrolled in that qualification for the full duration (no RPL/cross-credit), and hold a bachelor’s degree completed in New Zealand or overseas (no time limit). ${INZ.pswvExtend}`,
+      "Provide the diploma, the bachelor’s certificate and an official transcript. An IQA is not required for an overseas bachelor’s, but INZ can check authenticity.",
+      h2("Length and one-grant rule"),
+      "For this graduate-diploma path the visa can be issued for the time spent studying that diploma in New Zealand, up to one year. You can be granted only one PSWV.",
+      h2("How to apply"),
+      "From 16 November 2026, lodge in enhanced Immigration Online. Show at least NZD 5,000 in funds. A job offer is not required.",
+      ...sourcesBlock(false, [INZ.pswvExtend, INZ.postStudyOptions, INZ.stayWork]),
+    ],
+  });
+}
+
+function shortTerm() {
+  return article({
+    slug: "short-term-graduate-work-visa",
+    guideId: "study",
+    section: "pathways",
+    titleZh: "短期毕业工签：2026-11-16 起开放 6 个月",
+    titleEn: "Short-Term Graduate Work Visa: 6 months from 16 November 2026",
+    excerptZh: "给不符合 PSWV 的 Level 5–7 毕业生：6 个月开放工作，须在学生签证到期后 3 个月内申请。",
+    excerptEn: "For Level 5–7 graduates who are not eligible for a PSWV: 6 months of open work, apply within 3 months of student-visa expiry.",
+    image: IMG.study,
+    imageAltZh: "短期毕业工签",
+    imageAltEn: "Short-term graduate work visa",
+    related: RELATED.filter((s) => s !== "short-term-graduate-work-visa"),
+    bodyZh: [
+      `移民局 2026-09-10 宣布：新的 Short-Term Graduate Work Visa 从周一 2026-11-16 起接受申请，给予符合条件的毕业生 6 个月开放工作权，以便找工作和考虑转 Accredited Employer Work Visa。来源：${INZ.stgwv}`,
+      fig(IMG.job, "毕业后找工作", "这是一次性短期签证，不能延期或再拿一次。"),
+      h2("谁符合"),
+      "须持有 NZQCF Level 5–7 资格，且：在新西兰全日制学习至少 24 周；不是英语、foundation 或衔接课；该资格本身不能用来申请 PSWV；在对应学生签证到期后 3 个月内申请；已成功完成该资格；有至少 NZD 5,000 生活费；未曾获批过短期毕业工签或 PSWV。新西兰奖学金项目学生还需要 MFAT 或 Education New Zealand 书面批准。微证书（micro-credential）不算资格。",
+      "移民局举例：若学生签证在 2026-08-16 之前到期，则 2026-11-16 开放时已超过 3 个月窗口，不能申请。",
+      h2("限制"),
+      "工作必须基于雇佣协议或服务合同，不允许经营自己的生意。持有人不能为伴侣担保工签，也不能为子女担保 Dependent Child Student Visa（可了解访客签证或其他独立路径）。此后若再申请学生签证，通常必须是学士或比原来更高、且能使你符合 PSWV 的课程。",
+      h2("在哪里申请"),
+      "2026-11-16 起通过增强版 Immigration Online（ADEPT）在线申请。见移民局网站右上角 Login。",
+      ...sourcesBlock(true, [INZ.stgwv, INZ.postStudyOptions, INZ.stayWork]),
+    ],
+    bodyEn: [
+      `INZ announced on 10 September 2026 that the Short-Term Graduate Work Visa opens on Monday 16 November 2026 for 6 months of open work. ${INZ.stgwv}`,
+      fig(IMG.job, "Job search after study", "It is a one-off visa and cannot be extended or granted again."),
+      h2("Who is eligible"),
+      "A NZQCF Level 5–7 qualification studied full-time in New Zealand for at least 24 weeks, that is not English/foundation/bridging and is not PSWV-eligible. Apply within 3 months of the student visa ending, have completed the qualification, hold NZD 5,000, and have never held this visa or a PSWV.",
+      "If the student visa expired before 16 August 2026, the 3-month window is already closed when applications open.",
+      h2("Limits"),
+      "Work must be under an employment agreement or contract for services—no business ownership. Holders cannot support a partner for a work visa or a child for a Dependent Child Student Visa.",
+      h2("Where to apply"),
+      "Enhanced Immigration Online from 16 November 2026.",
+      ...sourcesBlock(false, [INZ.stgwv, INZ.postStudyOptions, INZ.stayWork]),
+    ],
+  });
+}
+
+function smc() {
+  return article({
+    slug: "skilled-migrant-category",
+    guideId: "study",
+    section: "pathways",
+    titleZh: "技术移民（SMC）：2026-08-24 变化与工资门槛工具",
+    titleEn: "Skilled Migrant Category: 24 August 2026 changes and the wage tool",
+    excerptZh: "2026-08-24 生效的 SMC 调整，以及移民局工资门槛计算器。留学不能保证能走这条路。",
+    excerptEn: "SMC settings that took effect on 24 August 2026, plus INZ’s wage-threshold tool. Study does not guarantee this path.",
+    image: IMG.career,
+    imageAltZh: "技术移民路径",
+    imageAltEn: "Skilled Migrant Category pathway",
+    related: RELATED.filter((s) => s !== "skilled-migrant-category"),
+    bodyZh: [
+      "Skilled Migrant Category Resident Visa 是技术居留路径之一，要求够分数或符合工作经验/技工路径，并达到对应工资门槛。以下仅整理移民局已公布、并于 2026-08-24 生效的变化。不是申请清单。",
+      fig(IMG.job, "技能工作与工资", "先用官方工具看工资门槛，再谈是否够格。"),
+      h2("2026-08-24 起的要点"),
+      `多数申请人只需满足「开始累积符合条件的新西兰技能工作经验时」有效的那一档工资门槛，而不再在申请居留时改用更高的新门槛。若工资上调发生在开工之前，且你在工作签证获批后 5 个月内开始该份技能工作，则用签证获批当日的门槛。来源：${INZ.smcFinal} 与 ${INZ.smcChanges}`,
+      "同期还更新了资格证明要求、海外技工资格的学分规则、自雇在部分新路径中不能算「直接相关工作经验」，以及红名单/黄名单/技工名单的适用方式。细节以操作手册和公告为准。",
+      h2("工资门槛工具"),
+      `移民局提供 SMC wage threshold tool：${INZ.smcWageTool} 你需要知道自己走哪条路径、时薪、每段技能工作的起止与工资变化、工作签证获批日、EOI 日期。工具结果是估算，不决定签证。`,
+      "修正通告列出的近期门槛表中，2026-03-09 起的 SMC 工资门槛为每小时 NZD 35.00（另有 1.1 / 1.2 / 1.5 / 2 / 3 倍档）。以工具和官网工资页为准。",
+      h2("和留学的关系"),
+      "读完书不等于能走 SMC。通常还要有符合列表与工资的工作或 Offer、英语和健康品行。先把学习计划建立在真实的课程与预算上，而不是倒推移民。需要个案意见请找持牌移民顾问。",
+      ...sourcesBlock(true, [INZ.smcChanges, INZ.smcFinal, INZ.smcWageTool]),
+    ],
+    bodyEn: [
+      "General information about SMC changes that took effect on 24 August 2026—not an application checklist and not licensed advice.",
+      fig(IMG.job, "Skilled work and wages", "Use the official wage tool before you assume eligibility."),
+      h2("What changed on 24 August 2026"),
+      "Most applicants meet the SMC wage threshold that applied when they started accruing eligible skilled work experience, rather than a higher rate at residence. A five-month grace period can lock the threshold on the work-visa grant date if work starts within that window.",
+      h2("Wage threshold tool"),
+      `${INZ.smcWageTool} — you need pathway, hourly pay, work dates, visa grant date and EOI date. Results are estimates. The published table includes NZD 35.00 an hour from 9 March 2026, plus multiplier bands.`,
+      h2("Study is not residence"),
+      "A qualification alone does not grant SMC. Get licensed advice for a personal assessment.",
+      ...sourcesBlock(false, [INZ.smcChanges, INZ.smcFinal, INZ.smcWageTool]),
+    ],
+  });
+}
+
+function greenList() {
+  return article({
+    slug: "green-list-residence",
+    guideId: "study",
+    section: "pathways",
+    titleZh: "Green List：Tier 1 直接居留与 Tier 2 工作 24 个月后居留",
+    titleEn: "Green List: Tier 1 straight to residence and Tier 2 after 24 months",
+    excerptZh: "Tier 1 可申请 Straight to Residence；Tier 2 需在新西兰做满 24 个月符合条件的工作。",
+    excerptEn: "Tier 1 can lead to Straight to Residence; Tier 2 needs 24 months of eligible New Zealand work.",
+    image: IMG.career,
+    imageAltZh: "Green List 居留路径",
+    imageAltEn: "Green List residence pathways",
+    related: RELATED.filter((s) => s !== "green-list-residence"),
+    bodyZh: [
+      "Green List 是移民局公布的短缺职业名单，分 Tier 1 与 Tier 2。职位必须来自认可雇主，并满足该职业的学历、注册和工资要求。列表会更新，请用官网检索，不要背旧表。",
+      fig(IMG.job, "短缺职业", "先确认自己的职位在哪一档，再谈签证名。"),
+      h2("Tier 1：Straight to Residence"),
+      `若你为认可雇主工作或已有 Offer，且职位在 Green List Tier 1，可申请 Straight to Residence Visa（通常 55 岁或以下，并满足英语、健康、品行等）。不必先在新西兰做满两年。来源：${INZ.greenList} 与 https://www.immigration.govt.nz/visas/straight-to-residence-visa`,
+      h2("Tier 2：Work to Residence（24 个月）"),
+      "Tier 2 需要在申请前 30 个月内，在新西兰累计 24 个月符合条件的全日制 Tier 2 工作（可分段），工资须达到开始该段工作经验时的要求。工作签证可以是 AEWV 等认可类别。https://www.immigration.govt.nz/visas/work-to-residence-visa",
+      h2("和留学的关系"),
+      "毕业后能否对上 Green List，取决于你实际从事的职位、注册和工资，而不是文凭名称。护理、工程、部分教育与 ICT 职位常被讨论，但每一行都有额外要求。检索：${INZ.greenRoles}",
+      ...sourcesBlock(true, [INZ.greenList, INZ.greenRoles]),
+    ],
+    bodyEn: [
+      "The Green List is INZ’s list of in-demand jobs, split into Tier 1 and Tier 2. The role must be with an accredited employer and meet that row’s qualification, registration and pay rules.",
+      fig(IMG.job, "In-demand roles", "Check the tier before you name the visa."),
+      h2("Tier 1: Straight to Residence"),
+      "A Tier 1 job or job offer with an accredited employer can support a Straight to Residence Visa if you meet age, English, health and character rules. Two years of New Zealand work is not required first.",
+      h2("Tier 2: Work to Residence"),
+      "You generally need 24 months of eligible full-time Tier 2 work in New Zealand in the 30 months before you apply.",
+      `Search roles: ${INZ.greenRoles}`,
+      ...sourcesBlock(false, [INZ.greenList, INZ.greenRoles]),
+    ],
+  });
+}
+
+function deadlines() {
+  return article({
+    slug: "intake-deadlines-scholarships",
+    guideId: "study",
+    section: "pathways",
+    titleZh: "2027 入学截止日与博士奖学金轮次",
+    titleEn: "2027 intake deadlines and doctoral scholarship rounds",
+    excerptZh: "奥克兰、林肯、奥塔哥已公布的 2027 Semester 1 节点，以及奥克兰 / AUT / 奥塔哥 / 惠灵顿博士奖学金。",
+    excerptEn: "Published 2027 Semester 1 nodes for Auckland, Lincoln and Otago, plus doctoral scholarship rounds.",
+    image: IMG.study,
+    imageAltZh: "申请截止与奖学金",
+    imageAltEn: "Application deadlines and scholarships",
+    related: RELATED.filter((s) => s !== "intake-deadlines-scholarships"),
+    bodyZh: [
+      `核对日期 ${UPDATED}。下列日期来自大学官网；个别专业更早，逾期只在有空位时考虑。网络传言里的「奥克兰 12 月 7 日」与校历不符——校历一般课程是 2026-12-08。`,
+      fig(IMG.visa, "截止日历", "境外学生还要为签证再留至少约 3 个月。"),
+      h2("2027 Semester 1 已公布节点（境外国际生）"),
+      "奥塔哥大学：多数全日制学位 2026-11-15。https://www.otago.ac.nz/international/future-students/prepare-for-otago/key-dates-for-new-international-students",
+      "林肯大学：Semester 1 2027 境外 2026-12-01。https://www.lincoln.ac.nz/study/apply-and-enrol/apply/",
+      "奥克兰大学：校历一般课程 Semester 1 2026-12-08；国际授课型研究生页另建议 2026-12-01。医学等专业更早。https://www.auckland.ac.nz/en/about-us/about-the-university/the-university/official-publications/university-calendar/current-calendar/key-university-dates/closing-dates-for-admission.html",
+      h2("博士奖学金（四所大学）"),
+      "奥克兰大学 Doctoral Scholarship：申请博士时勾选即可，不另开一封。2026 轮次截止含 2/5/8 月 1 日；下一轮 2026-11-01，奖学金结果约 2027-02-01。https://www.auckland.ac.nz/en/study/scholarships-and-awards/scholarship-types/postgraduate-scholarships/doctoral-scholarships.html",
+      "AUT Doctoral Scholarships：2026 年三个截止日 3 月 1 日、7 月 15 日、11 月 1 日，提前约一个月开放。https://www.aut.ac.nz/study/fees-and-scholarships/scholarships-and-awards-at-aut/doctoral-scholarships",
+      "奥塔哥大学 Doctoral Scholarship：可随时申请，按季度评审（3、6、9、11 月）。https://www.otago.ac.nz/courses/scholarships/university-of-otago-doctoral-scholarship",
+      "惠灵顿维多利亚大学 Wellington Doctoral Scholarship：每年三轮，截止 3 月 1 日、7 月 1 日、11 月 1 日；宣传约每年 110 个，津贴 NZD 32,000/年加学费。https://www.wgtn.ac.nz/scholarships/current/wellington-doctoral-scholarships",
+      "博士若在新西兰境内全日制就读，多所大学按国内费率收国际博士生——仍以该校博士页为准。",
+      ...sourcesBlock(true, [
+        "https://www.auckland.ac.nz/en/about-us/about-the-university/the-university/official-publications/university-calendar/current-calendar/key-university-dates/closing-dates-for-admission.html",
+        "https://www.lincoln.ac.nz/study/apply-and-enrol/apply/",
+        "https://www.otago.ac.nz/international/future-students/prepare-for-otago/key-dates-for-new-international-students",
+      ]),
+    ],
+    bodyEn: [
+      `Checked ${UPDATED}. A circulating “Auckland 7 December” date does not match the calendar: the general Semester 1 2027 date is 8 December 2026.`,
+      fig(IMG.visa, "Deadline calendar", "Offshore students still need visa time—INZ suggests at least three months."),
+      h2("Published 2027 Semester 1 nodes"),
+      "Otago offshore full-degree: 15 November 2026. Lincoln offshore: 1 December 2026. Auckland general calendar: 8 December 2026 (international taught postgraduate page also says 1 December 2026).",
+      h2("Doctoral scholarships"),
+      "Auckland: considered with the doctoral application; rounds include 1 Nov 2026. AUT 2026 closes 1 March, 15 July, 1 November. Otago: apply anytime, reviewed quarterly. Wellington: 1 March, 1 July, 1 November; advertised stipend NZD 32,000 plus fees.",
+      ...sourcesBlock(false, [
+        "https://www.auckland.ac.nz/en/study/scholarships-and-awards/scholarship-types/postgraduate-scholarships/doctoral-scholarships.html",
+        "https://www.aut.ac.nz/study/fees-and-scholarships/scholarships-and-awards-at-aut/doctoral-scholarships",
+        "https://www.otago.ac.nz/courses/scholarships/university-of-otago-doctoral-scholarship",
+        "https://www.wgtn.ac.nz/scholarships/current/wellington-doctoral-scholarships",
+      ]),
+    ],
+  });
+}
+
+function scams() {
+  return article({
+    slug: "visa-scams-fake-degrees",
+    guideId: "study",
+    section: "pathways",
+    titleZh: "假学历与中介骗局：递签前必须自己核对",
+    titleEn: "Fake degrees and agent scams: check documents before you lodge",
+    excerptZh: "移民局把提供虚假材料列为犯罪。不要付钱买「包过签证」或来路不明的学历。",
+    excerptEn: "INZ treats false documents as a criminal matter. Do not pay for a “guaranteed visa” or an unverifiable degree.",
+    image: IMG.study,
+    imageAltZh: "警惕虚假材料",
+    imageAltEn: "Beware false documents",
+    related: RELATED.filter((s) => s !== "visa-scams-fake-degrees"),
+    bodyZh: [
+      "移民局写明：使用伪造或被改动的文件、提供虚假或误导信息，属于移民欺诈，最高可判监禁 7 年和/或罚款 NZD 100,000，并可能导致拒签、取消签证或递解。来源：https://www.immigration.govt.nz/about-us/our-strategies-and-programmes/stopping-fraud-and-exploitation/stopping-immigration-fraud/",
+      fig(IMG.visa, "只相信可验证的文件", "用发证机构官方渠道核对，不要用文件上印的陌生电话。"),
+      h2("学历与语言成绩"),
+      "移民局在面向教育机构的风险说明里写：应独立核实学历，不要照单全收；联系方式应自己查找，而不是用文件上的电话。IELTS 等成绩曾出现伪造或被改动，可用考试方官方验证。https://www.immigration.govt.nz/assist-migrants-and-students/assist-students/international-markets/india/opportunities-risks/minimising-risk",
+      h2("中介与「包过」"),
+      "学生签证必须申报谁协助了申请或 Offer。移民建议只能由持牌移民顾问或豁免人士提供。没有人能出售签证结果。若对方要求你把不实工作经历、假存款或假成绩写进材料，应立即停止。",
+      "NZQA 实践准则要求学校管理代理，确保信息真实。你仍要自己打开学校官网与 immigration.govt.nz，对照课程级别、学费和签证条件。",
+      h2("自己能做的核对"),
+      "① 学校是否在 NZQA / Universities New Zealand 名单；② 成绩与学历能否在发证方官网验证；③ 汇款账户是否与 Offer 一致；④ 任何「内部渠道加快」都当警报。不确定时把合同和聊天记录留给持牌顾问看，而不是再找下一家更会承诺的中介。",
+      ...sourcesBlock(true, [
+        INZ.fraud,
+        "https://www.immigration.govt.nz/assist-migrants-and-students/assist-students/international-markets/india/opportunities-risks/minimising-risk",
+        "https://www.iaa.govt.nz/",
+      ]),
+    ],
+    bodyEn: [
+      "Using a false or altered document, or providing false or misleading information, is immigration fraud. INZ states penalties of up to 7 years’ imprisonment and/or a NZD 100,000 fine, plus refusal, cancellation or deportation.",
+      fig(IMG.visa, "Verifiable documents only", "Check with the issuing body through contact details you find yourself."),
+      h2("Qualifications and test scores"),
+      "INZ tells providers to verify academic history and English results independently. Altered IELTS documents have been found. Use the test body’s official verification.",
+      h2("Agents and “guaranteed visas”"),
+      "You must declare who helped with the application or the offer. Only a licensed adviser or an exempt person may give immigration advice. Nobody can sell a visa outcome.",
+      ...sourcesBlock(false, [INZ.fraud, "https://www.iaa.govt.nz/"]),
+    ],
+  });
+}
+
+function processing() {
+  return article({
+    slug: "student-visa-processing",
+    guideId: "study",
+    section: "pathways",
+    titleZh: "学生签证审理：提早递交，高峰在 10 月到 3 月",
+    titleEn: "Student visa processing: apply early, peak from October to March",
+    excerptZh: "移民局建议至少提前 3 个月。2026 年 7–9 月官方统计的拒签占比高于上一完整财年。",
+    excerptEn: "INZ recommends at least three months. Official July–September 2026 decline share was higher than the previous full year.",
+    image: IMG.study,
+    imageAltZh: "学生签证审理时间",
+    imageAltEn: "Student visa processing times",
+    related: RELATED.filter((s) => s !== "student-visa-processing"),
+    bodyZh: [
+      `移民局建议国际学生至少在计划出行前 3 个月提交完整网上申请，并提醒 11 月至 3 月申请量大、审理可能更慢。系统是 Immigration Online。核对日期 ${UPDATED}。来源：${INZ.studentVisas} 与 ${INZ.applyOnline}`,
+      fig(IMG.visa, "完整一次交齐", "缺件不会自动变成「学校帮你催」。"),
+      h2("官方统计怎么读"),
+      "移民局学生签证统计 PDF（报告制备 2026-10-08）显示：2025/26 财年（2025-07 至 2026-06）决定 103,889 件，其中批准 93,138、拒签 10,751。2026/27 财年截至 2026-09 的 7–9 月：决定 30,577，批准 23,019，拒签 7,558。拒签占比高于上一完整财年，但 2026/27 目前只有一个季度，不能直接外推全年，也不能据此判断某一个国籍。https://www.immigration.govt.nz/assets/inz/documents/statistics/statistics-student-applications-decided.pdf",
+      "移民局没有在该统计里把 7–9 月拒签上升单独解释为「加强欺诈审查」。可以确定的是：虚假材料会导致拒签甚至刑事责任；真实意图、资金来源和材料完整度会被检查。见假学历一文。",
+      h2("你能控制的事"),
+      "按资金页准备生活费证明；大额进账写清来源；Offer 条件完成后再递；申报所有中介协助；高峰季（约 10 月到次年 3 月）更早交。不要为了赶开学而提交不完整档案。",
+      ...sourcesBlock(true, [INZ.studentVisas, INZ.applyOnline, INZ.statsPdf]),
+    ],
+    bodyEn: [
+      `INZ recommends a complete online student-visa application at least three months before travel and notes high volumes from November to March. Checked ${UPDATED}.`,
+      fig(IMG.visa, "Lodge a complete file", "Missing documents delay you; they do not create a school-priority queue."),
+      h2("How to read the official counts"),
+      "INZ’s student-visa statistics PDF (prepared 8 October 2026): FY 2025/26 had 103,889 decisions (93,138 approved, 10,751 declined). July–September 2026 (start of FY 2026/27) had 30,577 decisions (23,019 approved, 7,558 declined). The decline share is higher than the previous full year, but one quarter is not a full-year forecast and is not a nationality-specific rate.",
+      "The statistics file does not by itself prove that “closer fraud checks” caused the quarterly rise. What INZ does say elsewhere is that false documents can lead to decline or prosecution, and that genuine intent and funds are assessed.",
+      ...sourcesBlock(false, [INZ.studentVisas, INZ.applyOnline, INZ.statsPdf]),
+    ],
+  });
+}
