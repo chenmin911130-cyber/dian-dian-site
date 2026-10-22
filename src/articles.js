@@ -2169,6 +2169,281 @@ export const articles = [
     ]
   },
   {
+    "slug": "nz-weekend-social-activities",
+    "guideId": "life",
+    "section": "life",
+    "updatedAt": "2026-10-23",
+    "titleZh": "新西兰周末社交活动推荐（适合高中生和大学生）",
+    "titleEn": "Weekend social activities in NZ for high school and university students",
+    "excerptZh": "parkrun、大学社团、图书馆英语角、市集、志愿者、节庆和 Meetup——怎么报名、用什么网站一表看清。",
+    "excerptEn": "parkrun, clubs, library groups, markets, volunteering, festivals and Meetup—how to sign up and where.",
+    "image": "/images/life-feature.png",
+    "imageAltZh": "新西兰周末社交活动",
+    "imageAltEn": "Weekend activities in New Zealand",
+    "bodyZh": [
+      "周末是认识朋友、练英语、融入本地最好的时间。以下都是长期固定举办的活动，每一项都写了怎么报名、用什么网站或 App（核对 2026-10-23）。具体时间、地点和是否收费，以官网当期信息为准。",
+      {
+        "type": "image",
+        "src": "/images/life-feature.png",
+        "alt": "周末户外与社交",
+        "caption": "先从免费、固定、有人组织的活动开始，最容易交到朋友。"
+      },
+      {
+        "type": "table",
+        "head": [
+          "活动",
+          "怎么报名",
+          "用什么 App/网站",
+          "是否免费"
+        ],
+        "rows": [
+          [
+            "parkrun 5 公里（每周六 8:00）",
+            "官网注册一次，拿到个人条形码，每次带去扫码记成绩",
+            "parkrun.co.nz",
+            "免费"
+          ],
+          [
+            "大学社团 / O-Week / Clubs Day",
+            "开学周去 Clubs Day 摊位，或在学生会网站找社团再按社团说明加入",
+            "AUSA、VUWSA、UCSA、OUSA 官网",
+            "以各社团为准"
+          ],
+          [
+            "图书馆英语角 / 语言交流",
+            "在活动页找时间地点，多数直接到场",
+            "Auckland Libraries 活动页",
+            "以活动页为准"
+          ],
+          [
+            "周末市集",
+            "不用报名，按开放时间到场",
+            "各市集官网 / aucklandnz.com",
+            "入场免费（按市集说明）"
+          ],
+          [
+            "志愿者（社区、环保、种树）",
+            "在网站搜岗位，按岗位页面申请",
+            "Volunteering Auckland、SEEK Volunteer、DOC 志愿者页、Auckland Council 公园志愿者页",
+            "免费参加"
+          ],
+          [
+            "城市活动与节庆",
+            "在活动日历找活动，部分要预约票",
+            "OurAuckland 活动页、Eventbrite、Humanitix",
+            "很多免费，以活动页为准"
+          ],
+          [
+            "兴趣小组 / 徒步",
+            "注册账号，加入小组后报名具体活动",
+            "Meetup；大学徒步社；FMC 官网",
+            "以组织者为准"
+          ],
+          [
+            "高中生：爱德华公爵希拉里奖",
+            "通过学校协调人报名；学校没开设可找 Auckland Challenge",
+            "dofehillary.org.nz",
+            "以官网为准"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "1. parkrun：每周六早上 8 点的免费 5 公里"
+      },
+      "parkrun 是免费的每周社区活动，可以走、慢跑、跑步，或者当志愿者、在旁边加油。全国每个 parkrun 地点都是每周六早上 8:00 开始。奥克兰有 Cornwall Park、Western Springs、Barry Curtis、Hobsonville Point 等多个地点。报名步骤：① 在 parkrun 官网注册（只需注册一次）；② 拿到个人条形码，打印或存在手机里；③ 周六带着条形码到场，跑完扫码才有成绩，忘带就没有成绩。也可以在 SEEK Volunteer 上找到 parkrun 志愿者岗位。来源：https://www.parkrun.co.nz/cornwallpark/",
+      {
+        "type": "h2",
+        "text": "2. 大学社团、O-Week 和 Clubs Day"
+      },
+      "大学生交朋友最快的方式是加入社团：运动、文化、学术、徒步、桌游等等。开学周（O-Week）通常有 Clubs Day，可以直接去摊位问、留联系方式。各校学生会网站有社团名单和活动信息：奥克兰大学 AUSA https://www.ausa.org.nz/ ；维多利亚大学 VUWSA https://www.vuwsa.org.nz/ ；坎特伯雷大学 UCSA https://www.ucsa.org.nz/ ；奥塔哥大学 OUSA https://www.ousa.org.nz/ 。报名方式和会费以各社团为准。很多大学有徒步社（tramping club），是安全入门徒步的好方式。",
+      {
+        "type": "h2",
+        "text": "3. 图书馆：英语角和语言交流"
+      },
+      "Auckland Libraries 的活动页列出了各馆的固定活动，例如 Takapuna、Albany Village、Mt Albert 等馆的英语会话小组，以及多个馆的毛利语会话小组。在活动页按分馆和日期筛选，查清楚是否需要预约，大多数直接到场即可。来源：https://www.aucklandlibraries.govt.nz/en/events.html",
+      {
+        "type": "h2",
+        "text": "4. 周末市集"
+      },
+      "Otara Markets：每周六 6:00–12:00（公众假日除外），在 Otara Town Centre 后面的停车场，太平洋岛国和毛利文化氛围很浓（https://www.otaramarkets.co.nz/）。Matakana Village Farmers Market：每周六 8:00–13:00，全年无论晴雨，离奥克兰市中心约 1 小时车程（https://www.aucklandnz.com/explore/matakana-village-farmers-market）。Parnell 的 La Cigale French Market 也很受欢迎，开放时间请以官方渠道为准。市集不用报名，带点现金更方便。",
+      {
+        "type": "h2",
+        "text": "5. 志愿者：社区、环保、种树"
+      },
+      "Volunteering Auckland 可以按类别、地区、时间搜岗位，点进岗位页面申请（https://volunteeringauckland.org.nz/individuals/opportunities）。SEEK Volunteer 是全国性的志愿者平台（https://seekvolunteer.co.nz/）。DOC（保护部）在奥克兰有 Waitākere Ranges 生态恢复、Motuihe、Motutapu、Tiritiri Matangi 等岛屿的志愿日，部分要提前申请，名额有限（https://www.doc.govt.nz/get-involved/volunteer/in-your-region/auckland/）。Auckland Council 的公园志愿项目包括 Friends of Parks、除虫害和种树日，种树日通常在秋冬季（https://www.aucklandcouncil.govt.nz/en/environment/what-you-can-do-for-environment/volunteer-in-our-parks.html）。",
+      {
+        "type": "h2",
+        "text": "6. 城市活动、节庆与文化节"
+      },
+      "OurAuckland 是 Auckland Council 的活动日历，可以找到市集、展览、音乐会和社区活动（https://ourauckland.aucklandcouncil.govt.nz/events/）。BNZ Auckland Lantern Festival（元宵灯会）是新西兰最大的文化节之一，免费但需要预约票，日期每年随农历变化，2026 年是 2 月 26 日至 3 月 1 日在 Manukau Sports Bowl 举办（https://www.aucklandlive.co.nz/show/auckland-lantern-festival）。排灯节（Diwali）、Pasifika 等文化节也是 Auckland Council 活动日历的常客，请在活动页查当年日期。很多活动用 Eventbrite（https://www.eventbrite.co.nz/）或 Humanitix（https://www.humanitix.com/nz）售票或登记，免费活动也可能需要先领票。",
+      {
+        "type": "h2",
+        "text": "7. Meetup 兴趣小组与徒步"
+      },
+      "Meetup（https://www.meetup.com/）上有徒步、桌游、语言交换、摄影等小组：注册账号，加入小组，再对具体活动点 RSVP。第一次参加尽量选公共场所、人多的活动。想认真学徒步，可以看新西兰户外俱乐部联合会 FMC 的俱乐部信息（https://www.fmc.org.nz/）或加入大学徒步社。",
+      {
+        "type": "h2",
+        "text": "8. 运动俱乐部、教会与社区团体"
+      },
+      "本地运动俱乐部（足球、篮球、羽毛球、板球等）通常有社交联赛，可以在俱乐部官网或社区 Facebook 群找报名信息。教会、寺庙和社区中心也经常办周末活动，可以按兴趣自愿参加。",
+      {
+        "type": "h2",
+        "text": "9. 高中生：爱德华公爵希拉里奖等"
+      },
+      "The Duke of Edinburgh’s Hillary Award 包括体育、技能、志愿服务和探险四部分，最低年龄铜奖 14 岁、银奖 15 岁、金奖 16 岁（https://dofehillary.org.nz/participants/how-the-award-works/）。先问学校有没有开设；没有的话，奥克兰可以找 Auckland Challenge，它为 13–25 岁、学校不提供该奖项的青少年做协调（https://dofehillary.org.nz/partner/auckland-challenge/）。志愿服务部分可以算 parkrun、图书馆、环保种树等无偿、固定的服务。",
+      {
+        "type": "h2",
+        "text": "10. 其他城市简要"
+      },
+      "惠灵顿、基督城、但尼丁同样有 parkrun（每周六 8:00）、大学学生会社团（VUWSA、UCSA、OUSA）、图书馆活动和 DOC 志愿项目，在上面同样的网站按城市筛选即可。",
+      {
+        "type": "h2",
+        "text": "安全提醒（尤其是未成年人）"
+      },
+      "18 岁以下参加活动要先征得家长或监护人同意；寄宿家庭的学生要遵守寄宿家庭和学校关于外出、门禁和过夜的规定，出门前告诉寄宿家庭去哪、和谁、几点回。新西兰年满 18 岁才能买酒，18 岁以下没有父母或法定监护人陪同时不能在公共场所饮酒（https://www.police.govt.nz/advice/drugs-and-alcohol/alcohol-laws-and-penalties）。去海边尽量选有救生员巡逻的海滩，在红黄旗之间游泳（https://www.surflifesaving.org.nz/ ，水上安全见 https://www.watersafety.org.nz/）。和网上认识的人第一次见面，选白天、人多的公共场所，并告诉朋友。",
+      {
+        "type": "h2",
+        "text": "官方来源（请点开核对）"
+      },
+      "https://www.parkrun.co.nz/cornwallpark/",
+      "https://volunteeringauckland.org.nz/individuals/opportunities",
+      "https://www.doc.govt.nz/get-involved/volunteer/in-your-region/auckland/",
+      "https://ourauckland.aucklandcouncil.govt.nz/events/",
+      "https://dofehillary.org.nz/participants/how-the-award-works/"
+    ],
+    "bodyEn": [
+      "Weekends are the best time to make friends, practise English and get to know NZ. These are recurring options with how to sign up and which sites to use (checked 23 October 2026). Always confirm times and costs on the official page.",
+      {
+        "type": "image",
+        "src": "/images/life-feature.png",
+        "alt": "Weekend activities",
+        "caption": "Free, regular, organised activities are the easiest way to meet people."
+      },
+      {
+        "type": "table",
+        "head": [
+          "Activity",
+          "How to sign up",
+          "App / website",
+          "Free?"
+        ],
+        "rows": [
+          [
+            "parkrun 5k (Saturdays 8am)",
+            "Register once, get your barcode, bring it each week",
+            "parkrun.co.nz",
+            "Free"
+          ],
+          [
+            "University clubs / O-Week / Clubs Day",
+            "Visit Clubs Day stalls or find clubs on the students’ association site",
+            "AUSA, VUWSA, UCSA, OUSA",
+            "Varies by club"
+          ],
+          [
+            "Library conversation groups",
+            "Check the events page; most are drop-in",
+            "Auckland Libraries events",
+            "See event page"
+          ],
+          [
+            "Weekend markets",
+            "Just turn up during opening hours",
+            "Market websites / aucklandnz.com",
+            "Free entry"
+          ],
+          [
+            "Volunteering",
+            "Search roles and apply on the role page",
+            "Volunteering Auckland, SEEK Volunteer, DOC, Auckland Council parks",
+            "Free"
+          ],
+          [
+            "City events & festivals",
+            "Find events; some need free tickets",
+            "OurAuckland, Eventbrite, Humanitix",
+            "Many free"
+          ],
+          [
+            "Interest groups / tramping",
+            "Join a group, RSVP to events",
+            "Meetup, university tramping clubs, FMC",
+            "Varies"
+          ],
+          [
+            "High school: Duke of Ed Hillary Award",
+            "Via your school coordinator or Auckland Challenge",
+            "dofehillary.org.nz",
+            "See website"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "1. parkrun"
+      },
+      "A free, weekly 5k community event—walk, jog, run, volunteer or cheer. Every NZ parkrun starts Saturday at 8:00am; Auckland locations include Cornwall Park, Western Springs, Barry Curtis and Hobsonville Point. Register once, bring a scannable barcode—no barcode, no time. https://www.parkrun.co.nz/cornwallpark/",
+      {
+        "type": "h2",
+        "text": "2. University clubs and O-Week"
+      },
+      "Clubs Day during O-Week is the easiest start. Students’ associations: AUSA https://www.ausa.org.nz/ , VUWSA https://www.vuwsa.org.nz/ , UCSA https://www.ucsa.org.nz/ , OUSA https://www.ousa.org.nz/ . Joining rules and fees vary by club.",
+      {
+        "type": "h2",
+        "text": "3. Libraries"
+      },
+      "Auckland Libraries lists regular English conversation groups (e.g. Takapuna, Albany Village, Mt Albert) and te reo Māori conversation groups. https://www.aucklandlibraries.govt.nz/en/events.html",
+      {
+        "type": "h2",
+        "text": "4. Weekend markets"
+      },
+      "Otara Markets: Saturdays 6am–12pm except public holidays (https://www.otaramarkets.co.nz/). Matakana Village Farmers Market: Saturdays 8am–1pm year-round, about an hour from the CBD (https://www.aucklandnz.com/explore/matakana-village-farmers-market). La Cigale in Parnell is also popular—check its official hours.",
+      {
+        "type": "h2",
+        "text": "5. Volunteering"
+      },
+      "Volunteering Auckland (https://volunteeringauckland.org.nz/individuals/opportunities), SEEK Volunteer (https://seekvolunteer.co.nz/), DOC Auckland volunteer days on Waitākere Ranges and islands such as Motuihe, Motutapu and Tiritiri Matangi (https://www.doc.govt.nz/get-involved/volunteer/in-your-region/auckland/), and Auckland Council park volunteering, with planting days usually in late autumn and winter (https://www.aucklandcouncil.govt.nz/en/environment/what-you-can-do-for-environment/volunteer-in-our-parks.html).",
+      {
+        "type": "h2",
+        "text": "6. Events and festivals"
+      },
+      "OurAuckland events calendar: https://ourauckland.aucklandcouncil.govt.nz/events/ . The BNZ Auckland Lantern Festival is free but ticketed; dates follow the lunar calendar (2026: 26 Feb–1 Mar, Manukau Sports Bowl). Diwali and Pasifika events—check each year’s dates. Many events use Eventbrite (https://www.eventbrite.co.nz/) or Humanitix (https://www.humanitix.com/nz).",
+      {
+        "type": "h2",
+        "text": "7. Meetup and tramping"
+      },
+      "Join groups on Meetup (https://www.meetup.com/) and RSVP. For tramping, see FMC (https://www.fmc.org.nz/) or a university tramping club.",
+      {
+        "type": "h2",
+        "text": "8. Sports clubs and community groups"
+      },
+      "Local clubs often run social leagues; churches, temples and community centres run weekend activities—join by interest.",
+      {
+        "type": "h2",
+        "text": "9. High school students"
+      },
+      "Duke of Edinburgh’s Hillary Award minimum ages: Bronze 14, Silver 15, Gold 16 (https://dofehillary.org.nz/participants/how-the-award-works/). If your school doesn’t run it, Auckland Challenge coordinates for ages 13–25 (https://dofehillary.org.nz/partner/auckland-challenge/).",
+      {
+        "type": "h2",
+        "text": "10. Other cities"
+      },
+      "Wellington, Christchurch and Dunedin also have Saturday parkruns, students’ association clubs, library events and DOC volunteering—filter by city on the same sites.",
+      {
+        "type": "h2",
+        "text": "Safety (especially for under-18s)"
+      },
+      "Get parent/guardian consent; homestay students follow homestay and school rules on outings and curfews. You must be 18+ to buy alcohol, and under-18s without a parent or legal guardian can’t drink in public (https://www.police.govt.nz/advice/drugs-and-alcohol/alcohol-laws-and-penalties). Swim at patrolled beaches between the flags (https://www.surflifesaving.org.nz/). Meet online contacts in busy public places in daytime.",
+      {
+        "type": "h2",
+        "text": "Official sources (please verify)"
+      },
+      "https://www.parkrun.co.nz/cornwallpark/",
+      "https://volunteeringauckland.org.nz/individuals/opportunities",
+      "https://ourauckland.aucklandcouncil.govt.nz/events/"
+    ]
+  },
+  {
     "slug": "school-auckland",
     "guideId": "study",
     "section": "universities",
