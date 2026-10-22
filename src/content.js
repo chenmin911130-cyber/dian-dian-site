@@ -26,7 +26,7 @@ export const siteCopy = {
     privacyNote:
       "隐私：表单和 Word 文件仅在你的浏览器中处理，不会上传。",
     disclaimer:
-      "免责声明：本站提供留学咨询与一般信息，不构成持牌移民法律建议；文中费用与数字均为约数，请以新西兰移民局及学校官网信息为准。",
+      "本站内容仅为一般性留学信息，不构成移民或法律建议。签证与移民问题请咨询新西兰持牌移民顾问（LIA）或参考 immigration.govt.nz。文中费用与数字均为约数，请以学校官网为准。",
   },
   en: {
     siteName: "DianDian NZ Study Consulting",
@@ -50,7 +50,7 @@ export const siteCopy = {
     privacyNote:
       "Privacy: form data and Word files stay in your browser and are never uploaded.",
     disclaimer:
-      "Disclaimer: consulting and general information only—not licensed immigration advice. Figures such as fees and budgets are approximate; verify with Immigration New Zealand and official school sites.",
+      "This site provides general study information only and is not immigration or legal advice. For visa and immigration questions, consult a licensed New Zealand immigration adviser (LIA) or immigration.govt.nz. Figures are approximate; check official school sites.",
   },
 };
 

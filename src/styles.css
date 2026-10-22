@@ -2018,3 +2018,10 @@ body.is-cinematic {
 .article-detail__table th, .article-detail__table td { border: 1px solid rgba(0,0,0,0.12); padding: 0.55rem 0.7rem; text-align: left; vertical-align: top; }
 .article-detail__table th { background: rgba(0,0,0,0.04); font-weight: 600; }
 .article-detail__table figcaption { font-size: 0.82rem; opacity: 0.7; margin-top: 0.4rem; }
+
+/* Mobile: keep wide article tables inside a horizontal scroller (grid items default to min-width:auto) */
+.article-detail__body { grid-template-columns: minmax(0, 1fr); min-width: 0; }
+.article-detail__table { min-width: 0; max-width: 100%; }
+.article-detail__table-scroll { max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; touch-action: pan-x pan-y pinch-zoom; }
+.article-detail__table-hint { display: none; font-size: 0.8rem; opacity: 0.65; margin: 0 0 0.35rem; text-align: center; }
+@media (max-width: 640px) { .article-detail__table-hint { display: block; } }

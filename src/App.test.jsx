@@ -83,7 +83,7 @@ it("opens the consultation form from the hero with four visa-prep sections", asy
 
   expect(window.location.pathname).toBe("/consult");
   expect(
-    screen.getByRole("heading", { name: "留学签证咨询信息表" }),
+    screen.getByRole("heading", { name: "留学选校咨询信息表" }),
   ).toBeInTheDocument();
 
   for (const title of [
@@ -118,7 +118,7 @@ it("opens the consultation form from the hero with four visa-prep sections", asy
   ]);
 
   expect(
-    screen.getAllByText(/不构成持牌移民法律建议/).length,
+    screen.getAllByText(/不构成移民或法律建议/).length,
   ).toBeGreaterThanOrEqual(2);
   expect(
     screen.getAllByRole("link", { name: "yuditawang0925@gmail.com" }).length,
@@ -258,7 +258,7 @@ it("loads the consultation page directly at /consult", () => {
   window.history.replaceState({}, "", "/consult");
   render(<App />);
   expect(
-    screen.getByRole("heading", { name: "留学签证咨询信息表" }),
+    screen.getByRole("heading", { name: "留学选校咨询信息表" }),
   ).toBeInTheDocument();
 });
 

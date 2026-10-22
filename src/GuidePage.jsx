@@ -21,7 +21,7 @@ const SECTION_LABELS = {
   ai: { zh: "AI 课程专文", en: "AI programmes" },
   foundation: { zh: "热门专业与预科", en: "Popular fields and foundation" },
   process: { zh: "申请、签证与预算", en: "Applications, visas and budget" },
-  pathways: { zh: "毕业后签证与移民路径", en: "Post-study visas and residence" },
+  pathways: { zh: "毕业后签证政策（官方信息摘录）", en: "Post-study visa policy (official information)" },
   career: { zh: "求职与工时", en: "Jobs and work hours" },
   life: { zh: "落地生活", en: "Settling in" },
 };
