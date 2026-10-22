@@ -100,9 +100,9 @@ export const guides = [
     imageAltEn: "New Zealand coast and everyday life",
     titleZh: "生活指南",
     titleEn: "Living in NZ",
-    summaryZh: "月度生活费预算、租房、开户、超市省钱、手机公交、保险看病与落地第一周。",
+    summaryZh: "月度生活费预算、租房、开户、超市省钱、手机公交、保险看病、落地第一周、买车开车与文化礼仪。",
     summaryEn:
-      "Monthly living budget, renting, banking, supermarket savings, SIM/transport, insurance and your first week.",
+      "Monthly living budget, renting, banking, supermarket savings, SIM/transport, insurance, your first week, cars and driving, and culture.",
     introZh:
       "落地后最先卡住的往往不是课程，而是租房、银行卡、手机卡和看病。这一区按刚需顺序整理，帮你少花冤枉钱、少踩坑。",
     introEn:
