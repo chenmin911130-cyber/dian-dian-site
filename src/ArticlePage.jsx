@@ -61,6 +61,26 @@ function renderBlocks(blocks) {
       );
     }
 
+    if (block?.type === "table") {
+      return (
+        <figure key={`tbl-${index}`} className="article-detail__table">
+          <div className="article-detail__table-scroll">
+            <table>
+              <thead>
+                <tr>{block.head.map((cell, i) => <th key={i}>{cell}</th>)}</tr>
+              </thead>
+              <tbody>
+                {block.rows.map((row, r) => (
+                  <tr key={r}>{row.map((cell, i) => <td key={i}>{textWithLinks(cell)}</td>)}</tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {block.caption ? <figcaption>{block.caption}</figcaption> : null}
+        </figure>
+      );
+    }
+
     return null;
   });
 }
