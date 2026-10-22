@@ -2011,3 +2011,10 @@ body.is-cinematic {
   }
 }
 
+
+.article-detail__table { margin: 1.5rem 0; }
+.article-detail__table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.article-detail__table table { width: 100%; border-collapse: collapse; font-size: 0.92rem; min-width: 520px; }
+.article-detail__table th, .article-detail__table td { border: 1px solid rgba(0,0,0,0.12); padding: 0.55rem 0.7rem; text-align: left; vertical-align: top; }
+.article-detail__table th { background: rgba(0,0,0,0.04); font-weight: 600; }
+.article-detail__table figcaption { font-size: 0.82rem; opacity: 0.7; margin-top: 0.4rem; }
