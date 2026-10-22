@@ -64,6 +64,7 @@ function renderBlocks(blocks) {
     if (block?.type === "table") {
       return (
         <figure key={`tbl-${index}`} className="article-detail__table">
+          <p className="article-detail__table-hint" aria-hidden="true">← 左右滑动查看 →</p>
           <div className="article-detail__table-scroll">
             <table>
               <thead>
