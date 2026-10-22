@@ -1,0 +1,14 @@
+node_modules
+dist
+.git
+.github
+.cursor
+*.md
+!AGENTS.md
+coverage
+.env
+.env.*
+terminals
+tmp
+*.log
+npm-debug.log*
