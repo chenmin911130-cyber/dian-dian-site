@@ -41,7 +41,7 @@ export async function generateConsultDoc(data) {
             spacing: { after: 160 },
             children: [
               new TextRun({
-                text: "点点新西兰留学咨询 · 留学签证信息表",
+                text: "点点新西兰留学咨询 · 留学选校信息表",
                 bold: true,
               }),
             ],
@@ -103,5 +103,5 @@ export async function generateConsultDoc(data) {
 
   const blob = await Packer.toBlob(doc);
   const safeName = (data.name || "").trim().replace(/[\\/:*?"<>|]/g, "") || "申请";
-  saveAs(blob, `点点新西兰留学咨询-签证信息表-${safeName}.docx`);
+  saveAs(blob, `点点新西兰留学咨询-选校信息表-${safeName}.docx`);
 }

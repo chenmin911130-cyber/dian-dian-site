@@ -131,14 +131,14 @@ export function ConsultForm({ locale, labels, onBack }) {
       </button>
 
       <header className="consult-page__head">
-        <p className="consult-page__kicker">STUDENT VISA PREP</p>
+        <p className="consult-page__kicker">STUDY PLANNING</p>
         <h1 id="consult-title">
-          {zh ? "留学签证咨询信息表" : "Student visa consultation form"}
+          {zh ? "留学选校咨询信息表" : "Study planning form"}
         </h1>
         <p className="consult-page__lead">
           {zh
-            ? "按四个部分填写必要信息即可。完成后在本机生成 Word 文件，邮件发给点点；资料仅在你的浏览器中处理，不会上传。"
-            : "Fill in the essentials across four sections. A Word file is generated on your device to email to DianDian—nothing is uploaded."}
+            ? "按四个部分填写必要信息即可。完成后在本机生成 Word 文件，邮件发给点点；资料仅在你的浏览器中处理，不会上传。本表仅用于选校与课程规划，点点不提供签证申请或移民咨询服务。"
+            : "Fill in the essentials across four sections. A Word file is generated on your device to email to DianDian—nothing is uploaded. This form is for school and course planning only; DianDian does not provide visa application or immigration advice services."}
         </p>
         <div className="consult-page__notes">
           <p className="consult-page__contact">

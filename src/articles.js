@@ -4134,12 +4134,12 @@ export const articles = [
     "guideId": "study",
     "section": "pathways",
     "updatedAt": "2026-10-21",
-    "titleZh": "技术移民（SMC）：2026-08-24 变化与工资门槛工具",
+    "titleZh": "Skilled Migrant Category（SMC）：移民局 2026-08-24 政策变化摘录",
     "titleEn": "Skilled Migrant Category: 24 August 2026 changes and the wage tool",
-    "excerptZh": "2026-08-24 生效的 SMC 调整，以及移民局工资门槛计算器。留学不能保证能走这条路。",
+    "excerptZh": "移民局公布、2026-08-24 生效的 SMC 调整与官方工资门槛工具链接。仅为官方信息摘录。",
     "excerptEn": "SMC settings that took effect on 24 August 2026, plus INZ’s wage-threshold tool. Study does not guarantee this path.",
     "image": "/images/career-feature.png",
-    "imageAltZh": "技术移民路径",
+    "imageAltZh": "SMC 政策信息",
     "imageAltEn": "Skilled Migrant Category pathway",
     "related": [
       "post-study-work-visa",
@@ -4173,7 +4173,7 @@ export const articles = [
         "type": "h2",
         "text": "和留学的关系"
       },
-      "读完书不等于能走 SMC。通常还要有符合列表与工资的工作或 Offer、英语和健康品行。先把学习计划建立在真实的课程与预算上，而不是倒推移民。需要个案意见请找持牌移民顾问。",
+      "按移民局公布的要求，SMC 还涉及工作或 Offer、工资、英语和健康品行等条件。本站不评估任何个人是否符合条件；个人情况请咨询新西兰持牌移民顾问（LIA）或参考 immigration.govt.nz。",
       {
         "type": "h2",
         "text": "官方来源（请点开核对）"
@@ -4219,10 +4219,10 @@ export const articles = [
     "guideId": "study",
     "section": "pathways",
     "updatedAt": "2026-10-21",
-    "titleZh": "Green List：Tier 1 直接居留与 Tier 2 工作 24 个月后居留",
-    "titleEn": "Green List: Tier 1 straight to residence and Tier 2 after 24 months",
-    "excerptZh": "Tier 1 可申请 Straight to Residence；Tier 2 需在新西兰做满 24 个月符合条件的工作。",
-    "excerptEn": "Tier 1 can lead to Straight to Residence; Tier 2 needs 24 months of eligible New Zealand work.",
+    "titleZh": "Green List（绿名单）是什么：移民局官方分层说明摘录",
+    "titleEn": "What the Green List is: INZ tier overview (official facts)",
+    "excerptZh": "移民局官方 Green List 分层说明摘录；不评估个人资格，具体请咨询持牌移民顾问。",
+    "excerptEn": "Summary of INZ’s official Green List tiers. Not personal advice; consult a licensed adviser.",
     "image": "/images/career-feature.png",
     "imageAltZh": "Green List 居留路径",
     "imageAltEn": "Green List residence pathways",
@@ -4240,7 +4240,7 @@ export const articles = [
         "type": "image",
         "src": "/images/article-job-search.png",
         "alt": "短缺职业",
-        "caption": "先确认自己的职位在哪一档，再谈签证名。"
+        "caption": "Green List 分 Tier 1 与 Tier 2，详见移民局官网。"
       },
       {
         "type": "h2",
@@ -4256,7 +4256,7 @@ export const articles = [
         "type": "h2",
         "text": "和留学的关系"
       },
-      "毕业后能否对上 Green List，取决于你实际从事的职位、注册和工资，而不是文凭名称。护理、工程、部分教育与 ICT 职位常被讨论，但每一行都有额外要求。检索：${INZ.greenRoles}",
+      "按移民局说明，Green List 针对的是具体职位及其注册、学历和工资要求，而不是文凭名称。本站不评估个人是否符合条件。官方检索：${INZ.greenRoles}",
       {
         "type": "h2",
         "text": "官方来源（请点开核对）"
@@ -5029,9 +5029,9 @@ export const articles = [
     "guideId": "study",
     "section": "foundation",
     "updatedAt": "2026-10-21",
-    "titleZh": "2026 新西兰最热门专业：国际生都在读什么、哪些和绿名单挂钩",
+    "titleZh": "2026 新西兰最热门专业：国际生都在读什么、就业前景怎样",
     "titleEn": "New Zealand’s most popular fields for international students (2026)",
-    "excerptZh": "用教育部 2025 全年数据看国际生最多的专业，再对照移民局绿名单：商科人最多，工程、护理、教师更贴近居留路径。",
+    "excerptZh": "用教育部 2025 全年数据看国际生最多的专业，商科人最多，其次是社会文化与 IT；附各方向的学习要求与就业注意事项。",
     "excerptEn": "Ministry of Education 2025 data on what international students study, cross-checked with the Green List.",
     "image": "/images/campus/uni-auckland.webp",
     "imageAltZh": "奥克兰大学钟楼",
@@ -5052,7 +5052,7 @@ export const articles = [
       "post-study-work-visa"
     ],
     "bodyZh": [
-      "「新西兰现在最流行读什么？」答案分两层：一是人数最多的专业，二是对毕业后工作和身份最有帮助的专业。两者并不完全重合。本文数据核对日期 2026-10-21 至 2026-10-23，均附官方来源。",
+      "「新西兰现在最流行读什么？」下面按国际生人数和就业市场两个角度整理。本文数据核对日期 2026-10-21 至 2026-10-23，均附官方来源。",
       {
         "type": "h2",
         "text": "人数：国际生 2025 年最多读的领域"
@@ -5111,10 +5111,10 @@ export const articles = [
       "来源：https://figure.nz/chart/IqPpvXrOxAWO7Ny7-z9m5LaFBmZ4dh5IT",
       {
         "type": "h2",
-        "text": "就业与身份：为什么工程、护理、教师被反复推荐"
+        "text": "就业市场：官方紧缺职位名单（事实摘录）"
       },
       "移民局绿名单（Green List）列出新西兰紧缺职位。按移民局 2026-03-09 版 Appendix 13，名单上包括土木、结构、电气、机械等各类工程师，注册护士（多个方向）、医生、牙医、药剂师、物理治疗师、医学影像等健康职位，以及中小学教师（须在 Teaching Council 注册）、工料测量师、建筑项目经理等。原文：https://www.immigration.govt.nz/opsmanual/89117.htm（该版本已归档，现行名单与分层请看 https://www.immigration.govt.nz/work/requirements-for-work-visas/green-list-occupations-qualifications-and-skills/green-list-roles-jobs-we-need-people-for-in-new-zealand/ ）",
-      "要注意两件事。第一，绿名单看的是职业和注册资格，不是读了某个专业就自动拿身份：护士要拿到护理委员会注册，教师要有 Teaching Council 注册与执业证，工程师常见要求是华盛顿协议认证的学位。第二，IT 类岗位（软件工程师、开发、网络安全等）虽在名单上，但同一版本要求时薪至少 NZD 70（约年薪 NZD 145,600），应届生很难直接达到。",
+      "按官方文件，名单上的职位通常有执业注册要求：护士须护理委员会注册，教师须 Teaching Council 注册与执业证，工程师常见要求是华盛顿协议认证的学位；同一版本中 IT 类岗位列有时薪 NZD 70 的门槛。选专业应以兴趣、能力和就业市场为主。本文不构成移民建议，签证与移民问题请咨询持牌移民顾问（LIA）。",
       {
         "type": "h2",
         "text": "热门专业一览（结合人数与出口）"
@@ -5130,27 +5130,27 @@ export const articles = [
           [
             "商科（会计、金融、市场、商业分析）",
             "人数第一，转专业门槛低",
-            "竞争最大；会计等岗位的身份路径不如工程、护理直接"
+            "就业竞争最大，建议积累实习经历"
           ],
           [
             "工程（土木、电气、机械、软件）",
-            "多个工程师职位在绿名单上",
+            "工程师属官方紧缺职位，就业需求稳定",
             "本科 4 年荣誉学位，数学物理要求高"
           ],
           [
             "护理与健康科学",
-            "注册护士等职位在绿名单上",
+            "注册护士属官方紧缺职位，就业需求稳定",
             "英语要求高，常见 IELTS 7.0；须完成临床实习与注册"
           ],
           [
             "教育（中小学教师）",
-            "教师在绿名单上",
+            "中小学教师属官方紧缺职位",
             "需 Teaching Council 注册；部分教育学位要求 IELTS 7.0"
           ],
           [
             "计算机 / 数据 / AI",
             "人数第三，增长快",
-            "绿名单 IT 岗薪资门槛高，应届不一定适用"
+            "应届岗位竞争激烈，作品集和实习很重要"
           ],
           [
             "建筑管理与工料测量",
@@ -5175,7 +5175,7 @@ export const articles = [
         "text": "点点的建议"
       },
       "如果目标是「读完能留下来」，优先看工程、护理、教师这几条有注册和紧缺职位支撑的路径；如果只是想拿学历、以后回国或去别国，商科、IT 选择最多。不论哪条，都先确认该专业对高中数学、物理、化学的要求——这直接决定你预科该选哪个方向（见《适合中国高中毕业生的新西兰预科对比》）。",
-      "以上费用为约数，核对日期 2026-10-21。学年、专业、奖学金与汇率都会变，报名前请以学校官网当季学费表和 Offer 为准。移民政策变化频繁，绿名单以移民局现行页面为准。",
+      "以上费用为约数，核对日期 2026-10-21。学年、专业、奖学金与汇率都会变，报名前请以学校官网当季学费表和 Offer 为准。签证与移民政策请以 immigration.govt.nz 为准。",
       {
         "type": "h2",
         "text": "官方来源（请点开核对）"
@@ -5190,7 +5190,7 @@ export const articles = [
       "Ministry of Education data: 59,890 international tertiary students in 2025 (+15% on 2024). Top fields: management and commerce (17,020), society and culture (12,210), IT (9,540), natural sciences (6,120), engineering (5,750), health (4,900), education (3,900). https://figure.nz/chart/IqPpvXrOxAWO7Ny7-z9m5LaFBmZ4dh5IT",
       {
         "type": "h2",
-        "text": "Green List link"
+        "text": "Official shortage list (facts only)"
       },
       "Engineers, registered nurses, doctors and school teachers appear on the Green List (Appendix 13, 09/03/2026 version, now archived). IT roles carry a NZD 70/hour threshold in that version. Check the current list: https://www.immigration.govt.nz/work/requirements-for-work-visas/green-list-occupations-qualifications-and-skills/green-list-roles-jobs-we-need-people-for-in-new-zealand/",
       {
@@ -5208,23 +5208,23 @@ export const articles = [
           ],
           [
             "Engineering",
-            "Green List roles",
+            "Listed as in-demand roles by INZ",
             "4-year honours degree, strong maths/physics"
           ],
           [
             "Nursing / health",
-            "Green List roles",
+            "Listed as in-demand roles by INZ",
             "IELTS often 7.0; registration needed"
           ],
           [
             "Teaching",
-            "Green List roles",
+            "Listed as in-demand roles by INZ",
             "Teaching Council registration"
           ],
           [
             "IT / data",
             "Fast growth",
-            "High wage threshold on Green List"
+            "Competitive graduate market; portfolio and internships matter"
           ]
         ]
       },
@@ -5426,19 +5426,19 @@ export const articles = [
         "text": "观点一：「中介爱推商科」"
       },
       "@1x99999（2026-03-28）：「中介帮你申请新西兰学校，学校会给中介返点/佣金，商科是万金油专业，谁都可以来读，对中介来说推荐商科可以实现利益最大化。」",
-      "核对：商科确实是国际生人数最多的领域（2025 年 17,020 人，见《2026 新西兰最热门专业》）。商科本身没有问题，但如果你的目标是毕业后留下来，应该同时比较工程、护理、教师这些在绿名单上的职业路径，而不是只听一家中介的建议。",
+      "核对：商科确实是国际生人数最多的领域（2025 年 17,020 人，见《2026 新西兰最热门专业》）。商科本身没有问题，选专业应结合兴趣、能力和就业市场，多比较学校官网信息，而不是只听一家中介的建议。",
       {
         "type": "h2",
-        "text": "观点二：「移民放宽了，但你可能更难移了」"
+        "text": "观点二：学历之外，就业才是关键"
       },
       "@babilo214544（2026-10-21）：「8月24日起，技术移民新政生效：本地硕士加学士直接6分……但有个前提：你得先拿到一份时薪$35以上的技术类工作。」该帖还提到失业率 5.6%。",
-      "核对：技术移民（SMC）改革的官方说明见 https://www.immigration.govt.nz/about-us/news-centre/further-changes-to-the-skilled-migrant-category-to-come-into-effect-in-august-2026/ 。帖子里的时薪和失业率数字我们没有逐一核实，请以移民局 SMC 薪资工具（https://www.immigration.govt.nz/live/resident-visas-to-live-in-new-zealand/skilled-residence-pathways-in-new-zealand/skilled-migrant-category-pathway-to-residence/smc-wage-threshold-tool/）和统计局最新数据为准。这条帖子的提醒是对的：学历只是第一步，真正的门槛是找到合格的工作。",
+      "核对：技术移民（SMC）改革的官方说明见 https://www.immigration.govt.nz/about-us/news-centre/further-changes-to-the-skilled-migrant-category-to-come-into-effect-in-august-2026/ 。帖子里的时薪和失业率数字我们没有逐一核实，请以移民局 SMC 薪资工具（https://www.immigration.govt.nz/live/resident-visas-to-live-in-new-zealand/skilled-residence-pathways-in-new-zealand/skilled-migrant-category-pathway-to-residence/smc-wage-threshold-tool/）和统计局最新数据为准。本站不对个人移民资格做评估；相关问题请咨询持牌移民顾问（LIA）。",
       {
         "type": "h2",
-        "text": "观点三：「选什么课，决定毕业后能走哪条路」"
+        "text": "观点三：课程类型与毕业工签政策"
       },
       "@globalchoice360（2026-10-20）：「In New Zealand, the course you choose to study can influence your post-study work opportunities and the pathways available to you in the future.」",
-      "核对：属实。毕业工签的资格与学历层级、学制和课程类型挂钩，详见 https://www.immigration.govt.nz/study/after-you-finish-your-study/staying-to-work-after-finishing-your-study/ 。高中毕业生读预科加三年本科，通常比读短期证书更稳。",
+      "核对：按移民局公布的政策，毕业工签资格与学历层级、学制和课程类型有关，详见 https://www.immigration.govt.nz/study/after-you-finish-your-study/staying-to-work-after-finishing-your-study/ 。个人是否符合条件请以移民局官网或持牌移民顾问意见为准。",
       {
         "type": "h2",
         "text": "观点四：雅思没达标、预科没达标怎么办"
