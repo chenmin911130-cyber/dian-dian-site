@@ -1,5 +1,52 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { getArticle } from "./content";
+
+function shortLabel(href) {
+  try {
+    const u = new URL(href);
+    const host = u.hostname.replace(/^www\./, "");
+    const path = u.pathname.replace(/\/+$/, "");
+    if (!path) return host;
+    const segs = path.split("/").filter(Boolean);
+    const last = decodeURIComponent(segs[segs.length - 1] || "");
+    const shown = segs.length > 1 ? `${host}/…/${last}` : `${host}/${last}`;
+    return shown.length > 48 ? `${shown.slice(0, 45)}…` : shown;
+  } catch {
+    return href;
+  }
+}
+
+function slugId(index) {
+  return `sec-${index}`;
+}
+
+function BackToTop({ label }) {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setShow(window.scrollY > 800);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+  if (!show) return null;
+  return (
+    <button
+      type="button"
+      className="back-to-top"
+      aria-label={label}
+      onClick={() => {
+        try {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        } catch {
+          /* jsdom */
+        }
+      }}
+    >
+      ↑
+    </button>
+  );
+}
 
 function textWithLinks(text) {
   const parts = text.split(/(https?:\/\/[A-Za-z0-9._~:/?#\[\]@!$&'*+,;=%-]+)/g);
@@ -9,8 +56,8 @@ function textWithLinks(text) {
     const trail = part.slice(href.length);
     return (
       <span key={index}>
-        <a href={href} target="_blank" rel="noreferrer">
-          {href}
+        <a className="ext-link" href={href} target="_blank" rel="noreferrer" title={href}>
+          {shortLabel(href)}
         </a>
         {trail}
       </span>
@@ -45,7 +92,7 @@ function renderBlocks(blocks) {
 
     if (block?.type === "h2") {
       return (
-        <h2 key={`h2-${index}`} className="article-detail__subhead">
+        <h2 key={`h2-${index}`} id={slugId(index)} className="article-detail__subhead">
           {block.text}
         </h2>
       );
@@ -95,6 +142,9 @@ export function ArticlePage({
 }) {
   const zh = locale === "zh";
   const blocks = zh ? article.bodyZh : article.bodyEn;
+  const toc = (blocks || [])
+    .map((block, index) => (block?.type === "h2" ? { id: slugId(index), text: block.text } : null))
+    .filter(Boolean);
 
   return (
     <article className="detail-page detail-page--article">
@@ -142,7 +192,21 @@ export function ArticlePage({
         <CreditLine credit={zh ? article.imageCreditZh : article.imageCreditEn} />
       </figure>
 
+      {toc.length >= 3 ? (
+        <nav className="article-toc" aria-label={zh ? "目录" : "Contents"}>
+          <h2>{zh ? "目录" : "Contents"}</h2>
+          <ol>
+            {toc.map((item) => (
+              <li key={item.id}>
+                <a href={`#${item.id}`}>{item.text}</a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+      ) : null}
+
       <div className="article-detail__body">{renderBlocks(blocks)}</div>
+      <BackToTop label={zh ? "回到顶部" : "Back to top"} />
       {article.related?.length ? (
         <section className="article-related" aria-label={zh ? "相关文章" : "Related articles"}>
           <h2>{zh ? "相关文章" : "Related articles"}</h2>
