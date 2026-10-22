@@ -245,9 +245,9 @@ it("opens the Seek and Trade Me article from the career guide", async () => {
       name: "在 Seek 与 Trade Me 找工作：从注册到入职",
     }),
   ).toBeInTheDocument();
-  expect(screen.getByText(/本地中小商家多/)).toBeInTheDocument();
+  expect(screen.getByRole("heading", { name: /本地中小商家多/ })).toBeInTheDocument();
   expect(
-    screen.getAllByRole("link", { name: "https://www.seek.co.nz/" })[0],
+    screen.getAllByRole("link", { name: "seek.co.nz" })[0],
   ).toHaveAttribute("href", "https://www.seek.co.nz/");
   expect(
     screen.getByRole("img", { name: /在 Seek 与 Trade Me 找工作/ }),
@@ -313,4 +313,13 @@ it("shows a not-found page for unknown URLs", () => {
   expect(
     screen.getByRole("heading", { name: "页面没有找到" }),
   ).toBeInTheDocument();
+});
+
+test("article page sets its own canonical URL and shows a table of contents", async () => {
+  window.history.pushState({}, "", "/article/used-car-driving-licence");
+  render(<App />);
+  await screen.findByRole("navigation", { name: "目录" });
+  expect(document.querySelector('link[rel="canonical"]').href).toBe(
+    "https://diandianyudita.com/article/used-car-driving-licence",
+  );
 });

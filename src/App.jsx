@@ -23,9 +23,20 @@ import {
 } from "./content";
 
 function PageTitle({ title }) {
+  const location = useLocation();
   useEffect(() => {
     document.title = title;
-  }, [title]);
+    const url = `https://diandianyudita.com${location.pathname === "/" ? "/" : location.pathname.replace(/\/+$/, "")}`;
+    let link = document.querySelector('link[rel="canonical"]');
+    if (!link) {
+      link = document.createElement("link");
+      link.rel = "canonical";
+      document.head.appendChild(link);
+    }
+    link.href = url;
+    const og = document.querySelector('meta[property="og:url"]');
+    if (og) og.content = url;
+  }, [title, location.pathname]);
   return null;
 }
 
@@ -136,11 +147,17 @@ function Header({ locale, setLocale }) {
             onClick={() => setMenuOpen(false)}
           />
           <nav className="site-menu__panel" aria-label={locale === "zh" ? "主导航" : "Primary navigation"}>
+            <NavLink to="/" end onClick={() => setMenuOpen(false)}>
+              {locale === "zh" ? "首页" : "Home"}
+            </NavLink>
             {navItems.map(([to, label]) => (
               <NavLink key={to} to={to} onClick={() => setMenuOpen(false)}>
                 {label}
               </NavLink>
             ))}
+            <NavLink to="/consult" className="site-menu__consult" onClick={() => setMenuOpen(false)}>
+              {locale === "zh" ? "咨询" : "Consult"}
+            </NavLink>
             <LocaleSwitch locale={locale} setLocale={setLocale} />
           </nav>
         </div>
