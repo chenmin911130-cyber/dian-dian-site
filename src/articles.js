@@ -975,7 +975,7 @@ export const articles = [
     "slug": "seek-trademe-jobs",
     "guideId": "career",
     "section": "career",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-23",
     "titleZh": "在 Seek 与 Trade Me 找工作：从注册到入职",
     "titleEn": "Finding work on Seek and Trade Me: from profile to first shift",
     "excerptZh": "两个平台怎么搜、简历怎么投、学生签证每周最多 25 小时怎么排班。",
@@ -1012,6 +1012,11 @@ export const articles = [
       },
       "周一更新两个平台的 alerts；周二到周四每天投 2–4 个匹配岗（一周大约 8–15 个），记录公司、时薪、通勤。投出 5–7 天可礼貌跟进一次。面试后 24 小时内短感谢即可。把通勤超过 45–60 分钟的岗单独标出来——税后时薪可能被路费吃掉。",
       "还没有 IRD 号也可以先面试，但入职发薪前要办理。保留职位链接和聊天记录，防止口头承诺与合同不符。",
+      {
+        "type": "h2",
+        "text": "最低工资（现行）"
+      },
+      "最低工资（2026-04-01 起，税前）：成人最低工资 NZ$23.95/小时（此前 $23.50）；起步/培训最低工资 NZ$19.16/小时（此前 $18.80）。来源：https://www.employment.govt.nz/news-and-updates/minimum-wage-is-increasing-on-1-april-2026",
       {
         "type": "image",
         "src": "/images/article-auckland-cbd.png",
@@ -1055,6 +1060,11 @@ export const articles = [
       },
       "Eight to fifteen matched applications beat spam. Follow up after 5–7 days. Factor a 45–60 minute commute into the real wage.",
       {
+        "type": "h2",
+        "text": "Minimum wage (current)"
+      },
+      "Minimum wage (from 1 April 2026, before tax): adult NZ$23.95 an hour (was $23.50); starting-out and training NZ$19.16 (was $18.80). https://www.employment.govt.nz/news-and-updates/minimum-wage-is-increasing-on-1-april-2026",
+      {
         "type": "image",
         "src": "/images/article-auckland-cbd.png",
         "alt": "Commuting to work",
@@ -1073,7 +1083,7 @@ export const articles = [
     "slug": "nz-cv-cover-letter",
     "guideId": "career",
     "section": "career",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-23",
     "titleZh": "新西兰简历与 Cover Letter 怎么写",
     "titleEn": "How to write an NZ CV and cover letter",
     "excerptZh": "一页英文简历、结果导向、关键词对齐职位——比华丽模板更重要。",
@@ -1110,6 +1120,11 @@ export const articles = [
       },
       "模板花哨但信息密度低、只写职责不写结果、把期望薪资写得比广告区间高很多又无本地参照、或在学生签证下承诺每周 40 小时学期工。后一项既不诚实，也有合规风险。",
       {
+        "type": "h2",
+        "text": "最低工资（现行）"
+      },
+      "最低工资（2026-04-01 起，税前）：成人最低工资 NZ$23.95/小时（此前 $23.50）；起步/培训最低工资 NZ$19.16/小时（此前 $18.80）。来源：https://www.employment.govt.nz/news-and-updates/minimum-wage-is-increasing-on-1-april-2026",
+      {
         "type": "image",
         "src": "/images/article-skills-lab.png",
         "alt": "技能与项目展示",
@@ -1140,6 +1155,11 @@ export const articles = [
       },
       "Firstname_Lastname_CV.pdf. Spell-check. Avoid decorative templates and bilingual clutter.",
       {
+        "type": "h2",
+        "text": "Minimum wage (current)"
+      },
+      "Minimum wage (from 1 April 2026, before tax): adult NZ$23.95 an hour (was $23.50); starting-out and training NZ$19.16 (was $18.80). https://www.employment.govt.nz/news-and-updates/minimum-wage-is-increasing-on-1-april-2026",
+      {
         "type": "image",
         "src": "/images/article-skills-lab.png",
         "alt": "Skills and projects",
@@ -1151,7 +1171,7 @@ export const articles = [
     "slug": "interview-star",
     "guideId": "career",
     "section": "career",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-23",
     "titleZh": "本地面试：用 STAR 讲清楚经历",
     "titleEn": "NZ interviews: tell your story with STAR",
     "excerptZh": "行为面试常见。准备两个真实例子，并先想好怎么说明学生工时。",
@@ -1185,6 +1205,11 @@ export const articles = [
       "提前 10–15 分钟到；着装整洁即可，多数入门岗不需要西装。带一页纸质简历。视频面试提前测摄像头、网络和背景。英文卡壳时先答结论，并可请对方重复问题。",
       "没拿到也记录：是经验、英语、排班还是通勤不匹配。下一次把故事收得更短。",
       {
+        "type": "h2",
+        "text": "最低工资（现行）"
+      },
+      "最低工资（2026-04-01 起，税前）：成人最低工资 NZ$23.95/小时（此前 $23.50）；起步/培训最低工资 NZ$19.16/小时（此前 $18.80）。来源：https://www.employment.govt.nz/news-and-updates/minimum-wage-is-increasing-on-1-april-2026",
+      {
         "type": "image",
         "src": "/images/article-auckland-cbd.png",
         "alt": "面试出行",
@@ -1215,6 +1240,11 @@ export const articles = [
       },
       "Arrive 10–15 minutes early, dress tidy, bring a paper CV. If English stalls, lead with the outcome and ask to repeat the question.",
       {
+        "type": "h2",
+        "text": "Minimum wage (current)"
+      },
+      "Minimum wage (from 1 April 2026, before tax): adult NZ$23.95 an hour (was $23.50); starting-out and training NZ$19.16 (was $18.80). https://www.employment.govt.nz/news-and-updates/minimum-wage-is-increasing-on-1-april-2026",
+      {
         "type": "image",
         "src": "/images/article-auckland-cbd.png",
         "alt": "Getting to the interview",
@@ -1226,7 +1256,7 @@ export const articles = [
     "slug": "ird-work-hours",
     "guideId": "career",
     "section": "career",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-23",
     "titleZh": "IRD 税号与学生工时：25 小时怎么合规",
     "titleEn": "IRD numbers and the 25-hour student work limit",
     "excerptZh": "先核对签证条件，再申请 IRD；从 2025 年 11 月 3 日起符合条件者学期中最多 25 小时。",
@@ -1257,7 +1287,17 @@ export const articles = [
         "type": "h2",
         "text": "IRD 号码"
       },
-      "在 Inland Revenue 网站申请 IRD number：https://www.ird.govt.nz/ 。通常需要身份证件与在新西兰的地址。没有 IRD，雇主难以正确扣税。入职后核对工资单上的税码（tax code）、时薪与工时。换工作时更新银行与税务信息。",
+      "IRD 官方说明：落地后可用「new arrival」方式网上申请，需要护照信息、移民局申请号和最近一个海外税号（如有）；学生或工作签证持有人还需要一个能正常使用的新西兰银行账户或 IR997 客户尽调表。必须在签证上的「最晚入境日期」之前申请，过了这个日期就要改用「living in New Zealand」方式。获批后约 2 天内短信或邮件通知，邮寄约 10 天。申请免费。学生签证不能自雇。来源：https://www.ird.govt.nz/situations/work-or-study-in-new-zealand 与 https://www.ird.govt.nz/en/managing-my-tax/ird-numbers/ird-numbers-for-individuals/new-arrival-to-new-zealand---ird-number-application",
+      {
+        "type": "h2",
+        "text": "税码与 IR330"
+      },
+      "入职时填 Tax code declaration（IR330），告诉雇主扣多少税。主要收入（最高的一份）和其他副业收入用不同税码；有学生贷款要选含还款的税码；换工作、加第二份工或预计年收入变化时要重新选。可以用 IRD 的税码工具判断。来源：https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/what-tax-code-should-i-use",
+      {
+        "type": "h2",
+        "text": "最低工资"
+      },
+      "最低工资（2026-04-01 起，税前）：成人最低工资 NZ$23.95/小时（此前 $23.50）；起步/培训最低工资 NZ$19.16/小时（此前 $18.80）。来源：https://www.employment.govt.nz/news-and-updates/minimum-wage-is-increasing-on-1-april-2026",
       {
         "type": "h2",
         "text": "排班自查"
@@ -1275,7 +1315,9 @@ export const articles = [
       },
       "https://www.immigration.govt.nz/study/once-you-have-a-student-visa/working-on-a-student-visa/",
       "https://www.immigration.govt.nz/about-us/news-centre/upcoming-changes-to-student-visa-work-rights/",
-      "https://www.ird.govt.nz/"
+      "https://www.ird.govt.nz/",
+      "https://www.ird.govt.nz/en/managing-my-tax/ird-numbers/ird-numbers-for-individuals/new-arrival-to-new-zealand---ird-number-application",
+      "https://www.employment.govt.nz/news-and-updates/minimum-wage-is-increasing-on-1-april-2026"
     ],
     "bodyEn": [
       "Work rights come from your visa conditions and Immigration NZ, not from a manager’s verbal yes. Payroll needs an IRD number from Inland Revenue. This is general information, not tax or immigration advice.",
@@ -1295,7 +1337,17 @@ export const articles = [
         "type": "h2",
         "text": "IRD number"
       },
-      "Apply at https://www.ird.govt.nz/ with ID and a New Zealand address. Check the tax code, hourly rate and hours on every payslip.",
+      "IRD: after arrival, apply as a ‘new arrival’ online with passport details, your Immigration NZ application number and your latest overseas tax number (if any). Student and work visa holders also need a fully functioning NZ bank account or an IR997 form. Apply before the final arrival date on your visa; after that you apply as ‘living in New Zealand’. Approval usually arrives by text/email in about 2 days or by post within 10 days. It is free. You cannot be self-employed on a student visa. https://www.ird.govt.nz/situations/work-or-study-in-new-zealand",
+      {
+        "type": "h2",
+        "text": "Tax codes and IR330"
+      },
+      "Complete a Tax code declaration (IR330) for each employer. Your highest income is your main income; other jobs are secondary and use different codes. Student-loan holders choose a code with repayments. Re-check when jobs or expected income change. https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/what-tax-code-should-i-use",
+      {
+        "type": "h2",
+        "text": "Minimum wage"
+      },
+      "Minimum wage (from 1 April 2026, before tax): adult NZ$23.95 an hour (was $23.50); starting-out and training NZ$19.16 (was $18.80). https://www.employment.govt.nz/news-and-updates/minimum-wage-is-increasing-on-1-april-2026",
       {
         "type": "h2",
         "text": "Roster self-check"
@@ -1313,14 +1365,16 @@ export const articles = [
       },
       "https://www.immigration.govt.nz/study/once-you-have-a-student-visa/working-on-a-student-visa/",
       "https://www.immigration.govt.nz/about-us/news-centre/upcoming-changes-to-student-visa-work-rights/",
-      "https://www.ird.govt.nz/"
+      "https://www.ird.govt.nz/",
+      "https://www.ird.govt.nz/en/managing-my-tax/ird-numbers/ird-numbers-for-individuals/new-arrival-to-new-zealand---ird-number-application",
+      "https://www.employment.govt.nz/news-and-updates/minimum-wage-is-increasing-on-1-april-2026"
     ]
   },
   {
     "slug": "nz-monthly-budget",
     "guideId": "life",
     "section": "life",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-23",
     "titleZh": "留学生一个月生活费怎么算",
     "titleEn": "A practical one-month NZ living budget",
     "excerptZh": "房租、饮食、交通手机水电网——给奥克兰与其他城市各算一笔约数（核对 2026-10）。",
@@ -1340,7 +1394,7 @@ export const articles = [
         "type": "h2",
         "text": "房租"
       },
-      "奥克兰合租单间大约 NZ$220–350/周（月租约 NZ$950–1,520）；studio / 一居大约 NZ$400–550+/周。惠灵顿、基督城合租常可略低；汉密尔顿、但尼丁、林肯镇往往再低一截。看房时问清电费、热水、宽带是否另计，以及押金（bond）周数。",
+      "奥克兰合租单间大约 NZ$220–350/周（月租约 NZ$950–1,520）；studio / 一居大约 NZ$400–550+/周。惠灵顿、基督城合租常可略低；汉密尔顿、但尼丁、林肯镇往往再低一截。看房时问清电费、热水、宽带是否另计，以及押金（bond）周数——法定最多 4 周房租（https://www.tenancy.govt.nz/starting-a-tenancy/new-to-tenancy/information-for-new-tenants/）。",
       {
         "type": "h2",
         "text": "饮食与日用品"
@@ -1376,7 +1430,7 @@ export const articles = [
         "type": "h2",
         "text": "Rent"
       },
-      "Auckland shared room about NZ$220–350/week; studio/one-bed about NZ$400–550+/week. Wellington and Christchurch shared rooms are often a little lower; Hamilton, Dunedin and Lincoln are often lower again. Ask whether power, hot water and internet are extra.",
+      "Auckland shared room about NZ$220–350/week; studio/one-bed about NZ$400–550+/week. Wellington and Christchurch shared rooms are often a little lower; Hamilton, Dunedin and Lincoln are often lower again. Ask whether power, hot water and internet are extra. Bond is capped at 4 weeks’ rent (https://www.tenancy.govt.nz/starting-a-tenancy/new-to-tenancy/information-for-new-tenants/).",
       {
         "type": "h2",
         "text": "Food"
@@ -1404,7 +1458,7 @@ export const articles = [
     "slug": "renting-guide",
     "guideId": "life",
     "section": "life",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-23",
     "titleZh": "新西兰租房：Trade Me、合租与押金",
     "titleEn": "Renting in NZ: Trade Me, flatting and the bond",
     "excerptZh": "看房要快、材料备齐；押金收据、租约与 Tenancy Services 是底线。",
@@ -1429,12 +1483,17 @@ export const articles = [
         "type": "h2",
         "text": "合同与押金"
       },
-      "先读 tenancy agreement：租期、是否固定期限、谁付水电宽带、能否转租、退房通知。押金（bond）应通过 Tenancy Services 登记，你应拿到收据。官方说明见 https://www.tenancy.govt.nz/ 。付押金走可追溯转账，不要用无法追回的现金或私人收款码。",
+      "先读 tenancy agreement：租期、是否固定期限、谁付水电宽带、能否转租、退房通知。押金（bond）最多 4 周房租，房东必须给你收据，并在 23 个工作日内在 Tenancy Services（Bond Hub）线上登记。付押金走可追溯转账，不要用无法追回的现金或私人收款码。来源：https://www.tenancy.govt.nz/starting-a-tenancy/new-to-tenancy/information-for-new-tenants/",
       {
         "type": "h2",
         "text": "看房当天问题"
       },
-      "暖气是否够用、卫生间有无发霉、洗衣怎么安排、安静时段、是否允许短期转租、通勤到学校几站。没看清合同不要付大额定金。潮湿与冬季取暖是奥克兰、惠灵顿旧房的常见问题。",
+      "对照 Healthy Homes 标准看房：从 2025-07-01 起所有私人出租房都必须符合取暖（主客厅要有固定取暖设备）、保温、通风（厨房和浴室要有抽风扇）、防潮排水和防风五项标准；新签或续签的租约必须附达标声明，租客询问时房东须在 21 天内提供信息。另问清洗衣、安静时段、能否转租、通勤到学校几站。没看清合同不要付大额定金。来源：https://www.tenancy.govt.nz/healthy-homes/healthy-homes-compliance/",
+      {
+        "type": "h2",
+        "text": "涨租规则"
+      },
+      "无论固定期限还是周期性租约，房东只能在租约开始满 12 个月后、且距上次涨租满 12 个月后才能涨租，并须提前至少 60 天书面通知新租金和生效日期（寄宿屋为 28 天）。涨租后房东可要求补交押金，补足到新租金的 4 周以内。来源：https://www.tenancy.govt.nz/rent-bond-and-bills/rent/increasing-rent/",
       {
         "type": "h2",
         "text": "落地策略"
@@ -1464,12 +1523,17 @@ export const articles = [
         "type": "h2",
         "text": "Agreement and bond"
       },
-      "Read the tenancy agreement. Bonds should be lodged with Tenancy Services and you should get a receipt: https://www.tenancy.govt.nz/ . Use a traceable transfer.",
+      "Read the tenancy agreement. A bond can be no more than 4 weeks’ rent; the landlord must give you a receipt and lodge it with Tenancy Services (Bond Hub) within 23 working days. Pay by traceable transfer. https://www.tenancy.govt.nz/starting-a-tenancy/new-to-tenancy/information-for-new-tenants/",
       {
         "type": "h2",
         "text": "On viewing day"
       },
-      "Heating, damp, laundry, quiet hours, subletting and the commute. Do not pay a large holding deposit on a contract you have not read.",
+      "Check against the healthy homes standards: from 1 July 2025 every private rental must meet heating (a fixed heater for the main living room), insulation, ventilation (extractor fans in kitchen and bathroom), moisture/drainage and draught-stopping standards. New or renewed agreements must include a compliance statement, and landlords must answer tenant requests within 21 days. Also ask about laundry, quiet hours, subletting and the commute. https://www.tenancy.govt.nz/healthy-homes/healthy-homes-compliance/",
+      {
+        "type": "h2",
+        "text": "Rent increases"
+      },
+      "For fixed-term and periodic tenancies, rent can only rise 12 months after the tenancy started and 12 months after the last increase, with at least 60 days’ written notice (28 days for boarding houses). The landlord may ask for extra bond up to 4 weeks of the new rent. https://www.tenancy.govt.nz/rent-bond-and-bills/rent/increasing-rent/",
       {
         "type": "image",
         "src": "/images/article-arrival.png",
@@ -1482,7 +1546,7 @@ export const articles = [
     "slug": "bank-account-setup",
     "guideId": "life",
     "section": "life",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-23",
     "titleZh": "银行卡办理：四大行开户要点",
     "titleEn": "Opening a bank account: the main banks",
     "excerptZh": "护照、签证、地址与学生证明——预约国际学生开户更省事。",
@@ -1491,7 +1555,7 @@ export const articles = [
     "imageAltZh": "新西兰学生开户",
     "imageAltEn": "Opening a New Zealand student bank account",
     "bodyZh": [
-      "常见零售银行：ANZ、ASB、Westpac、BNZ。国际学生通常需要护照、签证或入境证明、新西兰地址证明与学生证明（Offer 或学生证）。部分银行支持行前预开户、落地后激活——以该行国际学生页为准。",
+      "常见零售银行：ANZ、ASB、Westpac、BNZ，另有 Kiwibank。通常需要护照、有效签证和地址证明，具体以各行官网为准。几家银行的行前开户说明（核对 2026-10-23）：ANZ——人在新西兰或 90 天内抵达、签证剩余至少 6 个月、年满 13 岁即可申请，可先存款，到网点核验身份后才激活（https://www.anz.co.nz/personal/moving-to-new-zealand/）；ASB——可行前网上申请，需护照、合格签证和 12 个月内的海外地址证明（https://www.asb.co.nz/moving-to-new-zealand）；Westpac——部分情况下最早可提前 180 天开户（https://www.westpac.co.nz/accounts-cards/open-a-new-zealand-bank-account-from-overseas/）。BNZ 与 Kiwibank 请直接查官网。",
       {
         "type": "image",
         "src": "/images/article-visa-docs.png",
@@ -1502,7 +1566,12 @@ export const articles = [
         "type": "h2",
         "text": "预约与材料"
       },
-      "在银行官网找 International students 预约。若刚落地没有账单，问是否接受学校信、租约、酒店证明。带上税号申请进度（如有）。不要把网银密码告诉「热心学长」或中介。",
+      "在银行官网找 International students 预约。若刚落地没有账单，问是否接受学校信、租约、酒店证明。注意顺序：申请 IRD 号时需要一个能正常使用的新西兰银行账户（或 IR997 表），所以通常先开户、再办 IRD。不要把网银密码告诉「热心学长」或中介。",
+      {
+        "type": "h2",
+        "text": "Funds Transfer Scheme"
+      },
+      "移民局的 Funds Transfer Scheme（FTS）目前通过 ANZ 和 BNZ 办理：ANZ 面向各类学习、年满 13 岁；BNZ 只面向大学和理工学院学生、年满 16 岁。是否适用以移民局和银行页面为准。来源：https://www.immigration.govt.nz/study/study-visas/funds-transfer-scheme/",
       {
         "type": "h2",
         "text": "问清费用"
@@ -1521,7 +1590,7 @@ export const articles = [
       }
     ],
     "bodyEn": [
-      "Common retail banks: ANZ, ASB, Westpac and BNZ. Expect to show a passport, visa or entry evidence, a New Zealand address and student proof. Some banks allow pre-arrival setup—use that bank’s international-student page.",
+      "Common retail banks: ANZ, ASB, Westpac, BNZ and Kiwibank. Expect a passport, a valid visa and proof of address; check each bank’s site. Pre-arrival notes (checked 23 Oct 2026): ANZ—apply if you are in NZ or arriving within 90 days, have a visa with at least six months left and are 13+; you can deposit, but the account is activated after an ID check in a branch (https://www.anz.co.nz/personal/moving-to-new-zealand/). ASB—apply online before arrival with passport, eligible visa and overseas address proof dated within 12 months (https://www.asb.co.nz/moving-to-new-zealand). Westpac—in some cases up to 180 days before you move (https://www.westpac.co.nz/accounts-cards/open-a-new-zealand-bank-account-from-overseas/). Check BNZ and Kiwibank directly.",
       {
         "type": "image",
         "src": "/images/article-visa-docs.png",
@@ -1532,7 +1601,12 @@ export const articles = [
         "type": "h2",
         "text": "Documents"
       },
-      "If you have no utility bill yet, ask whether a school letter, tenancy agreement or hotel proof is acceptable. Never share banking codes.",
+      "If you have no utility bill yet, ask whether a school letter, tenancy agreement or hotel proof is accepted. Order matters: an IRD number application needs a fully functioning NZ bank account (or an IR997 form), so open the account first.",
+      {
+        "type": "h2",
+        "text": "Funds Transfer Scheme"
+      },
+      "Immigration NZ’s Funds Transfer Scheme runs through ANZ (any study, age 13+) and BNZ (universities and polytechnics only, age 16+). Check the official pages for whether it applies to you. https://www.immigration.govt.nz/study/study-visas/funds-transfer-scheme/",
       {
         "type": "h2",
         "text": "Fees to ask about"
@@ -1754,7 +1828,7 @@ export const articles = [
     "slug": "arrival-first-week",
     "guideId": "life",
     "section": "life",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-23",
     "titleZh": "落地第一周清单",
     "titleEn": "Your first-week arrival checklist",
     "excerptZh": "住宿、手机、银行、交通、注册——按天推进，通讯比家具优先。",
@@ -1779,7 +1853,7 @@ export const articles = [
         "type": "h2",
         "text": "第 3–4 天"
       },
-      "预约或完成银行开户，办交通卡并充值，走一遍学校通勤。去最近的 Woolworths / Pak'nSave 买基础食物。记下附近药房和便利店。",
+      "预约或完成银行开户，办交通卡并充值，走一遍学校通勤。去最近的 Woolworths / Pak'nSave 买基础食物。记下附近药房和便利店。 开户后尽快在 IRD 网站以「new arrival」方式申请 IRD 号——必须在签证上的最晚入境日期之前申请（https://www.ird.govt.nz/situations/work-or-study-in-new-zealand）。",
       {
         "type": "h2",
         "text": "第 5–6 天"
@@ -1789,7 +1863,7 @@ export const articles = [
         "type": "h2",
         "text": "第 7 天"
       },
-      "列出下一周待办：长租或确认寄宿家庭、IRD、GP 注册、教材。纸质复印件放随身与行李箱分开位置。中学国际生还要和学校确认监护/寄宿监测安排。",
+      "列出下一周待办：长租或确认寄宿家庭、IRD（如还没申请）、GP 注册、教材。纸质复印件放随身与行李箱分开位置。中学国际生还要和学校确认监护/寄宿监测安排。",
       "需要帮助就联系国际学生办公室，或用本站咨询表整理还未办完的材料。前几天别把行程排太满。",
       {
         "type": "image",
@@ -1815,7 +1889,7 @@ export const articles = [
         "type": "h2",
         "text": "Days 3–4"
       },
-      "Open or activate a bank account, get a transport card, walk the commute, and buy basic food at Woolworths or Pak'nSave.",
+      "Open or activate a bank account, get a transport card, walk the commute, and buy basic food at Woolworths or Pak'nSave. Once the account works, apply for an IRD number as a ‘new arrival’—before the final arrival date on your visa (https://www.ird.govt.nz/situations/work-or-study-in-new-zealand).",
       {
         "type": "h2",
         "text": "Days 5–6"
@@ -1832,6 +1906,266 @@ export const articles = [
         "alt": "City mobility",
         "caption": "If you can ride, pay and receive school email, week one succeeded."
       }
+    ]
+  },
+  {
+    "guideId": "life",
+    "section": "life",
+    "updatedAt": "2026-10-23",
+    "image": "/images/life-feature.png",
+    "slug": "used-car-driving-licence",
+    "titleZh": "在新西兰买二手车与开车：驾照、WoF、rego、RUC 与过户",
+    "titleEn": "Buying a used car and driving in NZ: licence, WoF, rego, RUC and ownership",
+    "excerptZh": "2026-11-01 起海外驾照只能开 12 个月；买车前查 PPSR、看 CIN，分清车行与私人卖家。",
+    "excerptEn": "From 1 Nov 2026 an overseas car licence is valid for 12 months; check the PPSR and CIN, and know dealer vs private rights.",
+    "imageAltZh": "新西兰二手车与驾驶",
+    "imageAltEn": "Buying a used car in New Zealand",
+    "bodyZh": [
+      "以下是 NZ Transport Agency（NZTA）、Consumer Protection 和 PPSR 的公开信息整理（核对 2026-10-23），费用含 GST，以官网最新为准。",
+      {
+        "type": "image",
+        "src": "/images/article-transport.png",
+        "alt": "开车出行",
+        "caption": "新西兰靠左行驶，先熟悉路规再上路。"
+      },
+      {
+        "type": "h2",
+        "text": "重要变化：2026-11-01 起海外驾照只能开 12 个月"
+      },
+      "目前用有效的海外汽车驾照，可从最后一次入境起开 18 个月；从 2026-11-01 起缩短为 12 个月。摩托车和卡车驾照一直是 12 个月。驾照不是英文的，要同时带准确的英文翻译件或国际驾照（IDP），并随身带原驾照。如果在新西兰拿过新西兰驾照，或被停牌、吊销，就不能再用海外驾照。来源：https://www.nzta.govt.nz/travelling-on-our-roads/visitors-and-new-residents/driving-on-nz-roads",
+      {
+        "type": "h2",
+        "text": "换新西兰驾照的费用"
+      },
+      "海外驾照仍有效或过期不到 12 个月，可申请转换。非豁免国家（含中国大陆）汽车驾照：申请费 $52.10 + 理论考 $45.70 + 正式路考 $59.90，一次通过合计 $157.70（转 restricted 驾照则路考 $86.60）。来源：https://nzta.govt.nz/driver-licences/licensing-fees/licence-fees",
+      {
+        "type": "h2",
+        "text": "WoF（车检）"
+      },
+      "2000-01-01 及之后首次注册（全球任何地方）的轻型车，目前每 12 个月做一次 WoF；更早的每 6 个月。NZTA 已公布从 2026-11-01 起分阶段调整：4–14 年车龄的车改为每 2 年一次（2019-11-01 及之后注册的从 2026-11-01 开始，2013-11-01 至 2019-10-31 注册的从 2027-11-01 开始），14–26 年车龄仍每年一次，2000 年前注册的改为每年一次。WoF 检查费由各检测站定价。来源：https://nzta.govt.nz/vehicles/warrants-and-certificates/warrant-of-fitness 与 https://vehicleinspection.nzta.govt.nz/news/changes-to-light-vehicle-inspections-from-1-november-2026",
+      {
+        "type": "h2",
+        "text": "Rego（车辆年费）"
+      },
+      "私人乘用车，新牌照期从 2025-07-01 起：汽油车 12 个月 $144.22（6 个月 $76.44、3 个月 $42.57）；柴油或电动车 12 个月 $212.84（6 个月 $110.76、3 个月 $59.72）。含网上办理手续费和 GST。具体车牌可用 Rightcar 查。来源：https://nzta.govt.nz/vehicles/licensing-rego/vehicle-fees/licensing-fees",
+      {
+        "type": "h2",
+        "text": "RUC（柴油车、电动车要交）"
+      },
+      "3500kg 以下的柴油、电动及插电混动车要预先购买道路使用费（RUC），按 1000 公里为单位。普通两轴轻型车（RUC 类型 1，3500kg 以下）为每 1000 公里 $76（含 GST）；另每张牌照有手续费，网上 $12.44、代理柜台 $13.71。汽油车（含不能插电的油混）不用买 RUC。卖家必须保证车的 RUC 有效。来源：https://www.nzta.govt.nz/vehicles/road-user-charges/ruc-rates-and-transaction-fees/ 与 https://nzta.govt.nz/vehicles/road-user-charges/about-ruc/",
+      {
+        "type": "h2",
+        "text": "过户（change of ownership）"
+      },
+      "买卖双方都必须通知 NZTA。买方办理「change of registered person」（MR13B）免费；卖方要在成交时立即在网上通知，否则可能要承担买家之后的罚单和过路费。没有新西兰驾照的人需要联系 NZTA 办理。来源：https://nzta.govt.nz/vehicles/licensing-rego/vehicle-fees/administration-fees/ 与 https://nzta.govt.nz/vehicles/buying-and-selling-a-vehicle/selling-a-vehicle",
+      {
+        "type": "h2",
+        "text": "查有没有欠款：PPSR"
+      },
+      "买私人二手车前，用车辆 VIN、车架号和车牌在 PPSR 查询。如果显示有登记的担保权益（security interest），车可能被金融公司收走；没有结果则一般不太可能被收走。向注册车行买车时，车行必须在 CIN 上说明是否有欠款。来源：https://ppsr.companiesoffice.govt.nz/help-centre/information-for-debtors-and-consumers/how-the-ppsr-can-help-when-buying-used-goods/",
+      {
+        "type": "h2",
+        "text": "车行 vs 私人卖家"
+      },
+      "注册车行（可在 Motor Vehicle Traders Register 查到）必须遵守 Consumer Guarantees Act 和 Fair Trading Act，并在每辆二手车上贴准确的 Consumer Information Notice（CIN，含车况历史、里程、价格和欠款情况）。车行不能用「as is, where is」免除义务；车不达标可要求修理、换车或退款。私人卖家不需要注册、不需要 CIN，也不受 CGA/FTA 约束，买家保护少很多；但卖家如果提供虚假信息（比如谎称无欠款），你可能有权取消交易或索赔。一年卖超过 6 辆或进口超过 3 辆的人可能属于车商。来源：https://www.consumerprotection.govt.nz/help-product-service/cars/finding-the-right-car/buying-car-from-dealer 、https://www.consumerprotection.govt.nz/help-product-service/cars/finding-the-right-car/buying-car-privately 、https://www.consumerprotection.govt.nz/help-product-service/cars/solving-issues-private-seller",
+      {
+        "type": "h2",
+        "text": "买车前清单"
+      },
+      "确认驾照有效期（注意 11 月 1 日新规）→ 查 PPSR 和车辆历史 → 车行的话核对并签 CIN → 看 WoF、rego 到期日，柴油车看 RUC 剩余公里 → 找独立机构做购车前检查 → 成交当天双方通知 NZTA 过户 → 上路前买好车险。",
+      {
+        "type": "h2",
+        "text": "官方来源（请点开核对）"
+      },
+      "https://www.nzta.govt.nz/travelling-on-our-roads/visitors-and-new-residents/driving-on-nz-roads",
+      "https://nzta.govt.nz/vehicles/licensing-rego/vehicle-fees/licensing-fees",
+      "https://www.nzta.govt.nz/vehicles/road-user-charges/ruc-rates-and-transaction-fees/",
+      "https://www.consumerprotection.govt.nz/help-product-service/cars/before-buying-used-car"
+    ],
+    "bodyEn": [
+      "A summary of public information from NZ Transport Agency (NZTA), Consumer Protection and the PPSR, checked 23 October 2026. Fees include GST; always check the official pages.",
+      {
+        "type": "image",
+        "src": "/images/article-transport.png",
+        "alt": "Driving in NZ",
+        "caption": "NZ drives on the left—learn the road code first."
+      },
+      {
+        "type": "h2",
+        "text": "Key change: overseas car licences limited to 12 months from 1 November 2026"
+      },
+      "You can currently drive on a valid overseas car licence for up to 18 months from your last arrival. From 1 November 2026 this drops to 12 months. Motorcycle and truck licences remain 12 months. If your licence is not in English, carry an accurate English translation or an IDP plus the original licence. https://www.nzta.govt.nz/travelling-on-our-roads/visitors-and-new-residents/driving-on-nz-roads",
+      {
+        "type": "h2",
+        "text": "Converting to an NZ licence"
+      },
+      "If your licence is current or expired less than 12 months, you can convert. Car licence from a non-exempt country: application $52.10 + theory test $45.70 + full practical test $59.90 = $157.70 if you pass first time (restricted practical test $86.60). https://nzta.govt.nz/driver-licences/licensing-fees/licence-fees",
+      {
+        "type": "h2",
+        "text": "WoF"
+      },
+      "Light vehicles first registered on or after 1 January 2000 currently need a WoF every 12 months; older ones every 6 months. From 1 November 2026 changes phase in: vehicles 4–14 years old move to every 2 years (registered on/after 1 Nov 2019 from 1 Nov 2026; registered 1 Nov 2013–31 Oct 2019 from 1 Nov 2027); 14–26 years stay annual; pre-2000 vehicles move to annual. Inspection prices are set by each provider. https://vehicleinspection.nzta.govt.nz/news/changes-to-light-vehicle-inspections-from-1-november-2026",
+      {
+        "type": "h2",
+        "text": "Rego"
+      },
+      "Private passenger vehicle, licences starting on or after 1 July 2025: petrol $144.22 for 12 months ($76.44 / 6 months, $42.57 / 3 months); diesel or electric $212.84 for 12 months ($110.76 / $59.72). Includes the online admin fee and GST. https://nzta.govt.nz/vehicles/licensing-rego/vehicle-fees/licensing-fees",
+      {
+        "type": "h2",
+        "text": "RUC"
+      },
+      "Diesel, electric and plug-in hybrid vehicles up to 3500kg must prepay road user charges in 1000km units. RUC type 1 (two axles, up to 3500kg): $76 per 1000km incl. GST, plus an admin fee of $12.44 online or $13.71 at an agent. Petrol vehicles don’t need RUC. Sellers must ensure RUC is current. https://www.nzta.govt.nz/vehicles/road-user-charges/ruc-rates-and-transaction-fees/",
+      {
+        "type": "h2",
+        "text": "Change of ownership"
+      },
+      "Both buyer and seller must tell NZTA. The buyer’s change of registered person (MR13B) is free. Sellers should notify online at the time of sale or risk the buyer’s fines and tolls. https://nzta.govt.nz/vehicles/licensing-rego/vehicle-fees/administration-fees/",
+      {
+        "type": "h2",
+        "text": "Money owing: PPSR"
+      },
+      "Before a private purchase, search the PPSR with the VIN, chassis and plate number. A registered security interest means the car could be repossessed. https://ppsr.companiesoffice.govt.nz/help-centre/information-for-debtors-and-consumers/how-the-ppsr-can-help-when-buying-used-goods/",
+      {
+        "type": "h2",
+        "text": "Dealer vs private seller"
+      },
+      "Registered dealers must comply with the Consumer Guarantees Act and Fair Trading Act and display an accurate Consumer Information Notice (CIN) including any money owing; ‘as is, where is’ can’t remove those obligations. Private sellers need no CIN and are not bound by the CGA/FTA, though misrepresentation may still give you rights. https://www.consumerprotection.govt.nz/help-product-service/cars/finding-the-right-car/buying-car-from-dealer",
+      {
+        "type": "h2",
+        "text": "Checklist"
+      },
+      "Licence validity (note 1 November) → PPSR and history check → CIN for dealer sales → WoF, rego and RUC → independent pre-purchase inspection → both parties notify NZTA → insurance before driving.",
+      {
+        "type": "h2",
+        "text": "Official sources (please verify)"
+      },
+      "https://www.nzta.govt.nz/travelling-on-our-roads/visitors-and-new-residents/driving-on-nz-roads",
+      "https://nzta.govt.nz/vehicles/licensing-rego/vehicle-fees/licensing-fees",
+      "https://www.consumerprotection.govt.nz/help-product-service/cars/before-buying-used-car"
+    ]
+  },
+  {
+    "guideId": "life",
+    "section": "life",
+    "updatedAt": "2026-10-23",
+    "image": "/images/life-feature.png",
+    "slug": "nz-culture-etiquette",
+    "titleZh": "新西兰文化、社交礼仪与注意事项",
+    "titleEn": "NZ culture, social etiquette and things to know",
+    "excerptZh": "毛利文化基础、Kiwi 社交习惯、课堂与职场规矩、户外安全、入境申报、饮酒与邻里。",
+    "excerptEn": "Māori culture basics, Kiwi social norms, class and work, outdoor safety, border declarations, alcohol and neighbours.",
+    "imageAltZh": "新西兰文化与生活",
+    "imageAltEn": "Everyday culture in New Zealand",
+    "bodyZh": [
+      "新西兰整体氛围轻松友好，但有一些「默认规矩」，提前了解能少很多尴尬。以下是一般生活经验与官方信息的整理。",
+      {
+        "type": "image",
+        "src": "/images/life-feature.png",
+        "alt": "新西兰日常",
+        "caption": "友好、随和、守时——是很多人对 Kiwi 的第一印象。"
+      },
+      {
+        "type": "h2",
+        "text": "毛利文化基础"
+      },
+      "Kia ora 是最常用的毛利语问候，可表示你好、谢谢；学校和政府机构常用毛利语和英语双语名称。tikanga（毛利习俗）里，头被视为神圣，不要随意摸别人的头；不要坐在桌子上，因为桌子是放食物的地方。如果受邀参观 marae（毛利会堂），通常会有 pōwhiri 欢迎仪式，跟随主人指引，进入会堂前脱鞋，不确定时就问。每年 2 月 6 日是 Waitangi Day（怀唐伊日），纪念 1840 年签署《怀唐伊条约》，是全国公众假日。来源：https://www.legislation.govt.nz/act/public/1976/0033/4.0/DLM439068.html",
+      {
+        "type": "h2",
+        "text": "Kiwi 社交习惯"
+      },
+      "日常交流很随意，同学、老师、同事多直接叫名字。守时很重要，迟到要提前发消息。聚会写「BYO」意思是自带酒水，「bring a plate」是带一份食物分享，而不是带个空盘子。餐厅一般不要求小费，服务特别好可以给，但不是义务。排队按先后，不插队。闲聊常从天气、周末计划、运动开始。Kiwi 普遍谦虚，不喜欢过度炫耀（常说的「tall poppy syndrome」），自我介绍时实事求是更受欢迎。",
+      {
+        "type": "h2",
+        "text": "课堂与职场"
+      },
+      "课堂鼓励提问和讨论，老师通常希望你叫名字。学术诚信要求非常严格：抄袭、代写、未按规定使用 AI 工具都可能被处分，具体以学校规定为准，不确定时问老师或学习支持中心。职场同样讲究守时和直接沟通，请假、换班要提前说。",
+      {
+        "type": "h2",
+        "text": "户外安全"
+      },
+      "新西兰紫外线强，出门记得防晒、戴帽子和墨镜。海边游泳尽量选有救生员巡逻的区域，在红黄旗之间游；看清天气和潮汐再出海或徒步，出发前把行程告诉别人。Tiaki Promise 的意思是「关爱和保护」新西兰：带走垃圾、尊重自然和文化、安全出行。来源：https://www.airnewzealand.com/en-nz/about/sustainability/tiaki-promise",
+      {
+        "type": "h2",
+        "text": "入境申报：食品一定要报"
+      },
+      "入境时所有人都要填 New Zealand Traveller Declaration（NZTD），所有食品，哪怕很少量的调料、干货、蜂蜜、坚果，都必须申报，或者丢进机场的申报箱。没申报，即使是忘了或不知道规则，也可能被当场处以 NZD$400 罚款（不留犯罪记录）；故意走私最高可罚 NZD$100,000、判 5 年监禁。来源：https://www.mpi.govt.nz/bring-send-to-nz/bringing-and-posting-items-to-nz/what-happens-if-you-fail-to-declare",
+      {
+        "type": "h2",
+        "text": "开车靠左"
+      },
+      "新西兰靠左行驶，驾驶座在右边。海外驾照的使用期限从 2026-11-01 起有变化，详见《在新西兰买二手车与开车》一文。",
+      {
+        "type": "h2",
+        "text": "饮酒规定"
+      },
+      "年满 18 岁才能买酒、进酒吧，店员要求时需出示认可的带照片证件：有效护照、新西兰驾照、Kiwi Access Card 或旧版 18+ Card。很多城市划了公共场所禁酒区，违反地方禁酒令的罚款为 $250。来源：https://www.police.govt.nz/advice/drugs-and-alcohol/alcohol-laws-and-penalties 与 https://resources.alcohol.org.nz/alcohol-management-laws/nz-alcohol-laws/age-the-law",
+      {
+        "type": "h2",
+        "text": "邻里与垃圾分类"
+      },
+      "住宅区晚上注意音量，开派对最好提前告诉邻居。各市垃圾和回收规则不同（哪些塑料可回收、哪天收垃圾），以当地市政府（council）官网为准，奥克兰可查 Auckland Council。",
+      {
+        "type": "h2",
+        "text": "官方来源（请点开核对）"
+      },
+      "https://www.mpi.govt.nz/bring-send-to-nz/bringing-and-posting-items-to-nz/how-to-declare-items-when-arriving-in-nz",
+      "https://www.police.govt.nz/advice/drugs-and-alcohol/alcohol-laws-and-penalties",
+      "https://www.govt.nz/browse/work-and-tax/public-holidays-and-work/dates-for-public-holidays-and-anniversary-days/"
+    ],
+    "bodyEn": [
+      "New Zealand is relaxed and friendly, but a few unwritten rules help. This is general information plus official sources.",
+      {
+        "type": "image",
+        "src": "/images/life-feature.png",
+        "alt": "Everyday NZ",
+        "caption": "Friendly, casual and on time."
+      },
+      {
+        "type": "h2",
+        "text": "Māori culture basics"
+      },
+      "Kia ora is the everyday Māori greeting (hello, thanks). Under tikanga, the head is considered sacred, and you shouldn’t sit on tables because they’re for food. On a marae visit there is usually a pōwhiri welcome; follow your hosts, take shoes off before entering the meeting house and ask if unsure. Waitangi Day, 6 February, marks the 1840 signing of the Treaty of Waitangi and is a national public holiday. https://www.legislation.govt.nz/act/public/1976/0033/4.0/DLM439068.html",
+      {
+        "type": "h2",
+        "text": "Kiwi social norms"
+      },
+      "First names are normal. Be punctual and message if late. ‘BYO’ means bring your own drinks; ‘bring a plate’ means bring food to share. Tipping isn’t expected. Queue in order. Small talk starts with weather, weekends and sport. Modesty is valued (the ‘tall poppy’ idea).",
+      {
+        "type": "h2",
+        "text": "Class and work"
+      },
+      "Questions and discussion are encouraged. Academic integrity rules are strict: plagiarism, contract cheating and unauthorised AI use can lead to penalties—follow your institution’s rules. At work, be on time and give notice for shift changes.",
+      {
+        "type": "h2",
+        "text": "Outdoors"
+      },
+      "UV is strong—use sunscreen, a hat and sunglasses. Swim at patrolled beaches between the red and yellow flags, check weather and tides, and tell someone your plans. The Tiaki Promise means caring for and protecting New Zealand. https://www.airnewzealand.com/en-nz/about/sustainability/tiaki-promise",
+      {
+        "type": "h2",
+        "text": "Declare food at the border"
+      },
+      "Everyone completes a New Zealand Traveller Declaration. Declare all food, even small amounts, or use the amnesty bins. Failing to declare—even by accident—can mean an NZD$400 instant fine (no criminal conviction); deliberate smuggling can mean up to NZD$100,000 and 5 years’ prison. https://www.mpi.govt.nz/bring-send-to-nz/bringing-and-posting-items-to-nz/what-happens-if-you-fail-to-declare",
+      {
+        "type": "h2",
+        "text": "Driving on the left"
+      },
+      "NZ drives on the left. Overseas licence rules change on 1 November 2026—see our used-car and driving article.",
+      {
+        "type": "h2",
+        "text": "Alcohol"
+      },
+      "You must be 18+ to buy alcohol and show approved photo ID if asked: passport, NZ driver licence, Kiwi Access Card or an existing 18+ Card. Breaching a local alcohol ban carries a $250 fine. https://www.police.govt.nz/advice/drugs-and-alcohol/alcohol-laws-and-penalties",
+      {
+        "type": "h2",
+        "text": "Neighbours and recycling"
+      },
+      "Keep noise down at night and warn neighbours before a party. Rubbish and recycling rules differ by council—check your local council website.",
+      {
+        "type": "h2",
+        "text": "Official sources (please verify)"
+      },
+      "https://www.mpi.govt.nz/bring-send-to-nz/bringing-and-posting-items-to-nz/how-to-declare-items-when-arriving-in-nz",
+      "https://www.police.govt.nz/advice/drugs-and-alcohol/alcohol-laws-and-penalties"
     ]
   },
   {
