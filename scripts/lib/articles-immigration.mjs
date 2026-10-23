@@ -20,13 +20,13 @@ const RELATED = [
 
 export function immigrationArticles() {
   return [
+    processing(),
+    scams(),
     postStudy(),
     shortTerm(),
-    smc(),
-    greenList(),
     deadlines(),
-    scams(),
-    processing(),
+    greenList(),
+    smc(),
   ];
 }
 

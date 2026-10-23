@@ -1,6 +1,8 @@
-import { articles } from "./articles";
+import { articles as articleRecords } from "./articles";
+import { ARTICLE_ORDER, sortArticles } from "./articleOrder";
 
-export { articles };
+export { ARTICLE_ORDER };
+export const articles = sortArticles(articleRecords);
 
 export const CONTACT_EMAIL = "yuditawang0925@gmail.com";
 
@@ -122,7 +124,7 @@ export function getArticle(slug) {
 }
 
 export function getArticlesByGuide(guideId) {
-  return articles.filter((article) => article.guideId === guideId);
+  return sortArticles(articles.filter((article) => article.guideId === guideId));
 }
 
 export function getHomeArticles(locale) {

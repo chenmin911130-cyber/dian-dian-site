@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 
 const SECTION_ORDER = [
+  "process",
   "universities",
+  "foundation",
+  "pathways",
   "highschools",
+  "ai",
   "creative",
   "skills",
-  "ai",
-  "foundation",
-  "process",
-  "pathways",
   "career",
   "life",
 ];
