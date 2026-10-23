@@ -8,8 +8,9 @@ import { immigrationArticles } from "./lib/articles-immigration.mjs";
 import { aiArticles } from "./lib/articles-ai.mjs";
 import { foundationArticles } from "./lib/articles-foundation.mjs";
 import { healthArticles } from "./lib/articles-health.mjs";
+import { sortArticles } from "../src/articleOrder.js";
 
-const articles = [
+const articles = sortArticles([
   ...coreArticles(),
   ...universityArticles(),
   ...highSchoolArticles(),
@@ -17,7 +18,7 @@ const articles = [
   ...aiArticles(),
   ...foundationArticles(),
   ...healthArticles(),
-];
+]);
 
 const seen = new Set();
 for (const item of articles) {

@@ -2,6 +2,8 @@ import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { beforeEach } from "vitest";
 import { App } from "./App";
+import { ARTICLE_ORDER } from "./articleOrder";
+import { articles, getArticlesByGuide } from "./content";
 
 beforeEach(() => {
   window.localStorage.clear();
@@ -322,4 +324,43 @@ test("article page sets its own canonical URL and shows a table of contents", as
   expect(document.querySelector('link[rel="canonical"]').href).toBe(
     "https://diandianyudita.com/article/used-car-driving-licence",
   );
+});
+
+it("ranks every article and lists must-know guides first", () => {
+  expect(ARTICLE_ORDER).toEqual([...new Set(ARTICLE_ORDER)]);
+  expect(new Set(ARTICLE_ORDER)).toEqual(
+    new Set(articles.map((article) => article.slug)),
+  );
+  expect(getArticlesByGuide("life").map((article) => article.slug).slice(0, 5)).toEqual([
+    "international-student-gp-guide",
+    "nz-monthly-budget",
+    "renting-guide",
+    "arrival-first-week",
+    "health-insurance-gp",
+  ]);
+  expect(getArticlesByGuide("career").map((article) => article.slug)).toEqual([
+    "seek-trademe-jobs",
+    "ird-work-hours",
+    "nz-cv-cover-letter",
+    "interview-star",
+  ]);
+  expect(getArticlesByGuide("study")[0].slug).toBe("student-visa-basics");
+});
+
+it("shows visa and application must-knows before school deep-dives on the study guide", () => {
+  window.history.replaceState({}, "", "/study");
+  render(<App />);
+  const headings = screen.getAllByRole("heading", { level: 2 }).map((node) => node.textContent);
+  expect(headings.indexOf("申请、签证与预算")).toBeLessThan(headings.indexOf("八所大学"));
+  expect(headings.indexOf("八所大学")).toBeLessThan(headings.indexOf("创意私立路径"));
+});
+
+it("opens the life guide with the GP and budget articles first", () => {
+  window.history.replaceState({}, "", "/life");
+  render(<App />);
+  const lifeLinks = screen.getAllByRole("link").filter((link) =>
+    link.getAttribute("href")?.startsWith("/article/"),
+  );
+  expect(lifeLinks[0]).toHaveAttribute("href", "/article/international-student-gp-guide");
+  expect(lifeLinks[1]).toHaveAttribute("href", "/article/nz-monthly-budget");
 });
