@@ -7,6 +7,7 @@ import { highSchoolArticles } from "./lib/articles-highschools.mjs";
 import { immigrationArticles } from "./lib/articles-immigration.mjs";
 import { aiArticles } from "./lib/articles-ai.mjs";
 import { foundationArticles } from "./lib/articles-foundation.mjs";
+import { healthArticles } from "./lib/articles-health.mjs";
 
 const articles = [
   ...coreArticles(),
@@ -15,6 +16,7 @@ const articles = [
   ...immigrationArticles(),
   ...aiArticles(),
   ...foundationArticles(),
+  ...healthArticles(),
 ];
 
 const seen = new Set();
