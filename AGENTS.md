@@ -8,6 +8,12 @@ When implementing from a selected generated mock, treat that image as the source
 
 Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts/prepare-sites-build.mjs`, and `tests/sites-worker.test.mjs` intact so the same local prototype can be handed to Sites. Before a Sites handoff, run `npm run build` and `npm run test:sites`; the build must leave `dist/client/index.html`, `dist/server/index.js`, and `dist/.openai/hosting.json`.
 
+## Production hosting
+
+- Production is Firebase Hosting on Google Cloud. Project/site `diandianyudita` serves `https://diandianyudita.web.app` and `https://diandianyudita.firebaseapp.com`. Custom domain `diandianyudita.com` (and `www`) already points at Firebase (`199.36.158.100` / CNAME `diandianyudita.web.app`).
+- Do not treat Railway as the live host. Leave `railway.toml` in the repo as a leftover local-serve path; do not add Railway deploy steps or write “already live on Railway” in new PRs.
+- After `npm run build`, the Hosting public directory is `dist/client`. Deploy with `npm run deploy:hosting` (or `npx -y firebase-tools@latest deploy --only hosting`). Consultation form data stays in the browser and is not uploaded to Firebase/Firestore.
+
 ## Approved homepage direction
 
 - Homepage merges template visuals with the deployed information structure: full-viewport Wanaka landscape hero (That Wanaka Tree still, navy overlay, warm-white title, lake-blue pill CTA), then the original three editorial rows (栏目介绍｜图片｜精选文章), then a dark contact panel. Do not add agency extras (why-NZ cards, journey timeline, school logo wall, plan snapshot, stats). Guide, article, consult and 404 pages share the same cinematic shell: landscape background, dark header, and a deep-navy reading/form panel. Keep their existing content structure.

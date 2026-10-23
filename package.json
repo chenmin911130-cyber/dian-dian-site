@@ -8,6 +8,7 @@
     "build": "vite build && node scripts/prepare-sites-build.mjs",
     "preview": "vite preview",
     "start": "serve dist/client -s -l tcp://0.0.0.0:$PORT",
+    "deploy:hosting": "npm run build && npx -y firebase-tools@latest deploy --only hosting",
     "test": "vitest",
     "test:sites": "node --test tests/sites-worker.test.mjs"
   },
