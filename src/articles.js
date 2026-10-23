@@ -6087,7 +6087,7 @@ export const articles = [
     "slug": "international-student-gp-guide",
     "guideId": "life",
     "section": "life",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-24",
     "titleZh": "留学生在新西兰怎么看病：GP 注册、奥克兰诊所清单与保险报销全流程",
     "titleEn": "Seeing a doctor as an international student in New Zealand: GPs, Auckland clinics and insurance claims",
     "excerptZh": "留学生多数不享受公费医疗，只能以自费/保险病人身份在 GP 登记。本文讲清资格、看病渠道、费用、ACC，以及 Studentsafe、Orbit 等保险怎么报销，附奥克兰可接待留学生的诊所。",

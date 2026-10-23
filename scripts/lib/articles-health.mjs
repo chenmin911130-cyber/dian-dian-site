@@ -36,7 +36,8 @@ export function healthArticles() {
 }
 
 function studentGpGuide() {
-  return article({
+  return {
+    ...article({
     slug: "international-student-gp-guide",
     guideId: "life",
     section: "life",
@@ -204,5 +205,7 @@ function studentGpGuide() {
       h2("Disclaimer"),
       "General information only, not medical, legal or insurance advice. Verify with the clinic and your insurer. In an emergency call 111.",
     ],
-  });
+  }),
+    updatedAt: "2026-10-24",
+  };
 }
