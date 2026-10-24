@@ -1,0 +1,283 @@
+{
+  "hosting": {
+    "public": "dist/client",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "Content-Security-Policy",
+            "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob:; media-src 'self'; connect-src 'self'"
+          },
+          {
+            "key": "X-Frame-Options",
+            "value": "DENY"
+          },
+          {
+            "key": "X-Content-Type-Options",
+            "value": "nosniff"
+          },
+          {
+            "key": "Referrer-Policy",
+            "value": "strict-origin-when-cross-origin"
+          }
+        ]
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/study",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/career",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/life",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/consult",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/arrival-first-week",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/auckland-secondary-schools",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/bank-account-setup",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/english-test-guide",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/green-list-residence",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/health-insurance-gp",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/intake-deadlines-scholarships",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/international-student-gp-guide",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/interview-star",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/ird-work-hours",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/massey-ai-business-it",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/nz-ai-masters-overview",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/nz-application-timeline",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/nz-culture-etiquette",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/nz-cv-cover-letter",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/nz-foundation-for-gaokao-students",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/nz-monthly-budget",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/nz-popular-courses-2026",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/nz-study-advice-from-x",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/nz-universities-overview",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/nz-weekend-social-activities",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/offer-acceptance-checklist",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/phone-sim-transport",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/post-study-work-visa",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/renting-guide",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-auckland",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-auckland-grammar",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-aut",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-canterbury",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-diocesan",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-epsom-girls",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-future-skills",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-future-skills-ai",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-kings-college",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-lincoln",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-macleans",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-mags",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-massey",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-nzse",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-nzse-ai",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-otago",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-pinehurst",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-rangitoto",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-st-cuthberts",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-vuw",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-waikato",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-westlake-girls",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-westlake-takapuna",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/school-yoobee",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/seek-trademe-jobs",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/short-term-graduate-work-visa",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/skilled-migrant-category",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/student-visa-basics",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/student-visa-processing",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/supermarket-savings",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/tuition-living-budget",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/used-car-driving-licence",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/article/visa-scams-fake-degrees",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

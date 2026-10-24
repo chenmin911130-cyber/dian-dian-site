@@ -2,6 +2,7 @@
 import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { SECURITY_HEADER_VALUES } from "../worker/security-headers.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dist = path.join(root, "dist");
@@ -37,5 +38,32 @@ for (const file of readdirSync(workerDir)) {
   copyFileSync(path.join(workerDir, file), path.join(dist, "server", file));
 }
 copyFileSync(hosting, path.join(dist, ".openai", "hosting.json"));
+
+const firebaseHeaders = Object.entries(SECURITY_HEADER_VALUES).map(([key, value]) => ({
+  key,
+  value,
+}));
+
+const firebaseRewrites = [
+  "/study",
+  "/career",
+  "/life",
+  "/consult",
+  ...slugs.map((slug) => `/article/${slug}`),
+].map((source) => ({ source, destination: "/index.html" }));
+
+const firebaseConfig = {
+  hosting: {
+    public: "dist/client",
+    ignore: ["firebase.json", "**/.*", "**/node_modules/**"],
+    headers: [{ source: "**", headers: firebaseHeaders }],
+    rewrites: firebaseRewrites,
+  },
+};
+
+writeFileSync(
+  path.join(root, "firebase.json"),
+  `${JSON.stringify(firebaseConfig, null, 2)}\n`,
+);
 
 console.log("Prepared Sites build: dist/server/index.js and dist/.openai/hosting.json");
