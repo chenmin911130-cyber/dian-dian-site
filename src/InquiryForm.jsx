@@ -27,21 +27,19 @@ const EMPLOYMENT_OPTIONS = [
 ];
 
 const INCOME_OPTIONS = [
-  { value: "5000 人民币以下 / under ¥5,000", zh: "5千以下", en: "< ¥5k" },
-  { value: "5000–10000 人民币", zh: "5千–1万", en: "¥5–10k" },
-  { value: "10000–20000 人民币", zh: "1万–2万", en: "¥10–20k" },
-  { value: "20000–35000 人民币", zh: "2万–3.5万", en: "¥20–35k" },
-  { value: "35000 人民币以上", zh: "3.5万以上", en: "> ¥35k" },
-  { value: "不便透露", zh: "不便透露", en: "Prefer not to say" },
+  { value: "10万以下", zh: "10万以下", en: "Under ¥100k" },
+  { value: "10-20万", zh: "10-20万", en: "¥100k–200k" },
+  { value: "20-50万", zh: "20-50万", en: "¥200k–500k" },
+  { value: "50-100万", zh: "50-100万", en: "¥500k–1M" },
+  { value: "100万以上", zh: "100万以上", en: "Over ¥1M" },
 ];
 
 const SAVINGS_OPTIONS = [
-  { value: "NZ$10,000 以下 / under NZ$10k", zh: "1万纽币以下", en: "< NZ$10k" },
-  { value: "NZ$10,000–30,000", zh: "1–3万纽币", en: "NZ$10–30k" },
-  { value: "NZ$30,000–60,000", zh: "3–6万纽币", en: "NZ$30–60k" },
-  { value: "NZ$60,000–100,000", zh: "6–10万纽币", en: "NZ$60–100k" },
-  { value: "NZ$100,000 以上", zh: "10万纽币以上", en: "> NZ$100k" },
-  { value: "不便透露", zh: "不便透露", en: "Prefer not to say" },
+  { value: "10万以下", zh: "10万以下", en: "Under ¥100k" },
+  { value: "10-30万", zh: "10-30万", en: "¥100k–300k" },
+  { value: "30-50万", zh: "30-50万", en: "¥300k–500k" },
+  { value: "50-100万", zh: "50-100万", en: "¥500k–1M" },
+  { value: "100万以上", zh: "100万以上", en: "Over ¥1M" },
 ];
 
 const MAJOR_OPTIONS = [

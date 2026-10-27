@@ -266,7 +266,8 @@ it("loads the standalone inquiry form at /ask with chip groups and contact field
   expect(screen.getByRole("radio", { name: "本科" })).toBeInTheDocument();
   expect(screen.getByRole("radio", { name: "在职" })).toBeInTheDocument();
   expect(screen.getByLabelText("邮箱 *")).toBeInTheDocument();
-  expect(screen.getByText("存款（纽币）*")).toBeInTheDocument();
+  expect(screen.getByText("存款（人民币）*")).toBeInTheDocument();
+  expect(screen.getByText("年收入（人民币）*")).toBeInTheDocument();
   expect(screen.getByLabelText("具体做什么工作")).toBeInTheDocument();
   expect(screen.getByRole("radio", { name: "博士" })).toBeInTheDocument();
   expect(screen.queryByLabelText("手机号 *")).not.toBeInTheDocument();

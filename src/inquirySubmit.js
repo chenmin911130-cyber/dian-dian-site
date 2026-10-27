@@ -88,7 +88,20 @@ export function checkInquirySpamGuards({
 }
 
 function formatInquirySubmittedAt(date) {
-  return `${date.toISOString().replace("T", " ").replace(/\.\d{3}Z$/, "")} UTC`;
+  const parts = Object.fromEntries(
+    new Intl.DateTimeFormat("en-CA", {
+      timeZone: "Pacific/Auckland",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+    })
+      .formatToParts(date)
+      .map((part) => [part.type, part.value]),
+  );
+  return `${parts.year}-${parts.month}-${parts.day} ${parts.hour}:${parts.minute}（新西兰时间）`;
 }
 
 function inquiryMessageLine(label, value) {
