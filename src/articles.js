@@ -47,12 +47,12 @@ export const articles = [
       "奥塔哥大学（University of Otago）——但尼丁，另有基督城、惠灵顿健康科学校区。医学、牙科、药学、人文与海洋科学常被讨论。QS 2026：全球并列第 197（校方 2025-06-19 新闻）。学费按 paper 计。官网 https://www.otago.ac.nz/",
       {
         "type": "image",
-        "src": "/images/campus/ai-lecture.webp",
+        "src": "/images/article/lecture-auckland.jpg",
         "alt": "大学课堂",
-        "caption": "课堂示意（摄于赫尔辛基理工大学，不是新西兰校园）。八大是研究型大学，和私立技能学院不是同一条赛道——先锁定学历级别和专业。",
+        "caption": "奥克兰大学钟楼一带校园实景（研究型大学课堂与私立技能学院不是同一条赛道）。",
         "credit": {
-          "text": "图片：Tungsten · Public domain",
-          "href": "https://commons.wikimedia.org/wiki/File:Mathematics_lecture_at_the_Helsinki_University_of_Technology.jpg"
+          "text": "图片：Uhooep · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Clock_Tower%2C_University_of_Auckland.jpg"
         }
       },
       {
@@ -122,12 +122,12 @@ export const articles = [
       "University of Otago—Dunedin, with health-science campuses in Christchurch and Wellington. Medicine, dentistry, pharmacy, humanities and marine science are often discussed. QS 2026: =197 (Otago news, 19 June 2025). Fees are charged per paper. https://www.otago.ac.nz/",
       {
         "type": "image",
-        "src": "/images/campus/ai-lecture.webp",
+        "src": "/images/article/lecture-auckland.jpg",
         "alt": "University classroom",
-        "caption": "Generic lecture photo (Helsinki University of Technology, not a New Zealand campus). The eight universities are a different track from private skills colleges.",
+        "caption": "University of Auckland campus (research universities are a different track from private skills colleges).",
         "credit": {
-          "text": "Photo: Tungsten · Public domain",
-          "href": "https://commons.wikimedia.org/wiki/File:Mathematics_lecture_at_the_Helsinki_University_of_Technology.jpg"
+          "text": "Photo: Uhooep · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Clock_Tower%2C_University_of_Auckland.jpg"
         }
       },
       {
@@ -191,7 +191,7 @@ export const articles = [
     "titleEn": "Yoobee: animation, design and software pathways",
     "excerptZh": "创意与数字方向的私立学院：2026 年学费约数、校区与作品集导向怎么判断。",
     "excerptEn": "A creative/digital private college: 2026 fee ranges, campuses and who a portfolio path suits.",
-    "image": "/images/study-feature.png",
+    "image": "/images/article/lecture-auckland.jpg",
     "imageAltZh": "Yoobee 创意与数字课程",
     "imageAltEn": "Yoobee creative and digital programmes",
     "website": "https://yoobee.ac.nz/",
@@ -282,7 +282,15 @@ export const articles = [
       },
       "https://yoobee.ac.nz/",
       "Student funds: https://www.immigration.govt.nz/process-to-apply/applying-for-a-visa/providing-evidence-and-documents-to-support-your-visa-application/student-fund-requirements/"
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：Uhooep · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Clock_Tower%2C_University_of_Auckland.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Uhooep · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Clock_Tower%2C_University_of_Auckland.jpg"
+    }
   },
   {
     "slug": "school-nzse",
@@ -293,7 +301,7 @@ export const articles = [
     "titleEn": "NZSE / NZSEG: skills programmes, campuses and fees",
     "excerptZh": "IT、商务、数据分析与教学类路径；认准 NZSEG，别被 NESEG 误导。",
     "excerptEn": "IT, business, analytics and teaching paths—confirm NZSEG, not “NESEG”.",
-    "image": "/images/study-feature.png",
+    "image": "/images/article/lecture-auckland.jpg",
     "imageAltZh": "NZSE 技能与教育学院",
     "imageAltEn": "NZSE skills and education college",
     "website": "https://nzse.ac.nz/",
@@ -391,7 +399,15 @@ export const articles = [
       "https://nzse.ac.nz/",
       "https://nzseg.com/",
       "https://www.immigration.govt.nz/process-to-apply/applying-for-a-visa/providing-evidence-and-documents-to-support-your-visa-application/student-fund-requirements/"
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：Uhooep · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Clock_Tower%2C_University_of_Auckland.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Uhooep · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Clock_Tower%2C_University_of_Auckland.jpg"
+    }
   },
   {
     "slug": "school-future-skills",
@@ -402,7 +418,7 @@ export const articles = [
     "titleEn": "Future Skills: applied management, fees and scholarships",
     "excerptZh": "Queen Street 国际校区：2026 年本科/研文/硕士标价与 Jubilee 奖学金净价。",
     "excerptEn": "Queen Street campus: 2026 bachelor/PGDip/master’s list prices versus Jubilee scholarship net fees.",
-    "image": "/images/study-feature.png",
+    "image": "/images/article/lecture-canterbury.jpg",
     "imageAltZh": "Future Skills 奥克兰国际校区",
     "imageAltEn": "Future Skills Auckland international campus",
     "website": "https://www.futureskills.co.nz/",
@@ -435,9 +451,13 @@ export const articles = [
       "以上费用为约数，核对日期 2026-10-21。学年、专业、奖学金与汇率都会变，报名前请以学校官网当季学费表和 Offer 为准。来源：futureskills.co.nz 2026 International Prospectus 与 Scholarships 页。",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/offer-envelope.jpg",
         "alt": "学费与 Offer 文件",
-        "caption": "最终以 Offer 与发票为准。"
+        "caption": "最终以 Offer 与发票为准。",
+        "credit": {
+          "text": "图片：Karolina Grabowska · Pexels License",
+          "href": "https://www.pexels.com/photo/person-holding-white-envelope-7688336/"
+        }
       },
       {
         "type": "h2",
@@ -476,9 +496,13 @@ export const articles = [
       "Fee figures are approximate as of 2026-10-21. They change by year, programme and scholarship—verify on the official site and your offer letter. Sources: Future Skills 2026 International Prospectus and Scholarships page.",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/offer-envelope.jpg",
         "alt": "Offer and fee documents",
-        "caption": "Verbal “scholarship prices” are not the source of truth."
+        "caption": "Verbal “scholarship prices” are not the source of truth.",
+        "credit": {
+          "text": "Photo: Karolina Grabowska · Pexels License",
+          "href": "https://www.pexels.com/photo/person-holding-white-envelope-7688336/"
+        }
       },
       {
         "type": "h2",
@@ -492,7 +516,15 @@ export const articles = [
       "https://www.futureskills.co.nz/",
       "https://www.futureskills.co.nz/international/international-scholarships/",
       "https://www.immigration.govt.nz/process-to-apply/applying-for-a-visa/providing-evidence-and-documents-to-support-your-visa-application/student-fund-requirements/"
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：Schwede66 · CC BY-SA 3.0",
+      "href": "https://commons.wikimedia.org/wiki/File:James_Hight_Building_003.JPG"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Schwede66 · CC BY-SA 3.0",
+      "href": "https://commons.wikimedia.org/wiki/File:James_Hight_Building_003.JPG"
+    }
   },
   {
     "slug": "nz-application-timeline",
@@ -503,16 +535,20 @@ export const articles = [
     "titleEn": "A New Zealand university application timeline (2026–2027)",
     "excerptZh": "从定专业到 Offer、Immigration Online 递签，按月份倒推；附 2027 年部分校方截止日。",
     "excerptEn": "Work backwards from intake through offers and Immigration Online, with some published 2027 dates.",
-    "image": "/images/study-feature.png",
+    "image": "/images/article/calendar-planning.jpg",
     "imageAltZh": "新西兰大学申请规划",
     "imageAltEn": "Planning a New Zealand university application",
     "bodyZh": [
       "申请不是从填表开始，而是从开学季倒推。新西兰大学最常见的是 2 月 Semester 1 与 7 月 Semester 2；医学、教育、部分健康科学截止更早。移民局建议学生签证至少提前 3 个月递交，并提醒 11 月至 3 月是高峰。系统名称是 Immigration Online（学生签证已于 2025-08-18 迁入增强版）。",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/calendar-planning.jpg",
         "alt": "申请文件与时间规划",
-        "caption": "先锁定开学季，再倒推语言考试、网申、押金与签证。"
+        "caption": "先锁定开学季，再倒推语言考试、网申、押金与签证。",
+        "credit": {
+          "text": "图片：Pearson Scott Foresman · Public domain",
+          "href": "https://commons.wikimedia.org/wiki/File:Calendar_(PSF).jpg"
+        }
       },
       {
         "type": "h2",
@@ -561,9 +597,13 @@ export const articles = [
       "Start with a calendar, not a form. February and July are the main university intakes; medicine, teaching and some health programmes close earlier. Immigration NZ recommends applying for a student visa at least three months ahead and notes high volumes from November to March. The system is Immigration Online (enhanced student forms from 18 August 2025).",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/calendar-planning.jpg",
         "alt": "Application planning",
-        "caption": "Lock the intake, then work backwards through tests, applications, deposits and the visa."
+        "caption": "Lock the intake, then work backwards through tests, applications, deposits and the visa.",
+        "credit": {
+          "text": "Photo: Pearson Scott Foresman · Public domain",
+          "href": "https://commons.wikimedia.org/wiki/File:Calendar_(PSF).jpg"
+        }
       },
       {
         "type": "h2",
@@ -603,7 +643,15 @@ export const articles = [
       "https://www.immigration.govt.nz/study/study-visas/visas-for-studying-in-new-zealand/",
       "https://www.immigration.govt.nz/process-to-apply/applying-for-a-visa/applying-online/how-to-apply-for-a-visa-online/",
       "https://www.immigration.govt.nz/about-us/news-centre/student-visas/"
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：Pearson Scott Foresman · Public domain",
+      "href": "https://commons.wikimedia.org/wiki/File:Calendar_(PSF).jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Pearson Scott Foresman · Public domain",
+      "href": "https://commons.wikimedia.org/wiki/File:Calendar_(PSF).jpg"
+    }
   },
   {
     "slug": "student-visa-basics",
@@ -614,16 +662,20 @@ export const articles = [
     "titleEn": "Student visas: documents, funds and Immigration Online",
     "excerptZh": "按移民局清单准备护照、录取、每年 NZD 20,000/17,000 生活费证明，并在 Immigration Online 提交。",
     "excerptEn": "Follow INZ: passport, offer, NZD 20,000/17,000 living-funds evidence, and lodge in Immigration Online.",
-    "image": "/images/study-feature.png",
+    "image": "/images/article/visa-airport.jpg",
     "imageAltZh": "学生签证材料",
     "imageAltEn": "Student visa documents",
     "bodyZh": [
       "新西兰学生签证以 Immigration New Zealand 当前要求为准，不构成持牌移民法律建议。核心通常包括：有效护照、被认可教育机构的录取（Offer of place）、有能力支付学费、足够生活费或合格担保、健康与品行、真实的学习意图。请用官网核对，不要凭经验或中介口头摘要。",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/visa-documents.jpg",
         "alt": "签证材料桌面",
-        "caption": "材料一次交齐，比等补件更稳。"
+        "caption": "材料一次交齐，比等补件更稳。",
+        "credit": {
+          "text": "图片：Pexels · Pexels License",
+          "href": "https://www.pexels.com/photo/blue-passport-on-top-of-white-paper-4484078/"
+        }
       },
       {
         "type": "h2",
@@ -654,9 +706,13 @@ export const articles = [
       "收到 Conditional Offer 先分清语言、成绩单原件、押金等条件。保险需符合学校注册要求。任何协助你填表或拿 Offer 的人都必须在申请里申报。",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/flat-share.jpg",
         "alt": "稳定的学习与生活安排",
-        "caption": "住宿与行程说明要合理，短租可以先写进计划。"
+        "caption": "住宿与行程说明要合理，短租可以先写进计划。",
+        "credit": {
+          "text": "图片：Quang Nguyen Vinh · Pexels License",
+          "href": "https://www.pexels.com/photo/modern-living-room-1571460/"
+        }
       },
       {
         "type": "h2",
@@ -671,9 +727,13 @@ export const articles = [
       "Follow Immigration New Zealand’s current student-visa rules. This is general information, not licensed immigration advice. Typical pillars: a valid passport, an offer from an approved provider, ability to pay tuition, enough living funds or an acceptable sponsor, health and character, and a genuine intention to study.",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/visa-documents.jpg",
         "alt": "Visa documents",
-        "caption": "A complete first upload beats a long RFI chain."
+        "caption": "A complete first upload beats a long RFI chain.",
+        "credit": {
+          "text": "Photo: Pexels · Pexels License",
+          "href": "https://www.pexels.com/photo/blue-passport-on-top-of-white-paper-4484078/"
+        }
       },
       {
         "type": "h2",
@@ -703,9 +763,13 @@ export const articles = [
       "INZ looks at whether the programme matches your history, whether funds make sense, and whether your plans are credible. In July–September 2026 (start of FY 2026/27), INZ recorded 23,019 student-visa approvals and 7,558 declines out of 30,577 decisions (report prepared 8 October 2026). Apply early and lodge a complete file.",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/flat-share.jpg",
         "alt": "A credible living plan",
-        "caption": "A short stay is fine if you explain it."
+        "caption": "A short stay is fine if you explain it.",
+        "credit": {
+          "text": "Photo: Quang Nguyen Vinh · Pexels License",
+          "href": "https://www.pexels.com/photo/modern-living-room-1571460/"
+        }
       },
       {
         "type": "h2",
@@ -715,7 +779,15 @@ export const articles = [
       "https://www.immigration.govt.nz/process-to-apply/applying-for-a-visa/applying-online/how-to-apply-for-a-visa-online/",
       "https://www.immigration.govt.nz/study/study-visas/visas-for-studying-in-new-zealand/",
       "https://www.immigration.govt.nz/study/once-you-have-a-student-visa/working-on-a-student-visa/"
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：JESHOOTS.com · Pexels License",
+      "href": "https://www.pexels.com/photo/people-walking-inside-airport-912050/"
+    },
+    "imageCreditEn": {
+      "text": "Photo: JESHOOTS.com · Pexels License",
+      "href": "https://www.pexels.com/photo/people-walking-inside-airport-912050/"
+    }
   },
   {
     "slug": "english-test-guide",
@@ -726,7 +798,7 @@ export const articles = [
     "titleEn": "IELTS and PTE: scores that actually meet university and school rules",
     "excerptZh": "先查课程或中学国际部英语要求，再选考试；总分和小分都要看。",
     "excerptEn": "Check the exact university or school page first—overall and skill scores both matter.",
-    "image": "/images/study-feature.png",
+    "image": "/images/article/ielts-study.jpg",
     "imageAltZh": "语言考试与大学课堂",
     "imageAltEn": "Language testing and university study",
     "bodyZh": [
@@ -760,9 +832,13 @@ export const articles = [
       "硕士/荣誉学位与本科的小分要求可能不同；同一大学不同学院也不一样。把目标课的总分 + 听说读写抄进备考表。考试当天只带官方要求的证件，规则以雅思/PTE 官网为准。",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/ielts-study.jpg",
         "alt": "成绩与申请并行",
-        "caption": "语言成绩出来后立刻推进网申，别空等下一个开学季。"
+        "caption": "语言成绩出来后立刻推进网申，别空等下一个开学季。",
+        "credit": {
+          "text": "图片：Stux · Pexels License",
+          "href": "https://www.pexels.com/photo/person-writing-on-notebook-256520/"
+        }
       },
       {
         "type": "h2",
@@ -797,9 +873,13 @@ export const articles = [
       "Mock-test first. If you miss by 0.5, check a pathway or the next intake before you burn the visa window. Run transcript work in parallel. INZ has flagged altered IELTS documents—verify scores through the official channel and keep the receipt.",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/ielts-study.jpg",
         "alt": "Scores and applications together",
-        "caption": "Push the application as soon as results land."
+        "caption": "Push the application as soon as results land.",
+        "credit": {
+          "text": "Photo: Stux · Pexels License",
+          "href": "https://www.pexels.com/photo/person-writing-on-notebook-256520/"
+        }
       },
       {
         "type": "h2",
@@ -808,7 +888,15 @@ export const articles = [
       "https://www.universitiesnz.ac.nz/international-students/am-i-eligible",
       "https://www.ielts.org/",
       "https://www.pearsonpte.com/"
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：Stux · Pexels License",
+      "href": "https://www.pexels.com/photo/person-writing-on-notebook-256520/"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Stux · Pexels License",
+      "href": "https://www.pexels.com/photo/person-writing-on-notebook-256520/"
+    }
   },
   {
     "slug": "offer-acceptance-checklist",
@@ -819,16 +907,20 @@ export const articles = [
     "titleEn": "Got an offer? Next-step checklist",
     "excerptZh": "分清条件、缴费、接受 Offer、在 Immigration Online 递签与安排住宿。",
     "excerptEn": "Conditions, fees, acceptance, Immigration Online and housing—move in order.",
-    "image": "/images/study-feature.png",
+    "image": "/images/article/offer-envelope.jpg",
     "imageAltZh": "Offer 与缴费文件",
     "imageAltEn": "Offer and payment papers",
     "bodyZh": [
       "先把 Offer 读完并下载 PDF：课程全名与 NZQCF 级别、上课校区、开学日、学费与计价方式（按年 / 按 120 学分 / 按 paper）、条件（语言、成绩单、押金截止日期）。截图存档。",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/offer-envelope.jpg",
         "alt": "Offer 与缴费文件",
-        "caption": "条件没完成就递签，容易反复补件。"
+        "caption": "条件没完成就递签，容易反复补件。",
+        "credit": {
+          "text": "图片：Karolina Grabowska · Pexels License",
+          "href": "https://www.pexels.com/photo/person-holding-white-envelope-7688336/"
+        }
       },
       {
         "type": "h2",
@@ -861,9 +953,13 @@ export const articles = [
       "Read the offer fully and save the PDF: programme name and NZQCF level, campus, start date, fee structure, and every condition with its deadline.",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/offer-envelope.jpg",
         "alt": "Offer and payment papers",
-        "caption": "Do not lodge the visa while core conditions are still open."
+        "caption": "Do not lodge the visa while core conditions are still open.",
+        "credit": {
+          "text": "Photo: Karolina Grabowska · Pexels License",
+          "href": "https://www.pexels.com/photo/person-holding-white-envelope-7688336/"
+        }
       },
       {
         "type": "h2",
@@ -886,7 +982,15 @@ export const articles = [
         "alt": "Pre-arrival plans",
         "caption": "Buy inflexible flights only after the visa and first address are clearer."
       }
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：Karolina Grabowska · Pexels License",
+      "href": "https://www.pexels.com/photo/person-holding-white-envelope-7688336/"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Karolina Grabowska · Pexels License",
+      "href": "https://www.pexels.com/photo/person-holding-white-envelope-7688336/"
+    }
   },
   {
     "slug": "tuition-living-budget",
@@ -897,7 +1001,7 @@ export const articles = [
     "titleEn": "Tuition and living costs: a first-year cash budget",
     "excerptZh": "把学费、学生服务费、房租、保险与签证生活费证明分开算；奥克兰与其他城市差很多。",
     "excerptEn": "Split tuition, levy, rent, insurance and visa living-funds—Auckland is not Dunedin.",
-    "image": "/images/study-feature.png",
+    "image": "/images/article/tuition-invoice.jpg",
     "imageAltZh": "留学年度预算",
     "imageAltEn": "A yearly study budget",
     "bodyZh": [
@@ -927,9 +1031,13 @@ export const articles = [
       "用《留学生一个月生活费怎么算》的月度区间 × 在读月数，加上学费、学生服务费、保险、机票与押金。汇率按略保守估算折人民币。独居或 CBD studio 先把房租上调一档。",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/city-auckland.jpg",
         "alt": "房租占比",
-        "caption": "合租能显著降低月度总成本；中学路径则把寄宿家庭整年周数算进去。"
+        "caption": "合租能显著降低月度总成本；中学路径则把寄宿家庭整年周数算进去。",
+        "credit": {
+          "text": "图片：Paora · CC0",
+          "href": "https://commons.wikimedia.org/wiki/File:Queen_Street%2C_Auckland_PA01.jpg"
+        }
       },
       {
         "type": "h2",
@@ -959,9 +1067,13 @@ export const articles = [
       "Auckland shared rooms often about NZ$220–350 a week; Dunedin, Hamilton, Lincoln and Christchurch are often cheaper. School homestays commonly publish about NZ$380–440 a week plus placement and holiday holding fees. Do not treat 25-hour work rights as guaranteed income.",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/city-auckland.jpg",
         "alt": "Rent share",
-        "caption": "Flatting (or a full year of homestay weeks) belongs on the same sheet as tuition."
+        "caption": "Flatting (or a full year of homestay weeks) belongs on the same sheet as tuition.",
+        "credit": {
+          "text": "Photo: Paora · CC0",
+          "href": "https://commons.wikimedia.org/wiki/File:Queen_Street%2C_Auckland_PA01.jpg"
+        }
       },
       {
         "type": "h2",
@@ -969,7 +1081,15 @@ export const articles = [
       },
       "https://www.immigration.govt.nz/process-to-apply/applying-for-a-visa/providing-evidence-and-documents-to-support-your-visa-application/student-fund-requirements/",
       "https://www.immigration.govt.nz/study/once-you-have-a-student-visa/working-on-a-student-visa/"
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：Karolina Grabowska · Pexels License",
+      "href": "https://www.pexels.com/photo/person-holding-white-paper-6863332/"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Karolina Grabowska · Pexels License",
+      "href": "https://www.pexels.com/photo/person-holding-white-paper-6863332/"
+    }
   },
   {
     "slug": "seek-trademe-jobs",
@@ -980,7 +1100,7 @@ export const articles = [
     "titleEn": "Finding work on Seek and Trade Me: from profile to first shift",
     "excerptZh": "两个平台怎么搜、简历怎么投、学生签证每周最多 25 小时怎么排班。",
     "excerptEn": "How to search both platforms, apply locally, and roster within the 25-hour student limit.",
-    "image": "/images/career-feature.png",
+    "image": "/images/article/job-hunt.jpg",
     "imageAltZh": "在新西兰找工作",
     "imageAltEn": "Job hunting in New Zealand",
     "bodyZh": [
@@ -1077,7 +1197,15 @@ export const articles = [
       "https://www.seek.co.nz/",
       "https://www.trademe.co.nz/a/jobs",
       "https://www.immigration.govt.nz/study/once-you-have-a-student-visa/working-on-a-student-visa/"
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：fauxels · Pexels License",
+      "href": "https://www.pexels.com/photo/people-sitting-on-chairs-3184465/"
+    },
+    "imageCreditEn": {
+      "text": "Photo: fauxels · Pexels License",
+      "href": "https://www.pexels.com/photo/people-sitting-on-chairs-3184465/"
+    }
   },
   {
     "slug": "nz-cv-cover-letter",
@@ -1088,7 +1216,7 @@ export const articles = [
     "titleEn": "How to write an NZ CV and cover letter",
     "excerptZh": "一页英文简历、结果导向、关键词对齐职位——比华丽模板更重要。",
     "excerptEn": "One English page, outcomes and keyword fit beat a decorative template.",
-    "image": "/images/career-feature.png",
+    "image": "/images/article/job-hunt.jpg",
     "imageAltZh": "新西兰求职简历",
     "imageAltEn": "A New Zealand job CV",
     "bodyZh": [
@@ -1165,7 +1293,15 @@ export const articles = [
         "alt": "Skills and projects",
         "caption": "Portfolio links belong at the top only if they work."
       }
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：fauxels · Pexels License",
+      "href": "https://www.pexels.com/photo/people-sitting-on-chairs-3184465/"
+    },
+    "imageCreditEn": {
+      "text": "Photo: fauxels · Pexels License",
+      "href": "https://www.pexels.com/photo/people-sitting-on-chairs-3184465/"
+    }
   },
   {
     "slug": "interview-star",
@@ -1176,7 +1312,7 @@ export const articles = [
     "titleEn": "NZ interviews: tell your story with STAR",
     "excerptZh": "行为面试常见。准备两个真实例子，并先想好怎么说明学生工时。",
     "excerptEn": "Behavioural interviews are common—two real examples plus a clear hours story.",
-    "image": "/images/career-feature.png",
+    "image": "/images/article/job-hunt.jpg",
     "imageAltZh": "面试准备",
     "imageAltEn": "Interview preparation",
     "bodyZh": [
@@ -1250,7 +1386,15 @@ export const articles = [
         "alt": "Getting to the interview",
         "caption": "Buffer for rain delays."
       }
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：fauxels · Pexels License",
+      "href": "https://www.pexels.com/photo/people-sitting-on-chairs-3184465/"
+    },
+    "imageCreditEn": {
+      "text": "Photo: fauxels · Pexels License",
+      "href": "https://www.pexels.com/photo/people-sitting-on-chairs-3184465/"
+    }
   },
   {
     "slug": "ird-work-hours",
@@ -1261,16 +1405,20 @@ export const articles = [
     "titleEn": "IRD numbers and the 25-hour student work limit",
     "excerptZh": "先核对签证条件，再申请 IRD；从 2025 年 11 月 3 日起符合条件者学期中最多 25 小时。",
     "excerptEn": "Check visa conditions, then get an IRD number. Eligible students may work 25 hours a week from 3 November 2025.",
-    "image": "/images/career-feature.png",
+    "image": "/images/article/payslip-tax.jpg",
     "imageAltZh": "税务与学生工时",
     "imageAltEn": "Tax and student work hours",
     "bodyZh": [
       "能不能打工、每周几小时，只看你的签证条件与 Immigration New Zealand，不看雇主口头承诺。发薪与报税需要 IRD 号码（Inland Revenue）。本站不提供税务或移民法律意见，以下为官方公开信息的整理。",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/tax-form.jpg",
         "alt": "签证条件与税务",
-        "caption": "eVisa 或签证信上的 work conditions 才是依据。"
+        "caption": "eVisa 或签证信上的 work conditions 才是依据。",
+        "credit": {
+          "text": "图片：Karolina Grabowska · Pexels License",
+          "href": "https://www.pexels.com/photo/person-writing-on-white-paper-6864961/"
+        }
       },
       {
         "type": "h2",
@@ -1305,9 +1453,13 @@ export const articles = [
       "用日历记录每周工时，把课程、通勤和休息算进去。开学季主动和雇主减班。保留工资单至少一个财年。不确定条款时查移民局或持牌顾问——多上一小时的代价可能是签证。",
       {
         "type": "image",
-        "src": "/images/article-job-search.png",
+        "src": "/images/article/payslip-tax.jpg",
         "alt": "边读边工",
-        "caption": "第一份工重点是准时与沟通，本地推荐比短期高薪更值钱。"
+        "caption": "第一份工重点是准时与沟通，本地推荐比短期高薪更值钱。",
+        "credit": {
+          "text": "图片：Lukas · Pexels License",
+          "href": "https://www.pexels.com/photo/person-holding-white-paper-4386321/"
+        }
       },
       {
         "type": "h2",
@@ -1323,9 +1475,13 @@ export const articles = [
       "Work rights come from your visa conditions and Immigration NZ, not from a manager’s verbal yes. Payroll needs an IRD number from Inland Revenue. This is general information, not tax or immigration advice.",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/tax-form.jpg",
         "alt": "Visa conditions and tax",
-        "caption": "The work conditions on your eVisa or visa letter control."
+        "caption": "The work conditions on your eVisa or visa letter control.",
+        "credit": {
+          "text": "Photo: Karolina Grabowska · Pexels License",
+          "href": "https://www.pexels.com/photo/person-writing-on-white-paper-6864961/"
+        }
       },
       {
         "type": "h2",
@@ -1355,9 +1511,13 @@ export const articles = [
       "Log weekly hours. Ask to drop shifts in heavy study weeks. Keep payslips. If unsure, read INZ or talk to a licensed adviser.",
       {
         "type": "image",
-        "src": "/images/article-job-search.png",
+        "src": "/images/article/payslip-tax.jpg",
         "alt": "Study and work",
-        "caption": "Reliability and a local reference beat a short burst of high hours."
+        "caption": "Reliability and a local reference beat a short burst of high hours.",
+        "credit": {
+          "text": "Photo: Lukas · Pexels License",
+          "href": "https://www.pexels.com/photo/person-holding-white-paper-4386321/"
+        }
       },
       {
         "type": "h2",
@@ -1368,7 +1528,15 @@ export const articles = [
       "https://www.ird.govt.nz/",
       "https://www.ird.govt.nz/en/managing-my-tax/ird-numbers/ird-numbers-for-individuals/new-arrival-to-new-zealand---ird-number-application",
       "https://www.employment.govt.nz/news-and-updates/minimum-wage-is-increasing-on-1-april-2026"
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：Lukas · Pexels License",
+      "href": "https://www.pexels.com/photo/person-holding-white-paper-4386321/"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Lukas · Pexels License",
+      "href": "https://www.pexels.com/photo/person-holding-white-paper-4386321/"
+    }
   },
   {
     "slug": "nz-monthly-budget",
@@ -1379,7 +1547,7 @@ export const articles = [
     "titleEn": "A practical one-month NZ living budget",
     "excerptZh": "房租、饮食、交通手机水电网——给奥克兰与其他城市各算一笔约数（核对 2026-10）。",
     "excerptEn": "Rent, food, transport, phone and bills—sample Auckland and cheaper-city totals, checked October 2026.",
-    "image": "/images/life-feature.png",
+    "image": "/images/article/supermarket-shelves.jpg",
     "imageAltZh": "留学生月度生活费",
     "imageAltEn": "A monthly student living budget",
     "bodyZh": [
@@ -1413,9 +1581,13 @@ export const articles = [
       "签证生活费门槛（高校每年 NZD 20,000，约合每月 NZD 1,667）是移民局要求，不是推荐生活方式。奥克兰真实开销经常高于这个月均数，请按「门槛 + 城市溢价 + 应急」备款。",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/flat-share.jpg",
         "alt": "合租是控成本关键",
-        "caption": "月度生活费 × 在读月数，再加上学费与保险，才是第一年现金需求。"
+        "caption": "月度生活费 × 在读月数，再加上学费与保险，才是第一年现金需求。",
+        "credit": {
+          "text": "图片：Quang Nguyen Vinh · Pexels License",
+          "href": "https://www.pexels.com/photo/modern-living-room-1571460/"
+        }
       }
     ],
     "bodyEn": [
@@ -1448,11 +1620,23 @@ export const articles = [
       "Auckland shared, cooking at home: thrifty about NZ$1,600–1,900; mid about NZ$2,000–2,400. The visa tertiary living-funds figure (NZD 20,000/year) is a threshold, not a recommended lifestyle—Auckland often costs more.",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/flat-share.jpg",
         "alt": "Flatting controls cost",
-        "caption": "Monthly living × study months + tuition + insurance = cash to prepare."
+        "caption": "Monthly living × study months + tuition + insurance = cash to prepare.",
+        "credit": {
+          "text": "Photo: Quang Nguyen Vinh · Pexels License",
+          "href": "https://www.pexels.com/photo/modern-living-room-1571460/"
+        }
       }
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：Mike · Pexels License",
+      "href": "https://www.pexels.com/photo/assorted-fruits-and-vegetables-on-display-264636/"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Mike · Pexels License",
+      "href": "https://www.pexels.com/photo/assorted-fruits-and-vegetables-on-display-264636/"
+    }
   },
   {
     "slug": "renting-guide",
@@ -1463,16 +1647,20 @@ export const articles = [
     "titleEn": "Renting in NZ: Trade Me, flatting and the bond",
     "excerptZh": "看房要快、材料备齐；押金收据、租约与 Tenancy Services 是底线。",
     "excerptEn": "Move fast with documents ready; the bond receipt, tenancy agreement and Tenancy Services are the baseline.",
-    "image": "/images/life-feature.png",
+    "image": "/images/article/rental-viewing.jpg",
     "imageAltZh": "新西兰学生租房",
     "imageAltEn": "Student renting in New Zealand",
     "bodyZh": [
       "整租与独立房间多见 Trade Me Property（https://www.trademe.co.nz/a/property）；找室友常用 Flatmates.com.au 的新西兰页或 Facebook 本地组。奥克兰竞争激烈，白天看到晚上可能已定。中学国际生通常不能自行合租，必须走学校认可的寄宿家庭或指定监护人。",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/rental-viewing.jpg",
         "alt": "学生合租住所",
-        "caption": "看房带上护照/签证、录取或在读证明，回复要快但钱不要先转。"
+        "caption": "看房带上护照/签证、录取或在读证明，回复要快但钱不要先转。",
+        "credit": {
+          "text": "图片：Pixabay · Pexels License",
+          "href": "https://www.pexels.com/photo/modern-house-with-landscape-106399/"
+        }
       },
       {
         "type": "h2",
@@ -1510,9 +1698,13 @@ export const articles = [
       "Use Trade Me Property for listings and Flatmates or local groups for rooms. Auckland moves fast. International school students generally cannot independent-flat—they need a school-approved homestay or designated caregiver.",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/rental-viewing.jpg",
         "alt": "Shared student flat",
-        "caption": "Bring ID and enrolment; do not transfer money before you understand the agreement."
+        "caption": "Bring ID and enrolment; do not transfer money before you understand the agreement.",
+        "credit": {
+          "text": "Photo: Pixabay · Pexels License",
+          "href": "https://www.pexels.com/photo/modern-house-with-landscape-106399/"
+        }
       },
       {
         "type": "h2",
@@ -1540,7 +1732,15 @@ export const articles = [
         "alt": "Transitional stay",
         "caption": "Two to four weeks of short stay reduces blind year-long leases."
       }
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：Pixabay · Pexels License",
+      "href": "https://www.pexels.com/photo/modern-house-with-landscape-106399/"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Pixabay · Pexels License",
+      "href": "https://www.pexels.com/photo/modern-house-with-landscape-106399/"
+    }
   },
   {
     "slug": "bank-account-setup",
@@ -1551,16 +1751,20 @@ export const articles = [
     "titleEn": "Opening a bank account: the main banks",
     "excerptZh": "护照、签证、地址与学生证明——预约国际学生开户更省事。",
     "excerptEn": "Passport, visa, address and student proof—book an international-student appointment.",
-    "image": "/images/life-feature.png",
+    "image": "/images/article/bank-branch.jpg",
     "imageAltZh": "新西兰学生开户",
     "imageAltEn": "Opening a New Zealand student bank account",
     "bodyZh": [
       "常见零售银行：ANZ、ASB、Westpac、BNZ，另有 Kiwibank。通常需要护照、有效签证和地址证明，具体以各行官网为准。几家银行的行前开户说明（核对 2026-10-23）：ANZ——人在新西兰或 90 天内抵达、签证剩余至少 6 个月、年满 13 岁即可申请，可先存款，到网点核验身份后才激活（https://www.anz.co.nz/personal/moving-to-new-zealand/）；ASB——可行前网上申请，需护照、合格签证和 12 个月内的海外地址证明（https://www.asb.co.nz/moving-to-new-zealand）；Westpac——部分情况下最早可提前 180 天开户（https://www.westpac.co.nz/accounts-cards/open-a-new-zealand-bank-account-from-overseas/）。BNZ 与 Kiwibank 请直接查官网。",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/bank-branch.jpg",
         "alt": "开户证件",
-        "caption": "预约比排队更稳，开学周网点会很长。"
+        "caption": "预约比排队更稳，开学周网点会很长。",
+        "credit": {
+          "text": "图片：Expect Best · Pexels License",
+          "href": "https://www.pexels.com/photo/low-angle-photo-of-city-buildings-509092/"
+        }
       },
       {
         "type": "h2",
@@ -1584,18 +1788,26 @@ export const articles = [
       "银行不会用即时通讯要你的验证码。遇到「帮你开通支付」的陌生链接，先打卡背面电话。保留开户回执，签证或租房有时会要到账单。",
       {
         "type": "image",
-        "src": "/images/article-transport.png",
+        "src": "/images/article/bank-card.jpg",
         "alt": "开户后的日常",
-        "caption": "交通卡充值、超市支付都会轻松很多，尽早把账户用起来。"
+        "caption": "交通卡充值、超市支付都会轻松很多，尽早把账户用起来。",
+        "credit": {
+          "text": "图片：Pixabay · Pexels License",
+          "href": "https://www.pexels.com/photo/person-holding-credit-card-50987/"
+        }
       }
     ],
     "bodyEn": [
       "Common retail banks: ANZ, ASB, Westpac, BNZ and Kiwibank. Expect a passport, a valid visa and proof of address; check each bank’s site. Pre-arrival notes (checked 23 Oct 2026): ANZ—apply if you are in NZ or arriving within 90 days, have a visa with at least six months left and are 13+; you can deposit, but the account is activated after an ID check in a branch (https://www.anz.co.nz/personal/moving-to-new-zealand/). ASB—apply online before arrival with passport, eligible visa and overseas address proof dated within 12 months (https://www.asb.co.nz/moving-to-new-zealand). Westpac—in some cases up to 180 days before you move (https://www.westpac.co.nz/accounts-cards/open-a-new-zealand-bank-account-from-overseas/). Check BNZ and Kiwibank directly.",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/bank-branch.jpg",
         "alt": "ID for banking",
-        "caption": "Book an appointment; orientation week queues are long."
+        "caption": "Book an appointment; orientation week queues are long.",
+        "credit": {
+          "text": "Photo: Expect Best · Pexels License",
+          "href": "https://www.pexels.com/photo/low-angle-photo-of-city-buildings-509092/"
+        }
       },
       {
         "type": "h2",
@@ -1614,11 +1826,23 @@ export const articles = [
       "Monthly fees, international transfers, card delivery, app activation and transfer limits. Then set rent autopay.",
       {
         "type": "image",
-        "src": "/images/article-transport.png",
+        "src": "/images/article/bank-card.jpg",
         "alt": "Everyday banking",
-        "caption": "Transport top-ups and supermarket payments get easier once the account is live."
+        "caption": "Transport top-ups and supermarket payments get easier once the account is live.",
+        "credit": {
+          "text": "Photo: Pixabay · Pexels License",
+          "href": "https://www.pexels.com/photo/person-holding-credit-card-50987/"
+        }
       }
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：Expect Best · Pexels License",
+      "href": "https://www.pexels.com/photo/low-angle-photo-of-city-buildings-509092/"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Expect Best · Pexels License",
+      "href": "https://www.pexels.com/photo/low-angle-photo-of-city-buildings-509092/"
+    }
   },
   {
     "slug": "supermarket-savings",
@@ -1629,7 +1853,7 @@ export const articles = [
     "titleEn": "Supermarket specials: Woolworths, New World and Pak'nSave",
     "excerptZh": "Countdown 门店已改用 Woolworths 品牌。三大连锁怎么搭配买更省。",
     "excerptEn": "Former Countdown stores now trade as Woolworths. How to combine the three chains.",
-    "image": "/images/life-feature.png",
+    "image": "/images/article/supermarket-shelves.jpg",
     "imageAltZh": "新西兰超市采购",
     "imageAltEn": "Grocery shopping in New Zealand",
     "bodyZh": [
@@ -1686,7 +1910,15 @@ export const articles = [
         "alt": "Specials",
         "caption": "Plan the menu around the specials, do not impulse-buy them."
       }
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：Mike · Pexels License",
+      "href": "https://www.pexels.com/photo/assorted-fruits-and-vegetables-on-display-264636/"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Mike · Pexels License",
+      "href": "https://www.pexels.com/photo/assorted-fruits-and-vegetables-on-display-264636/"
+    }
   },
   {
     "slug": "phone-sim-transport",
@@ -1697,16 +1929,20 @@ export const articles = [
     "titleEn": "Getting a SIM and using public transport",
     "excerptZh": "落地先解决通讯与通勤：Spark / One NZ / 2degrees，以及奥克兰 AT HOP。",
     "excerptEn": "Sort a SIM and transport early: Spark, One NZ or 2degrees, and Auckland’s AT HOP.",
-    "image": "/images/life-feature.png",
+    "image": "/images/article/transport-bus.jpg",
     "imageAltZh": "手机卡与公共交通",
     "imageAltEn": "A local SIM and public transport",
     "bodyZh": [
       "常见移动运营商：Spark、One NZ、2degrees。机场或市区可办预付费 SIM / eSIM，通常带护照即可。先买短周期套餐，地址稳定后再改长期计划。保留能收短信的号码，银行和 IRD 常用短信验证；也可以改用验证器 App。",
       {
         "type": "image",
-        "src": "/images/article-transport.png",
+        "src": "/images/article/transport-bus.jpg",
         "alt": "城市公共交通",
-        "caption": "先搞清学校到住所的主干线路与末班时间，再密集看房。"
+        "caption": "先搞清学校到住所的主干线路与末班时间，再密集看房。",
+        "credit": {
+          "text": "图片：Pixabay · Pexels License",
+          "href": "https://www.pexels.com/photo/white-and-red-bus-on-road-during-daytime-209900/"
+        }
       },
       {
         "type": "h2",
@@ -1734,9 +1970,13 @@ export const articles = [
       "Spark, One NZ and 2degrees are the common mobile networks. A prepaid SIM or eSIM usually needs your passport. Start short-term, then switch. Keep SMS working for banks and IRD, or move 2FA to an authenticator app.",
       {
         "type": "image",
-        "src": "/images/article-transport.png",
+        "src": "/images/article/transport-bus.jpg",
         "alt": "City transport",
-        "caption": "Learn the school–home route and last services before heavy flat hunting."
+        "caption": "Learn the school–home route and last services before heavy flat hunting.",
+        "credit": {
+          "text": "Photo: Pixabay · Pexels License",
+          "href": "https://www.pexels.com/photo/white-and-red-bus-on-road-during-daytime-209900/"
+        }
       },
       {
         "type": "h2",
@@ -1754,7 +1994,15 @@ export const articles = [
         "alt": "Connected on arrival",
         "caption": "Week-one success is phone plus transport, not furniture."
       }
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：Pixabay · Pexels License",
+      "href": "https://www.pexels.com/photo/white-and-red-bus-on-road-during-daytime-209900/"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Pixabay · Pexels License",
+      "href": "https://www.pexels.com/photo/white-and-red-bus-on-road-during-daytime-209900/"
+    }
   },
   {
     "slug": "health-insurance-gp",
@@ -1765,16 +2013,20 @@ export const articles = [
     "titleEn": "Insurance and seeing a GP",
     "excerptZh": "先确认保险是否符合学校要求，再注册社区 GP；急诊只用于急重症。",
     "excerptEn": "Confirm the policy meets school rules, enrol with a GP, and keep ED for emergencies.",
-    "image": "/images/life-feature.png",
+    "image": "/images/article/health-pharmacy.jpg",
     "imageAltZh": "留学生保险与看病",
     "imageAltEn": "Student insurance and GP care",
     "bodyZh": [
       "国际学生通常必须持有学校认可的医疗保险，从入学到签证结束。买之前核对：门诊是否报销、处方自费多少、是否含牙科/光学、理赔是先垫后报还是直付。保单号和紧急电话存在手机里。",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/health-gp-clinic.jpg",
         "alt": "保险与就诊记录",
-        "caption": "看病带保险卡、护照和用药清单。"
+        "caption": "看病带保险卡、护照和用药清单。",
+        "credit": {
+          "text": "图片：Michal Klajban · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:North_Avon_Medical_Centre_%26_Pharmacy%2C_Richmond%2C_Christchurch%2C_New_Zealand.jpg"
+        }
       },
       {
         "type": "h2",
@@ -1793,18 +2045,26 @@ export const articles = [
       "带保险详情、护照、症状与过敏史。解释症状时用简单英文即可，可把关键词写在手机备忘录。睡眠与压力管理也是健康预算的一部分。",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/health-pharmacy.jpg",
         "alt": "安稳生活节奏",
-        "caption": "注册 GP 往往需要几周，落地第一周就问学校国际办公室推荐名单。"
+        "caption": "注册 GP 往往需要几周，落地第一周就问学校国际办公室推荐名单。",
+        "credit": {
+          "text": "图片：Tom Ackroyd · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Unichem_Pharmacy_Cuba.jpg"
+        }
       }
     ],
     "bodyEn": [
       "Most international students must hold insurance the school accepts for the whole enrolment/visa period. Check GP cover, prescription excess, dental/optical extras, and whether you pay first.",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/health-gp-clinic.jpg",
         "alt": "Insurance and visit notes",
-        "caption": "Bring policy details, your passport and a medication list."
+        "caption": "Bring policy details, your passport and a medication list.",
+        "credit": {
+          "text": "Photo: Michal Klajban · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:North_Avon_Medical_Centre_%26_Pharmacy%2C_Richmond%2C_Christchurch%2C_New_Zealand.jpg"
+        }
       },
       {
         "type": "h2",
@@ -1818,11 +2078,23 @@ export const articles = [
       "Keep receipts if the policy reimburses. Use campus counselling early when stress builds.",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/health-pharmacy.jpg",
         "alt": "Steady routines",
-        "caption": "Enrol with a GP in week one—the wait for new patients can be weeks."
+        "caption": "Enrol with a GP in week one—the wait for new patients can be weeks.",
+        "credit": {
+          "text": "Photo: Tom Ackroyd · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Unichem_Pharmacy_Cuba.jpg"
+        }
       }
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：Tom Ackroyd · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Unichem_Pharmacy_Cuba.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Tom Ackroyd · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Unichem_Pharmacy_Cuba.jpg"
+    }
   },
   {
     "slug": "arrival-first-week",
@@ -1833,7 +2105,7 @@ export const articles = [
     "titleEn": "Your first-week arrival checklist",
     "excerptZh": "住宿、手机、银行、交通、注册——按天推进，通讯比家具优先。",
     "excerptEn": "Housing, SIM, bank, transport, enrolment—phone and transport before furniture.",
-    "image": "/images/life-feature.png",
+    "image": "/images/article/visa-airport.jpg",
     "imageAltZh": "落地第一周",
     "imageAltEn": "The first week after arrival",
     "bodyZh": [
@@ -1867,9 +2139,13 @@ export const articles = [
       "需要帮助就联系国际学生办公室，或用本站咨询表整理还未办完的材料。前几天别把行程排太满。",
       {
         "type": "image",
-        "src": "/images/article-transport.png",
+        "src": "/images/article/transport-bus.jpg",
         "alt": "城市移动能力",
-        "caption": "能上车、能转账、能收到学校邮件，第一周就算达标。"
+        "caption": "能上车、能转账、能收到学校邮件，第一周就算达标。",
+        "credit": {
+          "text": "图片：Pixabay · Pexels License",
+          "href": "https://www.pexels.com/photo/white-and-red-bus-on-road-during-daytime-209900/"
+        }
       }
     ],
     "bodyEn": [
@@ -1902,17 +2178,29 @@ export const articles = [
       "List the next tasks: longer housing, IRD, GP, textbooks. Keep paper copies in two bags. School students should confirm guardian/homestay monitoring with the international office.",
       {
         "type": "image",
-        "src": "/images/article-transport.png",
+        "src": "/images/article/transport-bus.jpg",
         "alt": "City mobility",
-        "caption": "If you can ride, pay and receive school email, week one succeeded."
+        "caption": "If you can ride, pay and receive school email, week one succeeded.",
+        "credit": {
+          "text": "Photo: Pixabay · Pexels License",
+          "href": "https://www.pexels.com/photo/white-and-red-bus-on-road-during-daytime-209900/"
+        }
       }
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：JESHOOTS.com · Pexels License",
+      "href": "https://www.pexels.com/photo/people-walking-inside-airport-912050/"
+    },
+    "imageCreditEn": {
+      "text": "Photo: JESHOOTS.com · Pexels License",
+      "href": "https://www.pexels.com/photo/people-walking-inside-airport-912050/"
+    }
   },
   {
     "guideId": "life",
     "section": "life",
     "updatedAt": "2026-10-23",
-    "image": "/images/life-feature.png",
+    "image": "/images/article/transport-bus.jpg",
     "slug": "used-car-driving-licence",
     "titleZh": "在新西兰买二手车与开车：驾照、WoF、rego、RUC 与过户",
     "titleEn": "Buying a used car and driving in NZ: licence, WoF, rego, RUC and ownership",
@@ -1924,9 +2212,13 @@ export const articles = [
       "以下是 NZ Transport Agency（NZTA）、Consumer Protection 和 PPSR 的公开信息整理（核对 2026-10-23），费用含 GST，以官网最新为准。",
       {
         "type": "image",
-        "src": "/images/article-transport.png",
+        "src": "/images/article/transport-bus.jpg",
         "alt": "开车出行",
-        "caption": "新西兰靠左行驶，先熟悉路规再上路。"
+        "caption": "新西兰靠左行驶，先熟悉路规再上路。",
+        "credit": {
+          "text": "图片：Pixabay · Pexels License",
+          "href": "https://www.pexels.com/photo/white-and-red-bus-on-road-during-daytime-209900/"
+        }
       },
       {
         "type": "h2",
@@ -1986,9 +2278,13 @@ export const articles = [
       "A summary of public information from NZ Transport Agency (NZTA), Consumer Protection and the PPSR, checked 23 October 2026. Fees include GST; always check the official pages.",
       {
         "type": "image",
-        "src": "/images/article-transport.png",
+        "src": "/images/article/transport-bus.jpg",
         "alt": "Driving in NZ",
-        "caption": "NZ drives on the left—learn the road code first."
+        "caption": "NZ drives on the left—learn the road code first.",
+        "credit": {
+          "text": "Photo: Pixabay · Pexels License",
+          "href": "https://www.pexels.com/photo/white-and-red-bus-on-road-during-daytime-209900/"
+        }
       },
       {
         "type": "h2",
@@ -2042,13 +2338,21 @@ export const articles = [
       "https://www.nzta.govt.nz/travelling-on-our-roads/visitors-and-new-residents/driving-on-nz-roads",
       "https://nzta.govt.nz/vehicles/licensing-rego/vehicle-fees/licensing-fees",
       "https://www.consumerprotection.govt.nz/help-product-service/cars/before-buying-used-car"
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：Pixabay · Pexels License",
+      "href": "https://www.pexels.com/photo/white-and-red-bus-on-road-during-daytime-209900/"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Pixabay · Pexels License",
+      "href": "https://www.pexels.com/photo/white-and-red-bus-on-road-during-daytime-209900/"
+    }
   },
   {
     "guideId": "life",
     "section": "life",
     "updatedAt": "2026-10-23",
-    "image": "/images/life-feature.png",
+    "image": "/images/article/culture-haka.jpg",
     "slug": "nz-culture-etiquette",
     "titleZh": "新西兰文化、社交礼仪与注意事项",
     "titleEn": "NZ culture, social etiquette and things to know",
@@ -2060,9 +2364,13 @@ export const articles = [
       "新西兰整体氛围轻松友好，但有一些「默认规矩」，提前了解能少很多尴尬。以下是一般生活经验与官方信息的整理。",
       {
         "type": "image",
-        "src": "/images/life-feature.png",
+        "src": "/images/article/culture-haka.jpg",
         "alt": "新西兰日常",
-        "caption": "友好、随和、守时——是很多人对 Kiwi 的第一印象。"
+        "caption": "友好、随和、守时——是很多人对 Kiwi 的第一印象。",
+        "credit": {
+          "text": "图片：Catalyst Open Source · CC BY-SA 2.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Haka_for_Lillian_Hetet-Owen_(31659287718).jpg"
+        }
       },
       {
         "type": "h2",
@@ -2116,9 +2424,13 @@ export const articles = [
       "New Zealand is relaxed and friendly, but a few unwritten rules help. This is general information plus official sources.",
       {
         "type": "image",
-        "src": "/images/life-feature.png",
+        "src": "/images/article/culture-haka.jpg",
         "alt": "Everyday NZ",
-        "caption": "Friendly, casual and on time."
+        "caption": "Friendly, casual and on time.",
+        "credit": {
+          "text": "Photo: Catalyst Open Source · CC BY-SA 2.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Haka_for_Lillian_Hetet-Owen_(31659287718).jpg"
+        }
       },
       {
         "type": "h2",
@@ -2166,7 +2478,15 @@ export const articles = [
       },
       "https://www.mpi.govt.nz/bring-send-to-nz/bringing-and-posting-items-to-nz/how-to-declare-items-when-arriving-in-nz",
       "https://www.police.govt.nz/advice/drugs-and-alcohol/alcohol-laws-and-penalties"
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：Catalyst Open Source · CC BY-SA 2.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Haka_for_Lillian_Hetet-Owen_(31659287718).jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Catalyst Open Source · CC BY-SA 2.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Haka_for_Lillian_Hetet-Owen_(31659287718).jpg"
+    }
   },
   {
     "slug": "nz-weekend-social-activities",
@@ -2177,16 +2497,20 @@ export const articles = [
     "titleEn": "Weekend social activities in NZ for high school and university students",
     "excerptZh": "parkrun、大学社团、图书馆英语角、市集、志愿者、节庆和 Meetup——怎么报名、用什么网站一表看清。",
     "excerptEn": "parkrun, clubs, library groups, markets, volunteering, festivals and Meetup—how to sign up and where.",
-    "image": "/images/life-feature.png",
+    "image": "/images/article/weekend-hiking.jpg",
     "imageAltZh": "新西兰周末社交活动",
     "imageAltEn": "Weekend activities in New Zealand",
     "bodyZh": [
       "周末是认识朋友、练英语、融入本地最好的时间。以下都是长期固定举办的活动，每一项都写了怎么报名、用什么网站或 App（核对 2026-10-23）。具体时间、地点和是否收费，以官网当期信息为准。",
       {
         "type": "image",
-        "src": "/images/life-feature.png",
+        "src": "/images/article/weekend-hiking.jpg",
         "alt": "周末户外与社交",
-        "caption": "先从免费、固定、有人组织的活动开始，最容易交到朋友。"
+        "caption": "先从免费、固定、有人组织的活动开始，最容易交到朋友。",
+        "credit": {
+          "text": "图片：Jeffrey Pang from Madison, NJ, USA · CC BY 2.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Tongariro_Alpine_Crossing.jpg"
+        }
       },
       {
         "type": "table",
@@ -2316,9 +2640,13 @@ export const articles = [
       "Weekends are the best time to make friends, practise English and get to know NZ. These are recurring options with how to sign up and which sites to use (checked 23 October 2026). Always confirm times and costs on the official page.",
       {
         "type": "image",
-        "src": "/images/life-feature.png",
+        "src": "/images/article/weekend-hiking.jpg",
         "alt": "Weekend activities",
-        "caption": "Free, regular, organised activities are the easiest way to meet people."
+        "caption": "Free, regular, organised activities are the easiest way to meet people.",
+        "credit": {
+          "text": "Photo: Jeffrey Pang from Madison, NJ, USA · CC BY 2.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Tongariro_Alpine_Crossing.jpg"
+        }
       },
       {
         "type": "table",
@@ -2441,7 +2769,15 @@ export const articles = [
       "https://www.parkrun.co.nz/cornwallpark/",
       "https://volunteeringauckland.org.nz/individuals/opportunities",
       "https://ourauckland.aucklandcouncil.govt.nz/events/"
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：Jeffrey Pang from Madison, NJ, USA · CC BY 2.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Tongariro_Alpine_Crossing.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Jeffrey Pang from Madison, NJ, USA · CC BY 2.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Tongariro_Alpine_Crossing.jpg"
+    }
   },
   {
     "slug": "school-auckland",
@@ -2512,9 +2848,13 @@ export const articles = [
       "以上费用为约数，核对日期 2026-10-21。学年、专业、奖学金与汇率都会变，报名前请以学校官网当季学费表和 Offer 为准。",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/city-auckland.jpg",
         "alt": "城市生活成本",
-        "caption": "学费差常常小于一年房租差。"
+        "caption": "学费差常常小于一年房租差。",
+        "credit": {
+          "text": "图片：Paora · CC0",
+          "href": "https://commons.wikimedia.org/wiki/File:Queen_Street%2C_Auckland_PA01.jpg"
+        }
       },
       {
         "type": "h2",
@@ -2578,9 +2918,13 @@ export const articles = [
       "Fee figures are approximate as of 2026-10-21. They change by year, programme and scholarship—verify on the official site and your offer letter.",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/city-auckland.jpg",
         "alt": "City living costs",
-        "caption": "A year of rent can outweigh a tuition gap."
+        "caption": "A year of rent can outweigh a tuition gap.",
+        "credit": {
+          "text": "Photo: Paora · CC0",
+          "href": "https://commons.wikimedia.org/wiki/File:Queen_Street%2C_Auckland_PA01.jpg"
+        }
       },
       {
         "type": "h2",
@@ -2665,9 +3009,13 @@ export const articles = [
       "以上费用为约数，核对日期 2026-10-21。学年、专业、奖学金与汇率都会变，报名前请以学校官网当季学费表和 Offer 为准。",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/city-aut.jpg",
         "alt": "城市生活成本",
-        "caption": "学费差常常小于一年房租差。"
+        "caption": "学费差常常小于一年房租差。",
+        "credit": {
+          "text": "图片：Archives New Zealand · CC BY 2.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Hobson_Street%2C_Auckland_City.jpg"
+        }
       },
       {
         "type": "h2",
@@ -2721,9 +3069,13 @@ export const articles = [
       "Fee figures are approximate as of 2026-10-21. They change by year, programme and scholarship—verify on the official site and your offer letter.",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/city-aut.jpg",
         "alt": "City living costs",
-        "caption": "A year of rent can outweigh a tuition gap."
+        "caption": "A year of rent can outweigh a tuition gap.",
+        "credit": {
+          "text": "Photo: Archives New Zealand · CC BY 2.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Hobson_Street%2C_Auckland_City.jpg"
+        }
       },
       {
         "type": "h2",
@@ -2808,9 +3160,13 @@ export const articles = [
       "以上费用为约数，核对日期 2026-10-21。学年、专业、奖学金与汇率都会变，报名前请以学校官网当季学费表和 Offer 为准。",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/city-hamilton.jpg",
         "alt": "城市生活成本",
-        "caption": "学费差常常小于一年房租差。"
+        "caption": "学费差常常小于一年房租差。",
+        "credit": {
+          "text": "图片：Umedha Shanka Indranath Hettigoda · CC BY-SA 2.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Rail_track_Hamilton%2C_Hamilton_city%2C_New_Zealand.jpg"
+        }
       },
       {
         "type": "h2",
@@ -2864,9 +3220,13 @@ export const articles = [
       "Fee figures are approximate as of 2026-10-21. They change by year, programme and scholarship—verify on the official site and your offer letter.",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/city-hamilton.jpg",
         "alt": "City living costs",
-        "caption": "A year of rent can outweigh a tuition gap."
+        "caption": "A year of rent can outweigh a tuition gap.",
+        "credit": {
+          "text": "Photo: Umedha Shanka Indranath Hettigoda · CC BY-SA 2.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Rail_track_Hamilton%2C_Hamilton_city%2C_New_Zealand.jpg"
+        }
       },
       {
         "type": "h2",
@@ -2961,9 +3321,13 @@ export const articles = [
       "以上费用为约数，核对日期 2026-10-21。学年、专业、奖学金与汇率都会变，报名前请以学校官网当季学费表和 Offer 为准。",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/city-palmerston-north.jpg",
         "alt": "城市生活成本",
-        "caption": "学费差常常小于一年房租差。"
+        "caption": "学费差常常小于一年房租差。",
+        "credit": {
+          "text": "图片：AnnWoolliams · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:The_Square%2C_Palmerston_North%2C_North_Island%2C_New_Zealand.jpg"
+        }
       },
       {
         "type": "h2",
@@ -3027,9 +3391,13 @@ export const articles = [
       "Fee figures are approximate as of 2026-10-21. They change by year, programme and scholarship—verify on the official site and your offer letter.",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/city-palmerston-north.jpg",
         "alt": "City living costs",
-        "caption": "A year of rent can outweigh a tuition gap."
+        "caption": "A year of rent can outweigh a tuition gap.",
+        "credit": {
+          "text": "Photo: AnnWoolliams · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:The_Square%2C_Palmerston_North%2C_North_Island%2C_New_Zealand.jpg"
+        }
       },
       {
         "type": "h2",
@@ -3114,9 +3482,13 @@ export const articles = [
       "以上费用为约数，核对日期 2026-10-21。学年、专业、奖学金与汇率都会变，报名前请以学校官网当季学费表和 Offer 为准。",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/city-wellington.jpg",
         "alt": "城市生活成本",
-        "caption": "学费差常常小于一年房租差。"
+        "caption": "学费差常常小于一年房租差。",
+        "credit": {
+          "text": "图片：Samuel Cairncross · CC BY 2.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Cuba_Street%2C_Wellington_by_Sam_Cairncross.jpg"
+        }
       },
       {
         "type": "h2",
@@ -3170,9 +3542,13 @@ export const articles = [
       "Fee figures are approximate as of 2026-10-21. They change by year, programme and scholarship—verify on the official site and your offer letter.",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/city-wellington.jpg",
         "alt": "City living costs",
-        "caption": "A year of rent can outweigh a tuition gap."
+        "caption": "A year of rent can outweigh a tuition gap.",
+        "credit": {
+          "text": "Photo: Samuel Cairncross · CC BY 2.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Cuba_Street%2C_Wellington_by_Sam_Cairncross.jpg"
+        }
       },
       {
         "type": "h2",
@@ -3257,9 +3633,13 @@ export const articles = [
       "以上费用为约数，核对日期 2026-10-21。学年、专业、奖学金与汇率都会变，报名前请以学校官网当季学费表和 Offer 为准。",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/city-christchurch.jpg",
         "alt": "城市生活成本",
-        "caption": "学费差常常小于一年房租差。"
+        "caption": "学费差常常小于一年房租差。",
+        "credit": {
+          "text": "图片：Michal Klajban · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Tram_tracks_on_Cathedral_Square%2C_Christchurch%2C_New_Zealand.jpg"
+        }
       },
       {
         "type": "h2",
@@ -3313,9 +3693,13 @@ export const articles = [
       "Fee figures are approximate as of 2026-10-21. They change by year, programme and scholarship—verify on the official site and your offer letter.",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/city-christchurch.jpg",
         "alt": "City living costs",
-        "caption": "A year of rent can outweigh a tuition gap."
+        "caption": "A year of rent can outweigh a tuition gap.",
+        "credit": {
+          "text": "Photo: Michal Klajban · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Tram_tracks_on_Cathedral_Square%2C_Christchurch%2C_New_Zealand.jpg"
+        }
       },
       {
         "type": "h2",
@@ -3400,9 +3784,13 @@ export const articles = [
       "以上费用为约数，核对日期 2026-10-21。学年、专业、奖学金与汇率都会变，报名前请以学校官网当季学费表和 Offer 为准。",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/city-lincoln.jpg",
         "alt": "城市生活成本",
-        "caption": "学费差常常小于一年房租差。"
+        "caption": "学费差常常小于一年房租差。",
+        "credit": {
+          "text": "图片：Bernard Spragg. NZ from Christchurch, New Zealand · CC0",
+          "href": "https://commons.wikimedia.org/wiki/File:Union_Church_Lincoln%2C_NZ_FZ200%3B_2014.jpg"
+        }
       },
       {
         "type": "h2",
@@ -3456,9 +3844,13 @@ export const articles = [
       "Fee figures are approximate as of 2026-10-21. They change by year, programme and scholarship—verify on the official site and your offer letter.",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/city-lincoln.jpg",
         "alt": "City living costs",
-        "caption": "A year of rent can outweigh a tuition gap."
+        "caption": "A year of rent can outweigh a tuition gap.",
+        "credit": {
+          "text": "Photo: Bernard Spragg. NZ from Christchurch, New Zealand · CC0",
+          "href": "https://commons.wikimedia.org/wiki/File:Union_Church_Lincoln%2C_NZ_FZ200%3B_2014.jpg"
+        }
       },
       {
         "type": "h2",
@@ -3543,9 +3935,13 @@ export const articles = [
       "以上费用为约数，核对日期 2026-10-21。学年、专业、奖学金与汇率都会变，报名前请以学校官网当季学费表和 Offer 为准。",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/city-dunedin.jpg",
         "alt": "城市生活成本",
-        "caption": "学费差常常小于一年房租差。"
+        "caption": "学费差常常小于一年房租差。",
+        "credit": {
+          "text": "图片：Antilived · CC BY-SA 3.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Dunedin_Railway_Station_Full_Exterior.jpg"
+        }
       },
       {
         "type": "h2",
@@ -3599,9 +3995,13 @@ export const articles = [
       "Fee figures are approximate as of 2026-10-21. They change by year, programme and scholarship—verify on the official site and your offer letter.",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/city-dunedin.jpg",
         "alt": "City living costs",
-        "caption": "A year of rent can outweigh a tuition gap."
+        "caption": "A year of rent can outweigh a tuition gap.",
+        "credit": {
+          "text": "Photo: Antilived · CC BY-SA 3.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Dunedin_Railway_Station_Full_Exterior.jpg"
+        }
       },
       {
         "type": "h2",
@@ -3711,9 +4111,13 @@ export const articles = [
       "中学签证生活费证明现行标准为每年 NZD 17,000（或每月 NZD 1,417）；已预付寄宿可扣减。这与学校开出的寄宿家庭账单不是同一笔数。",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/city-auckland-north.jpg",
         "alt": "未成年学生住宿",
-        "caption": "先问学校国际部：寄宿、指定照顾者还是父母陪读，再递签。"
+        "caption": "先问学校国际部：寄宿、指定照顾者还是父母陪读，再递签。",
+        "credit": {
+          "text": "图片：Sandy Austin · CC BY 2.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Takapuna%2C_North_Shore_City%2C_Auckland%2C_New_Zealand.jpg"
+        }
       },
       {
         "type": "h2",
@@ -3775,9 +4179,13 @@ export const articles = [
       "A legal guardian may apply for a visitor visa to live with a student aged 17 or under / in years 1–13. School rules can be stricter: Auckland Grammar says international students may not live alone or in a flat. Published homestay rates often sit around NZD 380–440 a week plus placement and holiday holding fees. School living-funds evidence is NZD 17,000 a year and is not the same as the homestay invoice.",
       {
         "type": "image",
-        "src": "/images/article-shared-flat.png",
+        "src": "/images/article/city-auckland-north.jpg",
         "alt": "Under-18 accommodation",
-        "caption": "Ask the international office whether the plan is homestay, designated caregiver or a parent, then lodge the visa."
+        "caption": "Ask the international office whether the plan is homestay, designated caregiver or a parent, then lodge the visa.",
+        "credit": {
+          "text": "Photo: Sandy Austin · CC BY 2.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Takapuna%2C_North_Shore_City%2C_Auckland%2C_New_Zealand.jpg"
+        }
       },
       {
         "type": "h2",
@@ -4571,7 +4979,7 @@ export const articles = [
     "titleEn": "Post-Study Work Visa: Level 7 changes from November 2026",
     "excerptZh": "从 2026-11-16 起，符合条件的 Level 7 研究生文凭（另持学士学位）可申请 PSWV。以移民局为准。",
     "excerptEn": "From 16 November 2026, some Level 7 graduate diplomas plus a bachelor’s degree can qualify. Follow INZ.",
-    "image": "/images/study-feature.png",
+    "image": "/images/article/graduation-cap.jpg",
     "imageAltZh": "毕业后工作签证",
     "imageAltEn": "Post-study work visa",
     "related": [
@@ -4586,9 +4994,13 @@ export const articles = [
       "Post-Study Work Visa（PSWV）是毕业后的开放工签路径之一。以下整理移民局 2026 年 9 月公告与 2026-24 号修正通告，不构成持牌移民法律建议。政策会变，递交前打开官网。",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/graduation-cap.jpg",
         "alt": "毕业工签材料",
-        "caption": "学历是否「符合资格」比学校名气更重要。"
+        "caption": "学历是否「符合资格」比学校名气更重要。",
+        "credit": {
+          "text": "图片：Pixabay · Pexels License",
+          "href": "https://www.pexels.com/photo/graduates-throwing-their-hats-in-the-air-267885/"
+        }
       },
       {
         "type": "h2",
@@ -4624,9 +5036,13 @@ export const articles = [
       "This is general information about the Post-Study Work Visa, not licensed advice.",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/graduation-cap.jpg",
         "alt": "Post-study documents",
-        "caption": "Whether the qualification is eligible matters more than the brand name."
+        "caption": "Whether the qualification is eligible matters more than the brand name.",
+        "credit": {
+          "text": "Photo: Pixabay · Pexels License",
+          "href": "https://www.pexels.com/photo/graduates-throwing-their-hats-in-the-air-267885/"
+        }
       },
       {
         "type": "h2",
@@ -4651,7 +5067,15 @@ export const articles = [
       "https://www.immigration.govt.nz/about-us/news-centre/post-study-work-visa-eligibility-extended-from-16-november-2026/",
       "https://www.immigration.govt.nz/about-us/news-centre/new-and-updated-post-study-work-visa-options/",
       "https://www.immigration.govt.nz/study/after-you-finish-your-study/staying-to-work-after-finishing-your-study/"
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：Pixabay · Pexels License",
+      "href": "https://www.pexels.com/photo/graduates-throwing-their-hats-in-the-air-267885/"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Pixabay · Pexels License",
+      "href": "https://www.pexels.com/photo/graduates-throwing-their-hats-in-the-air-267885/"
+    }
   },
   {
     "slug": "short-term-graduate-work-visa",
@@ -4662,7 +5086,7 @@ export const articles = [
     "titleEn": "Short-Term Graduate Work Visa: 6 months from 16 November 2026",
     "excerptZh": "给不符合 PSWV 的 Level 5–7 毕业生：6 个月开放工作，须在学生签证到期后 3 个月内申请。",
     "excerptEn": "For Level 5–7 graduates who are not eligible for a PSWV: 6 months of open work, apply within 3 months of student-visa expiry.",
-    "image": "/images/study-feature.png",
+    "image": "/images/article/graduation-cap.jpg",
     "imageAltZh": "短期毕业工签",
     "imageAltEn": "Short-term graduate work visa",
     "related": [
@@ -4736,7 +5160,15 @@ export const articles = [
       "https://www.immigration.govt.nz/about-us/news-centre/new-short-term-graduate-work-visa-launching-on-16-november-2026/",
       "https://www.immigration.govt.nz/about-us/news-centre/new-and-updated-post-study-work-visa-options/",
       "https://www.immigration.govt.nz/study/after-you-finish-your-study/staying-to-work-after-finishing-your-study/"
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：Pixabay · Pexels License",
+      "href": "https://www.pexels.com/photo/graduates-throwing-their-hats-in-the-air-267885/"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Pixabay · Pexels License",
+      "href": "https://www.pexels.com/photo/graduates-throwing-their-hats-in-the-air-267885/"
+    }
   },
   {
     "slug": "skilled-migrant-category",
@@ -4747,7 +5179,7 @@ export const articles = [
     "titleEn": "Skilled Migrant Category: 24 August 2026 changes and the wage tool",
     "excerptZh": "移民局公布、2026-08-24 生效的 SMC 调整与官方工资门槛工具链接。仅为官方信息摘录。",
     "excerptEn": "SMC settings that took effect on 24 August 2026, plus INZ’s wage-threshold tool. Study does not guarantee this path.",
-    "image": "/images/career-feature.png",
+    "image": "/images/article/job-hunt.jpg",
     "imageAltZh": "SMC 政策信息",
     "imageAltEn": "Skilled Migrant Category pathway",
     "related": [
@@ -4821,7 +5253,15 @@ export const articles = [
       "https://www.immigration.govt.nz/about-us/news-centre/further-changes-to-the-skilled-migrant-category-to-come-into-effect-in-august-2026/",
       "https://www.immigration.govt.nz/about-us/news-centre/final-details-about-changes-to-the-skilled-migrant-category-resident-visa-and-work-to-residence-visa/",
       "https://www.immigration.govt.nz/live/resident-visas-to-live-in-new-zealand/skilled-residence-pathways-in-new-zealand/skilled-migrant-category-pathway-to-residence/smc-wage-threshold-tool/"
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：fauxels · Pexels License",
+      "href": "https://www.pexels.com/photo/people-sitting-on-chairs-3184465/"
+    },
+    "imageCreditEn": {
+      "text": "Photo: fauxels · Pexels License",
+      "href": "https://www.pexels.com/photo/people-sitting-on-chairs-3184465/"
+    }
   },
   {
     "slug": "green-list-residence",
@@ -4832,7 +5272,7 @@ export const articles = [
     "titleEn": "What the Green List is: INZ tier overview (official facts)",
     "excerptZh": "移民局官方 Green List 分层说明摘录；不评估个人资格，具体请咨询持牌移民顾问。",
     "excerptEn": "Summary of INZ’s official Green List tiers. Not personal advice; consult a licensed adviser.",
-    "image": "/images/career-feature.png",
+    "image": "/images/article/job-hunt.jpg",
     "imageAltZh": "Green List 居留路径",
     "imageAltEn": "Green List residence pathways",
     "related": [
@@ -4898,7 +5338,15 @@ export const articles = [
       },
       "https://www.immigration.govt.nz/live/resident-visas-to-live-in-new-zealand/skilled-residence-pathways-in-new-zealand/green-list-pathway-to-residence/",
       "https://www.immigration.govt.nz/work/requirements-for-work-visas/green-list-occupations-qualifications-and-skills/green-list-roles-jobs-we-need-people-for-in-new-zealand/"
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：fauxels · Pexels License",
+      "href": "https://www.pexels.com/photo/people-sitting-on-chairs-3184465/"
+    },
+    "imageCreditEn": {
+      "text": "Photo: fauxels · Pexels License",
+      "href": "https://www.pexels.com/photo/people-sitting-on-chairs-3184465/"
+    }
   },
   {
     "slug": "intake-deadlines-scholarships",
@@ -4909,7 +5357,7 @@ export const articles = [
     "titleEn": "2027 intake deadlines and doctoral scholarship rounds",
     "excerptZh": "奥克兰、林肯、奥塔哥已公布的 2027 Semester 1 节点，以及奥克兰 / AUT / 奥塔哥 / 惠灵顿博士奖学金。",
     "excerptEn": "Published 2027 Semester 1 nodes for Auckland, Lincoln and Otago, plus doctoral scholarship rounds.",
-    "image": "/images/study-feature.png",
+    "image": "/images/article/calendar-planning.jpg",
     "imageAltZh": "申请截止与奖学金",
     "imageAltEn": "Application deadlines and scholarships",
     "related": [
@@ -4924,9 +5372,13 @@ export const articles = [
       "核对日期 2026-10-21。下列日期来自大学官网；个别专业更早，逾期只在有空位时考虑。网络传言里的「奥克兰 12 月 7 日」与校历不符——校历一般课程是 2026-12-08。",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/calendar-planning.jpg",
         "alt": "截止日历",
-        "caption": "境外学生还要为签证再留至少约 3 个月。"
+        "caption": "境外学生还要为签证再留至少约 3 个月。",
+        "credit": {
+          "text": "图片：Pearson Scott Foresman · Public domain",
+          "href": "https://commons.wikimedia.org/wiki/File:Calendar_(PSF).jpg"
+        }
       },
       {
         "type": "h2",
@@ -4956,9 +5408,13 @@ export const articles = [
       "Checked 2026-10-21. A circulating “Auckland 7 December” date does not match the calendar: the general Semester 1 2027 date is 8 December 2026.",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/calendar-planning.jpg",
         "alt": "Deadline calendar",
-        "caption": "Offshore students still need visa time—INZ suggests at least three months."
+        "caption": "Offshore students still need visa time—INZ suggests at least three months.",
+        "credit": {
+          "text": "Photo: Pearson Scott Foresman · Public domain",
+          "href": "https://commons.wikimedia.org/wiki/File:Calendar_(PSF).jpg"
+        }
       },
       {
         "type": "h2",
@@ -4978,7 +5434,15 @@ export const articles = [
       "https://www.aut.ac.nz/study/fees-and-scholarships/scholarships-and-awards-at-aut/doctoral-scholarships",
       "https://www.otago.ac.nz/courses/scholarships/university-of-otago-doctoral-scholarship",
       "https://www.wgtn.ac.nz/scholarships/current/wellington-doctoral-scholarships"
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：Pearson Scott Foresman · Public domain",
+      "href": "https://commons.wikimedia.org/wiki/File:Calendar_(PSF).jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Pearson Scott Foresman · Public domain",
+      "href": "https://commons.wikimedia.org/wiki/File:Calendar_(PSF).jpg"
+    }
   },
   {
     "slug": "visa-scams-fake-degrees",
@@ -4989,7 +5453,7 @@ export const articles = [
     "titleEn": "Fake degrees and agent scams: check documents before you lodge",
     "excerptZh": "移民局把提供虚假材料列为犯罪。不要付钱买「包过签证」或来路不明的学历。",
     "excerptEn": "INZ treats false documents as a criminal matter. Do not pay for a “guaranteed visa” or an unverifiable degree.",
-    "image": "/images/study-feature.png",
+    "image": "/images/article/scam-warning.jpg",
     "imageAltZh": "警惕虚假材料",
     "imageAltEn": "Beware false documents",
     "related": [
@@ -5004,9 +5468,13 @@ export const articles = [
       "移民局写明：使用伪造或被改动的文件、提供虚假或误导信息，属于移民欺诈，最高可判监禁 7 年和/或罚款 NZD 100,000，并可能导致拒签、取消签证或递解。来源：https://www.immigration.govt.nz/about-us/our-strategies-and-programmes/stopping-fraud-and-exploitation/stopping-immigration-fraud/",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/scam-warning.jpg",
         "alt": "只相信可验证的文件",
-        "caption": "用发证机构官方渠道核对，不要用文件上印的陌生电话。"
+        "caption": "用发证机构官方渠道核对，不要用文件上印的陌生电话。",
+        "credit": {
+          "text": "图片：Pixabay · Pexels License",
+          "href": "https://www.pexels.com/photo/padlock-on-laptop-keyboard-60504/"
+        }
       },
       {
         "type": "h2",
@@ -5036,9 +5504,13 @@ export const articles = [
       "Using a false or altered document, or providing false or misleading information, is immigration fraud. INZ states penalties of up to 7 years’ imprisonment and/or a NZD 100,000 fine, plus refusal, cancellation or deportation.",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/scam-warning.jpg",
         "alt": "Verifiable documents only",
-        "caption": "Check with the issuing body through contact details you find yourself."
+        "caption": "Check with the issuing body through contact details you find yourself.",
+        "credit": {
+          "text": "Photo: Pixabay · Pexels License",
+          "href": "https://www.pexels.com/photo/padlock-on-laptop-keyboard-60504/"
+        }
       },
       {
         "type": "h2",
@@ -5056,7 +5528,15 @@ export const articles = [
       },
       "https://www.immigration.govt.nz/about-us/our-strategies-and-programmes/stopping-fraud-and-exploitation/stopping-immigration-fraud/",
       "https://www.iaa.govt.nz/"
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：Pixabay · Pexels License",
+      "href": "https://www.pexels.com/photo/padlock-on-laptop-keyboard-60504/"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Pixabay · Pexels License",
+      "href": "https://www.pexels.com/photo/padlock-on-laptop-keyboard-60504/"
+    }
   },
   {
     "slug": "student-visa-processing",
@@ -5067,7 +5547,7 @@ export const articles = [
     "titleEn": "Student visa processing: apply early, peak from October to March",
     "excerptZh": "移民局建议至少提前 3 个月。2026 年 7–9 月官方统计的拒签占比高于上一完整财年。",
     "excerptEn": "INZ recommends at least three months. Official July–September 2026 decline share was higher than the previous full year.",
-    "image": "/images/study-feature.png",
+    "image": "/images/article/visa-documents.jpg",
     "imageAltZh": "学生签证审理时间",
     "imageAltEn": "Student visa processing times",
     "related": [
@@ -5082,9 +5562,13 @@ export const articles = [
       "移民局建议国际学生至少在计划出行前 3 个月提交完整网上申请，并提醒 11 月至 3 月申请量大、审理可能更慢。系统是 Immigration Online。核对日期 2026-10-21。来源：https://www.immigration.govt.nz/study/study-visas/visas-for-studying-in-new-zealand/ 与 https://www.immigration.govt.nz/process-to-apply/applying-for-a-visa/applying-online/how-to-apply-for-a-visa-online/",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/visa-documents.jpg",
         "alt": "完整一次交齐",
-        "caption": "缺件不会自动变成「学校帮你催」。"
+        "caption": "缺件不会自动变成「学校帮你催」。",
+        "credit": {
+          "text": "图片：Pexels · Pexels License",
+          "href": "https://www.pexels.com/photo/blue-passport-on-top-of-white-paper-4484078/"
+        }
       },
       {
         "type": "h2",
@@ -5109,9 +5593,13 @@ export const articles = [
       "INZ recommends a complete online student-visa application at least three months before travel and notes high volumes from November to March. Checked 2026-10-21.",
       {
         "type": "image",
-        "src": "/images/article-visa-docs.png",
+        "src": "/images/article/visa-documents.jpg",
         "alt": "Lodge a complete file",
-        "caption": "Missing documents delay you; they do not create a school-priority queue."
+        "caption": "Missing documents delay you; they do not create a school-priority queue.",
+        "credit": {
+          "text": "Photo: Pexels · Pexels License",
+          "href": "https://www.pexels.com/photo/blue-passport-on-top-of-white-paper-4484078/"
+        }
       },
       {
         "type": "h2",
@@ -5126,7 +5614,15 @@ export const articles = [
       "https://www.immigration.govt.nz/study/study-visas/visas-for-studying-in-new-zealand/",
       "https://www.immigration.govt.nz/process-to-apply/applying-for-a-visa/applying-online/how-to-apply-for-a-visa-online/",
       "https://www.immigration.govt.nz/assets/inz/documents/statistics/statistics-student-applications-decided.pdf"
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：Pexels · Pexels License",
+      "href": "https://www.pexels.com/photo/blue-passport-on-top-of-white-paper-4484078/"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Pexels · Pexels License",
+      "href": "https://www.pexels.com/photo/blue-passport-on-top-of-white-paper-4484078/"
+    }
   },
   {
     "slug": "nz-ai-masters-overview",
@@ -5159,22 +5655,22 @@ export const articles = [
       "想用一年到一年半换一条能讲清的 AI / 数据分析职业故事，新西兰没有统一的“AI 硕士排行”。下面按商业变现（雇主是否听得懂、学制是否短、学费是否对得上工签窗口）对照五条大学路径，并附惠灵顿维多利亚、AUT 的补充。数字一律来自 2026-10-21 打开的校方页面；未写清的项目标「以官网为准」。",
       {
         "type": "image",
-        "src": "/images/campus/ai-lecture.webp",
+        "src": "/images/article/lecture-auckland.jpg",
         "alt": "授课型硕士课堂",
-        "caption": "课堂示意（摄于赫尔辛基理工大学，不是新西兰校园）。商业分析、数据科学和计算机 AI 不是同一条录取与课表，短名单不要混成一张表。",
+        "caption": "奥克兰大学钟楼一带校园实景（研究型大学课堂与私立技能学院不是同一条赛道）。",
         "credit": {
-          "text": "图片：Tungsten · Public domain",
-          "href": "https://commons.wikimedia.org/wiki/File:Mathematics_lecture_at_the_Helsinki_University_of_Technology.jpg"
+          "text": "图片：Uhooep · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Clock_Tower%2C_University_of_Auckland.jpg"
         }
       },
       {
         "type": "image",
-        "src": "/images/campus/uni-canterbury.webp",
-        "alt": "坎特伯雷大学 Ilam 运动场（2007）",
-        "caption": "坎特伯雷有授课型 Master of Artificial Intelligence；线上 MAAI 的国际政策要另核，不要和 Ilam 面授课混为一谈。",
+        "src": "/images/article/lecture-canterbury.jpg",
+        "alt": "坎特伯雷大学 James Hight 楼",
+        "caption": "坎特伯雷大学 Puaka–James Hight 一带校园实景；授课型 AI 硕士与线上 MAAI 的国际政策要分开核对。",
         "credit": {
-          "text": "图片：Claude12 · CC BY-SA 3.0",
-          "href": "https://commons.wikimedia.org/wiki/File:Ilam_Fields_University_of_Canterbury_New_Zealand_2007.jpg"
+          "text": "图片：Schwede66 · CC BY-SA 3.0",
+          "href": "https://commons.wikimedia.org/wiki/File:James_Hight_Building_003.JPG"
         }
       },
       {
@@ -5241,22 +5737,22 @@ export const articles = [
       "There is no official “AI master’s ranking” in New Zealand. This page shortlists five university routes by how clearly you can explain the job story, how long the taught programme is, and what the official fee pages said on 2026-10-21. Private-provider AI paths are separate articles.",
       {
         "type": "image",
-        "src": "/images/campus/ai-lecture.webp",
+        "src": "/images/article/lecture-auckland.jpg",
         "alt": "Taught master’s class",
-        "caption": "Generic lecture photo (Helsinki University of Technology, not a New Zealand campus). Business analytics, data science and computer-science AI use different entry rules.",
+        "caption": "University of Auckland campus (research universities are a different track from private skills colleges).",
         "credit": {
-          "text": "Photo: Tungsten · Public domain",
-          "href": "https://commons.wikimedia.org/wiki/File:Mathematics_lecture_at_the_Helsinki_University_of_Technology.jpg"
+          "text": "Photo: Uhooep · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Clock_Tower%2C_University_of_Auckland.jpg"
         }
       },
       {
         "type": "image",
-        "src": "/images/campus/uni-canterbury.webp",
-        "alt": "University of Canterbury Ilam fields (2007)",
-        "caption": "Canterbury’s taught Master of Artificial Intelligence is on campus; the online MAAI has a separate international-student policy.",
+        "src": "/images/article/lecture-canterbury.jpg",
+        "alt": "University of Canterbury James Hight building",
+        "caption": "University of Canterbury campus; taught AI master’s and the online MAAI have separate international policies.",
         "credit": {
-          "text": "Photo: Claude12 · CC BY-SA 3.0",
-          "href": "https://commons.wikimedia.org/wiki/File:Ilam_Fields_University_of_Canterbury_New_Zealand_2007.jpg"
+          "text": "Photo: Schwede66 · CC BY-SA 3.0",
+          "href": "https://commons.wikimedia.org/wiki/File:James_Hight_Building_003.JPG"
         }
       },
       {
@@ -5929,12 +6425,12 @@ export const articles = [
       "5. 预科一般只保证升入本校。想换学校，要先问清目标大学是否认可这个预科。",
       {
         "type": "image",
-        "src": "/images/campus/uni-canterbury.webp",
+        "src": "/images/article/lecture-canterbury.jpg",
         "alt": "坎特伯雷大学校园",
         "caption": "坎特伯雷预科由校内 UCIC 授课，8 个月，2026 年 6 月、10 月及 2027 年 2 月开学。",
         "credit": {
-          "text": "图片：Claude12 · CC BY-SA 3.0",
-          "href": "https://commons.wikimedia.org/wiki/File:Ilam_Fields_University_of_Canterbury_New_Zealand_2007.jpg"
+          "text": "图片：Schwede66 · CC BY-SA 3.0",
+          "href": "https://commons.wikimedia.org/wiki/File:James_Hight_Building_003.JPG"
         }
       },
       {
@@ -6092,7 +6588,7 @@ export const articles = [
     "titleEn": "Seeing a doctor as an international student in New Zealand: GPs, Auckland clinics and insurance claims",
     "excerptZh": "留学生多数不享受公费医疗，只能以自费/保险病人身份在 GP 登记。本文讲清资格、看病渠道、费用、ACC，以及 Studentsafe、Orbit 等保险怎么报销，附奥克兰可接待留学生的诊所。",
     "excerptEn": "Most international students are not eligible for funded care. How to register with a GP, where to go, costs, ACC, and how to claim on Studentsafe or OrbitProtect.",
-    "image": "/images/life-feature.png",
+    "image": "/images/article/health-gp-clinic.jpg",
     "imageAltZh": "留学生看病与保险",
     "imageAltEn": "International student healthcare",
     "related": [
@@ -6412,6 +6908,14 @@ export const articles = [
         "text": "Disclaimer"
       },
       "General information only, not medical, legal or insurance advice. Verify with the clinic and your insurer. In an emergency call 111."
-    ]
+    ],
+    "imageCreditZh": {
+      "text": "图片：Michal Klajban · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:North_Avon_Medical_Centre_%26_Pharmacy%2C_Richmond%2C_Christchurch%2C_New_Zealand.jpg"
+    },
+    "imageCreditEn": {
+      "text": "Photo: Michal Klajban · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:North_Avon_Medical_Centre_%26_Pharmacy%2C_Richmond%2C_Christchurch%2C_New_Zealand.jpg"
+    }
   }
 ];
