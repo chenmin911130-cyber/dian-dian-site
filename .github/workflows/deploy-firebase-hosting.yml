@@ -19,6 +19,8 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+        env:
+          VITE_WEB3FORMS_ACCESS_KEY: ${{ secrets.VITE_WEB3FORMS_ACCESS_KEY }}
       - uses: google-github-actions/auth@v2
         with:
           workload_identity_provider: projects/625283447919/locations/global/workloadIdentityPools/github/providers/github-oidc

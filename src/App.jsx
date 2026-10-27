@@ -15,14 +15,28 @@ import { LogoMark } from "./LogoMark";
 import { ContactChannels } from "./ContactChannels";
 import { ConsultForm } from "./ConsultForm";
 import { GuidePage } from "./GuidePage";
+import { InquiryForm } from "./InquiryForm";
 import {
   getArticle,
   getArticlesByGuide,
   getGuide,
+  INQUIRY_OG_IMAGE,
+  inquiryCopy,
   siteCopy,
 } from "./content";
 
-function PageTitle({ title }) {
+function setMetaTag({ selector, attr, name, content }) {
+  let el = document.querySelector(selector);
+  if (!el) {
+    el = document.createElement("meta");
+    if (attr === "property") el.setAttribute("property", name);
+    else el.setAttribute("name", name);
+    document.head.appendChild(el);
+  }
+  el.setAttribute("content", content);
+}
+
+function PageTitle({ title, description, ogTitle, ogDescription, ogImage, ogLocale }) {
   const location = useLocation();
   useEffect(() => {
     document.title = title;
@@ -34,9 +48,28 @@ function PageTitle({ title }) {
       document.head.appendChild(link);
     }
     link.href = url;
-    const og = document.querySelector('meta[property="og:url"]');
-    if (og) og.content = url;
-  }, [title, location.pathname]);
+    setMetaTag({ selector: 'meta[property="og:url"]', attr: "property", name: "og:url", content: url });
+    if (description) {
+      setMetaTag({ selector: 'meta[name="description"]', attr: "name", name: "description", content: description });
+    }
+    if (ogTitle) {
+      setMetaTag({ selector: 'meta[property="og:title"]', attr: "property", name: "og:title", content: ogTitle });
+    }
+    if (ogDescription) {
+      setMetaTag({
+        selector: 'meta[property="og:description"]',
+        attr: "property",
+        name: "og:description",
+        content: ogDescription,
+      });
+    }
+    if (ogImage) {
+      setMetaTag({ selector: 'meta[property="og:image"]', attr: "property", name: "og:image", content: ogImage });
+    }
+    if (ogLocale) {
+      setMetaTag({ selector: 'meta[property="og:locale"]', attr: "property", name: "og:locale", content: ogLocale });
+    }
+  }, [title, description, ogTitle, ogDescription, ogImage, ogLocale, location.pathname]);
   return null;
 }
 
@@ -176,6 +209,7 @@ function Footer({ locale, showChannels }) {
           Immigration New Zealand
         </a>
         <span>{copy.privacyNote}</span>
+        <Link to="/ask">{copy.inquiryFormLink}</Link>
         <small>{copy.disclaimer}</small>
         <small>© 2026 {copy.siteName}</small>
       </div>
@@ -233,12 +267,40 @@ function AppContent() {
   }, [location.pathname]);
 
   const isHome = location.pathname === "/";
+  const isInquiry = location.pathname === "/ask";
   const header = <Header locale={locale} setLocale={setLocale} />;
+  const inquiryMeta = inquiryCopy[locale];
 
   useEffect(() => {
     document.body.classList.add("is-cinematic");
-    return () => document.body.classList.remove("is-cinematic");
-  }, []);
+    if (isInquiry) document.body.classList.add("is-inquiry");
+    return () => {
+      document.body.classList.remove("is-cinematic");
+      document.body.classList.remove("is-inquiry");
+    };
+  }, [isInquiry]);
+
+  if (isInquiry) {
+    return (
+      <main className="site-shell site-shell--cinematic site-shell--inquiry">
+        <PageTitle
+          title={inquiryMeta.pageTitle}
+          description={inquiryMeta.metaDescription}
+          ogTitle={inquiryMeta.ogTitle}
+          ogDescription={inquiryMeta.ogDescription}
+          ogImage={INQUIRY_OG_IMAGE}
+          ogLocale={locale === "zh" ? "zh_CN" : "en_NZ"}
+        />
+        <div className="inquiry-shell">
+          <Link className="inquiry-shell__brand" to="/" aria-label={siteCopy[locale].siteName}>
+            <LogoMark className="inquiry-shell__mark" />
+            <span>{siteCopy[locale].siteBrand}</span>
+          </Link>
+          <InquiryForm locale={locale} setLocale={setLocale} />
+        </div>
+      </main>
+    );
+  }
 
   return (
     <main className="site-shell site-shell--cinematic">
