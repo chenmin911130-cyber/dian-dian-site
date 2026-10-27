@@ -267,7 +267,7 @@ function AppContent() {
   }, [location.pathname]);
 
   const isHome = location.pathname === "/";
-  const isInquiry = location.pathname === "/ask";
+  const isInquiry = location.pathname.replace(/\/+$/, "") === "/ask";
   const header = <Header locale={locale} setLocale={setLocale} />;
   const inquiryMeta = inquiryCopy[locale];
 
