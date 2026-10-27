@@ -275,6 +275,20 @@ it("loads the standalone inquiry form at /ask with chip groups and contact field
   );
 });
 
+it("loads the standalone inquiry form at /ask/ (trailing slash)", () => {
+  window.history.replaceState({}, "", "/ask/");
+  render(<App />);
+  expect(
+    screen.getByRole("heading", { name: "留学意向咨询" }),
+  ).toBeInTheDocument();
+  expect(
+    screen.getByRole("button", { name: "提交咨询" }),
+  ).toBeInTheDocument();
+  expect(
+    screen.queryByRole("heading", { name: "页面没有找到" }),
+  ).not.toBeInTheDocument();
+});
+
 it("loads the consultation page directly at /consult", () => {
   window.history.replaceState({}, "", "/consult");
   render(<App />);
