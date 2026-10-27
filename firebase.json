@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "diandianyudita",
     "public": "dist/client",
     "ignore": [
       "firebase.json",

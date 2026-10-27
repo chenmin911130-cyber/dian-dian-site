@@ -1,0 +1,26 @@
+name: Deploy to Firebase Hosting
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  id-token: write
+env:
+  PROJECT_ID: project-e99023b7-062a-4d00-873
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: projects/625283447919/locations/global/workloadIdentityPools/github/providers/github-oidc
+          service_account: github-deployer@project-e99023b7-062a-4d00-873.iam.gserviceaccount.com
+      - run: npx firebase-tools@13 deploy --only hosting --project ${{ env.PROJECT_ID }} --non-interactive
