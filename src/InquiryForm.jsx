@@ -16,7 +16,7 @@ const EDUCATION_OPTIONS = [
   { value: "本科", zh: "本科", en: "Bachelor" },
   { value: "研文 / PGDip", zh: "研文", en: "PGDip" },
   { value: "硕士", zh: "硕士", en: "Master’s" },
-  { value: "语言 / 预科", zh: "语言/预科", en: "Pathway" },
+  { value: "博士", zh: "博士", en: "PhD" },
 ];
 
 const EMPLOYMENT_OPTIONS = [
@@ -35,6 +35,15 @@ const INCOME_OPTIONS = [
   { value: "不便透露", zh: "不便透露", en: "Prefer not to say" },
 ];
 
+const SAVINGS_OPTIONS = [
+  { value: "NZ$10,000 以下 / under NZ$10k", zh: "1万纽币以下", en: "< NZ$10k" },
+  { value: "NZ$10,000–30,000", zh: "1–3万纽币", en: "NZ$10–30k" },
+  { value: "NZ$30,000–60,000", zh: "3–6万纽币", en: "NZ$30–60k" },
+  { value: "NZ$60,000–100,000", zh: "6–10万纽币", en: "NZ$60–100k" },
+  { value: "NZ$100,000 以上", zh: "10万纽币以上", en: "> NZ$100k" },
+  { value: "不便透露", zh: "不便透露", en: "Prefer not to say" },
+];
+
 const MAJOR_OPTIONS = [
   { value: "商科 / 管理", zh: "商科", en: "Business" },
   { value: "IT / 计算机", zh: "IT", en: "IT" },
@@ -48,11 +57,12 @@ const MAJOR_OPTIONS = [
 const emptyForm = {
   education: "",
   employment: "",
+  jobDescription: "",
   income: "",
+  savings: "",
   majorChoice: "",
   majorOther: "",
   email: "",
-  phone: "",
   website: "",
 };
 
@@ -226,15 +236,30 @@ export function InquiryForm({ locale, setLocale }) {
             locale={locale}
           />
 
-          <ChipGroup
-            legend={copy.employmentLabel}
-            name="employment"
-            options={EMPLOYMENT_OPTIONS}
-            value={form.employment}
-            onSelect={(value) => update("employment", value)}
-            error={fieldErrors.employment}
-            locale={locale}
-          />
+          <div className="inquiry-form__employment-row">
+            <ChipGroup
+              legend={copy.employmentLabel}
+              name="employment"
+              options={EMPLOYMENT_OPTIONS}
+              value={form.employment}
+              onSelect={(value) => update("employment", value)}
+              error={fieldErrors.employment}
+              locale={locale}
+            />
+            <TextField
+              label={copy.jobLabel}
+              id="inquiry-job"
+              error={fieldErrors.jobDescription}
+            >
+              <input
+                id="inquiry-job"
+                value={form.jobDescription}
+                onChange={(e) => update("jobDescription", e.target.value)}
+                placeholder={copy.jobPlaceholder}
+                aria-invalid={Boolean(fieldErrors.jobDescription)}
+              />
+            </TextField>
+          </div>
 
           <ChipGroup
             legend={copy.incomeLabel}
@@ -243,6 +268,16 @@ export function InquiryForm({ locale, setLocale }) {
             value={form.income}
             onSelect={(value) => update("income", value)}
             error={fieldErrors.income}
+            locale={locale}
+          />
+
+          <ChipGroup
+            legend={copy.savingsLabel}
+            name="savings"
+            options={SAVINGS_OPTIONS}
+            value={form.savings}
+            onSelect={(value) => update("savings", value)}
+            error={fieldErrors.savings}
             locale={locale}
           />
 
@@ -281,19 +316,6 @@ export function InquiryForm({ locale, setLocale }) {
               value={form.email}
               onChange={(e) => update("email", e.target.value)}
               aria-invalid={Boolean(fieldErrors.email)}
-            />
-          </TextField>
-
-          <TextField label={copy.phoneLabel} id="inquiry-phone" error={fieldErrors.phone}>
-            <input
-              id="inquiry-phone"
-              type="tel"
-              inputMode="tel"
-              autoComplete="tel"
-              value={form.phone}
-              onChange={(e) => update("phone", e.target.value)}
-              placeholder={copy.phonePlaceholder}
-              aria-invalid={Boolean(fieldErrors.phone)}
             />
           </TextField>
 

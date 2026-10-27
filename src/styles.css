@@ -2193,6 +2193,18 @@ body.is-inquiry {
   gap: 18px;
 }
 
+.inquiry-form__employment-row {
+  display: grid;
+  gap: 18px;
+  align-items: start;
+}
+
+@media (min-width: 640px) {
+  .inquiry-form__employment-row {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+
 .inquiry-chip-group {
   margin: 0;
   padding: 0;
