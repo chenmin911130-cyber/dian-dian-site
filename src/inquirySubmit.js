@@ -5,7 +5,6 @@ export const RATE_LIMIT_KEY = "diandian-inquiry-last-submit";
 export const MAJOR_OTHER_VALUE = "其他";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const PHONE_RE = /^[\d+\s()-]{8,20}$/;
 
 export function resolveMajor(form) {
   const choice = form.majorChoice?.trim() ?? "";
@@ -19,11 +18,12 @@ export function validateInquiryFields(form, locale) {
   const fieldErrors = {};
   const education = form.education?.trim() ?? "";
   const employment = form.employment?.trim() ?? "";
+  const jobDescription = form.jobDescription?.trim() ?? "";
   const income = form.income?.trim() ?? "";
+  const savings = form.savings?.trim() ?? "";
   const majorChoice = form.majorChoice?.trim() ?? "";
   const major = resolveMajor(form);
   const email = form.email?.trim() ?? "";
-  const phone = form.phone?.trim() ?? "";
 
   if (!education) {
     fieldErrors.education = zh ? "请选择学历。" : "Please select your education level.";
@@ -33,6 +33,9 @@ export function validateInquiryFields(form, locale) {
   }
   if (!income) {
     fieldErrors.income = zh ? "请选择收入区间。" : "Please select an income range.";
+  }
+  if (!savings) {
+    fieldErrors.savings = zh ? "请选择存款区间。" : "Please select a savings range.";
   }
   if (!majorChoice) {
     fieldErrors.major = zh ? "请选择专业方向。" : "Please select a field of study.";
@@ -44,20 +47,13 @@ export function validateInquiryFields(form, locale) {
   } else if (!EMAIL_RE.test(email)) {
     fieldErrors.email = zh ? "请输入有效邮箱。" : "Please enter a valid email.";
   }
-  if (!phone) {
-    fieldErrors.phone = zh ? "请填写手机号。" : "Please enter your mobile number.";
-  } else if (!PHONE_RE.test(phone)) {
-    fieldErrors.phone = zh
-      ? "请输入有效手机号（8–20 位数字）。"
-      : "Please enter a valid mobile number (8–20 digits).";
-  }
 
   if (Object.keys(fieldErrors).length) {
     return { ok: false, fieldErrors };
   }
   return {
     ok: true,
-    data: { education, employment, income, major, email, phone },
+    data: { education, employment, jobDescription, income, savings, major, email },
   };
 }
 
@@ -91,27 +87,46 @@ export function checkInquirySpamGuards({
   return { ok: true };
 }
 
-export function buildInquiryPayload(data, locale) {
-  const zh = locale === "zh";
+function formatInquirySubmittedAt(date) {
+  const parts = Object.fromEntries(
+    new Intl.DateTimeFormat("en-CA", {
+      timeZone: "Pacific/Auckland",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+    })
+      .formatToParts(date)
+      .map((part) => [part.type, part.value]),
+  );
+  return `${parts.year}-${parts.month}-${parts.day} ${parts.hour}:${parts.minute}（新西兰时间）`;
+}
+
+function inquiryMessageLine(label, value) {
+  return `${label}：${value ?? ""}`;
+}
+
+export function buildInquiryPayload(data, locale, submittedAt = new Date()) {
+  const jobDescription = data.jobDescription?.trim() ?? "";
+  const submitLanguage = locale === "zh" ? "中文" : "English";
   const lines = [
-    zh ? "— 留学意向咨询（diandianyudita.com/ask）—" : "— Study inquiry (diandianyudita.com/ask) —",
-    `${zh ? "学历" : "Education"}: ${data.education}`,
-    `${zh ? "工作情况" : "Employment"}: ${data.employment}`,
-    `${zh ? "收入" : "Income"}: ${data.income}`,
-    `${zh ? "专业方向" : "Intended major"}: ${data.major}`,
-    `${zh ? "邮箱" : "Email"}: ${data.email}`,
-    `${zh ? "手机" : "Mobile"}: ${data.phone}`,
+    inquiryMessageLine("学历", data.education),
+    inquiryMessageLine("工作情况", data.employment),
+    inquiryMessageLine("具体工作", jobDescription),
+    inquiryMessageLine("收入", data.income),
+    inquiryMessageLine("存款", data.savings),
+    inquiryMessageLine("意向专业", data.major),
+    inquiryMessageLine("邮箱", data.email),
+    inquiryMessageLine("提交语言", submitLanguage),
+    inquiryMessageLine("提交时间", formatInquirySubmittedAt(submittedAt)),
   ];
   return {
-    subject: zh ? "留学意向咨询｜点点网站" : "Study inquiry | DianDian site",
-    from_name: data.phone,
+    subject: `咨询：${data.email}｜${data.major}`,
+    from_name: data.email,
     email: data.email,
     message: lines.join("\n"),
-    education_level: data.education,
-    employment_status: data.employment,
-    income: data.income,
-    intended_major: data.major,
-    phone: data.phone,
   };
 }
 

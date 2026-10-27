@@ -19,10 +19,11 @@ async function shot(page, name) {
 async function fillValid(page) {
   await page.getByRole("radio", { name: "本科" }).click();
   await page.getByRole("radio", { name: "在职" }).click();
-  await page.getByRole("radio", { name: "1万–2万" }).click();
+  await page.fill("#inquiry-job", "软件工程师");
+  await page.getByRole("radio", { name: "20-50万" }).click();
+  await page.getByRole("radio", { name: "30-50万" }).click();
   await page.getByRole("radio", { name: "IT" }).click();
   await page.fill("#inquiry-email", "demo@example.com");
-  await page.fill("#inquiry-phone", "13800138000");
 }
 
 const browser = await chromium.launch();
@@ -78,10 +79,11 @@ await enPage.route("**/api.web3forms.com/**", async (route) => {
 await enPage.evaluate(() => localStorage.setItem("diandian-inquiry-last-submit", "0"));
 await enPage.getByRole("radio", { name: "Bachelor" }).click();
 await enPage.getByRole("radio", { name: "Employed", exact: true }).click();
-await enPage.getByRole("radio", { name: "¥10–20k" }).click();
+await enPage.getByRole("radio", { name: "¥200k–500k" }).click();
+await enPage.getByRole("radio", { name: "¥300k–500k" }).click();
 await enPage.getByRole("radio", { name: "IT" }).click();
+await enPage.fill("#inquiry-job", "Software engineer");
 await enPage.fill("#inquiry-email", "demo@example.com");
-await enPage.fill("#inquiry-phone", "13800138000");
 await enPage.waitForTimeout(3500);
 await enPage.getByRole("button", { name: "Send inquiry" }).click();
 await enPage.waitForSelector("#inquiry-success-title", { timeout: 8000 });

@@ -16,7 +16,7 @@ const EDUCATION_OPTIONS = [
   { value: "本科", zh: "本科", en: "Bachelor" },
   { value: "研文 / PGDip", zh: "研文", en: "PGDip" },
   { value: "硕士", zh: "硕士", en: "Master’s" },
-  { value: "语言 / 预科", zh: "语言/预科", en: "Pathway" },
+  { value: "博士", zh: "博士", en: "PhD" },
 ];
 
 const EMPLOYMENT_OPTIONS = [
@@ -27,12 +27,19 @@ const EMPLOYMENT_OPTIONS = [
 ];
 
 const INCOME_OPTIONS = [
-  { value: "5000 人民币以下 / under ¥5,000", zh: "5千以下", en: "< ¥5k" },
-  { value: "5000–10000 人民币", zh: "5千–1万", en: "¥5–10k" },
-  { value: "10000–20000 人民币", zh: "1万–2万", en: "¥10–20k" },
-  { value: "20000–35000 人民币", zh: "2万–3.5万", en: "¥20–35k" },
-  { value: "35000 人民币以上", zh: "3.5万以上", en: "> ¥35k" },
-  { value: "不便透露", zh: "不便透露", en: "Prefer not to say" },
+  { value: "10万以下", zh: "10万以下", en: "Under ¥100k" },
+  { value: "10-20万", zh: "10-20万", en: "¥100k–200k" },
+  { value: "20-50万", zh: "20-50万", en: "¥200k–500k" },
+  { value: "50-100万", zh: "50-100万", en: "¥500k–1M" },
+  { value: "100万以上", zh: "100万以上", en: "Over ¥1M" },
+];
+
+const SAVINGS_OPTIONS = [
+  { value: "10万以下", zh: "10万以下", en: "Under ¥100k" },
+  { value: "10-30万", zh: "10-30万", en: "¥100k–300k" },
+  { value: "30-50万", zh: "30-50万", en: "¥300k–500k" },
+  { value: "50-100万", zh: "50-100万", en: "¥500k–1M" },
+  { value: "100万以上", zh: "100万以上", en: "Over ¥1M" },
 ];
 
 const MAJOR_OPTIONS = [
@@ -48,11 +55,12 @@ const MAJOR_OPTIONS = [
 const emptyForm = {
   education: "",
   employment: "",
+  jobDescription: "",
   income: "",
+  savings: "",
   majorChoice: "",
   majorOther: "",
   email: "",
-  phone: "",
   website: "",
 };
 
@@ -226,15 +234,30 @@ export function InquiryForm({ locale, setLocale }) {
             locale={locale}
           />
 
-          <ChipGroup
-            legend={copy.employmentLabel}
-            name="employment"
-            options={EMPLOYMENT_OPTIONS}
-            value={form.employment}
-            onSelect={(value) => update("employment", value)}
-            error={fieldErrors.employment}
-            locale={locale}
-          />
+          <div className="inquiry-form__employment-row">
+            <ChipGroup
+              legend={copy.employmentLabel}
+              name="employment"
+              options={EMPLOYMENT_OPTIONS}
+              value={form.employment}
+              onSelect={(value) => update("employment", value)}
+              error={fieldErrors.employment}
+              locale={locale}
+            />
+            <TextField
+              label={copy.jobLabel}
+              id="inquiry-job"
+              error={fieldErrors.jobDescription}
+            >
+              <input
+                id="inquiry-job"
+                value={form.jobDescription}
+                onChange={(e) => update("jobDescription", e.target.value)}
+                placeholder={copy.jobPlaceholder}
+                aria-invalid={Boolean(fieldErrors.jobDescription)}
+              />
+            </TextField>
+          </div>
 
           <ChipGroup
             legend={copy.incomeLabel}
@@ -243,6 +266,16 @@ export function InquiryForm({ locale, setLocale }) {
             value={form.income}
             onSelect={(value) => update("income", value)}
             error={fieldErrors.income}
+            locale={locale}
+          />
+
+          <ChipGroup
+            legend={copy.savingsLabel}
+            name="savings"
+            options={SAVINGS_OPTIONS}
+            value={form.savings}
+            onSelect={(value) => update("savings", value)}
+            error={fieldErrors.savings}
             locale={locale}
           />
 
@@ -281,19 +314,6 @@ export function InquiryForm({ locale, setLocale }) {
               value={form.email}
               onChange={(e) => update("email", e.target.value)}
               aria-invalid={Boolean(fieldErrors.email)}
-            />
-          </TextField>
-
-          <TextField label={copy.phoneLabel} id="inquiry-phone" error={fieldErrors.phone}>
-            <input
-              id="inquiry-phone"
-              type="tel"
-              inputMode="tel"
-              autoComplete="tel"
-              value={form.phone}
-              onChange={(e) => update("phone", e.target.value)}
-              placeholder={copy.phonePlaceholder}
-              aria-invalid={Boolean(fieldErrors.phone)}
             />
           </TextField>
 
