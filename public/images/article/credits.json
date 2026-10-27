@@ -1,0 +1,285 @@
+[
+  {
+    "id": "city-auckland",
+    "src": "/images/article/city-auckland.jpg",
+    "commonsTitle": "Queen Street, Auckland PA01.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Queen_Street%2C_Auckland_PA01.jpg",
+    "author": "Paora",
+    "license": "CC0",
+    "bytes": 2267383
+  },
+  {
+    "id": "city-aut",
+    "src": "/images/article/city-aut.jpg",
+    "commonsTitle": "North Campus.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:North_Campus.jpg",
+    "author": "Sophbuchan",
+    "license": "CC BY-SA 4.0",
+    "bytes": 1194160
+  },
+  {
+    "id": "city-hamilton",
+    "src": "/images/article/city-hamilton.jpg",
+    "commonsTitle": "Rail track Hamilton, Hamilton city, New Zealand.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Rail_track_Hamilton%2C_Hamilton_city%2C_New_Zealand.jpg",
+    "author": "Umedha Shanka Indranath Hettigoda",
+    "license": "CC BY-SA 2.0",
+    "bytes": 1473259
+  },
+  {
+    "id": "city-palmerston-north",
+    "src": "/images/article/city-palmerston-north.jpg",
+    "commonsTitle": "The Square, Palmerston North, North Island, New Zealand.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:The_Square%2C_Palmerston_North%2C_North_Island%2C_New_Zealand.jpg",
+    "author": "AnnWoolliams",
+    "license": "CC BY-SA 4.0",
+    "bytes": 757752
+  },
+  {
+    "id": "city-wellington",
+    "src": "/images/article/city-wellington.jpg",
+    "commonsTitle": "Cuba Street, 2013 (06).jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Cuba_Street%2C_2013_(06).jpg",
+    "author": "Bahnfrend",
+    "license": "CC BY-SA 4.0",
+    "bytes": 686779
+  },
+  {
+    "id": "city-christchurch",
+    "src": "/images/article/city-christchurch.jpg",
+    "commonsTitle": "Tram tracks on Cathedral Square, Christchurch, New Zealand.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Tram_tracks_on_Cathedral_Square%2C_Christchurch%2C_New_Zealand.jpg",
+    "author": "Michal Klajban",
+    "license": "CC BY-SA 4.0",
+    "bytes": 657436
+  },
+  {
+    "id": "city-lincoln",
+    "src": "/images/article/city-lincoln.jpg",
+    "commonsTitle": "Union Church Lincoln, NZ FZ200; 2014.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Union_Church_Lincoln%2C_NZ_FZ200%3B_2014.jpg",
+    "author": "Bernard Spragg. NZ from Christchurch, New Zealand",
+    "license": "CC0",
+    "bytes": 971596
+  },
+  {
+    "id": "city-dunedin",
+    "src": "/images/article/city-dunedin.jpg",
+    "commonsTitle": "Dunedin Railway Station Full Exterior.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Dunedin_Railway_Station_Full_Exterior.jpg",
+    "author": "Antilived",
+    "license": "CC BY-SA 3.0",
+    "bytes": 519218
+  },
+  {
+    "id": "city-auckland-north",
+    "src": "/images/article/city-auckland-north.jpg",
+    "commonsTitle": "Takapuna, North Shore City, Auckland, New Zealand.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Takapuna%2C_North_Shore_City%2C_Auckland%2C_New_Zealand.jpg",
+    "author": "Sandy Austin",
+    "license": "CC BY 2.0",
+    "bytes": 815583
+  },
+  {
+    "id": "health-pharmacy",
+    "src": "/images/article/health-pharmacy.jpg",
+    "commonsTitle": "Unichem Pharmacy Cuba.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Unichem_Pharmacy_Cuba.jpg",
+    "author": "Tom Ackroyd",
+    "license": "CC BY-SA 4.0",
+    "bytes": 1019981
+  },
+  {
+    "id": "health-gp-clinic",
+    "src": "/images/article/health-gp-clinic.jpg",
+    "commonsTitle": "North Avon Medical Centre & Pharmacy, Richmond, Christchurch, New Zealand.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:North_Avon_Medical_Centre_%26_Pharmacy%2C_Richmond%2C_Christchurch%2C_New_Zealand.jpg",
+    "author": "Michal Klajban",
+    "license": "CC BY-SA 4.0",
+    "bytes": 598489
+  },
+  {
+    "id": "visa-airport",
+    "src": "/images/article/visa-airport.jpg",
+    "commonsTitle": "Auckland Airport In Main Hall.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Auckland_Airport_In_Main_Hall.jpg",
+    "author": "Ingolfson",
+    "license": "Public domain",
+    "bytes": 1004442
+  },
+  {
+    "id": "visa-documents",
+    "src": "/images/article/visa-documents.png",
+    "commonsTitle": "New Zealand Official Passport Outside Front Cover.png",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_Official_Passport_Outside_Front_Cover.png",
+    "author": "New Zealand Government",
+    "license": "Public domain",
+    "bytes": 406367
+  },
+  {
+    "id": "calendar-planning",
+    "src": "/images/article/calendar-planning.jpg",
+    "commonsTitle": "Calendar (PSF).jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Calendar_(PSF).jpg",
+    "author": "Pearson Scott Foresman",
+    "license": "Public domain",
+    "bytes": 10881
+  },
+  {
+    "id": "bank-branch",
+    "src": "/images/article/bank-branch.jpg",
+    "commonsTitle": "ANZ Bank Newton, Auckland PA01.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:ANZ_Bank_Newton%2C_Auckland_PA01.jpg",
+    "author": "Paora",
+    "license": "CC0",
+    "bytes": 489139
+  },
+  {
+    "id": "bank-card",
+    "src": "/images/article/bank-card.jpg",
+    "sourceUrl": "https://www.pexels.com/photo/person-holding-credit-card-50987/",
+    "author": "Pixabay",
+    "license": "Pexels License",
+    "bytes": 74861
+  },
+  {
+    "id": "ielts-study",
+    "src": "/images/article/ielts-study.jpg",
+    "commonsTitle": "Smiling Student Working on Assignments at Desk.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Smiling_Student_Working_on_Assignments_at_Desk.jpg",
+    "author": "Heidy Garcia",
+    "license": "CC BY 4.0",
+    "bytes": 263747
+  },
+  {
+    "id": "offer-envelope",
+    "src": "/images/article/offer-envelope.jpg",
+    "commonsTitle": "Letter from President Theodore Roosevelt with an envelope, 1909.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Letter_from_President_Theodore_Roosevelt_with_an_envelope%2C_1909.jpg",
+    "author": "This picture has been taken by Oleg Yunakov . Contact e-mail: yunakov gmail.com . Image can be used in accordance with t",
+    "license": "CC BY-SA 4.0",
+    "bytes": 1248581
+  },
+  {
+    "id": "tuition-invoice",
+    "src": "/images/article/tuition-invoice.png",
+    "commonsTitle": "Tuition-fee-breakdown-sample.png",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Tuition-fee-breakdown-sample.png",
+    "author": "Dwapale03",
+    "license": "CC BY-SA 4.0",
+    "bytes": 46809
+  },
+  {
+    "id": "rental-viewing",
+    "src": "/images/article/rental-viewing.jpg",
+    "commonsTitle": "Terrace houses, Ponsonby Rd.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Terrace_houses%2C_Ponsonby_Rd.jpg",
+    "author": "Bjankuloski06",
+    "license": "CC BY 4.0",
+    "bytes": 757798
+  },
+  {
+    "id": "flat-share",
+    "src": "/images/article/flat-share.jpg",
+    "sourceUrl": "https://www.pexels.com/photo/modern-living-room-1571460/",
+    "author": "Quang Nguyen Vinh",
+    "license": "Pexels License",
+    "bytes": 222543
+  },
+  {
+    "id": "supermarket-shelves",
+    "src": "/images/article/supermarket-shelves.jpg",
+    "commonsTitle": "Woolworths South Dunedin supermarket, 10 Dec 2025.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Woolworths_South_Dunedin_supermarket%2C_10_Dec_2025.jpg",
+    "author": "Andykatib",
+    "license": "CC0",
+    "bytes": 362763
+  },
+  {
+    "id": "transport-bus",
+    "src": "/images/article/transport-bus.jpg",
+    "commonsTitle": "Go Bus bus in Howick, Auckland.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Go_Bus_bus_in_Howick%2C_Auckland.jpg",
+    "author": "Justin Hu",
+    "license": "CC BY-SA 4.0",
+    "bytes": 787091
+  },
+  {
+    "id": "payslip-tax",
+    "src": "/images/article/payslip-tax.jpg",
+    "commonsTitle": "Metropolitan Police 1955 Payslip.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Metropolitan_Police_1955_Payslip.jpg",
+    "author": "Pontificalibus",
+    "license": "CC0",
+    "bytes": 311635
+  },
+  {
+    "id": "tax-form",
+    "src": "/images/article/tax-form.jpg",
+    "commonsTitle": "Form 4868, 2010, with pen glasses phone.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Form_4868%2C_2010%2C_with_pen_glasses_phone.jpg",
+    "author": "MoneyBlogNewz",
+    "license": "CC BY 2.0",
+    "bytes": 1000584
+  },
+  {
+    "id": "job-hunt",
+    "src": "/images/article/job-hunt.jpg",
+    "sourceUrl": "https://www.pexels.com/photo/people-sitting-on-chairs-3184465/",
+    "author": "fauxels",
+    "license": "Pexels License",
+    "bytes": 93451
+  },
+  {
+    "id": "lecture-auckland",
+    "src": "/images/article/lecture-auckland.jpg",
+    "commonsTitle": "Clock Tower, University of Auckland.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Clock_Tower%2C_University_of_Auckland.jpg",
+    "author": "Uhooep",
+    "license": "CC BY-SA 4.0",
+    "bytes": 786942
+  },
+  {
+    "id": "lecture-canterbury",
+    "src": "/images/article/lecture-canterbury.jpg",
+    "commonsTitle": "James Hight Building 003.JPG",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:James_Hight_Building_003.JPG",
+    "author": "Schwede66",
+    "license": "CC BY-SA 3.0",
+    "bytes": 514611
+  },
+  {
+    "id": "culture-haka",
+    "src": "/images/article/culture-haka.jpg",
+    "commonsTitle": "All Blacks Haka at Westpac Stadium, Wellington, NZ.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:All_Blacks_Haka_at_Westpac_Stadium%2C_Wellington%2C_NZ.jpg",
+    "author": "Natural-Heart",
+    "license": "CC BY-SA 2.0",
+    "bytes": 283420
+  },
+  {
+    "id": "weekend-hiking",
+    "src": "/images/article/weekend-hiking.jpg",
+    "commonsTitle": "Tongariro Alpine Crossing.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Tongariro_Alpine_Crossing.jpg",
+    "author": "Jeffrey Pang from Madison, NJ, USA",
+    "license": "CC BY 2.0",
+    "bytes": 798789
+  },
+  {
+    "id": "scam-warning",
+    "src": "/images/article/scam-warning.jpg",
+    "sourceUrl": "https://www.pexels.com/photo/padlock-on-laptop-keyboard-60504/",
+    "author": "Pixabay",
+    "license": "Pexels License",
+    "bytes": 120800
+  },
+  {
+    "id": "graduation-cap",
+    "src": "/images/article/graduation-cap.jpg",
+    "sourceUrl": "https://www.pexels.com/photo/graduates-throwing-their-hats-in-the-air-267885/",
+    "author": "Pixabay",
+    "license": "Pexels License",
+    "bytes": 197194
+  }
+]
