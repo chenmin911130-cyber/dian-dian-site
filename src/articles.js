@@ -1400,21 +1400,21 @@ export const articles = [
     "slug": "ird-work-hours",
     "guideId": "career",
     "section": "career",
-    "updatedAt": "2026-10-23",
-    "titleZh": "IRD 税号与学生工时：25 小时怎么合规",
-    "titleEn": "IRD numbers and the 25-hour student work limit",
-    "excerptZh": "先核对签证条件，再申请 IRD；从 2025 年 11 月 3 日起符合条件者学期中最多 25 小时。",
-    "excerptEn": "Check visa conditions, then get an IRD number. Eligible students may work 25 hours a week from 3 November 2025.",
+    "updatedAt": "2026-10-27",
+    "titleZh": "IRD 税号申请：步骤、myIR 与税码",
+    "titleEn": "Applying for an IRD number: steps, myIR and tax codes",
+    "excerptZh": "注册 myIR 后按「新抵纽」路径网上申请；获批约 2 天收到号，入职用 IR330 选对税码，避免 ND 多扣税。",
+    "excerptEn": "Register myIR and apply as a new arrival; expect your number in about 2 days, then use IR330—wrong or missing codes trigger ND withholding.",
     "image": "/images/article/payslip-tax.jpg",
-    "imageAltZh": "税务与学生工时",
-    "imageAltEn": "Tax and student work hours",
+    "imageAltZh": "IRD 税号与 myIR",
+    "imageAltEn": "IRD number and myIR",
     "bodyZh": [
-      "能不能打工、每周几小时，只看你的签证条件与 Immigration New Zealand，不看雇主口头承诺。发薪与报税需要 IRD 号码（Inland Revenue）。本站不提供税务或移民法律意见，以下为官方公开信息的整理。",
+      "在新西兰从雇主处挣工资，需要 IRD 号码（Inland Revenue）并选对税码，雇主才能按正确比例扣 PAYE。以下为 IRD 官网公开流程的逐步整理，不是税务或法律意见。核对日期：2026-10-27。",
       {
         "type": "image",
         "src": "/images/article/tax-form.jpg",
-        "alt": "签证条件与税务",
-        "caption": "eVisa 或签证信上的 work conditions 才是依据。",
+        "alt": "IRD 申请材料",
+        "caption": "先开好能正常收付的新西兰银行账户，再走网上申请更顺。",
         "credit": {
           "text": "图片：MoneyBlogNewz · CC BY 2.0",
           "href": "https://commons.wikimedia.org/wiki/File:Form_4868%2C_2010%2C_with_pen_glasses_phone.jpg"
@@ -1422,40 +1422,39 @@ export const articles = [
       },
       {
         "type": "h2",
-        "text": "25 小时从哪一天开始"
+        "text": "第一步：注册 myIR"
       },
-      "2025-11-03 起，符合条件的学生签证持有人学期中最多可工作每周 25 小时（此前常见为 20 小时）。当天及之后新批的学生签证按 25 小时条件发放。若你的签证仍写 20 小时，需要申请 variation of conditions 或新的学生签证，不会自动增加。假期全职（年中假期、圣诞新年等）以签证是否写明为准。来源：https://www.immigration.govt.nz/about-us/news-centre/upcoming-changes-to-student-visa-work-rights/ 与 https://www.immigration.govt.nz/study/once-you-have-a-student-visa/working-on-a-student-visa/",
-      "中学 Year 12–13、年满 16 岁的学生，仍需学校与父母/法定监护人书面同意才能获得学期中工作权；许可应按最多 25 小时来写。英语课程、交换与 Study Abroad 是否有工时，以 U13 条款与你的签证为准，不要假设「所有学生都能打 25 小时」。",
+      "申请个人 IRD 号前，需先注册 myIR 网络账户：准备姓名、邮箱和手机号，创建用户 ID 与密码，并设置至少一种两步验证（邮箱、短信或验证器 App 等）。注册时选择「申请个人新 IRD 号（含 new arrival）」或先注册再在「I want to…」里发起申请。来源：https://www.ird.govt.nz/myir-help/register-account/personal（核对日期：2026-10-27）",
       {
         "type": "h2",
-        "text": "如何申请变更到 25 小时"
+        "text": "第二步：准备材料"
       },
-      "移民局说明：2025-08-18 之前在旧系统申请的学生签证，可用网上表格只申请增加工时；其他条件变更仍用 INZ 1020。不确定自己在哪个系统，先问移民局。许多签证本就允许暑假全职，你可以等暑假后再决定是否申请这多出的 5 小时。",
+      "持居民签证：护照信息 + Immigration New Zealand 申请号。持学生或工作签证：上述信息 + 最近一个海外税号（如有）+ 能正常使用的新西兰银行账户，或已填好的 IR997 客户尽调表。澳洲护照持有人无 INZ 签证，但抵纽后通常仍有约 4–6 周可使用「新抵纽」路径。来源：https://www.ird.govt.nz/managing-my-tax/ird-numbers/ird-numbers-for-individuals/new-arrival-to-new-zealand---ird-number-application（核对日期：2026-10-27）",
       {
         "type": "h2",
-        "text": "IRD 号码"
+        "text": "第三步：在 myIR 提交「新抵纽」申请"
       },
-      "IRD 官方说明：落地后可用「new arrival」方式网上申请，需要护照信息、移民局申请号和最近一个海外税号（如有）；学生或工作签证持有人还需要一个能正常使用的新西兰银行账户或 IR997 客户尽调表。必须在签证上的「最晚入境日期」之前申请，过了这个日期就要改用「living in New Zealand」方式。获批后约 2 天内短信或邮件通知，邮寄约 10 天。申请免费。学生签证不能自雇。来源：https://www.ird.govt.nz/situations/work-or-study-in-new-zealand 与 https://www.ird.govt.nz/en/managing-my-tax/ird-numbers/ird-numbers-for-individuals/new-arrival-to-new-zealand---ird-number-application",
+      "落地后尽快登录 myIR，选择 new arrival 流程；IRD 会与移民局核对身份，一般不必再邮寄同一套证件。若你的 INZ 签证上设有「最晚入境日期」，须在该日期之前用此路径申请；过期后需改按「living in New Zealand」申请。申请免费。来源：https://www.ird.govt.nz/situations/work-or-study-in-new-zealand 与 https://www.ird.govt.nz/managing-my-tax/ird-numbers/ird-numbers-for-individuals/new-arrival-to-new-zealand---ird-number-application（核对日期：2026-10-27）",
       {
         "type": "h2",
-        "text": "税码与 IR330"
+        "text": "多久能拿到税号"
       },
-      "入职时填 Tax code declaration（IR330），告诉雇主扣多少税。主要收入（最高的一份）和其他副业收入用不同税码；有学生贷款要选含还款的税码；换工作、加第二份工或预计年收入变化时要重新选。可以用 IRD 的税码工具判断。来源：https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/what-tax-code-should-i-use",
+      "获批后，IRD 通常在约 2 天内以短信或邮件发送 IRD 号码；若需补材料会另行联系。纸质通知可能更久（官网曾写约 10 天邮寄）。拿到号后请妥善保存，报税、换工作都要用。来源：https://www.ird.govt.nz/managing-my-tax/ird-numbers/ird-numbers-for-individuals/new-arrival-to-new-zealand---ird-number-application（核对日期：2026-10-27）",
       {
         "type": "h2",
-        "text": "最低工资"
+        "text": "第四步：把 IRD 号接入 myIR"
       },
-      "最低工资（2026-04-01 起，税前）：成人最低工资 NZ$23.95/小时（此前 $23.50）；起步/培训最低工资 NZ$19.16/小时（此前 $18.80）。来源：https://www.employment.govt.nz/news-and-updates/minimum-wage-is-increasing-on-1-april-2026",
+      "若注册时尚未有号，获批后在 myIR 选择「添加已有 IRD 号」；通过短信激活（手机号须与 IRD 记录一致）或致电 IRD 开通。之后可在 myIR 查看信函、更新联系方式，并管理 end-of-year 申报等事项。来源：https://www.ird.govt.nz/myir-help/register-account/personal（核对日期：2026-10-27）",
       {
         "type": "h2",
-        "text": "排班自查"
+        "text": "入职：填 IR330 选对税码"
       },
-      "用日历记录每周工时，把课程、通勤和休息算进去。开学季主动和雇主减班。保留工资单至少一个财年。不确定条款时查移民局或持牌顾问——多上一小时的代价可能是签证。",
+      "每份雇主各交一份 Tax code declaration（IR330）。最高的一份收入是 main income，其余为 secondary，税码不同；有学生贷款要选含还款的税码；换工作、加第二份工或预计年收入变化时要重新选。可用 IRD 在线工具或 IR330 流程图判断。若未提交完整 IR330，雇主须按 no-notification（ND）扣税：PAYE 为 45% 另加 ACC earners’ levy（雇主指南 IR335 示例合计 46.75%），远高于正常工薪税率。来源：https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/what-tax-code-should-i-use 、https://www.ird.govt.nz/deductions 、https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir330/ir330.pdf（核对日期：2026-10-27）",
       {
         "type": "image",
         "src": "/images/article/payslip-tax.jpg",
-        "alt": "边读边工",
-        "caption": "第一份工重点是准时与沟通，本地推荐比短期高薪更值钱。",
+        "alt": "入职税码",
+        "caption": "入职第一周就把 IRD 号与 IR330 交给雇主，避免 ND 多扣税。",
         "credit": {
           "text": "图片：Pontificalibus · CC0",
           "href": "https://commons.wikimedia.org/wiki/File:Metropolitan_Police_1955_Payslip.jpg"
@@ -1465,19 +1464,20 @@ export const articles = [
         "type": "h2",
         "text": "官方来源（请点开核对）"
       },
-      "https://www.immigration.govt.nz/study/once-you-have-a-student-visa/working-on-a-student-visa/",
-      "https://www.immigration.govt.nz/about-us/news-centre/upcoming-changes-to-student-visa-work-rights/",
-      "https://www.ird.govt.nz/",
-      "https://www.ird.govt.nz/en/managing-my-tax/ird-numbers/ird-numbers-for-individuals/new-arrival-to-new-zealand---ird-number-application",
-      "https://www.employment.govt.nz/news-and-updates/minimum-wage-is-increasing-on-1-april-2026"
+      "https://www.ird.govt.nz/situations/work-or-study-in-new-zealand",
+      "https://www.ird.govt.nz/managing-my-tax/ird-numbers/ird-numbers-for-individuals/new-arrival-to-new-zealand---ird-number-application",
+      "https://www.ird.govt.nz/myir-help/register-account/personal",
+      "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/what-tax-code-should-i-use",
+      "https://www.ird.govt.nz/deductions",
+      "以上链接内容核对日期：2026-10-27。"
     ],
     "bodyEn": [
-      "Work rights come from your visa conditions and Immigration NZ, not from a manager’s verbal yes. Payroll needs an IRD number from Inland Revenue. This is general information, not tax or immigration advice.",
+      "If you earn salary or wages in New Zealand, you need an IRD number and the right tax code so your employer can deduct the correct PAYE. This is a step-by-step summary of Inland Revenue’s public guidance—not tax or legal advice. Checked on 2026-10-27.",
       {
         "type": "image",
         "src": "/images/article/tax-form.jpg",
-        "alt": "Visa conditions and tax",
-        "caption": "The work conditions on your eVisa or visa letter control.",
+        "alt": "IRD application documents",
+        "caption": "Open a fully functioning NZ bank account before you apply online.",
         "credit": {
           "text": "Photo: MoneyBlogNewz · CC BY 2.0",
           "href": "https://commons.wikimedia.org/wiki/File:Form_4868%2C_2010%2C_with_pen_glasses_phone.jpg"
@@ -1485,35 +1485,39 @@ export const articles = [
       },
       {
         "type": "h2",
-        "text": "When 25 hours started"
+        "text": "Step 1: Register myIR"
       },
-      "From 3 November 2025, eligible student-visa holders may work up to 25 hours a week in term time. New visas granted from that date use 25 hours. Existing 20-hour visas do not update automatically—you need a variation of conditions or a new visa. Holiday full-time work depends on the printed conditions. https://www.immigration.govt.nz/study/once-you-have-a-student-visa/working-on-a-student-visa/",
-      "Year 12–13 students aged 16+ still need written school and parental permission. Exchange, Study Abroad and English programmes follow the specific instructions on the visa.",
+      "You need a myIR web logon before applying. Have your name, email and phone ready, create a user ID and password, and set up at least one two-step verification method. When registering, choose ‘Apply for a new IRD number for an individual (including a new arrival)’ or start the application under ‘I want to…’ later. Source: https://www.ird.govt.nz/myir-help/register-account/personal (checked on 2026-10-27).",
       {
         "type": "h2",
-        "text": "IRD number"
+        "text": "Step 2: Gather documents"
       },
-      "IRD: after arrival, apply as a ‘new arrival’ online with passport details, your Immigration NZ application number and your latest overseas tax number (if any). Student and work visa holders also need a fully functioning NZ bank account or an IR997 form. Apply before the final arrival date on your visa; after that you apply as ‘living in New Zealand’. Approval usually arrives by text/email in about 2 days or by post within 10 days. It is free. You cannot be self-employed on a student visa. https://www.ird.govt.nz/situations/work-or-study-in-new-zealand",
+      "Resident visa: passport details and your Immigration NZ application number. Student or work visa: those details, your latest overseas tax number (if any), and either a fully functioning NZ bank account or a completed IR997 customer due diligence form. Australian passport holders have no INZ visa but usually have about 4–6 weeks after arrival to use the new-arrival process. Source: https://www.ird.govt.nz/managing-my-tax/ird-numbers/ird-numbers-for-individuals/new-arrival-to-new-zealand---ird-number-application (checked on 2026-10-27).",
       {
         "type": "h2",
-        "text": "Tax codes and IR330"
+        "text": "Step 3: Apply as a new arrival in myIR"
       },
-      "Complete a Tax code declaration (IR330) for each employer. Your highest income is your main income; other jobs are secondary and use different codes. Student-loan holders choose a code with repayments. Re-check when jobs or expected income change. https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/what-tax-code-should-i-use",
+      "After you land, log in to myIR and complete the new-arrival application; IRD can verify your identity with Immigration NZ so you do not usually resend the same ID documents. If your INZ visa has a final date you must arrive by, apply under this process before that date—otherwise use the ‘living in New Zealand’ application. It is free. Sources: https://www.ird.govt.nz/situations/work-or-study-in-new-zealand and https://www.ird.govt.nz/managing-my-tax/ird-numbers/ird-numbers-for-individuals/new-arrival-to-new-zealand---ird-number-application (checked on 2026-10-27).",
       {
         "type": "h2",
-        "text": "Minimum wage"
+        "text": "How long it takes"
       },
-      "Minimum wage (from 1 April 2026, before tax): adult NZ$23.95 an hour (was $23.50); starting-out and training NZ$19.16 (was $18.80). https://www.employment.govt.nz/news-and-updates/minimum-wage-is-increasing-on-1-april-2026",
+      "If approved, IRD usually texts or emails your IRD number within about 2 days; they will contact you if they need more information. Postal notification can take longer (the site notes up to about 10 days by post). Keep the number somewhere safe—you need it for payroll and tax events. Source: https://www.ird.govt.nz/managing-my-tax/ird-numbers/ird-numbers-for-individuals/new-arrival-to-new-zealand---ird-number-application (checked on 2026-10-27).",
       {
         "type": "h2",
-        "text": "Roster self-check"
+        "text": "Step 4: Link your IRD number in myIR"
       },
-      "Log weekly hours. Ask to drop shifts in heavy study weeks. Keep payslips. If unsure, read INZ or talk to a licensed adviser.",
+      "If you registered before you had a number, add it in myIR once it is issued, then activate access by text (your mobile must match IRD records) or by calling IRD. You can then read secure messages, update contact details and manage end-of-year tasks online. Source: https://www.ird.govt.nz/myir-help/register-account/personal (checked on 2026-10-27).",
+      {
+        "type": "h2",
+        "text": "Starting work: IR330 and tax codes"
+      },
+      "Give each employer a completed Tax code declaration (IR330). Your highest income is your main income; other jobs use secondary codes. Pick a student-loan code if repayments apply, and update your code when jobs or expected income change. Use IRD’s online tool or the IR330 flowchart. Without a completed IR330, employers must use the no-notification (ND) code: PAYE at 45% plus ACC earners’ levy (IR335 employer guide example totals 46.75%)—far above normal pay-as-you-earn rates. Sources: https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/what-tax-code-should-i-use , https://www.ird.govt.nz/deductions , https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir330/ir330.pdf (checked on 2026-10-27).",
       {
         "type": "image",
         "src": "/images/article/payslip-tax.jpg",
-        "alt": "Study and work",
-        "caption": "Reliability and a local reference beat a short burst of high hours.",
+        "alt": "Tax code at work",
+        "caption": "Hand your IRD number and IR330 to payroll in week one to avoid ND withholding.",
         "credit": {
           "text": "Photo: Pontificalibus · CC0",
           "href": "https://commons.wikimedia.org/wiki/File:Metropolitan_Police_1955_Payslip.jpg"
@@ -1523,11 +1527,12 @@ export const articles = [
         "type": "h2",
         "text": "Official sources (please verify)"
       },
-      "https://www.immigration.govt.nz/study/once-you-have-a-student-visa/working-on-a-student-visa/",
-      "https://www.immigration.govt.nz/about-us/news-centre/upcoming-changes-to-student-visa-work-rights/",
-      "https://www.ird.govt.nz/",
-      "https://www.ird.govt.nz/en/managing-my-tax/ird-numbers/ird-numbers-for-individuals/new-arrival-to-new-zealand---ird-number-application",
-      "https://www.employment.govt.nz/news-and-updates/minimum-wage-is-increasing-on-1-april-2026"
+      "https://www.ird.govt.nz/situations/work-or-study-in-new-zealand",
+      "https://www.ird.govt.nz/managing-my-tax/ird-numbers/ird-numbers-for-individuals/new-arrival-to-new-zealand---ird-number-application",
+      "https://www.ird.govt.nz/myir-help/register-account/personal",
+      "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/what-tax-code-should-i-use",
+      "https://www.ird.govt.nz/deductions",
+      "Links checked on 2026-10-27."
     ],
     "imageCreditZh": {
       "text": "图片：Pontificalibus · CC0",
@@ -1642,7 +1647,7 @@ export const articles = [
     "slug": "renting-guide",
     "guideId": "life",
     "section": "life",
-    "updatedAt": "2026-10-23",
+    "updatedAt": "2026-10-27",
     "titleZh": "新西兰租房：Trade Me、合租与押金",
     "titleEn": "Renting in NZ: Trade Me, flatting and the bond",
     "excerptZh": "看房要快、材料备齐；押金收据、租约与 Tenancy Services 是底线。",
@@ -1669,19 +1674,39 @@ export const articles = [
       "护照与签证页、录取或在读证明、能说明付租能力的材料、上一份房东或雇主推荐（如有）。第一次看房不要携带大量现金。",
       {
         "type": "h2",
+        "text": "刚到时的过渡住宿"
+      },
+      "长租竞争激烈时，可先住 1–4 周短租（正规短租平台、学校宿舍或亲友家），白天看房、晚上有固定落脚点。Tenancy Services 提醒：只有确定要租再签 tenancy agreement，签约前务必通读条款并保留收据。找房可上网搜、问同学，也可在 Ministry of Justice 网站检索房东是否曾有 Tenancy Tribunal 记录。来源：https://www.tenancy.govt.nz/starting-a-tenancy/new-to-tenancy/information-for-new-tenants/（核对日期：2026-10-27）",
+      {
+        "type": "h2",
+        "text": "常见租房骗局"
+      },
+      "警惕「未看房先转账」：假房东用过低租金、催促付款、拒绝实地看房或只接受无法追溯的付款方式。官方建议签约前认真读租约、确认房东身份；付 bond 前了解应付金额与收据要求，必要时可在房东同意下直接向 Tenancy Services 付 bond。不要仅凭聊天里的「护照照片」就转账。来源：https://www.tenancy.govt.nz/starting-a-tenancy/new-to-tenancy/information-for-new-tenants/ 、https://www.tenancy.govt.nz/rent-bond-and-bills/bond/paying-a-bond/（核对日期：2026-10-27）",
+      {
+        "type": "h2",
         "text": "合同与押金"
       },
-      "先读 tenancy agreement：租期、是否固定期限、谁付水电宽带、能否转租、退房通知。押金（bond）最多 4 周房租，房东必须给你收据，并在 23 个工作日内在 Tenancy Services（Bond Hub）线上登记。付押金走可追溯转账，不要用无法追回的现金或私人收款码。来源：https://www.tenancy.govt.nz/starting-a-tenancy/new-to-tenancy/information-for-new-tenants/",
+      "先读 tenancy agreement：租期、是否固定期限、谁付水电宽带、能否转租、退房通知。押金（bond）最多 4 周房租，房东必须给你收据，并在 23 个工作日内在 Tenancy Services（Bond Hub）线上登记。付押金走可追溯转账，不要用无法追回的现金或私人收款码。来源：https://www.tenancy.govt.nz/starting-a-tenancy/new-to-tenancy/information-for-new-tenants/（核对日期：2026-10-27）",
+      {
+        "type": "h2",
+        "text": "押金退不回来怎么办"
+      },
+      "退房时与房东一起做 property inspection，确认 bond 退款金额。最快路径：请房东在 Bond Hub 提交退款，租客在线确认；若 6 周内未收到 bond 已登记通知，应联系房东核实。若双方对退款有争议，可向 Tenancy Tribunal 申请（网上申请费 NZ$29，需 RealMe）；租户申请时，若房东也要扣 bond，房东也需申请。Tribunal 可裁定 bond 如何分配。可先致电 0800 836 262（0800 TENANCY）。来源：https://www.tenancy.govt.nz/rent-bond-and-bills/bond/refunding-a-bond/how-to-apply-for-a-bond-refund/ 、https://www.tenancy.govt.nz/disputes/tribunal/making-an-application/ 、https://www.tenancy.govt.nz/disputes/tribunal/decisions-the-tribunal-can-make/types-of-tenancy-tribunal-orders/（核对日期：2026-10-27）",
+      {
+        "type": "h2",
+        "text": "冬季看房清单：取暖、保温、潮湿"
+      },
+      "冬天看房更要问：主客厅是否有符合 Healthy Homes 的固定取暖设备（非便携 LPG 等）；天花板/地板保温是否达标、有无霉变或缺口；厨房浴室抽风是否正常；地面/排水是否防潮（封闭地基是否可有 ground moisture barrier）。可要求房东提供合规声明或在 21 天内答复 Healthy Homes 信息请求。来源：https://www.tenancy.govt.nz/healthy-homes/heating-standard/ 、https://www.tenancy.govt.nz/healthy-homes/insulation-standard/ 、https://www.tenancy.govt.nz/healthy-homes/moisture-and-drainage-standard/ 、https://www.tenancy.govt.nz/healthy-homes/healthy-homes-compliance/（核对日期：2026-10-27）",
       {
         "type": "h2",
         "text": "看房当天问题"
       },
-      "对照 Healthy Homes 标准看房：从 2025-07-01 起所有私人出租房都必须符合取暖（主客厅要有固定取暖设备）、保温、通风（厨房和浴室要有抽风扇）、防潮排水和防风五项标准；新签或续签的租约必须附达标声明，租客询问时房东须在 21 天内提供信息。另问清洗衣、安静时段、能否转租、通勤到学校几站。没看清合同不要付大额定金。来源：https://www.tenancy.govt.nz/healthy-homes/healthy-homes-compliance/",
+      "对照 Healthy Homes 标准看房：从 2025-07-01 起所有私人出租房都必须符合取暖（主客厅要有固定取暖设备）、保温、通风（厨房和浴室要有抽风扇）、防潮排水和防风五项标准；新签或续签的租约必须附达标声明，租客询问时房东须在 21 天内提供信息。另问清洗衣、安静时段、能否转租、通勤到学校几站。没看清合同不要付大额定金。来源：https://www.tenancy.govt.nz/healthy-homes/healthy-homes-compliance/（核对日期：2026-10-27）",
       {
         "type": "h2",
         "text": "涨租规则"
       },
-      "无论固定期限还是周期性租约，房东只能在租约开始满 12 个月后、且距上次涨租满 12 个月后才能涨租，并须提前至少 60 天书面通知新租金和生效日期（寄宿屋为 28 天）。涨租后房东可要求补交押金，补足到新租金的 4 周以内。来源：https://www.tenancy.govt.nz/rent-bond-and-bills/rent/increasing-rent/",
+      "无论固定期限还是周期性租约，房东只能在租约开始满 12 个月后、且距上次涨租满 12 个月后才能涨租，并须提前至少 60 天书面通知新租金和生效日期（寄宿屋为 28 天）。涨租后房东可要求补交押金，补足到新租金的 4 周以内。来源：https://www.tenancy.govt.nz/rent-bond-and-bills/rent/increasing-rent/（核对日期：2026-10-27）",
       {
         "type": "h2",
         "text": "落地策略"
@@ -1713,19 +1738,39 @@ export const articles = [
       "Passport/visa, enrolment, evidence you can pay rent, and a reference if you have one.",
       {
         "type": "h2",
+        "text": "Transitional stay when you arrive"
+      },
+      "When long-term listings move fast, book 1–4 weeks of legitimate short stay (licensed short-stay, student housing or friends) so you can view by day and sleep somewhere secure at night. Tenancy Services says read the tenancy agreement carefully and only sign when you are sure you want the property; keep receipts. You can search online, ask your network, and check Ministry of Justice Tenancy Tribunal orders for a landlord’s past disputes. Source: https://www.tenancy.govt.nz/starting-a-tenancy/new-to-tenancy/information-for-new-tenants/ (checked on 2026-10-27).",
+      {
+        "type": "h2",
+        "text": "Common rental scams"
+      },
+      "Watch for ‘pay before you view’: fake landlords use below-market rent, urgency and untraceable payments, or refuse an in-person viewing. Read the agreement before you sign, verify who you are dealing with, and understand bond rules before you pay; with the landlord’s approval you may pay bond directly to Tenancy Services. Do not transfer money based only on chat photos of ID. Sources: https://www.tenancy.govt.nz/starting-a-tenancy/new-to-tenancy/information-for-new-tenants/ and https://www.tenancy.govt.nz/rent-bond-and-bills/bond/paying-a-bond/ (checked on 2026-10-27).",
+      {
+        "type": "h2",
         "text": "Agreement and bond"
       },
-      "Read the tenancy agreement. A bond can be no more than 4 weeks’ rent; the landlord must give you a receipt and lodge it with Tenancy Services (Bond Hub) within 23 working days. Pay by traceable transfer. https://www.tenancy.govt.nz/starting-a-tenancy/new-to-tenancy/information-for-new-tenants/",
+      "Read the tenancy agreement. A bond can be no more than 4 weeks’ rent; the landlord must give you a receipt and lodge it with Tenancy Services (Bond Hub) within 23 working days. Pay by traceable transfer. Source: https://www.tenancy.govt.nz/starting-a-tenancy/new-to-tenancy/information-for-new-tenants/ (checked on 2026-10-27).",
+      {
+        "type": "h2",
+        "text": "If your bond is not returned"
+      },
+      "Do a move-out inspection with the landlord and agree the refund. The fastest route is the landlord submitting a Bond Hub refund for you to confirm; if you paid the bond and hear nothing within about 6 weeks, follow up on lodging. If you disagree, either party can apply to the Tenancy Tribunal online (fee NZ$29, RealMe login); if a tenant applies and the landlord wants part of the bond, the landlord must apply too. The Tribunal can order how bond is split. Call 0800 836 262 (0800 TENANCY) if you need help. Sources: https://www.tenancy.govt.nz/rent-bond-and-bills/bond/refunding-a-bond/how-to-apply-for-a-bond-refund/ , https://www.tenancy.govt.nz/disputes/tribunal/making-an-application/ , https://www.tenancy.govt.nz/disputes/tribunal/decisions-the-tribunal-can-make/types-of-tenancy-tribunal-orders/ (checked on 2026-10-27).",
+      {
+        "type": "h2",
+        "text": "Winter viewing: heating, insulation, damp"
+      },
+      "In winter, check the main living room has an acceptable fixed heater under the healthy homes heating standard (not a portable LPG bottle heater); ceiling and underfloor insulation in reasonable condition without mould or gaps; working kitchen and bathroom extraction; and drainage/moisture measures such as a ground moisture barrier where required. Ask for the compliance statement or a healthy homes response within 21 days. Sources: https://www.tenancy.govt.nz/healthy-homes/heating-standard/ , https://www.tenancy.govt.nz/healthy-homes/insulation-standard/ , https://www.tenancy.govt.nz/healthy-homes/moisture-and-drainage-standard/ , https://www.tenancy.govt.nz/healthy-homes/healthy-homes-compliance/ (checked on 2026-10-27).",
       {
         "type": "h2",
         "text": "On viewing day"
       },
-      "Check against the healthy homes standards: from 1 July 2025 every private rental must meet heating (a fixed heater for the main living room), insulation, ventilation (extractor fans in kitchen and bathroom), moisture/drainage and draught-stopping standards. New or renewed agreements must include a compliance statement, and landlords must answer tenant requests within 21 days. Also ask about laundry, quiet hours, subletting and the commute. https://www.tenancy.govt.nz/healthy-homes/healthy-homes-compliance/",
+      "Check against the healthy homes standards: from 1 July 2025 every private rental must meet heating (a fixed heater for the main living room), insulation, ventilation (extractor fans in kitchen and bathroom), moisture/drainage and draught-stopping standards. New or renewed agreements must include a compliance statement, and landlords must answer tenant requests within 21 days. Also ask about laundry, quiet hours, subletting and the commute. Source: https://www.tenancy.govt.nz/healthy-homes/healthy-homes-compliance/ (checked on 2026-10-27).",
       {
         "type": "h2",
         "text": "Rent increases"
       },
-      "For fixed-term and periodic tenancies, rent can only rise 12 months after the tenancy started and 12 months after the last increase, with at least 60 days’ written notice (28 days for boarding houses). The landlord may ask for extra bond up to 4 weeks of the new rent. https://www.tenancy.govt.nz/rent-bond-and-bills/rent/increasing-rent/",
+      "For fixed-term and periodic tenancies, rent can only rise 12 months after the tenancy started and 12 months after the last increase, with at least 60 days’ written notice (28 days for boarding houses). The landlord may ask for extra bond up to 4 weeks of the new rent. Source: https://www.tenancy.govt.nz/rent-bond-and-bills/rent/increasing-rent/ (checked on 2026-10-27).",
       {
         "type": "image",
         "src": "/images/article-arrival.png",
