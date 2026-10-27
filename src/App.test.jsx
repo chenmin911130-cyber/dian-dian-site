@@ -256,6 +256,25 @@ it("opens the Seek and Trade Me article from the career guide", async () => {
   ).toBeInTheDocument();
 });
 
+it("loads the standalone inquiry form at /ask with chip groups and contact fields", () => {
+  window.history.replaceState({}, "", "/ask");
+  render(<App />);
+  expect(
+    screen.getByRole("heading", { name: "留学意向咨询" }),
+  ).toBeInTheDocument();
+  expect(screen.getByText("学历 *")).toBeInTheDocument();
+  expect(screen.getByRole("radio", { name: "本科" })).toBeInTheDocument();
+  expect(screen.getByRole("radio", { name: "在职" })).toBeInTheDocument();
+  expect(screen.getByLabelText("邮箱 *")).toBeInTheDocument();
+  expect(screen.getByLabelText("手机号 *")).toBeInTheDocument();
+  expect(
+    screen.getByRole("button", { name: "提交咨询" }),
+  ).toBeInTheDocument();
+  expect(document.querySelector('meta[property="og:image"]')?.content).toBe(
+    "https://diandianyudita.com/images/hero-wanaka.jpg",
+  );
+});
+
 it("loads the consultation page directly at /consult", () => {
   window.history.replaceState({}, "", "/consult");
   render(<App />);

@@ -9,7 +9,7 @@ const CONTENT_SECURITY_POLICY = [
   "font-src 'self' https://fonts.gstatic.com data:",
   "img-src 'self' data: blob:",
   "media-src 'self'",
-  "connect-src 'self'",
+  "connect-src 'self' https://api.web3forms.com",
 ].join("; ");
 
 export const SECURITY_HEADER_VALUES = {

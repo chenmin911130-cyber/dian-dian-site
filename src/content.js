@@ -6,12 +6,72 @@ export const articles = sortArticles(articleRecords);
 
 export const CONTACT_EMAIL = "yuditawang0925@gmail.com";
 
+export const INQUIRY_OG_IMAGE = "https://diandianyudita.com/images/hero-wanaka.jpg";
+
+export const inquiryCopy = {
+  zh: {
+    kicker: "DIANDIAN · NZ STUDY",
+    title: "留学意向咨询",
+    lead: "填写以下信息，点点会在微信或邮件回复你。仅用于留学规划沟通，不会公开你的资料。",
+    educationLabel: "学历 *",
+    employmentLabel: "工作情况 *",
+    incomeLabel: "收入（税后，人民币）*",
+    majorLabel: "想要就读的专业方向 *",
+    majorOtherLabel: "请说明其他专业方向 *",
+    majorPlaceholder: "例如：建筑、法律、酒店管理…",
+    emailLabel: "邮箱 *",
+    phoneLabel: "手机号 *",
+    phonePlaceholder: "中国大陆或新西兰号码",
+    submit: "提交咨询",
+    submitting: "提交中…",
+    privacy: "提交即表示你同意点点仅将信息用于留学咨询联系。",
+    successTitle: "已收到你的咨询",
+    successBody: "谢谢！点点会尽快通过微信或邮件联系你，请留意消息。",
+    backHome: "返回首页",
+    submitFail:
+      "暂时无法提交，请检查网络后重试，或返回首页查看微信二维码联系点点。",
+    pageTitle: "留学意向咨询｜点点新西兰留学咨询",
+    metaDescription:
+      "面向计划赴新西兰留学的学生：填写学历、工作与意向专业，点点会通过微信或邮件回复。",
+    ogTitle: "点点｜留学意向咨询",
+    ogDescription: "几分钟填写意向，点点帮你对接新西兰留学规划。",
+  },
+  en: {
+    kicker: "DIANDIAN · NZ STUDY",
+    title: "Study inquiry",
+    lead: "Share a few details and DianDian will reply on WeChat or email. Used only for study planning—not published.",
+    educationLabel: "Education level *",
+    employmentLabel: "Employment status *",
+    incomeLabel: "Income (after tax, CNY) *",
+    majorLabel: "Intended field of study *",
+    majorOtherLabel: "Describe your field *",
+    majorPlaceholder: "e.g. architecture, law, hospitality…",
+    emailLabel: "Email *",
+    phoneLabel: "Mobile phone *",
+    phonePlaceholder: "Mainland China or NZ number",
+    submit: "Send inquiry",
+    submitting: "Sending…",
+    privacy: "By submitting, you agree DianDian may use this only to contact you about study planning.",
+    successTitle: "Inquiry received",
+    successBody: "Thank you! DianDian will reach out on WeChat or email soon—please watch for a message.",
+    backHome: "Back to home",
+    submitFail:
+      "Could not send right now. Check your connection and try again, or return home to contact DianDian via WeChat.",
+    pageTitle: "Study inquiry | DianDian NZ Study Consulting",
+    metaDescription:
+      "For students planning to study in New Zealand: education, work and intended major—DianDian replies on WeChat or email.",
+    ogTitle: "DianDian | Study inquiry",
+    ogDescription: "A short form for New Zealand study planning—DianDian follows up personally.",
+  },
+};
+
 export const siteCopy = {
   zh: {
     siteName: "点点新西兰留学咨询",
     siteBrand: "点点",
     siteTag: "新西兰留学咨询",
     consultation: "填写留学咨询",
+    inquiryFormLink: "快速意向咨询",
     heroTitle: "留学新西兰，从规划到落地",
     heroLead: "面向计划赴新西兰留学的学生，提供选校、申请材料与落地建议。",
     heroCta: "填写留学咨询",
@@ -35,6 +95,7 @@ export const siteCopy = {
     siteBrand: "DianDian",
     siteTag: "NZ Study Consulting",
     consultation: "Fill in a consult form",
+    inquiryFormLink: "Quick inquiry",
     heroTitle: "From plan to arrival in New Zealand.",
     heroLead:
       "For students planning to study in New Zealand: school shortlists, application materials, and settling-in advice.",

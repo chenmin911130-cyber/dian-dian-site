@@ -2105,3 +2105,311 @@ body.nav-open .site-header,
 body.nav-open .hero { backdrop-filter: none; -webkit-backdrop-filter: none; transform: none; filter: none; }
 body.nav-open .site-masthead { position: relative; z-index: 100; }
 body.nav-open .site-footer { visibility: hidden; }
+
+/* Standalone WeChat-friendly inquiry form (/ask) */
+body.is-inquiry {
+  background: #0a182a;
+}
+
+.site-shell--inquiry {
+  width: 100%;
+  max-width: none;
+  min-height: 100dvh;
+  padding: 0;
+  background:
+    linear-gradient(180deg, rgba(10, 24, 42, 0.88) 0%, rgba(10, 24, 42, 0.94) 100%),
+    url("/images/page-wanaka.jpg") center top / cover no-repeat;
+  background-attachment: scroll;
+}
+
+@media (min-width: 881px) {
+  .site-shell--inquiry {
+    background-attachment: fixed;
+  }
+}
+
+.inquiry-shell {
+  width: min(100%, 480px);
+  margin: 0 auto;
+  padding: max(12px, env(safe-area-inset-top)) 20px max(28px, env(safe-area-inset-bottom));
+}
+
+.inquiry-shell__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  margin-bottom: 8px;
+  color: #f6f3ec;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.inquiry-shell__mark {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.inquiry-page {
+  padding: 8px 0 12px;
+}
+
+.inquiry-page__card {
+  padding: 20px 18px 22px;
+  border-radius: 20px;
+  background: rgba(12, 32, 52, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
+}
+
+.inquiry-page__kicker {
+  margin: 0 0 6px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: #9ec9e6;
+}
+
+.inquiry-page__head h1,
+.inquiry-page--success h1 {
+  margin: 0 0 10px;
+  font-size: clamp(1.45rem, 5vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.25;
+  color: #f6f3ec;
+}
+
+.inquiry-page__lead {
+  margin: 0 0 20px;
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(246, 243, 236, 0.78);
+}
+
+.inquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.inquiry-chip-group {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.inquiry-chip-group__legend {
+  padding: 0 0 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(246, 243, 236, 0.92);
+}
+
+.inquiry-chip-group__options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.inquiry-chip {
+  min-height: 44px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(158, 201, 230, 0.35);
+  background: rgba(255, 255, 255, 0.06);
+  color: #f6f3ec;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+
+.inquiry-chip:hover {
+  background: rgba(61, 126, 172, 0.22);
+  border-color: rgba(158, 201, 230, 0.55);
+}
+
+.inquiry-chip.is-selected {
+  background: linear-gradient(135deg, #2f6fa3, #3d7eac);
+  border-color: transparent;
+  color: #fffdf8;
+  box-shadow: 0 4px 14px rgba(47, 111, 163, 0.35);
+}
+
+.inquiry-chip-group--error .inquiry-chip-group__legend {
+  color: #f5b8b8;
+}
+
+.inquiry-field-error {
+  margin: 6px 0 0;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #ffb4b4;
+}
+
+.inquiry-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.inquiry-form__field label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(246, 243, 236, 0.92);
+}
+
+.inquiry-form__field--error label {
+  color: #f5b8b8;
+}
+
+.inquiry-form__field input {
+  min-height: 48px;
+  padding: 12px 14px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(47, 111, 163, 0.28);
+  background: #fffdf8;
+  color: #1e2c38;
+}
+
+.inquiry-form__field input:focus {
+  outline: 2px solid #3d7eac;
+  outline-offset: 1px;
+}
+
+.inquiry-form__field--error input {
+  border-color: rgba(255, 120, 120, 0.65);
+}
+
+.inquiry-form__banner {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(180, 60, 60, 0.2);
+  border: 1px solid rgba(255, 140, 140, 0.35);
+  color: #ffd8d8;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.inquiry-form__hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.inquiry-form__privacy {
+  margin: 4px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgba(246, 243, 236, 0.55);
+}
+
+.inquiry-form__actions {
+  margin-top: 4px;
+}
+
+.inquiry-form__submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 52px;
+  font-size: 16px;
+}
+
+.inquiry-spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 253, 248, 0.35);
+  border-top-color: #fffdf8;
+  border-radius: 50%;
+  animation: inquiry-spin 0.7s linear infinite;
+}
+
+@keyframes inquiry-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .inquiry-spinner {
+    animation: none;
+    opacity: 0.85;
+  }
+}
+
+.inquiry-page__foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.inquiry-form__home-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: #9ec9e6;
+  font-weight: 500;
+}
+
+.inquiry-page--success {
+  padding: 24px 0;
+}
+
+.inquiry-success-card {
+  text-align: center;
+  padding: 32px 22px 28px;
+  border-radius: 20px;
+  background: rgba(12, 32, 52, 0.88);
+  border: 1px solid rgba(158, 201, 230, 0.22);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.28);
+}
+
+.inquiry-page__success-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 18px;
+  border-radius: 999px;
+  background: linear-gradient(145deg, rgba(47, 111, 163, 0.5), rgba(61, 126, 172, 0.25));
+  border: 2px solid rgba(158, 201, 230, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inquiry-page__success-check {
+  font-size: 32px;
+  color: #f6f3ec;
+  line-height: 1;
+}
+
+.inquiry-success-card__cta {
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 22px;
+  padding: 0 24px;
+  min-height: 48px;
+  border-radius: 999px;
+  background: rgba(47, 111, 163, 0.35);
+  border: 1px solid rgba(158, 201, 230, 0.35);
+}
+
+.site-shell--inquiry .locale-switch button {
+  min-height: 44px;
+  padding: 8px 12px;
+}

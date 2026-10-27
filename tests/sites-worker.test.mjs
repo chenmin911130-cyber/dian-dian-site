@@ -26,6 +26,30 @@ test("serves existing static assets without a fallback", async () => {
   expectSecurityHeaders(response);
 });
 
+test("falls back to index.html for the /ask inquiry route", async () => {
+  const calls = [];
+  const response = await worker.fetch(
+    new Request("https://example.test/ask", {
+      headers: { accept: "text/html" },
+    }),
+    {
+      ASSETS: {
+        fetch: async (request) => {
+          const url = new URL(request.url);
+          calls.push(url.pathname + url.search);
+          return new Response(url.pathname === "/index.html" ? "app" : "missing", {
+            status: url.pathname === "/index.html" ? 200 : 404,
+          });
+        },
+      },
+    },
+  );
+
+  assert.equal(response.status, 200);
+  assert.deepEqual(calls, ["/ask", "/index.html"]);
+  expectSecurityHeaders(response);
+});
+
 test("falls back to index.html for a known app route", async () => {
   const calls = [];
   const response = await worker.fetch(
