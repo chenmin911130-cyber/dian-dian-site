@@ -48,10 +48,6 @@
         "destination": "/index.html"
       },
       {
-        "source": "/ask",
-        "destination": "/index.html"
-      },
-      {
         "source": "/article/arrival-first-week",
         "destination": "/index.html"
       },

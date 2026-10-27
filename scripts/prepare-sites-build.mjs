@@ -2,6 +2,8 @@
 import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { buildAskShareHtml } from "./lib/inquiry-share-html.mjs";
+import { INQUIRY_ASK_SHARE } from "./lib/inquiry-share-meta.mjs";
 import { SECURITY_HEADER_VALUES } from "../worker/security-headers.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -31,6 +33,12 @@ export const ARTICLE_SLUGS = new Set(${JSON.stringify(slugs)});
 `;
 writeFileSync(path.join(workerDir, "routes-data.js"), routesData);
 
+const shellHtml = readFileSync(index, "utf8");
+const askHtml = buildAskShareHtml(shellHtml, INQUIRY_ASK_SHARE);
+const askDir = path.join(dist, "client", "ask");
+mkdirSync(askDir, { recursive: true });
+writeFileSync(path.join(askDir, "index.html"), askHtml);
+
 mkdirSync(path.join(dist, "server"), { recursive: true });
 mkdirSync(path.join(dist, ".openai"), { recursive: true });
 for (const file of readdirSync(workerDir)) {
@@ -49,7 +57,6 @@ const firebaseRewrites = [
   "/career",
   "/life",
   "/consult",
-  "/ask",
   ...slugs.map((slug) => `/article/${slug}`),
 ].map((source) => ({ source, destination: "/index.html" }));
 
