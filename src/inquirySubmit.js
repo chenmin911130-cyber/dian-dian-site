@@ -87,33 +87,33 @@ export function checkInquirySpamGuards({
   return { ok: true };
 }
 
-export function buildInquiryPayload(data, locale) {
-  const zh = locale === "zh";
-  const jobLine =
-    data.jobDescription?.trim() ?
-      `${zh ? "具体工作" : "Job role"}: ${data.jobDescription.trim()}`
-    : null;
+function formatInquirySubmittedAt(date) {
+  return `${date.toISOString().replace("T", " ").replace(/\.\d{3}Z$/, "")} UTC`;
+}
+
+function inquiryMessageLine(label, value) {
+  return `${label}：${value ?? ""}`;
+}
+
+export function buildInquiryPayload(data, locale, submittedAt = new Date()) {
+  const jobDescription = data.jobDescription?.trim() ?? "";
+  const submitLanguage = locale === "zh" ? "中文" : "English";
   const lines = [
-    zh ? "— 留学意向咨询（diandianyudita.com/ask）—" : "— Study inquiry (diandianyudita.com/ask) —",
-    `${zh ? "学历" : "Education"}: ${data.education}`,
-    `${zh ? "工作情况" : "Employment"}: ${data.employment}`,
-    ...(jobLine ? [jobLine] : []),
-    `${zh ? "收入" : "Income"}: ${data.income}`,
-    `${zh ? "存款" : "Savings"}: ${data.savings}`,
-    `${zh ? "专业方向" : "Intended major"}: ${data.major}`,
-    `${zh ? "邮箱" : "Email"}: ${data.email}`,
+    inquiryMessageLine("学历", data.education),
+    inquiryMessageLine("工作情况", data.employment),
+    inquiryMessageLine("具体工作", jobDescription),
+    inquiryMessageLine("收入", data.income),
+    inquiryMessageLine("存款", data.savings),
+    inquiryMessageLine("意向专业", data.major),
+    inquiryMessageLine("邮箱", data.email),
+    inquiryMessageLine("提交语言", submitLanguage),
+    inquiryMessageLine("提交时间", formatInquirySubmittedAt(submittedAt)),
   ];
   return {
-    subject: zh ? "留学意向咨询｜点点网站" : "Study inquiry | DianDian site",
+    subject: `咨询：${data.email}｜${data.major}`,
     from_name: data.email,
     email: data.email,
     message: lines.join("\n"),
-    education_level: data.education,
-    employment_status: data.employment,
-    job_description: data.jobDescription?.trim() ?? "",
-    income: data.income,
-    savings: data.savings,
-    intended_major: data.major,
   };
 }
 

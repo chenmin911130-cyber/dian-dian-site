@@ -48,25 +48,48 @@ describe("validateInquiryFields", () => {
 });
 
 describe("buildInquiryPayload", () => {
-  it("includes savings and job fields for Web3Forms", () => {
-    const payload = buildInquiryPayload(
-      {
-        education: "本科",
-        employment: "在职",
-        jobDescription: " 市场专员 ",
-        income: "10000–20000 人民币",
-        savings: "NZ$10,000–30,000",
-        major: "IT / 计算机",
-        email: "test@example.com",
-      },
-      "zh",
+  const sampleData = {
+    education: "本科",
+    employment: "在职",
+    jobDescription: "市场专员",
+    income: "10000–20000 人民币",
+    savings: "NZ$10,000–30,000",
+    major: "IT / 计算机",
+    email: "test@example.com",
+  };
+  const submittedAt = new Date("2026-10-27T12:34:56.000Z");
+
+  it("puts all answers in one plain-text message with Chinese labels", () => {
+    const payload = buildInquiryPayload(sampleData, "zh", submittedAt);
+    expect(payload.message).toBe(
+      [
+        "学历：本科",
+        "工作情况：在职",
+        "具体工作：市场专员",
+        "收入：10000–20000 人民币",
+        "存款：NZ$10,000–30,000",
+        "意向专业：IT / 计算机",
+        "邮箱：test@example.com",
+        "提交语言：中文",
+        "提交时间：2026-10-27 12:34:56 UTC",
+      ].join("\n"),
     );
-    expect(payload.savings).toBe("NZ$10,000–30,000");
-    expect(payload.job_description).toBe("市场专员");
-    expect(payload.message).toContain("存款");
-    expect(payload.message).toContain("具体工作");
-    expect(payload.message).not.toContain("手机");
-    expect(payload.phone).toBeUndefined();
+    expect(payload.message).not.toMatch(/[<>*#]/);
+  });
+
+  it("uses English submit language label when locale is en", () => {
+    const payload = buildInquiryPayload(sampleData, "en", submittedAt);
+    expect(payload.message).toContain("提交语言：English");
+  });
+
+  it("sets subject from email and intended major only", () => {
+    const payload = buildInquiryPayload(sampleData, "zh", submittedAt);
+    expect(payload.subject).toBe("咨询：test@example.com｜IT / 计算机");
+  });
+
+  it("does not duplicate fields outside message", () => {
+    const payload = buildInquiryPayload(sampleData, "zh", submittedAt);
+    expect(Object.keys(payload).sort()).toEqual(["email", "from_name", "message", "subject"]);
     expect(payload.from_name).toBe("test@example.com");
   });
 });
