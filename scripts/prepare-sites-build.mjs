@@ -54,6 +54,7 @@ const firebaseRewrites = [
 
 const firebaseConfig = {
   hosting: {
+    site: "diandianyudita",
     public: "dist/client",
     ignore: ["firebase.json", "**/.*", "**/node_modules/**"],
     headers: [{ source: "**", headers: firebaseHeaders }],
