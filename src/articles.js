@@ -455,8 +455,8 @@ export const articles = [
         "alt": "学费与 Offer 文件",
         "caption": "最终以 Offer 与发票为准。",
         "credit": {
-          "text": "图片：Karolina Grabowska · Pexels License",
-          "href": "https://www.pexels.com/photo/person-holding-white-envelope-7688336/"
+          "text": "图片：This picture has been taken by Oleg Yunakov . Contact e-mail: yunakov gmail.com . Image can be used in accordance with t · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Letter_from_President_Theodore_Roosevelt_with_an_envelope%2C_1909.jpg"
         }
       },
       {
@@ -500,8 +500,8 @@ export const articles = [
         "alt": "Offer and fee documents",
         "caption": "Verbal “scholarship prices” are not the source of truth.",
         "credit": {
-          "text": "Photo: Karolina Grabowska · Pexels License",
-          "href": "https://www.pexels.com/photo/person-holding-white-envelope-7688336/"
+          "text": "Photo: This picture has been taken by Oleg Yunakov . Contact e-mail: yunakov gmail.com . Image can be used in accordance with t · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Letter_from_President_Theodore_Roosevelt_with_an_envelope%2C_1909.jpg"
         }
       },
       {
@@ -669,12 +669,12 @@ export const articles = [
       "新西兰学生签证以 Immigration New Zealand 当前要求为准，不构成持牌移民法律建议。核心通常包括：有效护照、被认可教育机构的录取（Offer of place）、有能力支付学费、足够生活费或合格担保、健康与品行、真实的学习意图。请用官网核对，不要凭经验或中介口头摘要。",
       {
         "type": "image",
-        "src": "/images/article/visa-documents.jpg",
+        "src": "/images/article/visa-documents.png",
         "alt": "签证材料桌面",
         "caption": "材料一次交齐，比等补件更稳。",
         "credit": {
-          "text": "图片：Pexels · Pexels License",
-          "href": "https://www.pexels.com/photo/blue-passport-on-top-of-white-paper-4484078/"
+          "text": "图片：New Zealand Government · Public domain",
+          "href": "https://commons.wikimedia.org/wiki/File:New_Zealand_Official_Passport_Outside_Front_Cover.png"
         }
       },
       {
@@ -727,12 +727,12 @@ export const articles = [
       "Follow Immigration New Zealand’s current student-visa rules. This is general information, not licensed immigration advice. Typical pillars: a valid passport, an offer from an approved provider, ability to pay tuition, enough living funds or an acceptable sponsor, health and character, and a genuine intention to study.",
       {
         "type": "image",
-        "src": "/images/article/visa-documents.jpg",
+        "src": "/images/article/visa-documents.png",
         "alt": "Visa documents",
         "caption": "A complete first upload beats a long RFI chain.",
         "credit": {
-          "text": "Photo: Pexels · Pexels License",
-          "href": "https://www.pexels.com/photo/blue-passport-on-top-of-white-paper-4484078/"
+          "text": "Photo: New Zealand Government · Public domain",
+          "href": "https://commons.wikimedia.org/wiki/File:New_Zealand_Official_Passport_Outside_Front_Cover.png"
         }
       },
       {
@@ -781,12 +781,12 @@ export const articles = [
       "https://www.immigration.govt.nz/study/once-you-have-a-student-visa/working-on-a-student-visa/"
     ],
     "imageCreditZh": {
-      "text": "图片：JESHOOTS.com · Pexels License",
-      "href": "https://www.pexels.com/photo/people-walking-inside-airport-912050/"
+      "text": "图片：Ingolfson · Public domain",
+      "href": "https://commons.wikimedia.org/wiki/File:Auckland_Airport_In_Main_Hall.jpg"
     },
     "imageCreditEn": {
-      "text": "Photo: JESHOOTS.com · Pexels License",
-      "href": "https://www.pexels.com/photo/people-walking-inside-airport-912050/"
+      "text": "Photo: Ingolfson · Public domain",
+      "href": "https://commons.wikimedia.org/wiki/File:Auckland_Airport_In_Main_Hall.jpg"
     }
   },
   {
@@ -836,8 +836,8 @@ export const articles = [
         "alt": "成绩与申请并行",
         "caption": "语言成绩出来后立刻推进网申，别空等下一个开学季。",
         "credit": {
-          "text": "图片：Stux · Pexels License",
-          "href": "https://www.pexels.com/photo/person-writing-on-notebook-256520/"
+          "text": "图片：Heidy Garcia · CC BY 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Smiling_Student_Working_on_Assignments_at_Desk.jpg"
         }
       },
       {
@@ -877,8 +877,8 @@ export const articles = [
         "alt": "Scores and applications together",
         "caption": "Push the application as soon as results land.",
         "credit": {
-          "text": "Photo: Stux · Pexels License",
-          "href": "https://www.pexels.com/photo/person-writing-on-notebook-256520/"
+          "text": "Photo: Heidy Garcia · CC BY 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Smiling_Student_Working_on_Assignments_at_Desk.jpg"
         }
       },
       {
@@ -890,12 +890,12 @@ export const articles = [
       "https://www.pearsonpte.com/"
     ],
     "imageCreditZh": {
-      "text": "图片：Stux · Pexels License",
-      "href": "https://www.pexels.com/photo/person-writing-on-notebook-256520/"
+      "text": "图片：Heidy Garcia · CC BY 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Smiling_Student_Working_on_Assignments_at_Desk.jpg"
     },
     "imageCreditEn": {
-      "text": "Photo: Stux · Pexels License",
-      "href": "https://www.pexels.com/photo/person-writing-on-notebook-256520/"
+      "text": "Photo: Heidy Garcia · CC BY 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Smiling_Student_Working_on_Assignments_at_Desk.jpg"
     }
   },
   {
@@ -918,8 +918,8 @@ export const articles = [
         "alt": "Offer 与缴费文件",
         "caption": "条件没完成就递签，容易反复补件。",
         "credit": {
-          "text": "图片：Karolina Grabowska · Pexels License",
-          "href": "https://www.pexels.com/photo/person-holding-white-envelope-7688336/"
+          "text": "图片：This picture has been taken by Oleg Yunakov . Contact e-mail: yunakov gmail.com . Image can be used in accordance with t · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Letter_from_President_Theodore_Roosevelt_with_an_envelope%2C_1909.jpg"
         }
       },
       {
@@ -957,8 +957,8 @@ export const articles = [
         "alt": "Offer and payment papers",
         "caption": "Do not lodge the visa while core conditions are still open.",
         "credit": {
-          "text": "Photo: Karolina Grabowska · Pexels License",
-          "href": "https://www.pexels.com/photo/person-holding-white-envelope-7688336/"
+          "text": "Photo: This picture has been taken by Oleg Yunakov . Contact e-mail: yunakov gmail.com . Image can be used in accordance with t · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Letter_from_President_Theodore_Roosevelt_with_an_envelope%2C_1909.jpg"
         }
       },
       {
@@ -984,12 +984,12 @@ export const articles = [
       }
     ],
     "imageCreditZh": {
-      "text": "图片：Karolina Grabowska · Pexels License",
-      "href": "https://www.pexels.com/photo/person-holding-white-envelope-7688336/"
+      "text": "图片：This picture has been taken by Oleg Yunakov . Contact e-mail: yunakov gmail.com . Image can be used in accordance with t · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Letter_from_President_Theodore_Roosevelt_with_an_envelope%2C_1909.jpg"
     },
     "imageCreditEn": {
-      "text": "Photo: Karolina Grabowska · Pexels License",
-      "href": "https://www.pexels.com/photo/person-holding-white-envelope-7688336/"
+      "text": "Photo: This picture has been taken by Oleg Yunakov . Contact e-mail: yunakov gmail.com . Image can be used in accordance with t · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Letter_from_President_Theodore_Roosevelt_with_an_envelope%2C_1909.jpg"
     }
   },
   {
@@ -1001,7 +1001,7 @@ export const articles = [
     "titleEn": "Tuition and living costs: a first-year cash budget",
     "excerptZh": "把学费、学生服务费、房租、保险与签证生活费证明分开算；奥克兰与其他城市差很多。",
     "excerptEn": "Split tuition, levy, rent, insurance and visa living-funds—Auckland is not Dunedin.",
-    "image": "/images/article/tuition-invoice.jpg",
+    "image": "/images/article/tuition-invoice.png",
     "imageAltZh": "留学年度预算",
     "imageAltEn": "A yearly study budget",
     "bodyZh": [
@@ -1083,12 +1083,12 @@ export const articles = [
       "https://www.immigration.govt.nz/study/once-you-have-a-student-visa/working-on-a-student-visa/"
     ],
     "imageCreditZh": {
-      "text": "图片：Karolina Grabowska · Pexels License",
-      "href": "https://www.pexels.com/photo/person-holding-white-paper-6863332/"
+      "text": "图片：Dwapale03 · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Tuition-fee-breakdown-sample.png"
     },
     "imageCreditEn": {
-      "text": "Photo: Karolina Grabowska · Pexels License",
-      "href": "https://www.pexels.com/photo/person-holding-white-paper-6863332/"
+      "text": "Photo: Dwapale03 · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Tuition-fee-breakdown-sample.png"
     }
   },
   {
@@ -1416,8 +1416,8 @@ export const articles = [
         "alt": "签证条件与税务",
         "caption": "eVisa 或签证信上的 work conditions 才是依据。",
         "credit": {
-          "text": "图片：Karolina Grabowska · Pexels License",
-          "href": "https://www.pexels.com/photo/person-writing-on-white-paper-6864961/"
+          "text": "图片：MoneyBlogNewz · CC BY 2.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Form_4868%2C_2010%2C_with_pen_glasses_phone.jpg"
         }
       },
       {
@@ -1457,8 +1457,8 @@ export const articles = [
         "alt": "边读边工",
         "caption": "第一份工重点是准时与沟通，本地推荐比短期高薪更值钱。",
         "credit": {
-          "text": "图片：Lukas · Pexels License",
-          "href": "https://www.pexels.com/photo/person-holding-white-paper-4386321/"
+          "text": "图片：Pontificalibus · CC0",
+          "href": "https://commons.wikimedia.org/wiki/File:Metropolitan_Police_1955_Payslip.jpg"
         }
       },
       {
@@ -1479,8 +1479,8 @@ export const articles = [
         "alt": "Visa conditions and tax",
         "caption": "The work conditions on your eVisa or visa letter control.",
         "credit": {
-          "text": "Photo: Karolina Grabowska · Pexels License",
-          "href": "https://www.pexels.com/photo/person-writing-on-white-paper-6864961/"
+          "text": "Photo: MoneyBlogNewz · CC BY 2.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Form_4868%2C_2010%2C_with_pen_glasses_phone.jpg"
         }
       },
       {
@@ -1515,8 +1515,8 @@ export const articles = [
         "alt": "Study and work",
         "caption": "Reliability and a local reference beat a short burst of high hours.",
         "credit": {
-          "text": "Photo: Lukas · Pexels License",
-          "href": "https://www.pexels.com/photo/person-holding-white-paper-4386321/"
+          "text": "Photo: Pontificalibus · CC0",
+          "href": "https://commons.wikimedia.org/wiki/File:Metropolitan_Police_1955_Payslip.jpg"
         }
       },
       {
@@ -1530,12 +1530,12 @@ export const articles = [
       "https://www.employment.govt.nz/news-and-updates/minimum-wage-is-increasing-on-1-april-2026"
     ],
     "imageCreditZh": {
-      "text": "图片：Lukas · Pexels License",
-      "href": "https://www.pexels.com/photo/person-holding-white-paper-4386321/"
+      "text": "图片：Pontificalibus · CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:Metropolitan_Police_1955_Payslip.jpg"
     },
     "imageCreditEn": {
-      "text": "Photo: Lukas · Pexels License",
-      "href": "https://www.pexels.com/photo/person-holding-white-paper-4386321/"
+      "text": "Photo: Pontificalibus · CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:Metropolitan_Police_1955_Payslip.jpg"
     }
   },
   {
@@ -1630,12 +1630,12 @@ export const articles = [
       }
     ],
     "imageCreditZh": {
-      "text": "图片：Mike · Pexels License",
-      "href": "https://www.pexels.com/photo/assorted-fruits-and-vegetables-on-display-264636/"
+      "text": "图片：Andykatib · CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:Woolworths_South_Dunedin_supermarket%2C_10_Dec_2025.jpg"
     },
     "imageCreditEn": {
-      "text": "Photo: Mike · Pexels License",
-      "href": "https://www.pexels.com/photo/assorted-fruits-and-vegetables-on-display-264636/"
+      "text": "Photo: Andykatib · CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:Woolworths_South_Dunedin_supermarket%2C_10_Dec_2025.jpg"
     }
   },
   {
@@ -1658,8 +1658,8 @@ export const articles = [
         "alt": "学生合租住所",
         "caption": "看房带上护照/签证、录取或在读证明，回复要快但钱不要先转。",
         "credit": {
-          "text": "图片：Pixabay · Pexels License",
-          "href": "https://www.pexels.com/photo/modern-house-with-landscape-106399/"
+          "text": "图片：Bjankuloski06 · CC BY 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Terrace_houses%2C_Ponsonby_Rd.jpg"
         }
       },
       {
@@ -1702,8 +1702,8 @@ export const articles = [
         "alt": "Shared student flat",
         "caption": "Bring ID and enrolment; do not transfer money before you understand the agreement.",
         "credit": {
-          "text": "Photo: Pixabay · Pexels License",
-          "href": "https://www.pexels.com/photo/modern-house-with-landscape-106399/"
+          "text": "Photo: Bjankuloski06 · CC BY 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Terrace_houses%2C_Ponsonby_Rd.jpg"
         }
       },
       {
@@ -1734,12 +1734,12 @@ export const articles = [
       }
     ],
     "imageCreditZh": {
-      "text": "图片：Pixabay · Pexels License",
-      "href": "https://www.pexels.com/photo/modern-house-with-landscape-106399/"
+      "text": "图片：Bjankuloski06 · CC BY 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Terrace_houses%2C_Ponsonby_Rd.jpg"
     },
     "imageCreditEn": {
-      "text": "Photo: Pixabay · Pexels License",
-      "href": "https://www.pexels.com/photo/modern-house-with-landscape-106399/"
+      "text": "Photo: Bjankuloski06 · CC BY 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Terrace_houses%2C_Ponsonby_Rd.jpg"
     }
   },
   {
@@ -1762,8 +1762,8 @@ export const articles = [
         "alt": "开户证件",
         "caption": "预约比排队更稳，开学周网点会很长。",
         "credit": {
-          "text": "图片：Expect Best · Pexels License",
-          "href": "https://www.pexels.com/photo/low-angle-photo-of-city-buildings-509092/"
+          "text": "图片：Paora · CC0",
+          "href": "https://commons.wikimedia.org/wiki/File:ANZ_Bank_Newton%2C_Auckland_PA01.jpg"
         }
       },
       {
@@ -1805,8 +1805,8 @@ export const articles = [
         "alt": "ID for banking",
         "caption": "Book an appointment; orientation week queues are long.",
         "credit": {
-          "text": "Photo: Expect Best · Pexels License",
-          "href": "https://www.pexels.com/photo/low-angle-photo-of-city-buildings-509092/"
+          "text": "Photo: Paora · CC0",
+          "href": "https://commons.wikimedia.org/wiki/File:ANZ_Bank_Newton%2C_Auckland_PA01.jpg"
         }
       },
       {
@@ -1836,12 +1836,12 @@ export const articles = [
       }
     ],
     "imageCreditZh": {
-      "text": "图片：Expect Best · Pexels License",
-      "href": "https://www.pexels.com/photo/low-angle-photo-of-city-buildings-509092/"
+      "text": "图片：Paora · CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:ANZ_Bank_Newton%2C_Auckland_PA01.jpg"
     },
     "imageCreditEn": {
-      "text": "Photo: Expect Best · Pexels License",
-      "href": "https://www.pexels.com/photo/low-angle-photo-of-city-buildings-509092/"
+      "text": "Photo: Paora · CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:ANZ_Bank_Newton%2C_Auckland_PA01.jpg"
     }
   },
   {
@@ -1912,12 +1912,12 @@ export const articles = [
       }
     ],
     "imageCreditZh": {
-      "text": "图片：Mike · Pexels License",
-      "href": "https://www.pexels.com/photo/assorted-fruits-and-vegetables-on-display-264636/"
+      "text": "图片：Andykatib · CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:Woolworths_South_Dunedin_supermarket%2C_10_Dec_2025.jpg"
     },
     "imageCreditEn": {
-      "text": "Photo: Mike · Pexels License",
-      "href": "https://www.pexels.com/photo/assorted-fruits-and-vegetables-on-display-264636/"
+      "text": "Photo: Andykatib · CC0",
+      "href": "https://commons.wikimedia.org/wiki/File:Woolworths_South_Dunedin_supermarket%2C_10_Dec_2025.jpg"
     }
   },
   {
@@ -1940,8 +1940,8 @@ export const articles = [
         "alt": "城市公共交通",
         "caption": "先搞清学校到住所的主干线路与末班时间，再密集看房。",
         "credit": {
-          "text": "图片：Pixabay · Pexels License",
-          "href": "https://www.pexels.com/photo/white-and-red-bus-on-road-during-daytime-209900/"
+          "text": "图片：Justin Hu · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Go_Bus_bus_in_Howick%2C_Auckland.jpg"
         }
       },
       {
@@ -1974,8 +1974,8 @@ export const articles = [
         "alt": "City transport",
         "caption": "Learn the school–home route and last services before heavy flat hunting.",
         "credit": {
-          "text": "Photo: Pixabay · Pexels License",
-          "href": "https://www.pexels.com/photo/white-and-red-bus-on-road-during-daytime-209900/"
+          "text": "Photo: Justin Hu · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Go_Bus_bus_in_Howick%2C_Auckland.jpg"
         }
       },
       {
@@ -1996,12 +1996,12 @@ export const articles = [
       }
     ],
     "imageCreditZh": {
-      "text": "图片：Pixabay · Pexels License",
-      "href": "https://www.pexels.com/photo/white-and-red-bus-on-road-during-daytime-209900/"
+      "text": "图片：Justin Hu · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Go_Bus_bus_in_Howick%2C_Auckland.jpg"
     },
     "imageCreditEn": {
-      "text": "Photo: Pixabay · Pexels License",
-      "href": "https://www.pexels.com/photo/white-and-red-bus-on-road-during-daytime-209900/"
+      "text": "Photo: Justin Hu · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Go_Bus_bus_in_Howick%2C_Auckland.jpg"
     }
   },
   {
@@ -2143,8 +2143,8 @@ export const articles = [
         "alt": "城市移动能力",
         "caption": "能上车、能转账、能收到学校邮件，第一周就算达标。",
         "credit": {
-          "text": "图片：Pixabay · Pexels License",
-          "href": "https://www.pexels.com/photo/white-and-red-bus-on-road-during-daytime-209900/"
+          "text": "图片：Justin Hu · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Go_Bus_bus_in_Howick%2C_Auckland.jpg"
         }
       }
     ],
@@ -2182,18 +2182,18 @@ export const articles = [
         "alt": "City mobility",
         "caption": "If you can ride, pay and receive school email, week one succeeded.",
         "credit": {
-          "text": "Photo: Pixabay · Pexels License",
-          "href": "https://www.pexels.com/photo/white-and-red-bus-on-road-during-daytime-209900/"
+          "text": "Photo: Justin Hu · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Go_Bus_bus_in_Howick%2C_Auckland.jpg"
         }
       }
     ],
     "imageCreditZh": {
-      "text": "图片：JESHOOTS.com · Pexels License",
-      "href": "https://www.pexels.com/photo/people-walking-inside-airport-912050/"
+      "text": "图片：Ingolfson · Public domain",
+      "href": "https://commons.wikimedia.org/wiki/File:Auckland_Airport_In_Main_Hall.jpg"
     },
     "imageCreditEn": {
-      "text": "Photo: JESHOOTS.com · Pexels License",
-      "href": "https://www.pexels.com/photo/people-walking-inside-airport-912050/"
+      "text": "Photo: Ingolfson · Public domain",
+      "href": "https://commons.wikimedia.org/wiki/File:Auckland_Airport_In_Main_Hall.jpg"
     }
   },
   {
@@ -2216,8 +2216,8 @@ export const articles = [
         "alt": "开车出行",
         "caption": "新西兰靠左行驶，先熟悉路规再上路。",
         "credit": {
-          "text": "图片：Pixabay · Pexels License",
-          "href": "https://www.pexels.com/photo/white-and-red-bus-on-road-during-daytime-209900/"
+          "text": "图片：Justin Hu · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Go_Bus_bus_in_Howick%2C_Auckland.jpg"
         }
       },
       {
@@ -2282,8 +2282,8 @@ export const articles = [
         "alt": "Driving in NZ",
         "caption": "NZ drives on the left—learn the road code first.",
         "credit": {
-          "text": "Photo: Pixabay · Pexels License",
-          "href": "https://www.pexels.com/photo/white-and-red-bus-on-road-during-daytime-209900/"
+          "text": "Photo: Justin Hu · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Go_Bus_bus_in_Howick%2C_Auckland.jpg"
         }
       },
       {
@@ -2340,12 +2340,12 @@ export const articles = [
       "https://www.consumerprotection.govt.nz/help-product-service/cars/before-buying-used-car"
     ],
     "imageCreditZh": {
-      "text": "图片：Pixabay · Pexels License",
-      "href": "https://www.pexels.com/photo/white-and-red-bus-on-road-during-daytime-209900/"
+      "text": "图片：Justin Hu · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Go_Bus_bus_in_Howick%2C_Auckland.jpg"
     },
     "imageCreditEn": {
-      "text": "Photo: Pixabay · Pexels License",
-      "href": "https://www.pexels.com/photo/white-and-red-bus-on-road-during-daytime-209900/"
+      "text": "Photo: Justin Hu · CC BY-SA 4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Go_Bus_bus_in_Howick%2C_Auckland.jpg"
     }
   },
   {
@@ -2368,8 +2368,8 @@ export const articles = [
         "alt": "新西兰日常",
         "caption": "友好、随和、守时——是很多人对 Kiwi 的第一印象。",
         "credit": {
-          "text": "图片：Catalyst Open Source · CC BY-SA 2.0",
-          "href": "https://commons.wikimedia.org/wiki/File:Haka_for_Lillian_Hetet-Owen_(31659287718).jpg"
+          "text": "图片：Natural-Heart · CC BY-SA 2.0",
+          "href": "https://commons.wikimedia.org/wiki/File:All_Blacks_Haka_at_Westpac_Stadium%2C_Wellington%2C_NZ.jpg"
         }
       },
       {
@@ -2428,8 +2428,8 @@ export const articles = [
         "alt": "Everyday NZ",
         "caption": "Friendly, casual and on time.",
         "credit": {
-          "text": "Photo: Catalyst Open Source · CC BY-SA 2.0",
-          "href": "https://commons.wikimedia.org/wiki/File:Haka_for_Lillian_Hetet-Owen_(31659287718).jpg"
+          "text": "Photo: Natural-Heart · CC BY-SA 2.0",
+          "href": "https://commons.wikimedia.org/wiki/File:All_Blacks_Haka_at_Westpac_Stadium%2C_Wellington%2C_NZ.jpg"
         }
       },
       {
@@ -2480,12 +2480,12 @@ export const articles = [
       "https://www.police.govt.nz/advice/drugs-and-alcohol/alcohol-laws-and-penalties"
     ],
     "imageCreditZh": {
-      "text": "图片：Catalyst Open Source · CC BY-SA 2.0",
-      "href": "https://commons.wikimedia.org/wiki/File:Haka_for_Lillian_Hetet-Owen_(31659287718).jpg"
+      "text": "图片：Natural-Heart · CC BY-SA 2.0",
+      "href": "https://commons.wikimedia.org/wiki/File:All_Blacks_Haka_at_Westpac_Stadium%2C_Wellington%2C_NZ.jpg"
     },
     "imageCreditEn": {
-      "text": "Photo: Catalyst Open Source · CC BY-SA 2.0",
-      "href": "https://commons.wikimedia.org/wiki/File:Haka_for_Lillian_Hetet-Owen_(31659287718).jpg"
+      "text": "Photo: Natural-Heart · CC BY-SA 2.0",
+      "href": "https://commons.wikimedia.org/wiki/File:All_Blacks_Haka_at_Westpac_Stadium%2C_Wellington%2C_NZ.jpg"
     }
   },
   {
@@ -3013,8 +3013,8 @@ export const articles = [
         "alt": "城市生活成本",
         "caption": "学费差常常小于一年房租差。",
         "credit": {
-          "text": "图片：Archives New Zealand · CC BY 2.0",
-          "href": "https://commons.wikimedia.org/wiki/File:Hobson_Street%2C_Auckland_City.jpg"
+          "text": "图片：Sophbuchan · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:North_Campus.jpg"
         }
       },
       {
@@ -3073,8 +3073,8 @@ export const articles = [
         "alt": "City living costs",
         "caption": "A year of rent can outweigh a tuition gap.",
         "credit": {
-          "text": "Photo: Archives New Zealand · CC BY 2.0",
-          "href": "https://commons.wikimedia.org/wiki/File:Hobson_Street%2C_Auckland_City.jpg"
+          "text": "Photo: Sophbuchan · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:North_Campus.jpg"
         }
       },
       {
@@ -3486,8 +3486,8 @@ export const articles = [
         "alt": "城市生活成本",
         "caption": "学费差常常小于一年房租差。",
         "credit": {
-          "text": "图片：Samuel Cairncross · CC BY 2.0",
-          "href": "https://commons.wikimedia.org/wiki/File:Cuba_Street%2C_Wellington_by_Sam_Cairncross.jpg"
+          "text": "图片：Bahnfrend · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Cuba_Street%2C_2013_(06).jpg"
         }
       },
       {
@@ -3546,8 +3546,8 @@ export const articles = [
         "alt": "City living costs",
         "caption": "A year of rent can outweigh a tuition gap.",
         "credit": {
-          "text": "Photo: Samuel Cairncross · CC BY 2.0",
-          "href": "https://commons.wikimedia.org/wiki/File:Cuba_Street%2C_Wellington_by_Sam_Cairncross.jpg"
+          "text": "Photo: Bahnfrend · CC BY-SA 4.0",
+          "href": "https://commons.wikimedia.org/wiki/File:Cuba_Street%2C_2013_(06).jpg"
         }
       },
       {
@@ -5547,7 +5547,7 @@ export const articles = [
     "titleEn": "Student visa processing: apply early, peak from October to March",
     "excerptZh": "移民局建议至少提前 3 个月。2026 年 7–9 月官方统计的拒签占比高于上一完整财年。",
     "excerptEn": "INZ recommends at least three months. Official July–September 2026 decline share was higher than the previous full year.",
-    "image": "/images/article/visa-documents.jpg",
+    "image": "/images/article/visa-documents.png",
     "imageAltZh": "学生签证审理时间",
     "imageAltEn": "Student visa processing times",
     "related": [
@@ -5562,12 +5562,12 @@ export const articles = [
       "移民局建议国际学生至少在计划出行前 3 个月提交完整网上申请，并提醒 11 月至 3 月申请量大、审理可能更慢。系统是 Immigration Online。核对日期 2026-10-21。来源：https://www.immigration.govt.nz/study/study-visas/visas-for-studying-in-new-zealand/ 与 https://www.immigration.govt.nz/process-to-apply/applying-for-a-visa/applying-online/how-to-apply-for-a-visa-online/",
       {
         "type": "image",
-        "src": "/images/article/visa-documents.jpg",
+        "src": "/images/article/visa-documents.png",
         "alt": "完整一次交齐",
         "caption": "缺件不会自动变成「学校帮你催」。",
         "credit": {
-          "text": "图片：Pexels · Pexels License",
-          "href": "https://www.pexels.com/photo/blue-passport-on-top-of-white-paper-4484078/"
+          "text": "图片：New Zealand Government · Public domain",
+          "href": "https://commons.wikimedia.org/wiki/File:New_Zealand_Official_Passport_Outside_Front_Cover.png"
         }
       },
       {
@@ -5593,12 +5593,12 @@ export const articles = [
       "INZ recommends a complete online student-visa application at least three months before travel and notes high volumes from November to March. Checked 2026-10-21.",
       {
         "type": "image",
-        "src": "/images/article/visa-documents.jpg",
+        "src": "/images/article/visa-documents.png",
         "alt": "Lodge a complete file",
         "caption": "Missing documents delay you; they do not create a school-priority queue.",
         "credit": {
-          "text": "Photo: Pexels · Pexels License",
-          "href": "https://www.pexels.com/photo/blue-passport-on-top-of-white-paper-4484078/"
+          "text": "Photo: New Zealand Government · Public domain",
+          "href": "https://commons.wikimedia.org/wiki/File:New_Zealand_Official_Passport_Outside_Front_Cover.png"
         }
       },
       {
@@ -5616,12 +5616,12 @@ export const articles = [
       "https://www.immigration.govt.nz/assets/inz/documents/statistics/statistics-student-applications-decided.pdf"
     ],
     "imageCreditZh": {
-      "text": "图片：Pexels · Pexels License",
-      "href": "https://www.pexels.com/photo/blue-passport-on-top-of-white-paper-4484078/"
+      "text": "图片：New Zealand Government · Public domain",
+      "href": "https://commons.wikimedia.org/wiki/File:New_Zealand_Official_Passport_Outside_Front_Cover.png"
     },
     "imageCreditEn": {
-      "text": "Photo: Pexels · Pexels License",
-      "href": "https://www.pexels.com/photo/blue-passport-on-top-of-white-paper-4484078/"
+      "text": "Photo: New Zealand Government · Public domain",
+      "href": "https://commons.wikimedia.org/wiki/File:New_Zealand_Official_Passport_Outside_Front_Cover.png"
     }
   },
   {
